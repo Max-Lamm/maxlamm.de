@@ -1,5 +1,5 @@
 /*
-Theme Name: Frost - Multipurpose Responsive HTML5 Template 
+Theme Name: Frost - Multipurpose Responsive HTML5 Template
 Theme URI: http://themes.iki-bir.com/frost
 Author: elemis
 Author URI: http://iki-bir.com
@@ -1420,7 +1420,7 @@ footer .post-list li em {
 /*	11. PARALAX
 /*-----------------------------------------------------------------------------------*/
 .parallax {
-    background: url(style/images/art/parallax1.jpg) fixed no-repeat center center;
+    background: url(style/images/parallax/parallax1.jpg) fixed no-repeat center center;
     -webkit-background-size: cover;
     background-size: cover;
     position: relative;
@@ -1448,16 +1448,16 @@ footer .post-list li em {
     background-attachment: scroll !important
 }
 .parallax.parallax1 {
-    background-image: url(style/images/art/parallax1.jpg)
+    background-image: url(style/images/parallax/parallax1.jpg)
 }
 .parallax.parallax2 {
-    background-image: url(style/images/art/parallax2.jpg)
+    background-image: url(style/images/parallax/parallax2.jpg)
 }
 .parallax.parallax3 {
-    background-image: url(style/images/art/parallax3.jpg)
+    background-image: url(style/images/parallax/parallax3.jpg)
 }
 .parallax.parallax4 {
-    background-image: url(style/images/art/parallax4.jpg)
+    background-image: url(style/images/parallax/parallax4.jpg)
 }
 .parallax a {
     color: #FFF
@@ -2854,7 +2854,7 @@ figure.main,
     font-size: 20px !important;
 }
 /* Firefox Fix */
-@-moz-document url-prefix() { 
+@-moz-document url-prefix() {
 	.fancybox-close:before,
 	.fancybox-prev span:before,
 	.fancybox-next span:before {
@@ -2977,7 +2977,7 @@ figure.main,
 /*-----------------------------------------------------------------------------------*/
 /*	33. RESPONSIVE
 /*-----------------------------------------------------------------------------------*/
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
 	.navbar-nav > li > a {
 	    padding: 33px 25px 31px
 	}
@@ -3012,7 +3012,7 @@ figure.main,
 	    width: 770px
 	}
 }
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
 	.nav.navbar-nav > li:last-of-type > ul {
 	    left: auto;
 	    right: 0;
@@ -3123,7 +3123,7 @@ figure.main,
 	    display: inline-block;
 	}
 }
-@media (max-width: 991px) { 
+@media (max-width: 991px) {
 	.navbar-brand {
 	    position: relative;
 	    -webkit-box-shadow: none;
@@ -3235,7 +3235,7 @@ figure.main,
 	    text-align: center;
 	}
 }
-@media (min-width: 768px) and (max-width: 991px) { 
+@media (min-width: 768px) and (max-width: 991px) {
 	.navbar .container,
 	.container {
 	    padding-right: 15px;
@@ -3297,7 +3297,7 @@ figure.main,
 	    width: 50%
 	}
 }
-@media (max-width: 767px) { 
+@media (max-width: 767px) {
 	.navbar.fixed .navbar-collapse .navbar-nav {
 	    max-height: 230px !important;
 	    overflow-y: scroll;
