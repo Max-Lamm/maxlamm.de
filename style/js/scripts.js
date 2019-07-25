@@ -148,7 +148,7 @@ $(document).ready(function () {
                     '<div class="page-title">' +
                     '<div class="container inner">' +
                     '<div class="navigation">' +
-                    '<a href="#" id="gwi-thumbs" class="btn pull-left back">Back</a>' +
+                    '<a href="#" id="gwi-thumbs" class="btn pull-left back">Zurück</a>' +
                     '<a href="#" id="gwi-next" class="btn pull-right rm0 nav-next-item">Next</a>' +
                     '<a href="#" id="gwi-prev" class="btn pull-right rm5 nav-prev-item">Prev</a>' +
                     '</div>' +
@@ -439,7 +439,7 @@ jQuery(document).ready(function($) {
                 loop: true,
                 margin: 0,
               });
-              
+
               $('.portfolio-slider').owlCarousel({
                 items: 1,
                 nav:true,
@@ -452,7 +452,7 @@ jQuery(document).ready(function($) {
 				navClass: [ 'owl-slider-prev', 'owl-slider-next' ],
 				controlsClass: 'owl-slider-controls'
               });
-              
+
               $('.carousel-gallery').owlCarousel({
 			    margin:10,
 			    navText: ['<i class="icon-left-open-big"></i>','<i class="icon-right-open-big"></i>'],
@@ -470,7 +470,7 @@ jQuery(document).ready(function($) {
 			            items:3
 			        }
 			    }
-			});            
+			});
 });
 /*-----------------------------------------------------------------------------------*/
 /*	VIDEO
@@ -484,7 +484,7 @@ jQuery(document).ready(function () {
 function callPortfolioScripts() {
 
     		  jQuery('.player').fitVids();
-    
+
     		  $('.portfolio-slider').owlCarousel({
                 items: 1,
                 nav:true,
@@ -497,7 +497,7 @@ function callPortfolioScripts() {
 				navClass: [ 'owl-slider-prev', 'owl-slider-next' ],
 				controlsClass: 'owl-slider-controls'
               });
-              
+
               $('.carousel-gallery').owlCarousel({
 			    margin:10,
 			    navText: ['<i class="icon-left-open-big"></i>','<i class="icon-right-open-big"></i>'],
@@ -514,8 +514,8 @@ function callPortfolioScripts() {
 			    	1400:{
 			            items:3
 			        }
-			    } 
-			}); 
+			    }
+			});
 };
 /*-----------------------------------------------------------------------------------*/
 /*	MENU
@@ -554,7 +554,7 @@ $(document).ready(function () {
 
 });
 
-$(document).ready(function(){ 
+$(document).ready(function(){
 $('.navbar .nav li a').on('click',function(){
 	    $('.navbar .navbar-collapse.in').collapse('hide');
 	})
@@ -579,7 +579,7 @@ $('.navbar .nav li a').on('click',function(){
  * @version 2.1.3
  */
 ;(function(f){"use strict";"function"===typeof define&&define.amd?define(["jquery"],f):"undefined"!==typeof module&&module.exports?module.exports=f(require("jquery")):f(jQuery)})(function($){"use strict";function n(a){return!a.nodeName||-1!==$.inArray(a.nodeName.toLowerCase(),["iframe","#document","html","body"])}function h(a){return $.isFunction(a)||$.isPlainObject(a)?a:{top:a,left:a}}var p=$.scrollTo=function(a,d,b){return $(window).scrollTo(a,d,b)};p.defaults={axis:"xy",duration:0,limit:!0};$.fn.scrollTo=function(a,d,b){"object"=== typeof d&&(b=d,d=0);"function"===typeof b&&(b={onAfter:b});"max"===a&&(a=9E9);b=$.extend({},p.defaults,b);d=d||b.duration;var u=b.queue&&1<b.axis.length;u&&(d/=2);b.offset=h(b.offset);b.over=h(b.over);return this.each(function(){function k(a){var k=$.extend({},b,{queue:!0,duration:d,complete:a&&function(){a.call(q,e,b)}});r.animate(f,k)}if(null!==a){var l=n(this),q=l?this.contentWindow||window:this,r=$(q),e=a,f={},t;switch(typeof e){case "number":case "string":if(/^([+-]=?)?\d+(\.\d+)?(px|%)?$/.test(e)){e= h(e);break}e=l?$(e):$(e,q);case "object":if(e.length===0)return;if(e.is||e.style)t=(e=$(e)).offset()}var v=$.isFunction(b.offset)&&b.offset(q,e)||b.offset;$.each(b.axis.split(""),function(a,c){var d="x"===c?"Left":"Top",m=d.toLowerCase(),g="scroll"+d,h=r[g](),n=p.max(q,c);t?(f[g]=t[m]+(l?0:h-r.offset()[m]),b.margin&&(f[g]-=parseInt(e.css("margin"+d),10)||0,f[g]-=parseInt(e.css("border"+d+"Width"),10)||0),f[g]+=v[m]||0,b.over[m]&&(f[g]+=e["x"===c?"width":"height"]()*b.over[m])):(d=e[m],f[g]=d.slice&& "%"===d.slice(-1)?parseFloat(d)/100*n:d);b.limit&&/^\d+$/.test(f[g])&&(f[g]=0>=f[g]?0:Math.min(f[g],n));!a&&1<b.axis.length&&(h===f[g]?f={}:u&&(k(b.onAfterFirst),f={}))});k(b.onAfter)}})};p.max=function(a,d){var b="x"===d?"Width":"Height",h="scroll"+b;if(!n(a))return a[h]-$(a)[b.toLowerCase()]();var b="client"+b,k=a.ownerDocument||a.document,l=k.documentElement,k=k.body;return Math.max(l[h],k[h])-Math.min(l[b],k[b])};$.Tween.propHooks.scrollLeft=$.Tween.propHooks.scrollTop={get:function(a){return $(a.elem)[a.prop]()}, set:function(a){var d=this.get(a);if(a.options.interrupt&&a._last&&a._last!==d)return $(a.elem).stop();var b=Math.round(a.now);d!==b&&($(a.elem)[a.prop](b),a._last=this.get(a))}};return p});
-$(document).ready(function(){ 
+$(document).ready(function(){
     $('.navbar, .smooth').localScroll({
 	    hash: true
     });
@@ -589,17 +589,17 @@ $(document).ready(function(){
 /*-----------------------------------------------------------------------------------*/
 $(document).ready(function() {
 	var headerWrapper		= parseInt($('.navbar').height());
-	
-	
+
+
 	var shrinked_header_height = 53;
 	var header_height = $('.navbar').height();
-	
+
 	$('.offset').css('padding-top', header_height + 'px');
-    $('.anchor').css('padding-top', shrinked_header_height + 'px');  
-    $('.anchor').css('margin-top', -(shrinked_header_height) + 'px'); 
-    
+    $('.anchor').css('padding-top', shrinked_header_height + 'px');
+    $('.anchor').css('margin-top', -(shrinked_header_height) + 'px');
+
 	var offsetTolerance	= -(header_height);
-	
+
 	//Detecting user's scroll
 	$(window).scroll(function() {
         //Check scroll position
@@ -621,7 +621,7 @@ $(document).ready(function() {
             $('.onepage .navbar ul.navbar-nav a:last').parent('li').addClass('current');
         }
     });
-	
+
 });
 /*-----------------------------------------------------------------------------------*/
 /*	RETINA
@@ -644,7 +644,7 @@ $(document).ready(function () {
     $(window).on('resize', function () {
         $('.fix-portfolio .items').isotope('reLayout')
     });
-    
+
     $('.fix-portfolio .filter li a').click(function () {
 
         $('.fix-portfolio .filter li a').removeClass('active');
@@ -683,11 +683,11 @@ var widgetFeed = new Instafeed({
 		accessToken: '1215763826.f1627ea.dad6ca96bd7642519b573d52c3ef467f',
         resolution: 'thumbnail',
         template: '<li><span class="icon-overlay"><a href="{{link}}" target="_blank"><img src="{{image}}" /></a></span></li>',
-        after: function () {    
+        after: function () {
 		    $('.icon-overlay a').prepend('<span class="icn-more"></span>');
 		  }
     });
-    
+
         $('#instawidget').each(function() {
     widgetFeed.run();
 });
