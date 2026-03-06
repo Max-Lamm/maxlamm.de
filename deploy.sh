@@ -8,8 +8,8 @@ set -e
 
 # Config — passe diese Werte an dein Setup an
 REMOTE_USER="maxlamm"                    # Dein Uberspace-Username
-REMOTE_HOST="draco.uberspace.de"         # Dein Uberspace-Host
-REMOTE_PATH="/var/www/virtual/${REMOTE_USER}/html/"  # DocumentRoot
+REMOTE_HOST="hernmann.uberspace.de"      # Dein Uberspace-Host
+REMOTE_PATH="/var/www/virtual/${REMOTE_USER}/test.maxlamm.de/"  # DocumentRoot
 
 # Colors
 GREEN='\033[0;32m'
