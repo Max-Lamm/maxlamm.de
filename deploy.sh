@@ -17,7 +17,7 @@ RED='\033[0;31m'
 NC='\033[0m'
 
 echo -e "${GREEN}▸ Building site...${NC}"
-hugo --minify --gc
+/opt/homebrew/bin/hugo --minify --gc
 
 echo ""
 echo -e "${GREEN}▸ Deploying to ${REMOTE_HOST}...${NC}"
