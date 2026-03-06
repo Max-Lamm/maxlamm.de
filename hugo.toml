@@ -1,0 +1,91 @@
+baseURL = "https://maxlamm.de/"
+title = "maxlamm"
+defaultContentLanguage = "de"
+defaultContentLanguageInSubdir = false
+enableRobotsTXT = true
+pagination.pagerSize = 50
+
+[languages]
+  [languages.de]
+    languageName = "Deutsch"
+    weight = 1
+    contentDir = "content/de"
+    [languages.de.params]
+      subtitle = "DoP & Colorist"
+      aboutHeading = "Hey, ich bin Max"
+      contactHeading = "Hast du ein Projekt im Kopf? Oder Lust auf eine Zusammenarbeit? Nutze dazu am besten das Kontaktformular, schreibe eine E-mail oder ruf mich doch einfach an. Ich freue mich von dir zu hören."
+      moreProjects = "weitere Projekte"
+      readMore = "Read More"
+      prevPost = "Vorheriges Projekt"
+      nextPost = "Nächstes Projekt"
+      backHome = "Zur Startseite"
+    [[languages.de.menus.footer]]
+      name = "Impressum"
+      url = "/impressum/"
+      weight = 1
+    [[languages.de.menus.footer]]
+      name = "Datenschutz"
+      url = "/datenschutz/"
+      weight = 2
+    [[languages.de.menus.footer]]
+      name = "AGB"
+      url = "/agb/"
+      weight = 3
+    [[languages.de.menus.footer]]
+      name = "Edit Conform"
+      url = "/edit-conform/"
+      weight = 4
+
+  [languages.en]
+    languageName = "English"
+    weight = 2
+    contentDir = "content/en"
+    [languages.en.params]
+      subtitle = "DoP & Colorist"
+      aboutHeading = "Hey, I'm Max"
+      contactHeading = "Got a project in mind? Or interested in working together? Just use the contact form, send me an email, or give me a call. I'd love to hear from you."
+      moreProjects = "more projects"
+      readMore = "Read More"
+      prevPost = "Previous Project"
+      nextPost = "Next Project"
+      backHome = "Back Home"
+    [[languages.en.menus.footer]]
+      name = "Imprint"
+      url = "/en/imprint/"
+      weight = 1
+    [[languages.en.menus.footer]]
+      name = "Privacy"
+      url = "/en/privacy/"
+      weight = 2
+    [[languages.en.menus.footer]]
+      name = "Terms"
+      url = "/en/terms/"
+      weight = 3
+    [[languages.en.menus.footer]]
+      name = "Edit Conform"
+      url = "/en/edit-conform/"
+      weight = 4
+
+[params]
+  author = "Maximilian Lamm"
+  description = "Cinematographer & Colorist"
+  email = "hi@maxlamm.de"
+  phone = "+49 176 XXXXXXXX"
+  instagram = "https://www.instagram.com/maxlamm/"
+  linkedin = "https://www.linkedin.com/in/maxlamm/"
+  accentColor = "#E05A4E"
+  logoText = "maxlamm"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[outputs]
+  home = ["HTML"]
+  section = ["HTML"]
+  taxonomy = ["HTML"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

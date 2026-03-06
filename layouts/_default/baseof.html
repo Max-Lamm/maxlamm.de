@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .IsHome }}{{ .Site.Title }} – {{ .Site.Params.description }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+</head>
+<body>
+  {{ block "main" . }}{{ end }}
+
+  {{- partial "footer.html" . -}}
+
+  <!-- Lightbox -->
+  <div class="lightbox">
+    <button class="lightbox__close" aria-label="Close">&times;</button>
+    <img src="" alt="">
+  </div>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" aria-label="Scroll to top">&#8593;</button>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

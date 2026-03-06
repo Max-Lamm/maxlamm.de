@@ -1,0 +1,113 @@
+{{ define "main" }}
+
+<!-- NAV (for subpages: regular links) -->
+<nav class="site-nav scrolled">
+  <div class="site-nav__inner">
+    <a class="site-nav__brand" href="{{ if eq .Lang "de" }}/{{ else }}/en/{{ end }}">maxlamm</a>
+    <div class="site-nav__links">
+      <a href="{{ if eq .Lang "de" }}/#projects{{ else }}/en/#projects{{ end }}">{{ if eq .Lang "de" }}Projekte{{ else }}Projects{{ end }}</a>
+      <a href="{{ if eq .Lang "de" }}/#about{{ else }}/en/#about{{ end }}">{{ if eq .Lang "de" }}Über mich{{ else }}About{{ end }}</a>
+      <a href="{{ if eq .Lang "de" }}/#contact{{ else }}/en/#contact{{ end }}">{{ if eq .Lang "de" }}Kontakt{{ else }}Contact{{ end }}</a>
+    </div>
+  </div>
+</nav>
+
+<article class="project-page">
+
+  <!-- Prev / Next -->
+  <div class="project-nav">
+    <div>
+      {{- with .PrevInSection -}}
+      <a href="{{ .RelPermalink }}">&#8249; {{ $.Site.Language.Params.prevPost }}</a>
+      {{- end -}}
+    </div>
+    <div>
+      {{- with .NextInSection -}}
+      <a href="{{ .RelPermalink }}">{{ $.Site.Language.Params.nextPost }} &#8250;</a>
+      {{- end -}}
+    </div>
+  </div>
+
+  <!-- Title -->
+  <div class="project-header">
+    <h1>{{ .Title }}</h1>
+  </div>
+
+  <!-- Description -->
+  <div class="project-description">
+    {{ .Content }}
+  </div>
+
+  <!-- Video Embeds -->
+  {{- range .Params.videos -}}
+  <div class="project-video">
+    <div class="video-wrapper">
+      {{- if findRE "vimeo" . -}}
+      <iframe src="https://player.vimeo.com/video/{{ replaceRE ".*vimeo\\.com/" "" . }}?dnt=1&title=0&byline=0&portrait=0" allow="autoplay; fullscreen" allowfullscreen loading="lazy"></iframe>
+      {{- else if findRE "youtu" . -}}
+      <iframe src="https://www.youtube-nocookie.com/embed/{{ replaceRE ".*(?:youtu\\.be/|v=)" "" . }}" allow="autoplay; fullscreen" allowfullscreen loading="lazy"></iframe>
+      {{- end -}}
+    </div>
+  </div>
+  {{- end -}}
+
+  <!-- Credits -->
+  {{- with .Params.credits -}}
+  <div class="project-credits">
+    <dl>
+      {{- range $key, $val := . -}}
+      <dt>{{ $key }}:</dt>
+      <dd>{{ $val }}</dd>
+      {{- end -}}
+    </dl>
+  </div>
+  {{- end -}}
+
+  <!-- Gallery -->
+  {{- with .Params.gallery -}}
+  <div class="project-gallery">
+    <div class="gallery-grid">
+      {{- range . -}}
+      <img src="{{ . }}" alt="" loading="lazy">
+      {{- end -}}
+    </div>
+  </div>
+  {{- end -}}
+
+  <!-- Tags -->
+  {{- with .Params.tags -}}
+  <div class="project-tags">
+    {{- range . -}}
+    <a href="{{ relLangURL (printf "tags/%s/" (urlize .)) }}">{{ . }}</a>
+    {{- end -}}
+  </div>
+  {{- end -}}
+
+  <!-- Related Projects -->
+  {{- $related := first 6 (where (.Site.RegularPages.Related .) "Section" "projects") -}}
+  {{- if gt (len $related) 0 -}}
+  <div class="related-projects">
+    <h3>{{ .Site.Language.Params.moreProjects }}</h3>
+    <div class="project-grid">
+      {{- range $related -}}
+      <a class="project-card" href="{{ .RelPermalink }}">
+        {{- with .Params.thumbnail -}}
+        <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
+        {{- end -}}
+        <div class="project-card__overlay">
+          <span class="project-card__title">{{ .Title }}</span>
+        </div>
+      </a>
+      {{- end -}}
+    </div>
+  </div>
+  {{- end -}}
+
+  <!-- Back Home -->
+  <div class="back-home">
+    <a href="{{ if eq .Lang "de" }}/{{ else }}/en/{{ end }}">&#8249;&nbsp;&nbsp;&nbsp;{{ .Site.Language.Params.backHome }}</a>
+  </div>
+
+</article>
+
+{{ end }}
