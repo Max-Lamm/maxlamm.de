@@ -14,14 +14,10 @@ tags:
   - "musikvideo"
 videos: []
 credits:
-  - role: "Artist"
-    name: "John Garner"
-  - role: "Regie/DoP"
-    name: "Maximilian Lamm"
-  - role: "Edit/Grading"
-    name: "Maximilian Lamm"
-  - role: "1st AC"
-    name: "Moritz Frank"
+  Artist: "John Garner"
+  Regie/DoP: "Maximilian Lamm"
+  Edit/Grading: "Maximilian Lamm"
+  1st AC: "Moritz Frank"
 gallery: []
 translationKey: "john-garner-picture-of-my-mind"
 ---

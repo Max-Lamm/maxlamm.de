@@ -10,14 +10,10 @@ categories:
 tags: []
 videos: []
 credits:
-  - role: "Artist"
-    name: "Pam Pam Ida"
-  - role: "Regie/DoP/Edit/Grading"
-    name: "Maximilian Lamm"
-  - role: "2nd Kamera"
-    name: "Johannes Fendt"
-  - role: "Kameraassistenz"
-    name: "Laura Schneider"
+  Artist: "Pam Pam Ida"
+  Regie/DoP/Edit/Grading: "Maximilian Lamm"
+  2nd Kamera: "Johannes Fendt"
+  Kameraassistenz: "Laura Schneider"
 gallery: []
 translationKey: "pampamida-hoassa-droht"
 ---

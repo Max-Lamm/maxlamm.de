@@ -10,16 +10,11 @@ categories:
 tags: []
 videos: []
 credits:
-  - role: "Kunde"
-    name: "Deutsches Rotes Kreuz"
-  - role: "Produktion"
-    name: "Monacoframe"
-  - role: "Regie"
-    name: "Michael Baumberger"
-  - role: "DoP"
-    name: "Maximilian Lamm"
-  - role: "Grading"
-    name: "Maximilian Lamm"
+  Kunde: "Deutsches Rotes Kreuz"
+  Produktion: "Monacoframe"
+  Regie: "Michael Baumberger"
+  DoP: "Maximilian Lamm"
+  Grading: "Maximilian Lamm"
 gallery: []
 translationKey: "missingtype-2022"
 ---

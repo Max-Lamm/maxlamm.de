@@ -10,10 +10,8 @@ categories:
 tags: []
 videos: []
 credits:
-  - role: "Artist"
-    name: "Pam Pam Ida"
-  - role: "Regie/DoP/Edit/Grading"
-    name: "Maximilian Lamm"
+  Artist: "Pam Pam Ida"
+  Regie/DoP/Edit/Grading: "Maximilian Lamm"
 gallery: []
 translationKey: "pampamida-no-ned-soweit"
 ---

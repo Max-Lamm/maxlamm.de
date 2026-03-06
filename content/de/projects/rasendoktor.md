@@ -10,16 +10,11 @@ categories:
 tags: []
 videos: []
 credits:
-  - role: "Kunde"
-    name: "Rasendoktor"
-  - role: "Produktion"
-    name: "Monacoframe"
-  - role: "Regie"
-    name: "Michael Baumberger"
-  - role: "DoP"
-    name: "Maximilian Lamm"
-  - role: "Grading"
-    name: "Maximilian Lamm"
+  Kunde: "Rasendoktor"
+  Produktion: "Monacoframe"
+  Regie: "Michael Baumberger"
+  DoP: "Maximilian Lamm"
+  Grading: "Maximilian Lamm"
 gallery: []
 translationKey: "rasendoktor"
 ---

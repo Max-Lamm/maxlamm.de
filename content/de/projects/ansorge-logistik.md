@@ -13,16 +13,11 @@ videos:
   - "https://vimeo.com/778197598"
   - "https://vimeo.com/778196079"
 credits:
-  - role: "Kunde"
-    name: "Ansorge Logistik"
-  - role: "Produktion"
-    name: "Monacoframe"
-  - role: "Regie"
-    name: "Michael Baumberger"
-  - role: "DoP"
-    name: "Maximilian Lamm"
-  - role: "Grading"
-    name: "Maximilian Lamm"
+  Kunde: "Ansorge Logistik"
+  Produktion: "Monacoframe"
+  Regie: "Michael Baumberger"
+  DoP: "Maximilian Lamm"
+  Grading: "Maximilian Lamm"
 gallery: []
 translationKey: "ansorge-logistik"
 ---

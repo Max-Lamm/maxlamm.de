@@ -9,12 +9,9 @@ categories:
 tags: []
 videos: []
 credits:
-  - role: "Kunde"
-    name: "Mini"
-  - role: "Produktion"
-    name: "Monacoframe"
-  - role: "Grading"
-    name: "Maximilian Lamm"
+  Kunde: "Mini"
+  Produktion: "Monacoframe"
+  Grading: "Maximilian Lamm"
 gallery: []
 translationKey: "mini-app"
 ---

@@ -10,18 +10,12 @@ categories:
 tags: []
 videos: []
 credits:
-  - role: "Kunde"
-    name: "Dethleffs"
-  - role: "Agentur"
-    name: "Territory"
-  - role: "Produktion"
-    name: "Monacoframe"
-  - role: "Regie"
-    name: "Michael Baumberger"
-  - role: "DoP"
-    name: "Maximilian Lamm"
-  - role: "Grading"
-    name: "Maximilian Lamm"
+  Kunde: "Dethleffs"
+  Agentur: "Territory"
+  Produktion: "Monacoframe"
+  Regie: "Michael Baumberger"
+  DoP: "Maximilian Lamm"
+  Grading: "Maximilian Lamm"
 gallery: []
 translationKey: "dethleffs-familie"
 ---

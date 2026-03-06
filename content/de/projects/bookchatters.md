@@ -10,14 +10,10 @@ categories:
 tags: []
 videos: []
 credits:
-  - role: "Kunde"
-    name: "Bookchatters"
-  - role: "Produktion"
-    name: "Monacoframe"
-  - role: "DoP"
-    name: "Maximilian Lamm"
-  - role: "Grading"
-    name: "Maximilian Lamm"
+  Kunde: "Bookchatters"
+  Produktion: "Monacoframe"
+  DoP: "Maximilian Lamm"
+  Grading: "Maximilian Lamm"
 gallery: []
 translationKey: "bookchatters"
 ---

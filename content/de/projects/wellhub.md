@@ -15,20 +15,13 @@ tags:
   - "wellness"
 videos: []
 credits:
-  - role: "Kunde"
-    name: "Wellhub (ehemals Gympass)"
-  - role: "Produktion"
-    name: "Monacoframe"
-  - role: "Regie"
-    name: "Michael Baumberger"
-  - role: "DoP"
-    name: "Maximilian Lamm"
-  - role: "1st AC"
-    name: "Moritz Frank"
-  - role: "Licht"
-    name: "Johannes Fendt"
-  - role: "Grading"
-    name: "Maximilian Lamm"
+  Kunde: "Wellhub (ehemals Gympass)"
+  Produktion: "Monacoframe"
+  Regie: "Michael Baumberger"
+  DoP: "Maximilian Lamm"
+  1st AC: "Moritz Frank"
+  Licht: "Johannes Fendt"
+  Grading: "Maximilian Lamm"
 gallery: []
 translationKey: "wellhub"
 ---

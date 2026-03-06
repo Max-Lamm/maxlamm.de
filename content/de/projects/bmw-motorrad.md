@@ -10,14 +10,10 @@ categories:
 tags: []
 videos: []
 credits:
-  - role: "Kunde"
-    name: "BMW Motorrad"
-  - role: "Produktion"
-    name: "Monacoframe"
-  - role: "DoP"
-    name: "Maximilian Lamm"
-  - role: "Grading"
-    name: "Maximilian Lamm"
+  Kunde: "BMW Motorrad"
+  Produktion: "Monacoframe"
+  DoP: "Maximilian Lamm"
+  Grading: "Maximilian Lamm"
 gallery: []
 translationKey: "bmw-motorrad"
 ---

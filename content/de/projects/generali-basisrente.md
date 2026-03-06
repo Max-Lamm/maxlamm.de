@@ -10,14 +10,10 @@ categories:
 tags: []
 videos: []
 credits:
-  - role: "Produktion"
-    name: "Monacoframe"
-  - role: "Regie"
-    name: "Michael Baumberger"
-  - role: "Kamera"
-    name: "Maximilian Lamm"
-  - role: "Grading"
-    name: "Maximilian Lamm"
+  Produktion: "Monacoframe"
+  Regie: "Michael Baumberger"
+  Kamera: "Maximilian Lamm"
+  Grading: "Maximilian Lamm"
 gallery: []
 translationKey: "generali-basisrente"
 ---

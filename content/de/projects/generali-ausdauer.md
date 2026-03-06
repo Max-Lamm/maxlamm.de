@@ -10,22 +10,14 @@ categories:
 tags: []
 videos: []
 credits:
-  - role: "Produktion"
-    name: "Monacoframe"
-  - role: "Regie"
-    name: "Michael Baumberger"
-  - role: "Redaktion"
-    name: "Chantal Haug"
-  - role: "Kamera"
-    name: "Maximilian Lamm, Michael Baumberger"
-  - role: "Licht"
-    name: "Fabian Erdt"
-  - role: "Ton"
-    name: "Marco Kern"
-  - role: "AC"
-    name: "Moritz Frank"
-  - role: "Grading"
-    name: "Maximilian Lamm"
+  Produktion: "Monacoframe"
+  Regie: "Michael Baumberger"
+  Redaktion: "Chantal Haug"
+  Kamera: "Maximilian Lamm, Michael Baumberger"
+  Licht: "Fabian Erdt"
+  Ton: "Marco Kern"
+  AC: "Moritz Frank"
+  Grading: "Maximilian Lamm"
 gallery: []
 translationKey: "generali-ausdauer"
 ---

@@ -9,20 +9,13 @@ categories:
 tags: []
 videos: []
 credits:
-  - role: "Kunde"
-    name: "farmy.ch"
-  - role: "Produktion"
-    name: "Jens Derler"
-  - role: "Agentur"
-    name: "Family Agency"
-  - role: "Regie"
-    name: "Michael Baumberger"
-  - role: "Produktionsleitung"
-    name: "Klaas Fermer"
-  - role: "Licht"
-    name: "Noah Furrer"
-  - role: "Styling"
-    name: "Angela Burkhart"
+  Kunde: "farmy.ch"
+  Produktion: "Jens Derler"
+  Agentur: "Family Agency"
+  Regie: "Michael Baumberger"
+  Produktionsleitung: "Klaas Fermer"
+  Licht: "Noah Furrer"
+  Styling: "Angela Burkhart"
 gallery: []
 translationKey: "farmy"
 ---

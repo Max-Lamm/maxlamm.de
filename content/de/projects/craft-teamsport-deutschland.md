@@ -9,14 +9,10 @@ categories:
 tags: []
 videos: []
 credits:
-  - role: "Kunde"
-    name: "Craft Teamsport"
-  - role: "Produktion"
-    name: "Monacoframe"
-  - role: "Regie"
-    name: "Michael Baumberger"
-  - role: "DoP"
-    name: "Maximilian Lamm"
+  Kunde: "Craft Teamsport"
+  Produktion: "Monacoframe"
+  Regie: "Michael Baumberger"
+  DoP: "Maximilian Lamm"
 gallery: []
 translationKey: "craft-teamsport-deutschland"
 ---

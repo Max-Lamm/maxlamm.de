@@ -10,20 +10,13 @@ categories:
 tags: []
 videos: []
 credits:
-  - role: "Idee, Produktion, Drehbuch"
-    name: "Jan Wannemacher"
-  - role: "Regie, Dir/DoP, Edit, Grading"
-    name: "Maximilian Lamm"
-  - role: "Konzept Unterstützung"
-    name: "Michael Baumberger"
-  - role: "1st AC"
-    name: "Moritz Frank"
-  - role: "Licht"
-    name: "Johannes Fendt"
-  - role: "Maske"
-    name: "Karin Scholl"
-  - role: "Sound-Design"
-    name: "Benedikt Mühle"
+  Idee, Produktion, Drehbuch: "Jan Wannemacher"
+  Regie, Dir/DoP, Edit, Grading: "Maximilian Lamm"
+  Konzept Unterstützung: "Michael Baumberger"
+  1st AC: "Moritz Frank"
+  Licht: "Johannes Fendt"
+  Maske: "Karin Scholl"
+  Sound-Design: "Benedikt Mühle"
 gallery: []
 translationKey: "heischnupfa"
 ---

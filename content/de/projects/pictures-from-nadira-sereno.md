@@ -16,10 +16,8 @@ tags:
   - "slow motion cinematography"
 videos: []
 credits:
-  - role: "Artist"
-    name: "Pictures from Nadira"
-  - role: "Regie/DoP/Edit/Grading"
-    name: "Maximilian Lamm"
+  Artist: "Pictures from Nadira"
+  Regie/DoP/Edit/Grading: "Maximilian Lamm"
 gallery: []
 translationKey: "pictures-from-nadira-sereno"
 ---

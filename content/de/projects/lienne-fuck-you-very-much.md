@@ -10,14 +10,10 @@ categories:
 tags: []
 videos: []
 credits:
-  - role: "Artist"
-    name: "LIENNE"
-  - role: "Regie"
-    name: "Michael Baumberger"
-  - role: "DoP"
-    name: "Maximilian Lamm"
-  - role: "Grading"
-    name: "Maximilian Lamm"
+  Artist: "LIENNE"
+  Regie: "Michael Baumberger"
+  DoP: "Maximilian Lamm"
+  Grading: "Maximilian Lamm"
 gallery: []
 translationKey: "lienne-fuck-you-very-much"
 ---
