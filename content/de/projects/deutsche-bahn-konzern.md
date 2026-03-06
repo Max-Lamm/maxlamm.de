@@ -2,7 +2,7 @@
 title: "Deutsche Bahn Konzern"
 date: 2023-09-01
 draft: false
-featured: true
+featured: false
 thumbnail: "/images/projects/deutsche-bahn/thumb.jpg"
 categories:
   - colorist

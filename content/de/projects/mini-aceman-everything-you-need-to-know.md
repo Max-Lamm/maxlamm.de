@@ -2,7 +2,7 @@
 title: "Mini Aceman – Everything you need to know"
 date: 2024-01-01
 draft: false
-featured: false
+featured: true
 thumbnail: "/images/projects/mini-aceman-everything-you-need-to-know/thumb.jpg"
 categories:
   - colorist

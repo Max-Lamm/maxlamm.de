@@ -2,7 +2,7 @@
 title: "Pictures from Nadira – Sereno"
 date: 2024-01-01
 draft: false
-featured: false
+featured: true
 thumbnail: "/images/projects/pictures-from-nadira-sereno/thumb.jpg"
 categories:
   - dop

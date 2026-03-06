@@ -1,7 +1,7 @@
 ---
 title: "Mini App"
 date: 2024-01-01
-draft: false
+draft: true
 featured: false
 thumbnail: "/images/projects/mini-app/thumb.jpg"
 categories:

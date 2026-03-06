@@ -2,12 +2,12 @@
 title: "Ansorge Logistik"
 date: 2024-01-01
 draft: false
-featured: false
+featured:  false
 thumbnail: "/images/projects/ansorge-logistik/thumb.jpg"
 categories:
   - dop
   - colorist
-tags: []
+tags: 
 videos:
   - "https://vimeo.com/776284584"
   - "https://vimeo.com/778197598"
@@ -18,7 +18,7 @@ credits:
   Regie: "Michael Baumberger"
   DoP: "Maximilian Lamm"
   Grading: "Maximilian Lamm"
-gallery: []
+gallery: 
 translationKey: "ansorge-logistik"
 ---
 

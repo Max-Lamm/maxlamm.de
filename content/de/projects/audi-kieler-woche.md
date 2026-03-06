@@ -2,7 +2,7 @@
 title: "Audi Kieler Woche"
 date: 2024-01-01
 draft: false
-featured: false
+featured: true
 thumbnail: "/images/projects/audi-kieler-woche/thumb.jpg"
 categories:
   - dop

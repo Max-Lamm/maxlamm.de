@@ -2,7 +2,7 @@
 title: "Rasendoktor"
 date: 2024-01-01
 draft: false
-featured: false
+featured: true
 thumbnail: "/images/projects/rasendoktor/thumb.jpg"
 categories:
   - dop

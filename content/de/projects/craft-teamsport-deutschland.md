@@ -2,7 +2,7 @@
 title: "Craft Teamsport Deutschland"
 date: 2024-01-01
 draft: false
-featured: false
+featured: true
 thumbnail: "/images/projects/craft-teamsport-deutschland/thumb.jpg"
 categories:
   - dop

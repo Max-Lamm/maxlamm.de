@@ -2,7 +2,7 @@
 title: "Sportec Ferdinand S"
 date: 2024-01-01
 draft: false
-featured: false
+featured: true
 thumbnail: "/images/projects/sportec-ferdinand-s/thumb.jpg"
 categories:
   - dop
