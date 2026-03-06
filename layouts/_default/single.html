@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+<nav class="site-nav scrolled">
+  <div class="site-nav__inner">
+    <a href="{{ if eq .Lang "de" }}/{{ else }}/en/{{ end }}">Home</a>
+    <a href="{{ if eq .Lang "de" }}/#projects{{ else }}/en/#projects{{ end }}">{{ if eq .Lang "de" }}Projekte{{ else }}Projects{{ end }}</a>
+    <a href="{{ if eq .Lang "de" }}/#about{{ else }}/en/#about{{ end }}">{{ if eq .Lang "de" }}Über mich{{ else }}About{{ end }}</a>
+    <a href="{{ if eq .Lang "de" }}/#contact{{ else }}/en/#contact{{ end }}">{{ if eq .Lang "de" }}Kontakt{{ else }}Contact{{ end }}</a>
+  </div>
+</nav>
+
+<div class="static-page">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+</div>
+
+{{ end }}

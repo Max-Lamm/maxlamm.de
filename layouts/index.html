@@ -1,0 +1,82 @@
+{{ define "main" }}
+
+<!-- NAV (for homepage: anchor links) -->
+<nav class="site-nav">
+  <div class="site-nav__inner">
+    <a class="site-nav__brand" href="#home">maxlamm</a>
+    <div class="site-nav__links">
+      <a href="#projects">{{ if eq .Lang "de" }}Projekte{{ else }}Projects{{ end }}</a>
+      <a href="#about">{{ if eq .Lang "de" }}Über mich{{ else }}About{{ end }}</a>
+      <a href="#contact">{{ if eq .Lang "de" }}Kontakt{{ else }}Contact{{ end }}</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <h1 class="hero__title">{{ .Site.Params.author }}</h1>
+  <p class="hero__subtitle">{{ .Site.Language.Params.subtitle }}</p>
+  <a href="#projects" class="hero__scroll">&#8964;</a>
+</section>
+
+<!-- PROJECTS GRID -->
+<section class="projects-section" id="projects">
+  <div class="project-grid">
+    {{- $projects := where .Site.RegularPages "Section" "projects" -}}
+    {{- $featured := where $projects ".Params.featured" true -}}
+    {{- $display := $featured -}}
+    {{- if eq (len $featured) 0 -}}
+      {{- $display = first 12 $projects -}}
+    {{- end -}}
+    {{- range $display -}}
+    <a class="project-card" href="{{ .RelPermalink }}">
+      {{- with .Params.thumbnail -}}
+      <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
+      {{- end -}}
+      <div class="project-card__overlay">
+        <span class="project-card__title">{{ .Title }}</span>
+        {{- with .Params.tags -}}
+        <span class="project-card__tags">{{ delimit . " · " }}</span>
+        {{- end -}}
+      </div>
+    </a>
+    {{- end -}}
+  </div>
+  <div class="more-projects">
+    <a class="btn" href="{{ if eq .Lang "de" }}/categories/{{ else }}/en/categories/{{ end }}">{{ .Site.Language.Params.moreProjects }}</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+  <div class="about-section__inner">
+    <div class="about-section__image">
+      <img src="/images/portrait.jpg" alt="{{ .Site.Params.author }}">
+    </div>
+    <div class="about-section__content">
+      <h2>{{ .Site.Language.Params.aboutHeading }}</h2>
+      {{ .Content }}
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="container">
+    <h2>{{ .Site.Language.Params.contactHeading }}</h2>
+    <form class="contact-form" action="/email-handler/" method="POST">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Email" required>
+
+      <label for="message">{{ if eq .Lang "de" }}Nachricht{{ else }}Message{{ end }}</label>
+      <textarea id="message" name="message" placeholder="{{ if eq .Lang "de" }}Nachricht{{ else }}Message{{ end }}" required></textarea>
+
+      <button type="submit" class="btn">{{ if eq .Lang "de" }}Senden{{ else }}Send{{ end }}</button>
+    </form>
+  </div>
+</section>
+
+{{ end }}
