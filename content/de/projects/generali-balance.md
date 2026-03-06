@@ -1,0 +1,21 @@
+---
+title: "Generali Nonstop – Balance"
+date: 2024-01-01
+draft: false
+featured: false
+thumbnail: "/images/projects/generali-balance/thumb.jpg"
+categories:
+  - dop
+  - colorist
+tags: []
+videos: []
+credits:
+  Produktion: "Monacoframe"
+  Regie: "Michael Baumberger"
+  Kamera: "Maximilian Lamm"
+  Grading: "Maximilian Lamm"
+gallery: []
+translationKey: "generali-balance"
+---
+
+Für das Generali Online Journal durfte ich das Monacoframe Team als DP und Colorist unterstützen.

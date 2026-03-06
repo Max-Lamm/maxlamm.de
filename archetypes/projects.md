@@ -14,6 +14,8 @@ tags:
 videos:
   - "https://vimeo.com/VIDEOID"
   # - "https://www.youtube.com/watch?v=VIDEOID"
+video_posters:
+  - "/images/projects/PROJECT-NAME/poster-01.jpg"
 credits:
   Kunde: ""
   Agentur: ""

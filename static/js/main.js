@@ -57,6 +57,18 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.key === 'Escape') closeLightbox();
   });
 
+  /* --- Video poster click-to-play --- */
+  document.querySelectorAll('.video-poster').forEach(poster => {
+    poster.addEventListener('click', () => {
+      const iframe = document.createElement('iframe');
+      iframe.src = poster.dataset.src;
+      iframe.allow = 'autoplay; fullscreen';
+      iframe.allowFullscreen = true;
+      iframe.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;border:none;';
+      poster.replaceWith(iframe);
+    });
+  });
+
   /* --- Contact Form (sends to email handler or Formspree) --- */
   const form = document.querySelector('.contact-form');
   if (form) {

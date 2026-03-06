@@ -11,9 +11,13 @@ tags:
   - bmw
   - elektromobilität
   - social media
+video_layout: portrait
 videos:
-  - "https://vimeo.com/EXAMPLE1"
-  - "https://vimeo.com/EXAMPLE2"
+  - "https://vimeo.com/1157519770"
+  - "https://vimeo.com/1157520091"
+video_posters:
+  - "/images/projects/dbmw-socials/poster-01.jpg"
+  - "/images/projects/bmw-socials/poster-02.jpg"
 credits:
   Kunde: "BMW"
   Produktion: "Monacoframe"
@@ -23,6 +27,15 @@ gallery:
   - "/images/projects/bmw-social/01.jpg"
   - "/images/projects/bmw-social/02.jpg"
   - "/images/projects/bmw-social/03.jpg"
+  - "/images/projects/bmw-social/04.jpg"
+  - "/images/projects/bmw-social/05.jpg"
+  - "/images/projects/bmw-social/06.jpg"
+  - "/images/projects/bmw-social/07.jpg"
+  - "/images/projects/bmw-social/08.jpg"
+  - "/images/projects/bmw-social/09.jpg"
+  - "/images/projects/bmw-social/10.jpg"
+  - "/images/projects/bmw-social/11.jpg"
+  - "/images/projects/bmw-social/12.jpg"
 translationKey: "bmw-social"
 ---
 
