@@ -11,7 +11,14 @@ tags:
   - DB
   - deutsche bahn
 videos:
-  - "https://vimeo.com/EXAMPLE"
+  - "https://youtu.be/6myXOUjWhBA"
+  - "https://youtu.be/Veb_Yj_73T4"
+  - "https://youtu.be/gvVCJDFnImM"
+video_posters:
+  - "/images/projects/deutsche-bahn/poster-01.jpg"
+  - "/images/projects/deutsche-bahn/poster-02.jpg"
+  - "/images/projects/deutsche-bahn/poster-03.jpg"
+video_size: small
 credits:
   Kunde: "Deutsche Bahn Konzern"
   Agentur: "Territory"

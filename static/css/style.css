@@ -498,6 +498,15 @@ a:hover { color: var(--accent-hover); }
   padding: 0 var(--gap);
 }
 
+.project-video--medium,
+.project-video--small {
+  margin-left: max(0px, calc((100vw - 900px) / 2));
+  margin-right: 0;
+}
+
+.project-video--medium { max-width: 600px; }
+.project-video--small  { max-width: 400px; }
+
 .video-wrapper {
   position: relative;
   padding-bottom: 56.25%;
@@ -508,6 +517,77 @@ a:hover { color: var(--accent-hover); }
 }
 
 .video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Video poster (click-to-play) */
+.video-poster {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-poster::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.video-poster__play {
+  position: relative;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.65);
+  border: none;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.video-poster:hover .video-poster__play {
+  transform: scale(1.1);
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.video-poster__play svg {
+  width: 22px;
+  height: 22px;
+  margin-left: 3px;
+}
+
+/* Portrait video pair (9:16 side by side) */
+.project-video-pair {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 var(--gap);
+  display: flex;
+  gap: 1.5rem;
+}
+
+.video-wrapper--portrait {
+  flex: 0 0 300px;
+  position: relative;
+  aspect-ratio: 9 / 16;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.video-wrapper--portrait iframe {
   position: absolute;
   top: 0;
   left: 0;
