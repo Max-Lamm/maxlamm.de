@@ -7,7 +7,7 @@ thumbnail: "/images/projects/the-heist/thumb.jpg"
 categories:
   - colorist
   - weitere
-tags: []
+types: []
 videos: []
 credits:
   Produktion: "Monacoframe"

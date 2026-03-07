@@ -7,7 +7,7 @@ thumbnail: "/images/projects/commercetools-automotive/thumb.jpg"
 categories:
   - dop
   - colorist
-tags: []
+types: []
 videos: []
 credits:
   Kunde: "commercetools"

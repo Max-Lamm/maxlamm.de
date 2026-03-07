@@ -6,10 +6,7 @@ featured: true
 thumbnail: "/images/projects/bmw-social/thumb.jpg"
 categories:
   - dop
-tags:
-  - automotive
-  - bmw
-  - elektromobilität
+types:
   - social media
 video_layout: portrait
 videos:

@@ -7,7 +7,7 @@ thumbnail: "/images/projects/pampamida-hoassa-droht/thumb.jpg"
 categories:
   - dop
   - colorist
-tags: []
+types: []
 videos: []
 credits:
   Artist: "Pam Pam Ida"

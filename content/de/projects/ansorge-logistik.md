@@ -7,7 +7,7 @@ thumbnail: "/images/projects/ansorge-logistik/thumb.jpg"
 categories:
   - dop
   - colorist
-tags: 
+types: 
 videos:
   - "https://vimeo.com/776284584"
   - "https://vimeo.com/778197598"

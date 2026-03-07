@@ -6,7 +6,7 @@ featured: false
 thumbnail: "/images/projects/farmy/thumb.jpg"
 categories:
   - dop
-tags: []
+types: []
 videos: []
 credits:
   Kunde: "farmy.ch"

@@ -7,7 +7,7 @@ thumbnail: "/images/projects/dethleffs-familie/thumb.jpg"
 categories:
   - dop
   - colorist
-tags: []
+types: []
 videos: []
 credits:
   Kunde: "Dethleffs"

@@ -7,7 +7,7 @@ thumbnail: "/images/projects/generali-ueberwintern/thumb.jpg"
 categories:
   - dop
   - colorist
-tags: []
+types: []
 videos: []
 credits:
   Produktion: "Monacoframe"

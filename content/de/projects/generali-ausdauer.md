@@ -7,7 +7,7 @@ thumbnail: "/images/projects/generali-ausdauer/thumb.jpg"
 categories:
   - dop
   - colorist
-tags: []
+types: []
 videos: []
 credits:
   Produktion: "Monacoframe"

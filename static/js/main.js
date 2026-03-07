@@ -105,6 +105,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  /* --- Project category filter --- */
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  if (filterBtns.length) {
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const cat = btn.dataset.cat;
+        document.querySelectorAll('#projects-grid .project-card').forEach(card => {
+          const cats = card.dataset.cats ? card.dataset.cats.split(',') : [];
+          card.style.display = (cat === 'all' || cats.includes(cat)) ? '' : 'none';
+        });
+      });
+    });
+  }
+
   /* --- Smooth scroll for anchor links --- */
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', (e) => {

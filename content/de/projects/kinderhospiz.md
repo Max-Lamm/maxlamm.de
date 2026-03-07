@@ -7,7 +7,7 @@ thumbnail: "/images/projects/kinderhospiz/thumb.jpg"
 categories:
   - dop
   - colorist
-tags: []
+types: []
 videos: []
 credits:
   Kunde: "Kinderhospiz St. Nikolaus"

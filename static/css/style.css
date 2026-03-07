@@ -185,7 +185,7 @@ a:hover { color: var(--accent-hover); }
 
 .project-card:hover img {
   transform: scale(1.05);
-  filter: brightness(.6);
+  filter: brightness(.4);
 }
 
 .project-card__overlay {
@@ -193,11 +193,13 @@ a:hover { color: var(--accent-hover); }
   inset: 0;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   padding: 1.5rem;
   opacity: 0;
   transition: opacity .4s ease;
-  background: linear-gradient(transparent 40%, rgba(0,0,0,.7) 100%);
+  background: rgba(0,0,0,.55);
 }
 
 .project-card:hover .project-card__overlay {
@@ -207,16 +209,26 @@ a:hover { color: var(--accent-hover); }
 .project-card__title {
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
-  letter-spacing: .04em;
+  letter-spacing: .06em;
   color: var(--text-white);
+  margin: .4rem 0;
 }
 
 .project-card__tags {
+  font-size: .7rem;
+  color: rgba(255,255,255,.65);
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.project-card__categories {
   font-size: .75rem;
-  color: var(--text-light);
-  margin-top: .25rem;
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
 }
 
 /* ============================================================
@@ -708,6 +720,37 @@ a:hover { color: var(--accent-hover); }
   padding-top: 80px;
 }
 
+.project-grid--4col {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.project-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  padding: 2rem 2rem 0;
+}
+
+.filter-btn {
+  padding: .4rem 1rem;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,.2);
+  color: var(--text-light);
+  font-family: var(--font-body);
+  font-size: .8rem;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background .2s ease, border-color .2s ease, color .2s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
 .archive-page h1 {
   font-family: var(--font-heading);
   font-weight: 700;
@@ -877,6 +920,10 @@ a:hover { color: var(--accent-hover); }
   }
 
   .related-projects .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project-grid--4col {
     grid-template-columns: repeat(2, 1fr);
   }
 

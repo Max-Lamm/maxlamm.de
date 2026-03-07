@@ -34,16 +34,19 @@
       <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
       {{- end -}}
       <div class="project-card__overlay">
-        <span class="project-card__title">{{ .Title }}</span>
-        {{- with .Params.tags -}}
+        {{- with .Params.types -}}
         <span class="project-card__tags">{{ delimit . " · " }}</span>
+        {{- end -}}
+        <span class="project-card__title">{{ .Title }}</span>
+        {{- with .Params.categories -}}
+        <span class="project-card__categories">{{ delimit . " · " }}</span>
         {{- end -}}
       </div>
     </a>
     {{- end -}}
   </div>
   <div class="more-projects">
-    <a class="btn" href="{{ if eq .Lang "de" }}/categories/{{ else }}/en/categories/{{ end }}">{{ .Site.Language.Params.moreProjects }}</a>
+    <a class="btn" href="{{ if eq .Lang "de" }}/projects/{{ else }}/en/projects/{{ end }}">{{ .Site.Language.Params.moreProjects }}</a>
   </div>
 </section>
 

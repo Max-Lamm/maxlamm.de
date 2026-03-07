@@ -7,13 +7,8 @@ thumbnail: "/images/projects/pictures-from-nadira-sereno/thumb.jpg"
 categories:
   - dop
   - colorist
-tags:
-  - "cinematography"
-  - "color grading"
-  - "freefly ember"
-  - "music video"
-  - "post rock"
-  - "slow motion cinematography"
+types:
+  - music video
 videos:
   - "https://youtu.be/1JaOsidXjU4"
 credits:

@@ -7,7 +7,7 @@ thumbnail: "/images/projects/bookchatters/thumb.jpg"
 categories:
   - dop
   - colorist
-tags: []
+types: []
 videos: []
 credits:
   Kunde: "Bookchatters"

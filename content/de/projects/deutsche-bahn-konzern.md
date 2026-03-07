@@ -6,10 +6,8 @@ featured: false
 thumbnail: "/images/projects/deutsche-bahn/thumb.jpg"
 categories:
   - colorist
-tags:
-  - color grading
-  - DB
-  - deutsche bahn
+types:
+  - social media
 videos:
   - "https://youtu.be/6myXOUjWhBA"
   - "https://youtu.be/Veb_Yj_73T4"

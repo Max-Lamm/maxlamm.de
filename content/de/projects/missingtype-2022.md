@@ -7,7 +7,7 @@ thumbnail: "/images/projects/missingtype-2022/thumb.jpg"
 categories:
   - dop
   - colorist
-tags: []
+types: []
 videos: []
 credits:
   Kunde: "Deutsches Rotes Kreuz"

@@ -7,7 +7,8 @@ thumbnail: "/images/projects/sportec-ferdinand-s/thumb.jpg"
 categories:
   - dop
   - colorist
-tags: []
+types:
+  - commercial
 videos:
   - "https://youtu.be/sS4yIDH7s8s?si=sZGQC1HLwhYkR7TN"
 credits:

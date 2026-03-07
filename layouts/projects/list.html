@@ -1,0 +1,52 @@
+{{ define "main" }}
+
+<nav class="site-nav scrolled">
+  <div class="site-nav__inner">
+    <a class="site-nav__brand" href="{{ if eq .Lang "de" }}/{{ else }}/en/{{ end }}">maxlamm</a>
+    <div class="site-nav__links">
+      <a href="{{ if eq .Lang "de" }}/#projects{{ else }}/en/#projects{{ end }}">{{ if eq .Lang "de" }}Projekte{{ else }}Projects{{ end }}</a>
+      <a href="{{ if eq .Lang "de" }}/#about{{ else }}/en/#about{{ end }}">{{ if eq .Lang "de" }}Über mich{{ else }}About{{ end }}</a>
+      <a href="{{ if eq .Lang "de" }}/#contact{{ else }}/en/#contact{{ end }}">{{ if eq .Lang "de" }}Kontakt{{ else }}Contact{{ end }}</a>
+    </div>
+  </div>
+</nav>
+
+{{- $cats := slice -}}
+{{- range .Pages -}}
+  {{- range .Params.categories -}}
+    {{- $cats = $cats | append . -}}
+  {{- end -}}
+{{- end -}}
+{{- $cats = $cats | uniq | sort -}}
+
+<div class="archive-page">
+  {{- if gt (len $cats) 1 -}}
+  <div class="project-filter">
+    <button class="filter-btn active" data-cat="all">{{ if eq .Lang "de" }}Alle{{ else }}All{{ end }}</button>
+    {{- range $cats -}}
+    <button class="filter-btn" data-cat="{{ . }}">{{ . }}</button>
+    {{- end -}}
+  </div>
+  {{- end -}}
+
+  <div class="project-grid project-grid--4col" id="projects-grid">
+    {{- range .Pages -}}
+    <a class="project-card" href="{{ .RelPermalink }}" data-cats="{{ delimit .Params.categories "," }}">
+      {{- with .Params.thumbnail -}}
+      <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
+      {{- end -}}
+      <div class="project-card__overlay">
+        {{- with .Params.types -}}
+        <span class="project-card__tags">{{ delimit . " · " }}</span>
+        {{- end -}}
+        <span class="project-card__title">{{ .Title }}</span>
+        {{- with .Params.categories -}}
+        <span class="project-card__categories">{{ delimit . " · " }}</span>
+        {{- end -}}
+      </div>
+    </a>
+    {{- end -}}
+  </div>
+</div>
+
+{{ end }}

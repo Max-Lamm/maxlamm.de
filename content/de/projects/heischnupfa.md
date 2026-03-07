@@ -7,7 +7,7 @@ thumbnail: "/images/projects/heischnupfa/thumb.jpg"
 categories:
   - dop
   - colorist
-tags: []
+types: []
 videos: []
 credits:
   Idee, Produktion, Drehbuch: "Jan Wannemacher"

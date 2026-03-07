@@ -7,7 +7,7 @@ thumbnail: "/images/projects/lienne-fuck-you-very-much/thumb.jpg"
 categories:
   - dop
   - colorist
-tags: []
+types: []
 videos: []
 credits:
   Artist: "LIENNE"

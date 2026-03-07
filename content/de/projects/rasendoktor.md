@@ -7,7 +7,8 @@ thumbnail: "/images/projects/rasendoktor/thumb.jpg"
 categories:
   - dop
   - colorist
-tags: []
+types:
+  - social media commercial
 videos:
   - "https://youtu.be/NpsVKLTHh0I"
   - "https://youtu.be/uVUrh7KQ8pk"

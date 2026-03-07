@@ -7,11 +7,8 @@ thumbnail: "/images/projects/porsche-roads/thumb.jpg"
 categories:
   - colorist
   - dop
-tags:
-  - carporn
-  - großer-ahornboden
-  - herbst
-  - porsche
+types:
+  - social media
 videos:
   - "https://vimeo.com/920973224/283f0448c7"
 credits:

@@ -6,12 +6,9 @@ featured: true
 thumbnail: "/images/projects/audi-kieler-woche/thumb.jpg"
 categories:
   - dop
-tags:
-  - "audi"
-  - "elektromobilität"
-  - "etron"
-  - "kieler woche"
-  - "segeln"
+types:
+  - social media
+  - event
 videos:
   - "https://youtube.com/shorts/9BvX1fr504g"
   - "https://youtube.com/shorts/0QnYmeSR3xM"

@@ -7,7 +7,7 @@ thumbnail: "/images/projects/dethleffs-trend/thumb.jpg"
 categories:
   - dop
   - colorist
-tags:
+types:
   - "camper van"
   - "camping"
   - "caravan"

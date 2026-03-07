@@ -6,7 +6,7 @@ featured: false
 thumbnail: "/images/projects/bad-heilbrunner/thumb.jpg"
 categories:
   - dop
-tags:
+types:
   - "bad heilbrunner"
   - "heilkräfte"
   - "imagefilm"

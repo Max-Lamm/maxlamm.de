@@ -7,7 +7,7 @@ thumbnail: "/images/projects/porsche-roads/thumb.jpg"
 categories:
   - colorist
   - cinematographer
-tags:
+types:
   - carporn
   - autumn
   - porsche

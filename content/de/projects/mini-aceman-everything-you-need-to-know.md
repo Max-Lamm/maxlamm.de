@@ -6,10 +6,8 @@ featured: true
 thumbnail: "/images/projects/mini-aceman-everything-you-need-to-know/thumb.jpg"
 categories:
   - colorist
-tags:
-  - "aceman"
-  - "elektromobilität"
-  - "mini"
+types:
+  - product video
 videos:
   - "https://www.youtube.com/watch?v=uc4q3RcTnRY"
 credits:

@@ -6,11 +6,8 @@ featured: true
 thumbnail: "/images/projects/cambodont/thumb.jpg"
 categories:
   - colorist
-tags:
-  - "cambodont"
-  - "kempten"
-  - "kinowerbung"
-  - "zahnarzt"
+types:
+  - commercial
 videos:
   - "https://www.youtube.com/watch?v=yiUdjkhuOUk"
 video_posters:

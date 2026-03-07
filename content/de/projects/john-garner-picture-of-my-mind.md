@@ -7,7 +7,7 @@ thumbnail: "/images/projects/john-garner-picture-of-my-mind/thumb.jpg"
 categories:
   - dop
   - colorist
-tags:
+types:
   - "filmemachen"
   - "folk musik"
   - "john garner"

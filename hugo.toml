@@ -76,14 +76,9 @@ pagination.pagerSize = 50
   accentColor = "#E05A4E"
   logoText = "maxlamm"
 
-[taxonomies]
-  tag = "tags"
-  category = "categories"
-
 [outputs]
   home = ["HTML"]
   section = ["HTML"]
-  taxonomy = ["HTML"]
 
 [markup]
   [markup.goldmark]

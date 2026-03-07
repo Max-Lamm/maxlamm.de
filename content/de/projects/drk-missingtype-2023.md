@@ -7,7 +7,7 @@ thumbnail: "/images/projects/drk-missingtype-2023/thumb.jpg"
 categories:
   - dop
   - colorist
-tags: []
+types: []
 videos: []
 credits:
   Kunde: "Deutsches Rotes Kreuz"

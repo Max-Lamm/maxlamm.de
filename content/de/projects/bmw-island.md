@@ -7,7 +7,7 @@ thumbnail: "/images/projects/bmw-island/thumb.jpg"
 categories:
   - dop
   - colorist
-tags: []
+types: []
 videos: []
 credits:
   Kunde: "BMW"

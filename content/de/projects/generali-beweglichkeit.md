@@ -7,7 +7,7 @@ thumbnail: "/images/projects/generali-beweglichkeit/thumb.jpg"
 categories:
   - dop
   - colorist
-tags: []
+types: []
 videos: []
 credits:
   Produktion: "Monacoframe"

@@ -6,7 +6,7 @@ featured: false
 thumbnail: "/images/projects/wellhub/thumb.jpg"
 categories:
   - dop
-tags:
+types:
   - "fitness"
   - "gympass"
   - "sport"

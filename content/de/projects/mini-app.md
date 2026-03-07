@@ -6,7 +6,7 @@ featured: false
 thumbnail: "/images/projects/mini-app/thumb.jpg"
 categories:
   - colorist
-tags: []
+types: []
 videos: []
 credits:
   Kunde: "Mini"

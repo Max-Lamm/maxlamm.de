@@ -7,7 +7,7 @@ thumbnail: "/images/projects/generali-basisrente/thumb.jpg"
 categories:
   - dop
   - colorist
-tags: []
+types: []
 videos: []
 credits:
   Produktion: "Monacoframe"

@@ -7,7 +7,7 @@ thumbnail: "/images/projects/how-to-draw-a-mini/thumb.jpg"
 categories:
   - colorist
   - weitere
-tags: []
+types: []
 videos: []
 credits:
   Kunde: "Mini"

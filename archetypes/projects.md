@@ -8,9 +8,10 @@ categories:
   - colorist
   # - dop
   # - weitere
-tags:
-  - tag1
-  - tag2
+types:
+  - commercial
+  # - documentary
+  # - branded-content
 videos:
   - "https://vimeo.com/VIDEOID"
   # - "https://www.youtube.com/watch?v=VIDEOID"
