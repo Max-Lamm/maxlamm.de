@@ -5,9 +5,10 @@ draft: false
 featured: true
 thumbnail: "/images/projects/craft-teamsport-deutschland/thumb.jpg"
 categories:
-  - dop
+  - colorist
 tags: []
-videos: []
+videos:
+  - "https://vimeo.com/968884243/e9c5601d70"
 credits:
   Kunde: "Craft Teamsport"
   Produktion: "Monacoframe"

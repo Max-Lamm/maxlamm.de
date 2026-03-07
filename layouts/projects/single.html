@@ -84,7 +84,7 @@
   <!-- Gallery -->
   {{- with .Params.gallery -}}
   <div class="project-gallery">
-    <div class="gallery-grid">
+    <div class="gallery-grid" style="--cols: {{ $.Params.gallery_columns | default 3 }}">
       {{- range . -}}
       <img src="{{ . }}" alt="" loading="lazy">
       {{- end -}}
@@ -92,17 +92,16 @@
   </div>
   {{- end -}}
 
-  <!-- Tags -->
-  {{- with .Params.tags -}}
-  <div class="project-tags">
-    {{- range . -}}
-    <a href="{{ relLangURL (printf "tags/%s/" (urlize .)) }}">{{ . }}</a>
-    {{- end -}}
-  </div>
-  {{- end -}}
-
   <!-- Related Projects -->
-  {{- $related := first 6 (where (.Site.RegularPages.Related .) "Section" "projects") -}}
+  {{- $cats := .Params.categories -}}
+  {{- $pool := where (where .Site.RegularPages "Section" "projects") "RelPermalink" "ne" .RelPermalink -}}
+  {{- $catMatches := where $pool "Params.categories" "intersect" $cats -}}
+  {{- $related := first 4 $catMatches -}}
+  {{- if lt (len $related) 4 -}}
+    {{- $needed := sub 4 (len $related) -}}
+    {{- $others := first $needed (shuffle (complement $catMatches $pool)) -}}
+    {{- range $others -}}{{- $related = $related | append . -}}{{- end -}}
+  {{- end -}}
   {{- if gt (len $related) 0 -}}
   <div class="related-projects">
     <h3>{{ .Site.Language.Params.moreProjects }}</h3>

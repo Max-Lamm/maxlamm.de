@@ -11,7 +11,10 @@ tags:
   - "kempten"
   - "kinowerbung"
   - "zahnarzt"
-videos: []
+videos:
+  - "https://www.youtube.com/watch?v=yiUdjkhuOUk"
+video_posters:
+  - "/images/projects/cambodont/thumb.jpg"
 credits:
   Kunde: "Cambodont"
   Produktion: "Monacoframe"
@@ -21,7 +24,16 @@ credits:
   AC: "Ferdinand Soldan"
   Gaffer: "Dennis Fischer"
   Grading: "Maximilian Lamm"
-gallery: []
+gallery:
+  - "/images/projects/cambodont/01.jpg"
+  - "/images/projects/cambodont/02.jpg"
+  - "/images/projects/cambodont/03.jpg"
+  - "/images/projects/cambodont/04.jpg"
+  - "/images/projects/cambodont/05.jpg"
+  - "/images/projects/cambodont/06.jpg"
+  - "/images/projects/cambodont/07.jpg"
+  - "/images/projects/cambodont/08.jpg"
+gallery_columns: 4
 translationKey: "cambodont"
 ---
 

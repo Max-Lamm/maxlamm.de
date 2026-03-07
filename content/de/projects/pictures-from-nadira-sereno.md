@@ -14,12 +14,28 @@ tags:
   - "music video"
   - "post rock"
   - "slow motion cinematography"
-videos: []
+videos:
+  - "https://youtu.be/1JaOsidXjU4"
 credits:
   Artist: "Pictures from Nadira"
   Regie/DoP/Edit/Grading: "Maximilian Lamm"
-gallery: []
+gallery:
+  - "/images/projects/pictures-from-nadira-sereno/01.jpg"
+  - "/images/projects/pictures-from-nadira-sereno/02.jpg"
+  - "/images/projects/pictures-from-nadira-sereno/03.jpg"
+  - "/images/projects/pictures-from-nadira-sereno/04.jpg"
+  - "/images/projects/pictures-from-nadira-sereno/05.jpg"
+  - "/images/projects/pictures-from-nadira-sereno/06.jpg"
+  - "/images/projects/pictures-from-nadira-sereno/07.jpg"
+  - "/images/projects/pictures-from-nadira-sereno/08.jpg"
+gallery_columns: 4
 translationKey: "pictures-from-nadira-sereno"
 ---
 
-Für die Band Pictures from Nadira durfte ich das Musikvideo zum Song "Sereno" als Regisseur, Kameramann, Editor und Colorist umsetzen.
+Für die Münchner Post-Rock-Band Pictures from Nadira durfte ich das Musikvideo zur Single „Sereno“ umsetzen – ein Projekt, das die Wahrnehmung von Zeit neu definiert.
+
+Der Song wurde von dem gleichnamigen italienischen Gedicht „Sereno“ von Giuseppe Ungaretti inspiriert, das von einem Moment der Klarheit und Erneuerung erzählt. 
+
+Diese Thematik spiegelt sich in der visuellen Umsetzung wider: Das gesamte 8-minütige Musikvideo spielt sich in Zeitlupe ab. Gedreht wurde es in gerade einmal 20 Sekunden – ermöglicht durch eine Kamera mit 600 Frames pro Sekunde.
+
+Die größte Herausforderung lag im präzisen Timing: Die Bewegungen der Kamera und die Performance der Schauspielerin mussten perfekt aufeinander abgestimmt sein, um den fließenden, fast surrealen Look des Videos zu erzeugen. Ein technischer Kraftakt, der die Idee hinter „Sereno“ eindrucksvoll zum Leben erweckt.

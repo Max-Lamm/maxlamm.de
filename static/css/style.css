@@ -628,14 +628,14 @@ a:hover { color: var(--accent-hover); }
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(var(--cols, 3), 1fr);
   gap: .5rem;
 }
 
 .gallery-grid img {
   width: 100%;
-  aspect-ratio: 16/9;
-  object-fit: cover;
+  height: auto;
+  display: block;
   border-radius: 2px;
   cursor: pointer;
   transition: transform .3s;
@@ -672,6 +672,10 @@ a:hover { color: var(--accent-hover); }
 /* Related Projects Grid */
 .related-projects {
   padding: 4rem 0;
+}
+
+.related-projects .project-grid {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .related-projects h3 {
@@ -869,6 +873,10 @@ a:hover { color: var(--accent-hover); }
   .project-grid,
   .gallery-grid,
   .archive-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .related-projects .project-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
