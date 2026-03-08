@@ -308,6 +308,8 @@ a:hover { color: var(--accent-hover); }
 .about-section {
   padding: 6rem 0;
   background: var(--bg-dark);
+  position: relative;
+  z-index: 3;
 }
 
 .about-section__inner {
@@ -347,6 +349,8 @@ a:hover { color: var(--accent-hover); }
 .contact-section {
   padding: 6rem 0;
   background: var(--bg);
+  position: relative;
+  z-index: 3;
   text-align: center;
 }
 
@@ -411,6 +415,8 @@ a:hover { color: var(--accent-hover); }
   padding: 4rem 0 2rem;
   text-align: center;
   background: var(--bg-dark);
+  position: relative;
+  z-index: 3;
 }
 
 .footer-logo {

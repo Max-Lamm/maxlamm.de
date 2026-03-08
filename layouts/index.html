@@ -73,7 +73,9 @@
 <section class="contact-section" id="contact">
   <div class="container">
     <h2>{{ .Site.Language.Params.contactHeading }}</h2>
-    <form class="contact-form" action="" method="POST">
+    <form class="contact-form" action="/email-handler/" method="POST">
+      <input type="text" name="website" tabindex="-1" autocomplete="off" style="display:none">
+      <input type="hidden" name="form_time" id="form_time" value="">
       <label for="name">Name</label>
       <input type="text" id="name" name="name" placeholder="Name" required>
 
@@ -85,6 +87,7 @@
 
       <button type="submit" class="btn">{{ if eq .Lang "de" }}Senden{{ else }}Send{{ end }}</button>
     </form>
+    <script>document.getElementById('form_time').value = Date.now();</script>
   </div>
 </section>
 
