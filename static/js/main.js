@@ -105,6 +105,37 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  /* --- Projects section fade-in on scroll --- */
+  const projectsSection = document.querySelector('.projects-section');
+  if (projectsSection) {
+    const onGridScroll = () => {
+      if (window.scrollY > 80) {
+        projectsSection.classList.add('section-visible');
+        window.removeEventListener('scroll', onGridScroll);
+      }
+    };
+    window.addEventListener('scroll', onGridScroll, { passive: true });
+  }
+
+  /* --- Hero video fade-out on scroll --- */
+  const heroVideo = document.querySelector('.hero__video');
+  const heroEl = document.querySelector('.hero');
+  if (heroVideo && heroEl) {
+    window.addEventListener('scroll', () => {
+      const heroH = heroEl.offsetHeight;
+      const scrolled = window.scrollY;
+      const fadeStart = heroH * 0.5;
+      const fadeEnd = heroH * 0.8;
+      if (scrolled <= fadeStart) {
+        heroVideo.style.opacity = 1;
+      } else if (scrolled >= fadeEnd) {
+        heroVideo.style.opacity = 0;
+      } else {
+        heroVideo.style.opacity = 1 - (scrolled - fadeStart) / (fadeEnd - fadeStart);
+      }
+    }, { passive: true });
+  }
+
   /* --- Project category filter --- */
   const filterBtns = document.querySelectorAll('.filter-btn');
   if (filterBtns.length) {

@@ -4,6 +4,8 @@ date: {{ .Date }}
 draft: false
 featured: false
 thumbnail: "/images/projects/THUMBNAIL.jpg"
+orientation: landscape
+  # portrait
 categories:
   - colorist
   # - dop

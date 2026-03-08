@@ -1,21 +1,27 @@
 {{ define "main" }}
 
-<!-- NAV (for homepage: anchor links) -->
+<!-- NAV -->
 <nav class="site-nav">
   <div class="site-nav__inner">
     <a class="site-nav__brand" href="#home">maxlamm</a>
     <div class="site-nav__links">
-      <a href="#projects">{{ if eq .Lang "de" }}Projekte{{ else }}Projects{{ end }}</a>
-      <a href="#about">{{ if eq .Lang "de" }}Über mich{{ else }}About{{ end }}</a>
-      <a href="#contact">{{ if eq .Lang "de" }}Kontakt{{ else }}Contact{{ end }}</a>
+      <a href="{{ if eq .Lang "de" }}/projects/{{ else }}/en/projects/{{ end }}">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
     </div>
   </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero" id="home">
-  <h1 class="hero__title">{{ .Site.Params.author }}</h1>
-  <p class="hero__subtitle">{{ .Site.Language.Params.subtitle }}</p>
+  <video class="hero__video" autoplay muted loop playsinline>
+    <source src="/videos/hero.mp4" type="video/mp4">
+    <source src="/videos/hero.webm" type="video/webm">
+  </video>
+  <div class="hero__content">
+    <h1 class="hero__title">{{ .Site.Params.author }}</h1>
+    <p class="hero__subtitle">{{ .Site.Language.Params.subtitle }}</p>
+  </div>
   <a href="#projects" class="hero__scroll">&#8964;</a>
 </section>
 
@@ -67,7 +73,7 @@
 <section class="contact-section" id="contact">
   <div class="container">
     <h2>{{ .Site.Language.Params.contactHeading }}</h2>
-    <form class="contact-form" action="/email-handler/" method="POST">
+    <form class="contact-form" action="" method="POST">
       <label for="name">Name</label>
       <input type="text" id="name" name="name" placeholder="Name" required>
 

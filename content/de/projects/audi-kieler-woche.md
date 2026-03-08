@@ -9,11 +9,11 @@ categories:
 types:
   - social media
   - event
+orientation: portrait
 videos:
   - "https://youtube.com/shorts/9BvX1fr504g"
   - "https://youtube.com/shorts/0QnYmeSR3xM"
   - "https://youtube.com/shorts/rfwliXLR3rE"
-video_layout: portrait
 video_posters:
   - "/images/projects/audi-kieler-woche/poster-01.jpg"
   - "/images/projects/audi-kieler-woche/poster-02.jpg"

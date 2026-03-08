@@ -13,7 +13,7 @@ pagination.pagerSize = 50
     [languages.de.params]
       subtitle = "DoP & Colorist"
       aboutHeading = "Hey, ich bin Max"
-      contactHeading = "Hast du ein Projekt im Kopf? Oder Lust auf eine Zusammenarbeit? Nutze dazu am besten das Kontaktformular, schreibe eine E-mail oder ruf mich doch einfach an. Ich freue mich von dir zu hören."
+      contactHeading = "Hast du ein Projekt im Kopf? Oder Lust auf eine Zusammenarbeit? Ich freue mich von dir zu hören."
       moreProjects = "weitere Projekte"
       readMore = "Read More"
       prevPost = "Vorheriges Projekt"
@@ -43,7 +43,7 @@ pagination.pagerSize = 50
     [languages.en.params]
       subtitle = "DoP & Colorist"
       aboutHeading = "Hey, I'm Max"
-      contactHeading = "Got a project in mind? Or interested in working together? Just use the contact form, send me an email, or give me a call. I'd love to hear from you."
+      contactHeading = "Got a project in mind? Or interested in working together? I'd love to hear from you."
       moreProjects = "more projects"
       readMore = "Read More"
       prevPost = "Previous Project"
@@ -70,7 +70,7 @@ pagination.pagerSize = 50
   author = "Maximilian Lamm"
   description = "Cinematographer & Colorist"
   email = "hi@maxlamm.de"
-  phone = "+49 176 XXXXXXXX"
+  phone = "+49 176 69262318"
   instagram = "https://www.instagram.com/maxlamm/"
   linkedin = "https://www.linkedin.com/in/maxlamm/"
   accentColor = "#E05A4E"

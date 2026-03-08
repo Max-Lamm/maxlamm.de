@@ -1,5 +1,5 @@
 ---
-title: "BMW Social Media Content"
+title: "BMW iX1, X3, i4"
 date: 2025-06-01
 draft: false
 featured: true
@@ -8,7 +8,7 @@ categories:
   - dop
 types:
   - social media
-video_layout: portrait
+orientation: portrait
 videos:
   - "https://vimeo.com/1157519770"
   - "https://vimeo.com/1157520091"
