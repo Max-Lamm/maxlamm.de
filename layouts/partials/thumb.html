@@ -1,0 +1,8 @@
+{{- $src := . -}}
+{{- $img := resources.Get (strings.TrimPrefix "/" $src) -}}
+{{- if $img -}}
+  {{- $t := $img.Fill "768x432 webp q80" -}}
+  <img src="{{ $t.RelPermalink }}" width="{{ $t.Width }}" height="{{ $t.Height }}" alt="" loading="lazy">
+{{- else -}}
+  <img src="{{ $src }}" alt="" loading="lazy">
+{{- end -}}

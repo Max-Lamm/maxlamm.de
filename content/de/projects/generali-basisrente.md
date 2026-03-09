@@ -1,21 +1,25 @@
 ---
 title: "Generali – Basisrente"
-date: 2024-01-01
+date: 2023-10-06
 draft: false
 featured: false
 thumbnail: "/images/projects/generali-basisrente/thumb.jpg"
 categories:
   - dop
   - colorist
-types: []
-videos: []
+types:
+  - commercial
+videos:
+  - https://youtu.be/qxaokmUAkQU
 credits:
-  Produktion: "Monacoframe"
-  Regie: "Michael Baumberger"
-  Kamera: "Maximilian Lamm"
-  Grading: "Maximilian Lamm"
-gallery: []
+  Produktion: Monacoframe
+  Agentur: territory
+  Regie: Michael Baumberger
+  Kamera: Maximilian Lamm
+  AC: Ferdinand Soldan
+  Licht: Dennis Fischer
+  Grading: Maximilian Lamm
 translationKey: "generali-basisrente"
 ---
 
-Für Generali durfte ich als Kameramann und Colorist einen Erklärfilm zum Thema Basisrente produzieren.
+Bei der Kampagne zur Basisrente von Generali durfte ich die Agentur territory bei der Umsetzung unterstützen. Ich konnte mich dabei als DP und Colorist einbringen. 

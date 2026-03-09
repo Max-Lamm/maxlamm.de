@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.gallery-grid img').forEach(img => {
     img.addEventListener('click', () => {
       if (lightbox && lightboxImg) {
-        lightboxImg.src = img.src;
+        lightboxImg.src = img.dataset.full || img.src;
         lightbox.classList.add('active');
         document.body.style.overflow = 'hidden';
       }

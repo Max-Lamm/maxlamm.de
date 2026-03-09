@@ -1,3 +1,4 @@
 ---
-title: "Projekte"
+title: "Work"
+url: "/work/"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Pictures from Nadira – Sereno"
-date: 2024-01-01
+date: 2025-02-20
 draft: false
 featured: true
 thumbnail: "/images/projects/pictures-from-nadira-sereno/thumb.jpg"
@@ -12,8 +12,10 @@ types:
 videos:
   - "https://youtu.be/1JaOsidXjU4"
 credits:
-  Artist: "Pictures from Nadira"
-  Regie/DoP/Edit/Grading: "Maximilian Lamm"
+  Regie: Michael Baumberger 
+  DP, Edit, Grading: Maximilian Lamm
+  Steadicam: Christoph Werner
+  1st AC: Moritz Frank
 gallery:
   - "/images/projects/pictures-from-nadira-sereno/01.jpg"
   - "/images/projects/pictures-from-nadira-sereno/02.jpg"
@@ -29,7 +31,7 @@ translationKey: "pictures-from-nadira-sereno"
 
 Für die Münchner Post-Rock-Band Pictures from Nadira durfte ich das Musikvideo zur Single „Sereno“ umsetzen – ein Projekt, das die Wahrnehmung von Zeit neu definiert.
 
-Der Song wurde von dem gleichnamigen italienischen Gedicht „Sereno“ von Giuseppe Ungaretti inspiriert, das von einem Moment der Klarheit und Erneuerung erzählt. 
+Der Song wurde von dem gleichnamigen italienischen Gedicht „Sereno“ von Giuseppe Ungaretti inspiriert, das von einem Moment der Klarheit und Erneuerung erzählt. 
 
 Diese Thematik spiegelt sich in der visuellen Umsetzung wider: Das gesamte 8-minütige Musikvideo spielt sich in Zeitlupe ab. Gedreht wurde es in gerade einmal 20 Sekunden – ermöglicht durch eine Kamera mit 600 Frames pro Sekunde.
 

@@ -1,21 +1,29 @@
 ---
-title: "Generali Nonstop – Idole"
-date: 2024-01-01
+title: "Generali – Idole Hautnah"
+date: 2022-10-16
 draft: false
 featured: false
 thumbnail: "/images/projects/generali-idole/thumb.jpg"
 categories:
   - dop
   - colorist
-types: []
-videos: []
+types:
+  - social media
+videos:
+  - "https://www.youtube.com/watch?v=_KNHSpf20cY"
+video_posters:
+  - "/images/projects/generali-idole/poster.jpg"
 credits:
-  Produktion: "Monacoframe"
-  Regie: "Michael Baumberger"
-  Kamera: "Maximilian Lamm"
-  Grading: "Maximilian Lamm"
-gallery: []
+  Produktion: Monacoframe
+  Regie: Michael Baumberger
+  Redaktion: Chantal Haug
+  Kamera: Maximilian Lamm, Michael Baumberger
+  Licht: Fabian Erdt
+  Ton: Sebastian Breitner, Jochen Wolkersdorfer
+  AC: Ferdinand Soldan
+  Grading: Maximilian Lamm
+gallery:
 translationKey: "generali-idole"
 ---
 
-Für das Generali Online Journal durfte ich das Monacoframe Team als DP und Colorist unterstützen.
+Zwei Kunstturner, Fabian Hambüchen und Gabriel Eichhorn. In den Minuten vor dem Training sitzen sie in der Umkleide auf einem Kasten, streifen die Handschuhe mit den Fingerlöchern über, bandagieren die Handgelenke, klatschen die Handflächen gegeneinander und lassen das Magnesia stauben. Für das Generali Online Journal durfte ich das Monacoframe Team als DP und Colorist unterstützen.

@@ -1,6 +1,6 @@
 ---
 title: "Rasendoktor"
-date: 2024-01-01
+date: 2026-02-23
 draft: false
 featured: true
 thumbnail: "/images/projects/rasendoktor/thumb.jpg"
@@ -19,11 +19,14 @@ video_posters:
   - "/images/projects/rasendoktor/poster-03.jpg"
 video_size: medium
 credits:
-  Kunde: "Rasendoktor"
-  Produktion: "Monacoframe"
-  Regie: "Michael Baumberger"
-  DoP: "Maximilian Lamm"
-  Grading: "Maximilian Lamm"
+  Kunde: Rasendoktor
+  Agentur: We Play Forward
+  Produktion: Antonia Wohlrab
+  Regie: Michael Baumberger
+  1st AC: Moritz Frank
+  Licht: Alex Fink
+  Ton: Flo Lorenz
+  Schnitt: Leslie Miller
 gallery:
   - "/images/projects/rasendoktor/01.jpg"
   - "/images/projects/rasendoktor/poster-03.jpg"

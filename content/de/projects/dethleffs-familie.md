@@ -1,23 +1,35 @@
 ---
 title: "Dethleffs – Es lebe deine Familie"
-date: 2024-01-01
+date: 2023-08-14
 draft: false
 featured: false
 thumbnail: "/images/projects/dethleffs-familie/thumb.jpg"
 categories:
-  - dop
   - colorist
-types: []
-videos: []
+  - weitere
+types:
+  - commercial
+videos:
+  - https://www.youtube.com/watch?v=lu2iW8STILM
 credits:
-  Kunde: "Dethleffs"
-  Agentur: "Territory"
-  Produktion: "Monacoframe"
-  Regie: "Michael Baumberger"
-  DoP: "Maximilian Lamm"
-  Grading: "Maximilian Lamm"
-gallery: []
+  Kunde: Dethleffs
+  Agentur: Territory
+  Produktion: Monacoframe
+  Service Produktion: Feitfilm
+  Regie: Michael Baumberger
+  DP: Maximilian Rödl
+  1st AC: Maximilian Lamm
+  Licht: Siro Antonio Micheroli, Christoph Schonholzer
+  FPV: Moritz Werffeli
+  PA: Claus Sieckmann
+  Props: Emilie Fischer, Barda Grigioni
+  Grading: Maximilian Lamm
+  Edit: Gero LangHeinrich
+  Sound-Design: Studio4
+  Still Photography: Matthias Fend
+  Rental: BillysLensRental
+gallery:
 translationKey: "dethleffs-familie"
 ---
 
-Für Dethleffs durfte ich als DoP und Colorist den Kampagnenfilm zum Thema Familie drehen.
+„Dethleffs – Ein Freund der Familie“. Zu diesem Motto durfte ich die Produktion um Monacoframe als Focus Puller und Colorist unterstützen. Gedreht wurde an zwei Tagen in der Graubünden in der Schweiz.

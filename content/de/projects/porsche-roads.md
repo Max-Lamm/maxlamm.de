@@ -1,29 +1,29 @@
 ---
 title: "Porsche Roads Herbst"
-date: 2024-03-15
+date: 2024-03-08
 draft: false
 featured: true
 thumbnail: "/images/projects/porsche-roads/thumb.jpg"
 categories:
   - colorist
-  - dop
+  - weitere
 types:
   - social media
 videos:
   - "https://vimeo.com/920973224/283f0448c7"
 credits:
-  Kunde: "Porsche"
-  Agentur: "Territory"
-  Produktion: "Monacoframe"
-  Creative Director: "Christian Klein"
-  DP: "Michael Baumberger"
-  1st AC: "Maximilian Lamm"
-  2nd AC: "Pascal Theisen"
-  Grip & Drohne: "Lukas Mauerer & Christoph Steiner"
-  Producer: "Benedikt Höll"
-  Fotografie: "Sebastian Stücke"
-  Precision Driver: "Uwe Mansshardt"
-  Grading: "Maximilian Lamm"
+  Kunde: Porsche
+  Agentur: Territory
+  Produktion: Monacoframe
+  Creative Director: Christian Klein
+  DP: Michael Baumberger
+  1st AC: Maximilian Lamm
+  2nd AC: Pascal Theisen
+  Grip & Drohne: Lukas Mauerer & Christoph Steiner
+  Producer: Benedikt Höll
+  Fotografie: Sebastian Stücke
+  Precision Driver: Uwe Mansshardt
+  Grading: Maximilian Lamm
 gallery:
   - "/images/projects/porsche-roads/01.jpg"
   - "/images/projects/porsche-roads/02.jpg"
@@ -31,6 +31,16 @@ gallery:
   - "/images/projects/porsche-roads/04.jpg"
   - "/images/projects/porsche-roads/05.jpg"
   - "/images/projects/porsche-roads/06.jpg"
+  - "/images/projects/porsche-roads/07.jpg"
+  - "/images/projects/porsche-roads/08.jpg"
+  - "/images/projects/porsche-roads/09.jpg"
+  - "/images/projects/porsche-roads/10.jpg"
+  - "/images/projects/porsche-roads/11.jpg"
+  - "/images/projects/porsche-roads/12.jpg"
+  - "/images/projects/porsche-roads/13.jpg"
+  - "/images/projects/porsche-roads/14.jpg"
+  - "/images/projects/porsche-roads/15.jpg"
+gallery_columns: 5
 translationKey: "porsche-roads"
 ---
 

@@ -171,6 +171,7 @@ a:hover { color: var(--accent-hover); }
 }
 
 .site-nav a:hover { opacity: 1; color: var(--text-white); }
+.site-nav__links a.active { color: var(--accent); opacity: 1; }
 
 /* ============================================================
    PROJECT GRID
@@ -508,21 +509,34 @@ a:hover { color: var(--accent-hover); }
   padding-top: 60px;
 }
 
-.project-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem var(--gap);
-  max-width: var(--max-width);
-  margin: 0 auto;
-  font-size: .9rem;
-}
-
-.project-nav a {
-  color: var(--accent);
+.project-float-nav {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3rem;
+  height: 3rem;
   display: flex;
   align-items: center;
-  gap: .4rem;
+  justify-content: center;
+  font-size: 1.8rem;
+  line-height: 1;
+  color: var(--text-white);
+  background: rgba(30,30,30,.7);
+  backdrop-filter: blur(8px);
+  border-radius: 50%;
+  transition: background .2s, opacity .2s;
+  opacity: .6;
+  z-index: 100;
 }
+
+.project-float-nav:hover {
+  background: rgba(60,60,60,.9);
+  opacity: 1;
+  color: var(--text-white);
+}
+
+.project-float-nav--prev { left: 1.5rem; }
+.project-float-nav--next { right: 1.5rem; }
 
 .project-header {
   max-width: 900px;
@@ -601,14 +615,15 @@ a:hover { color: var(--accent-hover); }
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.35);
 }
 
 .video-poster__play {
   position: relative;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.65);
-  border: none;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   width: 64px;
   height: 64px;
@@ -616,18 +631,33 @@ a:hover { color: var(--accent-hover); }
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.2s, background 0.2s;
+  transition: transform 0.2s, background 0.2s, border-color 0.2s;
 }
 
 .video-poster:hover .video-poster__play {
   transform: scale(1.1);
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
 .video-poster__play svg {
   width: 22px;
   height: 22px;
   margin-left: 3px;
+}
+
+/* 2x2 video grid (4 videos) */
+.project-video-grid {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 var(--gap);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.project-video-grid .video-wrapper {
+  margin-bottom: 0;
 }
 
 /* Portrait video pair (9:16 side by side) */
@@ -748,24 +778,23 @@ a:hover { color: var(--accent-hover); }
   margin-bottom: 2rem;
 }
 
-.back-home {
-  text-align: center;
-  padding: 1rem 0 4rem;
-}
-
-.back-home a {
-  color: var(--text-light);
-  font-size: .9rem;
-  display: inline-flex;
-  align-items: center;
-  gap: .4rem;
-}
 
 /* ============================================================
    CATEGORY / ARCHIVE PAGE
    ============================================================ */
-.archive-page {
+.archive-page,
+.work-page {
   padding-top: 80px;
+}
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  justify-content: center;
+  padding: 2rem var(--gap);
+  max-width: var(--max-width);
+  margin: 0 auto;
 }
 
 .project-grid--4col {
@@ -905,6 +934,7 @@ a:hover { color: var(--accent-hover); }
   position: fixed;
   bottom: 2rem;
   right: 2rem;
+  z-index: 10;
   width: 40px;
   height: 40px;
   background: rgba(255,255,255,.1);
@@ -961,6 +991,10 @@ a:hover { color: var(--accent-hover); }
    RESPONSIVE
    ============================================================ */
 @media (max-width: 768px) {
+  .project-float-nav--prev { left: .5rem; }
+  .project-float-nav--next { right: .5rem; }
+
+
   .project-grid,
   .gallery-grid,
   .archive-grid {

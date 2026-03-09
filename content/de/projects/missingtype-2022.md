@@ -1,22 +1,32 @@
 ---
 title: "DRK – #MissingType 2022"
-date: 2024-01-01
+date: 2022-06-14
 draft: false
 featured: false
 thumbnail: "/images/projects/missingtype-2022/thumb.jpg"
 categories:
   - dop
-  - colorist
-types: []
-videos: []
+types:
+  - commercial
+videos:
+  - "https://www.youtube.com/watch?v=UM5Y81ddOK8"
+video_posters:
+  - "/images/projects/missingtype-2022/poster.jpg"
 credits:
-  Kunde: "Deutsches Rotes Kreuz"
-  Produktion: "Monacoframe"
-  Regie: "Michael Baumberger"
-  DoP: "Maximilian Lamm"
-  Grading: "Maximilian Lamm"
-gallery: []
+  Produktion: Monacoframe
+  Talents: Vanessa Mai, Leon Goretzka
+  Regie: Steffen Boseckert
+  Kamera: Maximilian Lamm, Armin Kottek
+  Producer: Benedikt Höll
+  Ton: Jesús Casquete Gonzalez
+  AC: Moritz Frank
+  H&M: Aylin Halman, Ben Mayer
+  Styling: Konstantinos Gkoumpetis
+  Oberbeleuchter: Julian Wagner
+  Beleuchter: Lucas Gebauer
+  Edit: Maximilian Gibas
+  Grading: Philip Roth
 translationKey: "missingtype-2022"
 ---
 
-Für das Deutsche Rote Kreuz und die Kampagne #MissingType 2022 durfte ich als DoP und Colorist mitwirken.
+Wie schon im letzten Jahr durfte ich wieder gemeinsam mit den Kollegen von Monacoframe den DRK Blutspendedienst bei ihrer #missingtype Kampagne unterstützen. Diesmal hinter der Kamera.

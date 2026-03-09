@@ -1,4 +1,6 @@
 public/
-static/images/projects/
+static/images/
 static/videos
+resources/images/
+resources/_gen/images/
 .DS_Store

@@ -1,0 +1,6 @@
+{{- $src := .src -}}
+{{- $size := .size | default "1280x720 webp q80" -}}
+{{- $url := $src -}}
+{{- $img := resources.Get (strings.TrimPrefix "/" $src) -}}
+{{- if $img -}}{{- $url = ($img.Resize $size).RelPermalink -}}{{- end -}}
+{{- return $url -}}

@@ -1,6 +1,6 @@
 ---
 title: "BMW iX1, X3, i4"
-date: 2025-06-01
+date: 2026-01-28
 draft: false
 featured: true
 thumbnail: "/images/projects/bmw-social/thumb.jpg"
@@ -13,13 +13,17 @@ videos:
   - "https://vimeo.com/1157519770"
   - "https://vimeo.com/1157520091"
 video_posters:
-  - "/images/projects/dbmw-socials/poster-01.jpg"
-  - "/images/projects/bmw-socials/poster-02.jpg"
+  - "/images/projects/bmw-social/poster-01.jpg"
+  - "/images/projects/bmw-social/poster-02.jpg"
 credits:
-  Kunde: "BMW"
-  Produktion: "Monacoframe"
-  DP: "Maximilian Lamm"
-  Grading: "Maximilian Lamm"
+  Kunde: BMW
+  Agentur: Pacific UEG
+  Produktion: BDX Media x ace.studio
+  Regie: Sebastian Wolf
+  DP: Maximilian Lamm
+  Hair & Make-Up: Maria Stefanidou
+  Talents: Cherifa Akili, Edith Bowman, Michelle Y
+  Post Production: Simon Steinbrecher
 gallery:
   - "/images/projects/bmw-social/01.jpg"
   - "/images/projects/bmw-social/02.jpg"
@@ -33,9 +37,10 @@ gallery:
   - "/images/projects/bmw-social/10.jpg"
   - "/images/projects/bmw-social/11.jpg"
   - "/images/projects/bmw-social/12.jpg"
+gallery_columns: 6
 translationKey: "bmw-social"
 ---
 
 Für BMW durfte ich als Director of Photography drei Social-Media-Kurzformate visuell umsetzen. Ziel war es, die Marke in einem prägnanten, zeitgemäßen Format erlebbar zu machen – klar, dynamisch und auf den Punkt erzählt.
 
-Der Fokus lag auf einer reduzierten, präzisen Bildsprache, die auch im Short-Format funktioniert und den Charakter der Marke transportiert.
+Der Fokus lag auf einer reduzierten, präzisen Bildsprache, die auch im Short-Format funktioniert und den Charakter der Marke transportiert. Durch gezielte Kamerabewegungen, kontrollierte Lichtsetzung und eine klare visuelle Struktur entstanden kompakte Clips, die sowohl im Feed als auch im mobilen Kontext überzeugen.

@@ -5,7 +5,7 @@
   <div class="site-nav__inner">
     <a class="site-nav__brand" href="#home">maxlamm</a>
     <div class="site-nav__links">
-      <a href="{{ if eq .Lang "de" }}/projects/{{ else }}/en/projects/{{ end }}">Work</a>
+      <a href="{{ if eq .Lang "de" }}/work/{{ else }}/en/work/{{ end }}">Work</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </div>
@@ -37,7 +37,7 @@
     {{- range $display -}}
     <a class="project-card" href="{{ .RelPermalink }}">
       {{- with .Params.thumbnail -}}
-      <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
+      {{ partial "thumb.html" . }}
       {{- end -}}
       <div class="project-card__overlay">
         {{- with .Params.types -}}
@@ -52,7 +52,7 @@
     {{- end -}}
   </div>
   <div class="more-projects">
-    <a class="btn" href="{{ if eq .Lang "de" }}/projects/{{ else }}/en/projects/{{ end }}">{{ .Site.Language.Params.moreProjects }}</a>
+    <a class="btn" href="{{ if eq .Lang "de" }}/work/{{ else }}/en/work/{{ end }}">{{ .Site.Language.Params.moreProjects }}</a>
   </div>
 </section>
 
@@ -60,7 +60,9 @@
 <section class="about-section" id="about">
   <div class="about-section__inner">
     <div class="about-section__image">
-      <img src="/images/portrait.jpg" alt="{{ .Site.Params.author }}">
+      {{- $portrait := resources.Get "images/portrait.jpg" -}}
+      {{- if $portrait -}}{{- $portrait = ($portrait.Resize "800x webp q80") -}}{{- end -}}
+      <img src="{{ if $portrait }}{{ $portrait.RelPermalink }}{{ else }}/images/portrait.jpg{{ end }}" alt="{{ .Site.Params.author }}">
     </div>
     <div class="about-section__content">
       <h2>{{ .Site.Language.Params.aboutHeading }}</h2>
@@ -76,13 +78,8 @@
     <form class="contact-form" action="/email-handler/" method="POST">
       <input type="text" name="website" tabindex="-1" autocomplete="off" style="display:none">
       <input type="hidden" name="form_time" id="form_time" value="">
-      <label for="name">Name</label>
       <input type="text" id="name" name="name" placeholder="Name" required>
-
-      <label for="email">Email</label>
       <input type="email" id="email" name="email" placeholder="Email" required>
-
-      <label for="message">{{ if eq .Lang "de" }}Nachricht{{ else }}Message{{ end }}</label>
       <textarea id="message" name="message" placeholder="{{ if eq .Lang "de" }}Nachricht{{ else }}Message{{ end }}" required></textarea>
 
       <button type="submit" class="btn">{{ if eq .Lang "de" }}Senden{{ else }}Send{{ end }}</button>

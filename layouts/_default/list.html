@@ -4,30 +4,44 @@
   <div class="site-nav__inner">
     <a class="site-nav__brand" href="{{ if eq .Lang "de" }}/{{ else }}/en/{{ end }}">maxlamm</a>
     <div class="site-nav__links">
-      <a href="{{ if eq .Lang "de" }}/projects/{{ else }}/en/projects/{{ end }}">Work</a>
+      <a href="{{ if eq .Lang "de" }}/work/{{ else }}/en/work/{{ end }}">Work</a>
       <a href="{{ if eq .Lang "de" }}/#about{{ else }}/en/#about{{ end }}">About</a>
       <a href="{{ if eq .Lang "de" }}/#contact{{ else }}/en/#contact{{ end }}">Contact</a>
     </div>
   </div>
 </nav>
 
-<div class="archive-page">
-  <h1>{{ .Title }}</h1>
+<div class="work-page">
 
-  <div class="archive-grid">
+  <div class="filter-bar">
+    <button class="filter-btn active" data-cat="all">All</button>
+    {{- $cats := slice -}}
+    {{- range .Pages -}}{{- range .Params.categories -}}{{- $cats = $cats | append . -}}{{- end -}}{{- end -}}
+    {{- range ($cats | uniq) -}}
+    <button class="filter-btn" data-cat="{{ . }}">{{ . }}</button>
+    {{- end -}}
+  </div>
+
+  <div class="project-grid" id="projects-grid">
     {{- range .Pages -}}
-    <a class="archive-card" href="{{ .RelPermalink }}">
+    <a class="project-card" href="{{ .RelPermalink }}"
+       data-cats="{{ delimit (.Params.categories | default slice) "," }}">
       {{- with .Params.thumbnail -}}
-      <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
+      {{ partial "thumb.html" . }}
       {{- end -}}
-      <div class="archive-card__body">
-        <h2 class="archive-card__title">{{ .Title }}</h2>
-        <p class="archive-card__excerpt">{{ .Summary }}</p>
-        <span class="archive-card__link">{{ $.Site.Language.Params.readMore }}</span>
+      <div class="project-card__overlay">
+        {{- with .Params.types -}}
+        <span class="project-card__tags">{{ delimit . " · " }}</span>
+        {{- end -}}
+        <span class="project-card__title">{{ .Title }}</span>
+        {{- with .Params.categories -}}
+        <span class="project-card__categories">{{ delimit . " · " }}</span>
+        {{- end -}}
       </div>
     </a>
     {{- end -}}
   </div>
+
 </div>
 
 {{ end }}

@@ -1,21 +1,29 @@
 ---
-title: "Bookchatters"
-date: 2024-01-01
+title: "Hugendubel BookChatters"
+date: 2021-11-19
 draft: false
 featured: false
 thumbnail: "/images/projects/bookchatters/thumb.jpg"
 categories:
   - dop
-  - colorist
-types: []
-videos: []
+types:
+  - social media
+videos:
+  - "https://www.youtube.com/watch?v=ykH6NnCFuT4"
+  - "https://www.youtube.com/watch?v=nXq1c19Q_fU"
+video_posters:
+  - "/images/projects/bookchatters/poster-01.jpg"
+  - "/images/projects/bookchatters/poster-02.jpg"
+video_size: medium
 credits:
-  Kunde: "Bookchatters"
-  Produktion: "Monacoframe"
-  DoP: "Maximilian Lamm"
-  Grading: "Maximilian Lamm"
+  Client: Hugendubel
+  Regie: Phuong Herzer
+  Produktion: Philip Thorer
+  DoP: Maximilian Lamm
+  Set-Runner & Edit: Laura Schneider
+  Hair & Make-Up: Vanessa Harrer
 gallery: []
 translationKey: "bookchatters"
 ---
 
-Für die Münchner App Bookchatters durfte ich als DoP und Colorist den Launchfilm produzieren.
+Für die diesjährige Staffel der Hugendubel BookChatters durfte ich die Jungs von Dojo Digital als DP unterstützen. Gedreht wurde in einem Wohnhaus an vier Tagen. Das Haus hat uns die Möglichkeit gegeben, die insgesamt fünf verschiedenen Sets in allen möglichen Kombinationen gleichzeitig zu bespielen.

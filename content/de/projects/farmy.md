@@ -1,22 +1,31 @@
 ---
 title: "FARMY – Für Frisches. Und alles Andere"
-date: 2024-01-01
+date: 2023-09-04
 draft: false
 featured: false
 thumbnail: "/images/projects/farmy/thumb.jpg"
 categories:
   - dop
-types: []
-videos: []
+types:
+  - commercial
+videos:
+  - https://www.youtube.com/watch?v=XtNELF38-IQ
+  - https://www.youtube.com/watch?v=npNZ8URzkpo
+  - https://www.youtube.com/watch?v=fEwMfHFdDZQ
+video_size: medium
+video_posters:
+  - "/images/projects/farmy/poster-01.jpg"
+  - "/images/projects/farmy/poster-02.jpg"
+  - "/images/projects/farmy/poster-03.jpg"
 credits:
-  Kunde: "farmy.ch"
-  Produktion: "Jens Derler"
-  Agentur: "Family Agency"
-  Regie: "Michael Baumberger"
-  Produktionsleitung: "Klaas Fermer"
-  Licht: "Noah Furrer"
-  Styling: "Angela Burkhart"
-gallery: []
+  Kunde: farmy.ch
+  Produktion: Jens Derler
+  Agentur: Family Agency
+  Regie: Michael Baumberger
+  Produktionsleitung: Klaas Fermer
+  Licht: Noah Furrer
+  Styling: Angela Burkhart
+gallery:
 translationKey: "farmy"
 ---
 

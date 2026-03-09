@@ -5,7 +5,7 @@
   <div class="site-nav__inner">
     <a class="site-nav__brand" href="{{ if eq .Lang "de" }}/{{ else }}/en/{{ end }}">maxlamm</a>
     <div class="site-nav__links">
-      <a href="{{ if eq .Lang "de" }}/projects/{{ else }}/en/projects/{{ end }}">Work</a>
+      <a href="{{ if eq .Lang "de" }}/work/{{ else }}/en/work/{{ end }}" class="active">Work</a>
       <a href="{{ if eq .Lang "de" }}/#about{{ else }}/en/#about{{ end }}">About</a>
       <a href="{{ if eq .Lang "de" }}/#contact{{ else }}/en/#contact{{ end }}">Contact</a>
     </div>
@@ -14,19 +14,13 @@
 
 <article class="project-page">
 
-  <!-- Prev / Next -->
-  <div class="project-nav">
-    <div>
-      {{- with .PrevInSection -}}
-      <a href="{{ .RelPermalink }}">&#8249; {{ $.Site.Language.Params.prevPost }}</a>
-      {{- end -}}
-    </div>
-    <div>
-      {{- with .NextInSection -}}
-      <a href="{{ .RelPermalink }}">{{ $.Site.Language.Params.nextPost }} &#8250;</a>
-      {{- end -}}
-    </div>
-  </div>
+  <!-- Floating Prev / Next -->
+  {{- with .PrevInSection -}}
+  <a class="project-float-nav project-float-nav--prev" href="{{ .RelPermalink }}" aria-label="Vorheriges Projekt">&#8249;</a>
+  {{- end -}}
+  {{- with .NextInSection -}}
+  <a class="project-float-nav project-float-nav--next" href="{{ .RelPermalink }}" aria-label="Nächstes Projekt">&#8250;</a>
+  {{- end -}}
 
   <!-- Title -->
   <div class="project-header">
@@ -42,30 +36,46 @@
   {{- if eq (.Params.orientation | default "landscape") "portrait" -}}
   <div class="project-video-pair">
     {{- range $i, $v := .Params.videos -}}
-    {{- $poster := $.Params.thumbnail -}}
+    {{- $poster := $.Params.thumbnail | default (printf "/images/work/%s/thumb.jpg" $.File.ContentBaseName) -}}
     {{- with index $.Params.video_posters $i -}}{{- $poster = . -}}{{- end -}}
     <div class="video-wrapper video-wrapper--portrait">
       {{- if findRE "vimeo" $v -}}
-      <div class="video-poster" data-src="https://player.vimeo.com/video/{{ replaceRE ".*vimeo\\.com/" "" $v }}?dnt=1&title=0&byline=0&portrait=0&autoplay=1" style="background-image:url('{{ $poster }}')"><button class="video-poster__play" aria-label="Video abspielen"><svg viewBox="0 0 24 24" fill="white"><polygon points="6,3 20,12 6,21"/></svg></button></div>
+      <div class="video-poster" data-src="https://player.vimeo.com/video/{{ replaceRE ".*vimeo\\.com/" "" $v }}?dnt=1&title=0&byline=0&portrait=0&autoplay=1" style="background-image:url('{{ partial "img-url.html" (dict "src" $poster) }}')"><button class="video-poster__play" aria-label="Video abspielen"><svg viewBox="0 0 24 24" fill="white"><polygon points="6,3 20,12 6,21"/></svg></button></div>
       {{- else if findRE "youtu" $v -}}
-      <div class="video-poster" data-src="https://www.youtube-nocookie.com/embed/{{ replaceRE ".*(?:youtu\\.be/|v=)" "" $v }}?autoplay=1" style="background-image:url('{{ $poster }}')"><button class="video-poster__play" aria-label="Video abspielen"><svg viewBox="0 0 24 24" fill="white"><polygon points="6,3 20,12 6,21"/></svg></button></div>
+      <div class="video-poster" data-src="https://www.youtube-nocookie.com/embed/{{ replaceRE ".*(?:youtu\\.be/|v=)" "" $v }}?autoplay=1" style="background-image:url('{{ partial "img-url.html" (dict "src" $poster) }}')"><button class="video-poster__play" aria-label="Video abspielen"><svg viewBox="0 0 24 24" fill="white"><polygon points="6,3 20,12 6,21"/></svg></button></div>
+      {{- end -}}
+    </div>
+    {{- end -}}
+  </div>
+  {{- else -}}
+  {{- if eq (len .Params.videos) 4 -}}
+  <div class="project-video-grid">
+    {{- range $i, $v := .Params.videos -}}
+    {{- $poster := $.Params.thumbnail | default (printf "/images/work/%s/thumb.jpg" $.File.ContentBaseName) -}}
+    {{- with index $.Params.video_posters $i -}}{{- $poster = . -}}{{- end -}}
+    <div class="video-wrapper">
+      {{- if findRE "vimeo" $v -}}
+      <div class="video-poster" data-src="https://player.vimeo.com/video/{{ replaceRE ".*vimeo\\.com/" "" $v }}?dnt=1&title=0&byline=0&portrait=0&autoplay=1" style="background-image:url('{{ partial "img-url.html" (dict "src" $poster) }}')"><button class="video-poster__play" aria-label="Video abspielen"><svg viewBox="0 0 24 24" fill="white"><polygon points="6,3 20,12 6,21"/></svg></button></div>
+      {{- else if findRE "youtu" $v -}}
+      <div class="video-poster" data-src="https://www.youtube-nocookie.com/embed/{{ replaceRE ".*(?:youtu\\.be/|v=)" "" $v }}?autoplay=1" style="background-image:url('{{ partial "img-url.html" (dict "src" $poster) }}')"><button class="video-poster__play" aria-label="Video abspielen"><svg viewBox="0 0 24 24" fill="white"><polygon points="6,3 20,12 6,21"/></svg></button></div>
       {{- end -}}
     </div>
     {{- end -}}
   </div>
   {{- else -}}
   {{- range $i, $v := .Params.videos -}}
-  {{- $poster := $.Params.thumbnail -}}
+  {{- $poster := $.Params.thumbnail | default (printf "/images/work/%s/thumb.jpg" $.File.ContentBaseName) -}}
   {{- with index $.Params.video_posters $i -}}{{- $poster = . -}}{{- end -}}
   <div class="project-video project-video--{{ $.Params.video_size | default "large" }}">
     <div class="video-wrapper">
       {{- if findRE "vimeo" $v -}}
-      <div class="video-poster" data-src="https://player.vimeo.com/video/{{ replaceRE ".*vimeo\\.com/" "" $v }}?dnt=1&title=0&byline=0&portrait=0&autoplay=1" style="background-image:url('{{ $poster }}')"><button class="video-poster__play" aria-label="Video abspielen"><svg viewBox="0 0 24 24" fill="white"><polygon points="6,3 20,12 6,21"/></svg></button></div>
+      <div class="video-poster" data-src="https://player.vimeo.com/video/{{ replaceRE ".*vimeo\\.com/" "" $v }}?dnt=1&title=0&byline=0&portrait=0&autoplay=1" style="background-image:url('{{ partial "img-url.html" (dict "src" $poster) }}')"><button class="video-poster__play" aria-label="Video abspielen"><svg viewBox="0 0 24 24" fill="white"><polygon points="6,3 20,12 6,21"/></svg></button></div>
       {{- else if findRE "youtu" $v -}}
-      <div class="video-poster" data-src="https://www.youtube-nocookie.com/embed/{{ replaceRE ".*(?:youtu\\.be/|v=)" "" $v }}?autoplay=1" style="background-image:url('{{ $poster }}')"><button class="video-poster__play" aria-label="Video abspielen"><svg viewBox="0 0 24 24" fill="white"><polygon points="6,3 20,12 6,21"/></svg></button></div>
+      <div class="video-poster" data-src="https://www.youtube-nocookie.com/embed/{{ replaceRE ".*(?:youtu\\.be/|v=)" "" $v }}?autoplay=1" style="background-image:url('{{ partial "img-url.html" (dict "src" $poster) }}')"><button class="video-poster__play" aria-label="Video abspielen"><svg viewBox="0 0 24 24" fill="white"><polygon points="6,3 20,12 6,21"/></svg></button></div>
       {{- end -}}
     </div>
   </div>
+  {{- end -}}
   {{- end -}}
   {{- end -}}
 
@@ -86,7 +96,14 @@
   <div class="project-gallery">
     <div class="gallery-grid" style="--cols: {{ $.Params.gallery_columns | default 3 }}">
       {{- range . -}}
-      <img src="{{ . }}" alt="" loading="lazy">
+      {{- $galSrc := . -}}
+      {{- $galImg := resources.Get (strings.TrimPrefix "/" $galSrc) -}}
+      {{- if $galImg -}}
+        {{- $galThumb := $galImg.Resize "800x webp q80" -}}
+        <img src="{{ $galThumb.RelPermalink }}" data-full="{{ $galSrc }}" alt="" loading="lazy">
+      {{- else -}}
+        <img src="{{ $galSrc }}" alt="" loading="lazy">
+      {{- end -}}
       {{- end -}}
     </div>
   </div>
@@ -109,7 +126,7 @@
       {{- range $related -}}
       <a class="project-card" href="{{ .RelPermalink }}">
         {{- with .Params.thumbnail -}}
-        <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
+        {{ partial "thumb.html" . }}
         {{- end -}}
         <div class="project-card__overlay">
           <span class="project-card__title">{{ .Title }}</span>
@@ -120,10 +137,6 @@
   </div>
   {{- end -}}
 
-  <!-- Back Home -->
-  <div class="back-home">
-    <a href="{{ if eq .Lang "de" }}/{{ else }}/en/{{ end }}">&#8249;&nbsp;&nbsp;&nbsp;{{ .Site.Language.Params.backHome }}</a>
-  </div>
 
 </article>
 

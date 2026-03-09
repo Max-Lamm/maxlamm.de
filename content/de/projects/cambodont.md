@@ -1,6 +1,6 @@
 ---
 title: "Cambodont"
-date: 2024-01-01
+date: 2024-04-23
 draft: false
 featured: true
 thumbnail: "/images/projects/cambodont/thumb.jpg"
@@ -10,17 +10,21 @@ types:
   - commercial
 videos:
   - "https://www.youtube.com/watch?v=yiUdjkhuOUk"
-video_posters:
-  - "/images/projects/cambodont/thumb.jpg"
 credits:
-  Kunde: "Cambodont"
-  Produktion: "Monacoframe"
-  Regie: "Michael Baumberger"
-  DoP: "Philip Roth"
-  B-Cam: "Maximilian Lamm"
-  AC: "Ferdinand Soldan"
-  Gaffer: "Dennis Fischer"
-  Grading: "Maximilian Lamm"
+  Kunde: Cambodont
+  Agentur: Credodesign/Monacoframe
+  Director: Michael Baumberger
+  Talents: Felix Cremerius Ronny Schuster, Christian H. Andreas M.
+  DoP: Maximilian Rödl
+  1st AC: Sebastian Mögele
+  Gaffer: Dennis Fischer
+  Set Design: Benita Böhm
+  Hair & Make-Up: Laura Brucklachner
+  Runner: Zoe Lara
+  Edit: Gero LangHeinrich
+  Color Grading: Maximilian Lamm
+  Fotos: Petra Reger
+  Extras: Stefan Krause, Lisa Seifert, Aryane Siebra
 gallery:
   - "/images/projects/cambodont/01.jpg"
   - "/images/projects/cambodont/02.jpg"
@@ -34,4 +38,6 @@ gallery_columns: 4
 translationKey: "cambodont"
 ---
 
-Für einen Zahnarzt aus Kempten konnte ich das Kollektiv Monacoframe beim Color Grading für einen Kinospot unterstützen. Gedreht wurde auf der Arri Alexa Mini.
+Für einen Zahnarzt aus Kempten konnte ich das Kollektiv Monacoframe beim Color Grading für einen Kinospot unterstützen. Gedreht wurde mit einer RED Helium 8k und Atlas Anamorphoten, was mir eine Vielzahl an Möglichkeiten in der Farbbearbeitung bot. Die Herausforderung bestand darin, die verschiedenen Aufnahmen nahtlos miteinander zu verbinden und gleichzeitig den gewünschten visuellen Stil zu erreichen. Besonders wichtig war es, einen leichten Vintage-Western-Look zu etablieren ohne dabei an Authentizität zu verlieren.
+
+Für die Kinovorführung wurde ein intensiveres Grading angewendet, um die Details auf der großen Leinwand optimal zur Geltung zu bringen, während für die Webausspielung ein etwas sanfterer Look gewählt wurde, der auch auf kleineren Bildschirmen gut zur Geltung kommt.

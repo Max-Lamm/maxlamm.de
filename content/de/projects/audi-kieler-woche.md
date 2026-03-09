@@ -1,6 +1,6 @@
 ---
 title: "Audi Kieler Woche"
-date: 2024-01-01
+date: 2024-06-29
 draft: false
 featured: true
 thumbnail: "/images/projects/audi-kieler-woche/thumb.jpg"
@@ -19,14 +19,14 @@ video_posters:
   - "/images/projects/audi-kieler-woche/poster-02.jpg"
   - "/images/projects/audi-kieler-woche/poster-03.jpg"
 credits:
-  Kunde: "Audi AG"
-  Agentur: "territory"
-  Produktion: "Monacoframe"
-  Service Producer: "Tobias Holter"
-  Kamera: "Michael Baumberger, Maximilian Rödl, Maximilian Lamm"
-  1st AC: "Oscar Bornmann"
-  Schnitt: "Maximilian Gibas, Alex Lupanow"
-  Photographer: "Sebastian Stücke"
+  Kunde: Audi AG
+  Agentur: territorry
+  Produktion: Monacoframe
+  Service Producer: Tobias Holter
+  Kamera: Michael Baumberger, Maximilian Rödl, Maximilian Lamm
+  1st AC: Oscar Bornmann
+  Schnitt: Maximilian Gibas, Alex Lupanow
+  Photo: Francesca Amann
 gallery:
   - "/images/projects/audi-kieler-woche/01.jpg"
   - "/images/projects/audi-kieler-woche/02.jpg"
@@ -44,4 +44,4 @@ gallery_columns: 6
 translationKey: "audi-kieler-woche"
 ---
 
-Zusammen mit dem Monacoframe Kollektiv durfte ich Audi auf der Kieler Woche als Kameramann unterstützen. Vor Ort haben wir in Echtzeit Social-Media-Content produziert – vom Filmen spannender Momente bis hin zur schnellen Verarbeitung und Veröffentlichung innerhalb kürzester Zeitfenster.
+Zusammen mit dem Monacoframe Kollektiv durfte ich Audi auf der Kieler Woche als Kameramann unterstützen. Vor Ort haben wir in Echtzeit Social-Media-Content produziert – vom Filmen spannender Momente bis hin zum direkten Schnitt und Upload auf die Kanäle. So konnten wir die Dynamik und Atmosphäre des Events unmittelbar erlebbar machen.
