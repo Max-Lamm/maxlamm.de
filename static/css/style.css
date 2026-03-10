@@ -45,6 +45,14 @@
 .klaro .cookie-modal input:checked + .slider {
   background: #E8554E;
 }
+.klaro .cookie-notice .cn-learn-more,
+.klaro .cookie-modal .cm-link {
+  color: #E8554E;
+}
+.klaro .cookie-notice .cn-learn-more:hover,
+.klaro .cookie-modal .cm-link:hover {
+  color: #c94a3f;
+}
 
 
 /* --- Variables --- */
