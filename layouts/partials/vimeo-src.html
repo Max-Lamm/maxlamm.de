@@ -1,0 +1,7 @@
+{{- $path := replaceRE ".*vimeo\\.com/" "" . -}}
+{{- $parts := split $path "/" -}}
+{{- if gt (len $parts) 1 -}}
+{{- printf "https://player.vimeo.com/video/%s?h=%s&dnt=1&title=0&byline=0&portrait=0&autoplay=1" (index $parts 0) (index $parts 1) -}}
+{{- else -}}
+{{- printf "https://player.vimeo.com/video/%s?dnt=1&title=0&byline=0&portrait=0&autoplay=1" (index $parts 0) -}}
+{{- end -}}

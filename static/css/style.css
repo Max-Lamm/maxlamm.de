@@ -3,7 +3,49 @@
    Dark cinematographic portfolio
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&family=Barlow+Condensed:wght@400;500;600;700;800&family=Work+Sans:wght@600&family=Raleway:wght@400&display=swap');
+/* --- Local Fonts --- */
+@font-face { font-family: 'Raleway'; font-style: normal; font-weight: 300; font-display: swap; src: url('/fonts/raleway-300-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Raleway'; font-style: normal; font-weight: 400; font-display: swap; src: url('/fonts/raleway-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Raleway'; font-style: normal; font-weight: 600; font-display: swap; src: url('/fonts/raleway-600-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Raleway'; font-style: normal; font-weight: 700; font-display: swap; src: url('/fonts/raleway-700-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Work Sans'; font-style: normal; font-weight: 600; font-display: swap; src: url('/fonts/work-sans-600-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Work Sans'; font-style: normal; font-weight: 700; font-display: swap; src: url('/fonts/work-sans-700-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Work Sans'; font-style: normal; font-weight: 800; font-display: swap; src: url('/fonts/work-sans-800-normal.woff2') format('woff2'); }
+
+/* --- Klaro Cookie Consent --- */
+.klaro .cookie-modal,
+.klaro .cookie-notice {
+  font-family: var(--font-body);
+}
+.klaro .cookie-modal .cm-modal,
+.klaro .cookie-notice {
+  background: #222222;
+  color: #d4d4d4;
+  border: 1px solid #333;
+}
+.klaro .cookie-notice {
+  border-radius: 6px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.6);
+}
+.klaro .cookie-modal .cm-btn,
+.klaro .cookie-notice .cn-buttons .cm-btn {
+  border-radius: 3px;
+}
+.klaro .cookie-modal .cm-btn.cm-btn-success,
+.klaro .cookie-notice .cn-buttons .cm-btn.cm-btn-success {
+  background: #E05A4E;
+}
+.klaro .cookie-modal .cm-btn.cm-btn-success:hover,
+.klaro .cookie-notice .cn-buttons .cm-btn.cm-btn-success:hover {
+  background: #c94a3f;
+}
+.klaro .cookie-modal .slider {
+  background: #555;
+}
+.klaro .cookie-modal input:checked + .slider {
+  background: #E05A4E;
+}
+
 
 /* --- Variables --- */
 :root {
@@ -672,6 +714,8 @@ a:hover { color: var(--accent-hover); }
 .video-wrapper--portrait {
   flex: 0 0 300px;
   position: relative;
+  padding-bottom: 0;
+  height: auto;
   aspect-ratio: 9 / 16;
   overflow: hidden;
   border-radius: 2px;
@@ -761,11 +805,17 @@ a:hover { color: var(--accent-hover); }
 
 /* Related Projects Grid */
 .related-projects {
-  padding: 4rem 0;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem var(--gap);
 }
 
 .related-projects .project-grid {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.related-projects .project-card__title {
+  font-size: 0.85rem;
 }
 
 .related-projects h3 {

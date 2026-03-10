@@ -15,7 +15,7 @@ E-Mail: [info[at]maxlamm.de](/contact/)
 Steuernummer: 145/161/30009<br>
 USt-Id: DE321599738
 
-Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
+Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:
 
 Maximilian Lamm<br>
 Schäftlarnstraße 93<br>
@@ -34,7 +34,7 @@ Weltweit
 
 ### EU-Streitschlichtung
 
-Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: https://ec.europa.eu/consumers/odr/ Unsere E-Mail-Adresse finden Sie oben im Impressum.
+Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: https://ec.europa.eu/consumers/odr/ Meine E-Mail-Adresse finden Sie oben im Impressum.
 
  
 
@@ -45,7 +45,7 @@ Ich bin nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer V
  
 ### Haftung für Inhalte
 
-Als Diensteanbieter bin ich gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach § 8 bis 10 TMG bin ich als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+Als Diensteanbieter bin ich gemäß § 7 Abs. 1 DDG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 DDG bin ich als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
 
 Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
 

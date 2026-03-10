@@ -60,8 +60,17 @@ document.addEventListener('DOMContentLoaded', () => {
   /* --- Video poster click-to-play --- */
   document.querySelectorAll('.video-poster').forEach(poster => {
     poster.addEventListener('click', () => {
+      const src = poster.dataset.src || '';
+      const service = src.includes('vimeo') ? 'vimeo' : 'youtube';
+
+      const manager = window.klaro?.getManager?.();
+      if (manager && !manager.getConsent(service)) {
+        window.klaro.show();
+        return;
+      }
+
       const iframe = document.createElement('iframe');
-      iframe.src = poster.dataset.src;
+      iframe.src = src;
       iframe.allow = 'autoplay; fullscreen';
       iframe.allowFullscreen = true;
       iframe.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;border:none;';
