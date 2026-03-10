@@ -30,7 +30,7 @@
   <div class="project-grid">
     {{- $projects := where .Site.RegularPages "Section" "projects" -}}
     {{- $featured := where $projects ".Params.featured" true -}}
-    {{- $display := $featured -}}
+    {{- $display := first 9 $featured -}}
     {{- if eq (len $featured) 0 -}}
       {{- $display = first 12 $projects -}}
     {{- end -}}
