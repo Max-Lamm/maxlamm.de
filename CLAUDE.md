@@ -103,6 +103,64 @@ Videos werden als Poster-Bild gerendert und erst beim Klick geladen (Privacy-fre
 - **Credits**: Leere `name`-Felder werden im Template übersprungen — Credits-Einträge ohne Namen einfach weglassen
 - **Cookie-Banner**: Klaro.js, Fonts werden lokal eingebunden (kein CDN)
 
+## /new-project — Automatisierter Projekt-Workflow
+
+### Ablauf
+
+1. Nutzer füllt `new-project-input.md` aus
+2. Nutzer gibt den Befehl `/new-project` (oder "neues Projekt erstellen")
+3. Claude liest `new-project-input.md` und `crew-handles.md`
+4. Claude erstellt:
+   - `content/de/projects/<slug>.md`
+   - `content/en/projects/<slug>.md`
+   - Instagram Caption (EN) — direkt im Chat ausgegeben
+5. Nutzer reviewt alles, schlägt Änderungen vor
+6. Nach Bestätigung: git add + commit + push + deploy (Standard-Workflow)
+
+### Projekttexte generieren
+
+Aus Beschreibung + technischen Details einen ausführlichen Portfolio-Text bauen (1–3 Absätze):
+- **Stil und Ton**: Erste Person, persönliche Handschrift — "Für X durfte ich…" (DE) / "For X, I had the opportunity…" (EN). Orientierung an den bestehenden Projekttexten, insbesondere `content/de/projects/porsche-roads.md`.
+- **Struktur**: Aufgabe/Rolle → visueller/technischer Ansatz → Ergebnis
+- **Technik**: Kamera, Linsen, Look organisch einweben — keine trockene Aufzählung
+- **DE und EN**: Inhaltlich gleich, aber nicht wortwörtlich übersetzt — natürlich klingende Texte in beiden Sprachen
+
+### Front Matter generieren
+
+- `thumbnail`: `/images/projects/<slug>/thumb.jpg`
+- `gallery`: Aus den angegebenen Dateinamen zusammensetzen (`/images/projects/<slug>/01.jpg` etc.)
+- `video_posters`: Nur eintragen wenn explizit angegeben — sonst Feld weglassen (Fallback: thumb.jpg)
+- `translationKey`: Gleich dem `slug` — in DE und EN identisch
+- **Credits-Rollen übersetzen** für EN: Kunde → Client, Agentur → Agency, Regie → Director, Licht → Gaffer, Schnitt → Editor, Grading → Grading, DP → DP (unverändert)
+- Felder mit leerem Wert einfach weglassen (Credits ohne Namen, leere Galerien etc.)
+
+### Instagram Caption generieren
+
+Format:
+```
+[Hook / Projekteröffnung — 1–2 Sätze, direkt und spezifisch]
+
+[Kurzbeschreibung des Projekts und meiner Rolle]
+
+—
+[Rolle]: [Handle oder Name]
+[Rolle]: [Handle oder Name]
+...
+
+[Optionale Hashtags falls im Input angegeben]
+```
+
+**Handle-Lookup**: Namen aus den Credits gegen `crew-handles.md` abgleichen. Bekannte Namen → Handle ersetzen. Unbekannte Namen → Namen unverändert übernehmen.
+
+### Dateien
+
+| Datei | Zweck |
+|-------|-------|
+| `new-project-input.md` | Eingabe-Template (nach Nutzung für nächstes Projekt wiederverwenden) |
+| `crew-handles.md` | Name → Instagram-Handle Mapping (bei neuen Crewmitgliedern ergänzen) |
+
+---
+
 ## Workflow
 
 Nach jeder abgeschlossenen Aufgabe automatisch:
