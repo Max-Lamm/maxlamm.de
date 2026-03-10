@@ -14,19 +14,32 @@ videos:
 video_posters:
   - "/images/projects/dethleffs-trend/poster.jpg"
 credits:
-  Kunde: Dethleffs
-  Agentur: Territory
-  Produktion: Monacoframe
-  Service Produktion: 2.0 film
-  Regie: Michael Baumberger
-  DP: Maximilian Rödl
-  1st AC: Maximilian Lamm
-  Licht: Dennis Fischer
-  Drohne: Michael Baumberger
-  PA: Sophie Sommer
-  Grading: Maximilian Lamm
-  Edit: Gero LangHeinrich
-  Photos: Matthias Fend
+  - role: Kunde
+    name: Dethleffs
+  - role: Agentur
+    name: Territory
+  - role: Produktion
+    name: Monacoframe
+  - role: Service Produktion
+    name: 2.0 film
+  - role: Regie
+    name: Michael Baumberger
+  - role: DP
+    name: Maximilian Rödl
+  - role: 1st AC
+    name: Maximilian Lamm
+  - role: Licht
+    name: Dennis Fischer
+  - role: Drohne
+    name: Michael Baumberger
+  - role: PA
+    name: Sophie Sommer
+  - role: Grading
+    name: Maximilian Lamm
+  - role: Edit
+    name: Gero LangHeinrich
+  - role: Photos
+    name: Matthias Fend
 gallery:
   - "/images/projects/dethleffs-trend/01.jpg"
   - "/images/projects/dethleffs-trend/02.jpg"

@@ -12,16 +12,24 @@ types:
 videos:
   - "https://www.youtube.com/watch?v=bq73MxJQLl0"
 credits:
-  Idee, Regie, Produktion: Michael Baumberger
-  DoP: Maximilian Lamm, Philipp Roth
-  Executive Producer: Stefan Krause
-  Edit: Michael Baumberger, Leslie Ann Miller
-  Grading: Maximilian Lamm
-  Haare und Make-Up: Gizem Askar
-
-  Cast: Selin, Mirac, Selina, Charlie
-  Tänzer: Stephanie Hápp, Katharina Dressler, Prosper Mbengi 
-  Choreography: Miguel T. Sozinho
+  - role: Idee, Regie, Produktion
+    name: Michael Baumberger
+  - role: DoP
+    name: Maximilian Lamm, Philipp Roth
+  - role: Executive Producer
+    name: Stefan Krause
+  - role: Edit
+    name: Michael Baumberger, Leslie Ann Miller
+  - role: Grading
+    name: Maximilian Lamm
+  - role: Haare und Make-Up
+    name: Gizem Askar
+  - role: Cast
+    name: Selin, Mirac, Selina, Charlie
+  - role: Tänzer
+    name: Stephanie Hápp, Katharina Dressler, Prosper Mbengi
+  - role: Choreography
+    name: Miguel T. Sozinho
 translationKey: "lienne-fuck-you-very-much"
 ---
 

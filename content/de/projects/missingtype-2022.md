@@ -13,19 +13,32 @@ videos:
 video_posters:
   - "/images/projects/missingtype-2022/poster.jpg"
 credits:
-  Produktion: Monacoframe
-  Talents: Vanessa Mai, Leon Goretzka
-  Regie: Steffen Boseckert
-  Kamera: Maximilian Lamm, Armin Kottek
-  Producer: Benedikt Höll
-  Ton: Jesús Casquete Gonzalez
-  AC: Moritz Frank
-  H&M: Aylin Halman, Ben Mayer
-  Styling: Konstantinos Gkoumpetis
-  Oberbeleuchter: Julian Wagner
-  Beleuchter: Lucas Gebauer
-  Edit: Maximilian Gibas
-  Grading: Philip Roth
+  - role: Produktion
+    name: Monacoframe
+  - role: Talents
+    name: Vanessa Mai, Leon Goretzka
+  - role: Regie
+    name: Steffen Boseckert
+  - role: Kamera
+    name: Maximilian Lamm, Armin Kottek
+  - role: Producer
+    name: Benedikt Höll
+  - role: Ton
+    name: Jesús Casquete Gonzalez
+  - role: AC
+    name: Moritz Frank
+  - role: H&M
+    name: Aylin Halman, Ben Mayer
+  - role: Styling
+    name: Konstantinos Gkoumpetis
+  - role: Oberbeleuchter
+    name: Julian Wagner
+  - role: Beleuchter
+    name: Lucas Gebauer
+  - role: Edit
+    name: Maximilian Gibas
+  - role: Grading
+    name: Philip Roth
 translationKey: "missingtype-2022"
 ---
 

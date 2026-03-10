@@ -14,13 +14,20 @@ videos:
 video_posters:
   - "/images/projects/generali-balance/poster.jpg"
 credits:
-  Produktion: Monacoframe
-  Regie: Michael Baumberger
-  Redaktion: Chantal Haug
-  Kamera: Maximilian Lamm, Maximilian Rödl
-  Drohne: Christian Geiselbrechtinger
-  Ton: Anton Schlichter
-  Grading: Maximilian Lamm
+  - role: Produktion
+    name: Monacoframe
+  - role: Regie
+    name: Michael Baumberger
+  - role: Redaktion
+    name: Chantal Haug
+  - role: Kamera
+    name: Maximilian Lamm, Maximilian Rödl
+  - role: Drohne
+    name: Christian Geiselbrechtinger
+  - role: Ton
+    name: Anton Schlichter
+  - role: Grading
+    name: Maximilian Lamm
 gallery:
 translationKey: "generali-balance"
 ---

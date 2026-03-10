@@ -14,24 +14,42 @@ videos:
 video-posters:
   - "/images/projects/missingtype-2023/poster.jpg"
 credits:
-  Kunde: DRK Blutspendedienste
-  Agentur: We Play Forward
-  Produktion: Monacoframe
-  Regie: Michael Baumberger
-  DP: Maximilian Rödl
-  B-Cam: Maximilian Lamm
-  1st AC: Alex Fink
-  2nd AC: Jakob Landes, Sebastian Mögele
-  Licht: Armin Kottek, Fabian Pfriem
-  Beleuchter: Moritz Frank
-  Ton: Anton Schlichter
-  Hair & Make-Up: Lukas Kuciel, Laura Brucklachner
-  Styling: Alice Juhas
-  Edit: Maximilian Gibas
-  Grading: Maximilian Lamm
-  BTS: Sebastian Mögele
-  Sound-design: Martin Linka
-  Music: Stefan Krause
+  - role: Kunde
+    name: DRK Blutspendedienste
+  - role: Agentur
+    name: We Play Forward
+  - role: Produktion
+    name: Monacoframe
+  - role: Regie
+    name: Michael Baumberger
+  - role: DP
+    name: Maximilian Rödl
+  - role: B-Cam
+    name: Maximilian Lamm
+  - role: 1st AC
+    name: Alex Fink
+  - role: 2nd AC
+    name: Jakob Landes, Sebastian Mögele
+  - role: Licht
+    name: Armin Kottek, Fabian Pfriem
+  - role: Beleuchter
+    name: Moritz Frank
+  - role: Ton
+    name: Anton Schlichter
+  - role: Hair & Make-Up
+    name: Lukas Kuciel, Laura Brucklachner
+  - role: Styling
+    name: Alice Juhas
+  - role: Edit
+    name: Maximilian Gibas
+  - role: Grading
+    name: Maximilian Lamm
+  - role: BTS
+    name: Sebastian Mögele
+  - role: Sound-design
+    name: Martin Linka
+  - role: Music
+    name: Stefan Krause
 gallery:
   - "/images/projects/missingtype-2023/01.jpg"
   - "/images/projects/missingtype-2023/02.jpg"

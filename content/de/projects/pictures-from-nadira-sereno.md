@@ -12,10 +12,14 @@ types:
 videos:
   - "https://youtu.be/1JaOsidXjU4"
 credits:
-  Regie: Michael Baumberger 
-  DP, Edit, Grading: Maximilian Lamm
-  Steadicam: Christoph Werner
-  1st AC: Moritz Frank
+  - role: Regie
+    name: Michael Baumberger
+  - role: DP, Edit, Grading
+    name: Maximilian Lamm
+  - role: Steadicam
+    name: Christoph Werner
+  - role: 1st AC
+    name: Moritz Frank
 gallery:
   - "/images/projects/pictures-from-nadira-sereno/01.jpg"
   - "/images/projects/pictures-from-nadira-sereno/02.jpg"

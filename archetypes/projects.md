@@ -22,16 +22,26 @@ video_posters:
 video_size:
   - 
 credits:
-  Kunde: 
-  Agentur: 
-  Produktion: 
-  Regie: 
-  DP: 
-  1st AC: 
-  Licht: 
-  Ton: 
-  Schnitt: 
-  Grading: 
+  - role: Kunde
+    name:
+  - role: Agentur
+    name:
+  - role: Produktion
+    name:
+  - role: Regie
+    name:
+  - role: DP
+    name:
+  - role: 1st AC
+    name:
+  - role: Licht
+    name:
+  - role: Ton
+    name:
+  - role: Schnitt
+    name:
+  - role: Grading
+    name:
 gallery:
   - "/images/projects/PROJECT-NAME/01.jpg"
   - "/images/projects/PROJECT-NAME/02.jpg"

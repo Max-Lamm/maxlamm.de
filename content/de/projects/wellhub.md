@@ -11,14 +11,22 @@ types:
 videos:
   - "https://www.youtube.com/watch?v=BqmMSGP1X3Q"
 credits:
-  Kunde: Gympass
-  Produktion: Monacoframe
-  Regie: Michael Baumberger
-  DP: Maximilian Lamm
-  1st AC: Sebastian Mögele
-  Licht: Alex Fink
-  Schnitt: Kim Enzo Steinocher
-  Grading: Maximilian Lamm
+  - role: Kunde
+    name: Gympass
+  - role: Produktion
+    name: Monacoframe
+  - role: Regie
+    name: Michael Baumberger
+  - role: DP
+    name: Maximilian Lamm
+  - role: 1st AC
+    name: Sebastian Mögele
+  - role: Licht
+    name: Alex Fink
+  - role: Schnitt
+    name: Kim Enzo Steinocher
+  - role: Grading
+    name: Maximilian Lamm
 gallery:
   - "/images/projects/wellhub/01.jpg"
   - "/images/projects/wellhub/02.jpg"

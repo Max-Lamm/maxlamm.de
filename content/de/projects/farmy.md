@@ -18,13 +18,20 @@ video_posters:
   - "/images/projects/farmy/poster-02.jpg"
   - "/images/projects/farmy/poster-03.jpg"
 credits:
-  Kunde: farmy.ch
-  Produktion: Jens Derler
-  Agentur: Family Agency
-  Regie: Michael Baumberger
-  Produktionsleitung: Klaas Fermer
-  Licht: Noah Furrer
-  Styling: Angela Burkhart
+  - role: Kunde
+    name: farmy.ch
+  - role: Produktion
+    name: Jens Derler
+  - role: Agentur
+    name: Family Agency
+  - role: Regie
+    name: Michael Baumberger
+  - role: Produktionsleitung
+    name: Klaas Fermer
+  - role: Licht
+    name: Noah Furrer
+  - role: Styling
+    name: Angela Burkhart
 gallery:
 translationKey: "farmy"
 ---

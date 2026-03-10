@@ -20,9 +20,12 @@ video_posters:
   - "/images/projects/ansorge-logistik/poster-03.jpg"
   - "/images/projects/ansorge-logistik/poster-04.jpg"
 credits:
-  Produktion: Monacoframe
-  Regie: Michael Baumberger
-  Kamera: Armin Kottek
+  - role: Produktion
+    name: Monacoframe
+  - role: Regie
+    name: Michael Baumberger
+  - role: Kamera
+    name: Armin Kottek
 gallery:
 translationKey: "ansorge-logistik"
 ---

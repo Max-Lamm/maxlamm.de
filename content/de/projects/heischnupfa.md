@@ -14,15 +14,24 @@ videos:
 video_posters:
   - "/images/projects/heischnupfa/poster.jpg"
 credits:
-  Idee, Produktion, Drehbuch: Jan Wannemacher
-  Regie, Dir/DoP, Edit, Grading: Maximilian Lamm
-  Konzept Unterstützung: Michael Baumberger
-  Darsteller: Franziska Janetzko, Wowo Habdank, Korbinian Schiebl, Eugen Kozlov, Elvin Engelhardt
-  Musiker: Jan Wannemacher, Dominik Heron, Moritz Huber
-  1st AC: Moritz Frank
-  Licht: Johannes Fendt
-  Maske: Karin Scholl
-  Sound-Design: Benedikt Mühle
+  - role: Idee, Produktion, Drehbuch
+    name: Jan Wannemacher
+  - role: Regie, Dir/DoP, Edit, Grading
+    name: Maximilian Lamm
+  - role: Konzept Unterstützung
+    name: Michael Baumberger
+  - role: Darsteller
+    name: Franziska Janetzko, Wowo Habdank, Korbinian Schiebl, Eugen Kozlov, Elvin Engelhardt
+  - role: Musiker
+    name: Jan Wannemacher, Dominik Heron, Moritz Huber
+  - role: 1st AC
+    name: Moritz Frank
+  - role: Licht
+    name: Johannes Fendt
+  - role: Maske
+    name: Karin Scholl
+  - role: Sound-Design
+    name: Benedikt Mühle
 gallery:
 translationKey: "heischnupfa"
 ---

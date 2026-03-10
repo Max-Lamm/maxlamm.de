@@ -14,17 +14,28 @@ videos:
 video_posters:
   - "/images/projects/how-to-draw-a-mini/poster.jpg"
 credits:
-  Kunde: Mini
-  Agentur: Territory
-  Produktion: Monacoframe
-  Regie: Michael Baumberger
-  DP: Philip Roth
-  B-Cam: Maximilian Lamm
-  1st AC: Alexander Mitzler
-  Licht: Dennis Fischer
-  Ton: Benedikt Mühle
-  Schnitt: Maximilian Gibas
-  Grading: Maximilian Lamm
+  - role: Kunde
+    name: Mini
+  - role: Agentur
+    name: Territory
+  - role: Produktion
+    name: Monacoframe
+  - role: Regie
+    name: Michael Baumberger
+  - role: DP
+    name: Philip Roth
+  - role: B-Cam
+    name: Maximilian Lamm
+  - role: 1st AC
+    name: Alexander Mitzler
+  - role: Licht
+    name: Dennis Fischer
+  - role: Ton
+    name: Benedikt Mühle
+  - role: Schnitt
+    name: Maximilian Gibas
+  - role: Grading
+    name: Maximilian Lamm
 gallery:
   - "/images/projects/how-to-draw-a-mini/01.jpg"
   - "/images/projects/how-to-draw-a-mini/02.jpg"

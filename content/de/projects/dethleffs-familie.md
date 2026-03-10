@@ -12,22 +12,38 @@ types:
 videos:
   - https://www.youtube.com/watch?v=lu2iW8STILM
 credits:
-  Kunde: Dethleffs
-  Agentur: Territory
-  Produktion: Monacoframe
-  Service Produktion: Feitfilm
-  Regie: Michael Baumberger
-  DP: Maximilian Rödl
-  1st AC: Maximilian Lamm
-  Licht: Siro Antonio Micheroli, Christoph Schonholzer
-  FPV: Moritz Werffeli
-  PA: Claus Sieckmann
-  Props: Emilie Fischer, Barda Grigioni
-  Grading: Maximilian Lamm
-  Edit: Gero LangHeinrich
-  Sound-Design: Studio4
-  Still Photography: Matthias Fend
-  Rental: BillysLensRental
+  - role: Kunde
+    name: Dethleffs
+  - role: Agentur
+    name: Territory
+  - role: Produktion
+    name: Monacoframe
+  - role: Service Produktion
+    name: Feitfilm
+  - role: Regie
+    name: Michael Baumberger
+  - role: DP
+    name: Maximilian Rödl
+  - role: 1st AC
+    name: Maximilian Lamm
+  - role: Licht
+    name: Siro Antonio Micheroli, Christoph Schonholzer
+  - role: FPV
+    name: Moritz Werffeli
+  - role: PA
+    name: Claus Sieckmann
+  - role: Props
+    name: Emilie Fischer, Barda Grigioni
+  - role: Grading
+    name: Maximilian Lamm
+  - role: Edit
+    name: Gero LangHeinrich
+  - role: Sound-Design
+    name: Studio4
+  - role: Still Photography
+    name: Matthias Fend
+  - role: Rental
+    name: BillysLensRental
 gallery:
 translationKey: "dethleffs-familie"
 ---

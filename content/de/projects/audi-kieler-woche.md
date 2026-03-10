@@ -19,14 +19,22 @@ video_posters:
   - "/images/projects/audi-kieler-woche/poster-02.jpg"
   - "/images/projects/audi-kieler-woche/poster-03.jpg"
 credits:
-  Kunde: Audi AG
-  Agentur: territorry
-  Produktion: Monacoframe
-  Service Producer: Tobias Holter
-  Kamera: Michael Baumberger, Maximilian Rödl, Maximilian Lamm
-  1st AC: Oscar Bornmann
-  Schnitt: Maximilian Gibas, Alex Lupanow
-  Photo: Francesca Amann
+  - role: Kunde
+    name: Audi AG
+  - role: Agentur
+    name: territorry
+  - role: Produktion
+    name: Monacoframe
+  - role: Service Producer
+    name: Tobias Holter
+  - role: Kamera
+    name: Michael Baumberger, Maximilian Rödl, Maximilian Lamm
+  - role: 1st AC
+    name: Oscar Bornmann
+  - role: Schnitt
+    name: Maximilian Gibas, Alex Lupanow
+  - role: Photo
+    name: Francesca Amann
 gallery:
   - "/images/projects/audi-kieler-woche/01.jpg"
   - "/images/projects/audi-kieler-woche/02.jpg"

@@ -12,13 +12,20 @@ types:
 videos:
   - "https://youtu.be/sS4yIDH7s8s?si=sZGQC1HLwhYkR7TN"
 credits:
-  Kunde: Sportec AG
-  Produktion: Monacoframe
-  Regie: Michael Baumberger
-  DP: Maximilian Lamm, Pascal Brändle
-  1st AC: Danilo Pantalena
-  Schnitt: Pascal Brändle
-  Grading: Evgeny Solovev
+  - role: Kunde
+    name: Sportec AG
+  - role: Produktion
+    name: Monacoframe
+  - role: Regie
+    name: Michael Baumberger
+  - role: DP
+    name: Maximilian Lamm, Pascal Brändle
+  - role: 1st AC
+    name: Danilo Pantalena
+  - role: Schnitt
+    name: Pascal Brändle
+  - role: Grading
+    name: Evgeny Solovev
 gallery:
   - "/images/projects/sportec-ferdinand-s/01.jpg"
   - "/images/projects/sportec-ferdinand-s/02.jpg"

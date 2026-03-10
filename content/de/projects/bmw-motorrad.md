@@ -15,9 +15,12 @@ video_posters:
   - "/images/projects/bmw-motorrad/poster-01.jpg"
   - "/images/projects/bmw-motorrad/thumb.jpg"
 credits:
-  Kunde: BMW Motorrad
-  Produktion: 27km
-  3rd Unit DP & Rigging: Maximilian Lamm
+  - role: Kunde
+    name: BMW Motorrad
+  - role: Produktion
+    name: 27km
+  - role: 3rd Unit DP & Rigging
+    name: Maximilian Lamm
 translationKey: "bmw-motorrad"
 ---
 

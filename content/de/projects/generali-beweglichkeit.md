@@ -14,14 +14,22 @@ videos:
 video_posters:
   - "/images/projects/generali-beweglichkeit/poster.jpg"
 credits:
-  Produktion: Monacoframe
-  Regie: Michael Baumberger
-  Kamera: Maximilian Rödl, Maximilian Lamm
-  Licht: Lars Stockmann Olsen
-  Ton: Andreas Sorré
-  Runner: Ferdinand Soldan
-  Maske: Julia Ebert
-  Grading: Maximilian Lamm
+  - role: Produktion
+    name: Monacoframe
+  - role: Regie
+    name: Michael Baumberger
+  - role: Kamera
+    name: Maximilian Rödl, Maximilian Lamm
+  - role: Licht
+    name: Lars Stockmann Olsen
+  - role: Ton
+    name: Andreas Sorré
+  - role: Runner
+    name: Ferdinand Soldan
+  - role: Maske
+    name: Julia Ebert
+  - role: Grading
+    name: Maximilian Lamm
 gallery:
   - "/images/projects/generali-beweglichkeit/01.jpg"
   - "/images/projects/generali-beweglichkeit/02.jpg"

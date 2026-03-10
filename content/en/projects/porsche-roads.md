@@ -14,18 +14,30 @@ types:
 videos:
   - "https://vimeo.com/920973224"
 credits:
-  Client: "Porsche"
-  Agency: "Territory"
-  Production: "Monacoframe"
-  Creative Director: "Christian Klein"
-  DP: "Michael Baumberger"
-  1st AC: "Maximilian Lamm"
-  2nd AC: "Pascal Theisen"
-  Grip & Aerial: "Lukas Mauerer & Christoph Steiner"
-  Producer: "Benedikt Höll"
-  Photography: "Sebastian Stücke"
-  Precision Driver: "Uwe Mansshardt"
-  Grading: "Maximilian Lamm"
+  - role: Client
+    name: "Porsche"
+  - role: Agency
+    name: "Territory"
+  - role: Production
+    name: "Monacoframe"
+  - role: Creative Director
+    name: "Christian Klein"
+  - role: DP
+    name: "Michael Baumberger"
+  - role: 1st AC
+    name: "Maximilian Lamm"
+  - role: 2nd AC
+    name: "Pascal Theisen"
+  - role: Grip & Aerial
+    name: "Lukas Mauerer & Christoph Steiner"
+  - role: Producer
+    name: "Benedikt Höll"
+  - role: Photography
+    name: "Sebastian Stücke"
+  - role: Precision Driver
+    name: "Uwe Mansshardt"
+  - role: Grading
+    name: "Maximilian Lamm"
 gallery:
   - "/images/projects/porsche-roads/01.jpg"
   - "/images/projects/porsche-roads/02.jpg"

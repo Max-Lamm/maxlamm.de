@@ -19,14 +19,22 @@ video_posters:
   - "/images/projects/rasendoktor/poster-03.jpg"
 video_size: medium
 credits:
-  Kunde: Rasendoktor
-  Agentur: We Play Forward
-  Produktion: Antonia Wohlrab
-  Regie: Michael Baumberger
-  1st AC: Moritz Frank
-  Licht: Alex Fink
-  Ton: Flo Lorenz
-  Schnitt: Leslie Miller
+  - role: Kunde
+    name: Rasendoktor
+  - role: Agentur
+    name: We Play Forward
+  - role: Produktion
+    name: Antonia Wohlrab
+  - role: Regie
+    name: Michael Baumberger
+  - role: 1st AC
+    name: Moritz Frank
+  - role: Licht
+    name: Alex Fink
+  - role: Ton
+    name: Flo Lorenz
+  - role: Schnitt
+    name: Leslie Miller
 gallery:
   - "/images/projects/rasendoktor/01.jpg"
   - "/images/projects/rasendoktor/poster-03.jpg"

@@ -11,14 +11,22 @@ types:
 videos:
   - "https://www.youtube.com/watch?v=uc4q3RcTnRY"
 credits:
-  Kunde: Mini
-  Produktion: Monacoframe
-  Regie/DoP: Michael Baumberger
-  Trinity Operator: Christoph Werner
-  1st AC: Andreas Thomas
-  Licht: Lucas Gebauer
-  ADR: Benedikt Mühle
-  Schnitt: Maximilian Gibas
+  - role: Kunde
+    name: Mini
+  - role: Produktion
+    name: Monacoframe
+  - role: Regie/DoP
+    name: Michael Baumberger
+  - role: Trinity Operator
+    name: Christoph Werner
+  - role: 1st AC
+    name: Andreas Thomas
+  - role: Licht
+    name: Lucas Gebauer
+  - role: ADR
+    name: Benedikt Mühle
+  - role: Schnitt
+    name: Maximilian Gibas
 gallery:
   - "/images/projects/mini-aceman-everything-you-need-to-know/01.jpg"
   - "/images/projects/mini-aceman-everything-you-need-to-know/02.jpg"

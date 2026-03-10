@@ -12,18 +12,30 @@ types:
 videos:
   - "https://vimeo.com/920973224/283f0448c7"
 credits:
-  Kunde: Porsche
-  Agentur: Territory
-  Produktion: Monacoframe
-  Creative Director: Christian Klein
-  DP: Michael Baumberger
-  1st AC: Maximilian Lamm
-  2nd AC: Pascal Theisen
-  Grip & Drohne: Lukas Mauerer & Christoph Steiner
-  Producer: Benedikt Höll
-  Fotografie: Sebastian Stücke
-  Precision Driver: Uwe Mansshardt
-  Grading: Maximilian Lamm
+  - role: Kunde
+    name: Porsche
+  - role: Agentur
+    name: Territory
+  - role: Produktion
+    name: Monacoframe
+  - role: Creative Director
+    name: Christian Klein
+  - role: DP
+    name: Michael Baumberger
+  - role: 1st AC
+    name: Maximilian Lamm
+  - role: 2nd AC
+    name: Pascal Theisen
+  - role: Grip & Drohne
+    name: Lukas Mauerer & Christoph Steiner
+  - role: Producer
+    name: Benedikt Höll
+  - role: Fotografie
+    name: Sebastian Stücke
+  - role: Precision Driver
+    name: Uwe Mansshardt
+  - role: Grading
+    name: Maximilian Lamm
 gallery:
   - "/images/projects/porsche-roads/01.jpg"
   - "/images/projects/porsche-roads/02.jpg"

@@ -16,12 +16,18 @@ video_posters:
   - "/images/projects/bookchatters/poster-02.jpg"
 video_size: medium
 credits:
-  Client: Hugendubel
-  Regie: Phuong Herzer
-  Produktion: Philip Thorer
-  DoP: Maximilian Lamm
-  Set-Runner & Edit: Laura Schneider
-  Hair & Make-Up: Vanessa Harrer
+  - role: Client
+    name: Hugendubel
+  - role: Regie
+    name: Phuong Herzer
+  - role: Produktion
+    name: Philip Thorer
+  - role: DoP
+    name: Maximilian Lamm
+  - role: Set-Runner & Edit
+    name: Laura Schneider
+  - role: Hair & Make-Up
+    name: Vanessa Harrer
 gallery: []
 translationKey: "bookchatters"
 ---

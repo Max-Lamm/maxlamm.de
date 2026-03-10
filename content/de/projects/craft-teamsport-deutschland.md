@@ -11,9 +11,12 @@ types:
 videos:
   - "https://vimeo.com/968884243/e9c5601d70"
 credits:
-  Kunde: Craft Sportswear
-  Produckion: HTN Films
-  Dir/DP: Hubert Neufeld
+  - role: Kunde
+    name: Craft Sportswear
+  - role: Produckion
+    name: HTN Films
+  - role: Dir/DP
+    name: Hubert Neufeld
 gallery: []
 translationKey: "craft-teamsport-deutschland"
 ---

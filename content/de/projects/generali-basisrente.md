@@ -12,13 +12,20 @@ types:
 videos:
   - https://youtu.be/qxaokmUAkQU
 credits:
-  Produktion: Monacoframe
-  Agentur: territory
-  Regie: Michael Baumberger
-  Kamera: Maximilian Lamm
-  AC: Ferdinand Soldan
-  Licht: Dennis Fischer
-  Grading: Maximilian Lamm
+  - role: Produktion
+    name: Monacoframe
+  - role: Agentur
+    name: territory
+  - role: Regie
+    name: Michael Baumberger
+  - role: Kamera
+    name: Maximilian Lamm
+  - role: AC
+    name: Ferdinand Soldan
+  - role: Licht
+    name: Dennis Fischer
+  - role: Grading
+    name: Maximilian Lamm
 translationKey: "generali-basisrente"
 ---
 

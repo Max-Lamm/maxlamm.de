@@ -12,17 +12,28 @@ types:
 videos:
   - "https://www.youtube.com/watch?v=KEwxGe1HoZM"
 credits:
-  Produktion: Monacoframe
-  Regie: Linus Herbig-Matten
-  Kamera: Maximilian Rödl, Maximilian Lamm
-  Licht/Drohne: Armin Kottek
-  Grip: Jannis Sitte
-  Ton: Nina van Essen
-  Runner: Ferdinand Soldan
-  Maske/Kostüm: Melanie Haser, Jenny Danner
-  Set Aufnahmenleitung: Michael Baumberger
-  Grading: Maximilian Lamm
-  Requisite: Lorenz Regler
+  - role: Produktion
+    name: Monacoframe
+  - role: Regie
+    name: Linus Herbig-Matten
+  - role: Kamera
+    name: Maximilian Rödl, Maximilian Lamm
+  - role: Licht/Drohne
+    name: Armin Kottek
+  - role: Grip
+    name: Jannis Sitte
+  - role: Ton
+    name: Nina van Essen
+  - role: Runner
+    name: Ferdinand Soldan
+  - role: Maske/Kostüm
+    name: Melanie Haser, Jenny Danner
+  - role: Set Aufnahmenleitung
+    name: Michael Baumberger
+  - role: Grading
+    name: Maximilian Lamm
+  - role: Requisite
+    name: Lorenz Regler
 translationKey: "kinderhospiz"
 ---
 

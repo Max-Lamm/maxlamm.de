@@ -16,10 +16,14 @@ video_posters:
   - "/images/projects/commercetools-automotive/thumb.jpg"
   - "/images/projects/commercetools-automotive/poster-02.jpg"
 credits:
-  Kunde: Commercetools
-  Produktion: Monacoframe
-  Regie: Michael Baumberger
-  DoP, Edit & Grading: Maximilian Lamm
+  - role: Kunde
+    name: Commercetools
+  - role: Produktion
+    name: Monacoframe
+  - role: Regie
+    name: Michael Baumberger
+  - role: DoP, Edit & Grading
+    name: Maximilian Lamm
 translationKey: "commercetools-automotive"
 ---
 

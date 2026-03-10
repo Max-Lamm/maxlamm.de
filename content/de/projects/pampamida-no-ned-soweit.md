@@ -12,8 +12,10 @@ types:
 videos:
   - "https://www.youtube.com/watch?v=bDQ8iMjYnRU"
 credits:
-  Artist: "Pam Pam Ida"
-  Regie/DoP/Edit/Grading: "Maximilian Lamm"
+  - role: Artist
+    name: "Pam Pam Ida"
+  - role: Regie/DoP/Edit/Grading
+    name: "Maximilian Lamm"
 translationKey: "pampamida-no-ned-soweit"
 ---
 

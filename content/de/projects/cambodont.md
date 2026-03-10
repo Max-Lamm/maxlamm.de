@@ -11,20 +11,34 @@ types:
 videos:
   - "https://www.youtube.com/watch?v=yiUdjkhuOUk"
 credits:
-  Kunde: Cambodont
-  Agentur: Credodesign/Monacoframe
-  Director: Michael Baumberger
-  Talents: Felix Cremerius Ronny Schuster, Christian H. Andreas M.
-  DoP: Maximilian Rödl
-  1st AC: Sebastian Mögele
-  Gaffer: Dennis Fischer
-  Set Design: Benita Böhm
-  Hair & Make-Up: Laura Brucklachner
-  Runner: Zoe Lara
-  Edit: Gero LangHeinrich
-  Color Grading: Maximilian Lamm
-  Fotos: Petra Reger
-  Extras: Stefan Krause, Lisa Seifert, Aryane Siebra
+  - role: Kunde
+    name: Cambodont
+  - role: Agentur
+    name: Credodesign/Monacoframe
+  - role: Director
+    name: Michael Baumberger
+  - role: Talents
+    name: Felix Cremerius Ronny Schuster, Christian H. Andreas M.
+  - role: DoP
+    name: Maximilian Rödl
+  - role: 1st AC
+    name: Sebastian Mögele
+  - role: Gaffer
+    name: Dennis Fischer
+  - role: Set Design
+    name: Benita Böhm
+  - role: Hair & Make-Up
+    name: Laura Brucklachner
+  - role: Runner
+    name: Zoe Lara
+  - role: Edit
+    name: Gero LangHeinrich
+  - role: Color Grading
+    name: Maximilian Lamm
+  - role: Fotos
+    name: Petra Reger
+  - role: Extras
+    name: Stefan Krause, Lisa Seifert, Aryane Siebra
 gallery:
   - "/images/projects/cambodont/01.jpg"
   - "/images/projects/cambodont/02.jpg"

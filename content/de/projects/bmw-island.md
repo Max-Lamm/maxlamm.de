@@ -14,13 +14,20 @@ videos:
 video_posters:
   - "/images/projects/bmw-island/poster.jpg"
 credits:
-  Kunde: "BMW"
-  Agentur: "Die Favoriten"
-  Produktion: "HTN Films"
-  Regie: "Hubert Neufeld"
-  Kamera: "Hubert Neufeld, Michael Baumberger, Maximilian Lamm"
-  Foto: "Georg Lindacher"
-  BTS Foto: "Michael Kuhlmann"
+  - role: Kunde
+    name: "BMW"
+  - role: Agentur
+    name: "Die Favoriten"
+  - role: Produktion
+    name: "HTN Films"
+  - role: Regie
+    name: "Hubert Neufeld"
+  - role: Kamera
+    name: "Hubert Neufeld, Michael Baumberger, Maximilian Lamm"
+  - role: Foto
+    name: "Georg Lindacher"
+  - role: BTS Foto
+    name: "Michael Kuhlmann"
 gallery:
   - "/images/projects/bmw-island/01.jpg"
   - "/images/projects/bmw-island/02.jpg"

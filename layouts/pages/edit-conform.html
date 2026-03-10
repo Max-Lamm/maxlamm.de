@@ -1,0 +1,235 @@
+{{ define "main" }}
+
+<nav class="site-nav scrolled">
+  <div class="site-nav__inner">
+    <a href="{{ if eq .Lang "de" }}/{{ else }}/en/{{ end }}">Home</a>
+    <a href="{{ if eq .Lang "de" }}/#projects{{ else }}/en/#projects{{ end }}">{{ if eq .Lang "de" }}Projekte{{ else }}Projects{{ end }}</a>
+    <a href="{{ if eq .Lang "de" }}/#about{{ else }}/en/#about{{ end }}">About</a>
+    <a href="{{ if eq .Lang "de" }}/#contact{{ else }}/en/#contact{{ end }}">Contact</a>
+  </div>
+</nav>
+
+<div class="ec-page">
+
+  <section class="static-page">
+    <h1>Edit Conform Anleitung</h1>
+    <p>
+      Diese Anleitung hilft dir, deinen Schnitt für die Weiterverarbeitung (Conform) in DaVinci Resolve vorzubereiten.
+    </p>
+  </section>
+
+  <div class="ec-workflow-nav">
+    <div class="ec-workflow-tab active" data-tab="source">
+      <span class="ec-tab-badge">Empfohlen</span>
+      <div class="ec-tab-title">Source Media Workflow</div>
+      <div class="ec-tab-desc">Originalmedien werden referenziert – maximale Flexibilität bei Auflösung und Farbkorrektur.</div>
+    </div>
+    <div class="ec-workflow-tab" data-tab="flat">
+      <span class="ec-tab-badge">Alternative</span>
+      <div class="ec-tab-title">Flat Quicktime Workflow</div>
+      <div class="ec-tab-desc">Ein geflattetes Quicktime dient als Basis – einfacher, aber mit Einschränkungen.</div>
+    </div>
+  </div>
+
+  <div class="ec-workflow-content">
+
+    <!-- Source Media Workflow -->
+    <div class="ec-workflow-section active" id="source">
+
+      <div class="ec-step-group-label">Sequenz vorbereiten</div>
+
+      <div class="ec-step">
+        <div class="ec-step-number">01</div>
+        <div class="ec-step-body">
+          <div class="ec-step-text">Erstelle eine Kopie deiner Sequenz und füge einen beschreibenden Suffix hinzu, z.B. <code>forColor</code>.</div>
+        </div>
+      </div>
+
+      <div class="ec-step">
+        <div class="ec-step-number">02</div>
+        <div class="ec-step-body">
+          <div class="ec-step-text">Grafiken, Texteinblendungen, Overlays und andere nicht für's Grading relevante Elemente entfernen.</div>
+          <div class="ec-step-note"><strong>Ausnahme:</strong> Falls ich die finalen Exporte in Resolve erstellen soll, lass alle Elemente unverändert.</div>
+        </div>
+      </div>
+
+      <div class="ec-step">
+        <div class="ec-step-number">03</div>
+        <div class="ec-step-body">
+          <div class="ec-step-text">Reduziere die Clips und Bearbeitungen auf so wenige Videospuren wie möglich – idealerweise nur 1–2. Nach Abschluss sollten keine Clips oder Clip-Bereiche in der Sequenz vorhanden sein, die im finalen Schnitt nicht sichtbar sind.</div>
+        </div>
+      </div>
+
+      <div class="ec-step">
+        <div class="ec-step-number">04</div>
+        <div class="ec-step-body">
+          <div class="ec-step-text">Verbinde alle durchgehenden Edits, es sei denn, sie dienen der Unterteilung von Geschwindigkeitsänderungen oder Reframes.</div>
+        </div>
+      </div>
+
+      <div class="ec-step">
+        <div class="ec-step-number">05</div>
+        <div class="ec-step-body">
+          <div class="ec-step-text">Ersetze alle Multi-Cam-Clips, verschachtelte Sequenzen oder Compound Clips durch ihre Quellclips.</div>
+        </div>
+      </div>
+
+      <div class="ec-step">
+        <div class="ec-step-number">06</div>
+        <div class="ec-step-body">
+          <div class="ec-step-text">Tausche alle Proxies oder transkodierten Clips gegen die Original-Quellclips aus.</div>
+        </div>
+      </div>
+
+      <div class="ec-step-group-label">Aufräumen</div>
+
+      <div class="ec-step">
+        <div class="ec-step-number">07</div>
+        <div class="ec-step-body">
+          <div class="ec-step-text">Leere Videospuren löschen.</div>
+        </div>
+      </div>
+
+      <div class="ec-step">
+        <div class="ec-step-number">08</div>
+        <div class="ec-step-body">
+          <div class="ec-step-text">Alle Audiospuren und Clips löschen. Und durch einen Audio-Mixdown ersetzten.</div>
+        </div>
+      </div>
+
+      <div class="ec-step-group-label">Export &amp; Übergabe</div>
+
+      <div class="ec-step">
+        <div class="ec-step-number">09</div>
+        <div class="ec-step-body">
+          <div class="ec-step-text">Kopiere alle Originalmedien auf ein Arbeitslaufwerk.</div>
+        </div>
+      </div>
+
+      <div class="ec-step">
+        <div class="ec-step-number">10</div>
+        <div class="ec-step-body">
+          <div class="ec-step-text">Exportiere eine <code>XML</code> oder <code>AAF</code> der Sequenz.</div>
+        </div>
+      </div>
+
+      <div class="ec-step">
+        <div class="ec-step-number">11</div>
+        <div class="ec-step-body">
+          <div class="ec-step-text">Exportiere ein Quicktime Video der Sequenz in nativer Auflösung als <code>ProRes LT</code> oder <code>H.264</code>.</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Flat Quicktime Workflow -->
+    <div class="ec-workflow-section" id="flat">
+
+      <div class="ec-step-group-label">Sequenz vorbereiten</div>
+
+      <div class="ec-step">
+        <div class="ec-step-number">01</div>
+        <div class="ec-step-body">
+          <div class="ec-step-text">Erstelle eine Kopie deiner Sequenz und füge einen beschreibenden Suffix hinzu, z.B. <code>forColor</code>.</div>
+        </div>
+      </div>
+
+      <div class="ec-step">
+        <div class="ec-step-number">02</div>
+        <div class="ec-step-body">
+          <div class="ec-step-text">Stelle sicher, dass die Sequenzauflösung mit der gewünschten finalen Auslieferungsauflösung übereinstimmt.</div>
+        </div>
+      </div>
+
+      <div class="ec-step">
+        <div class="ec-step-number">03</div>
+        <div class="ec-step-body">
+          <div class="ec-step-text">Überprüfe, dass alle Clips das Bild vollständig ausfüllen, ohne schwarze Balken (Pillarboxing oder Letterboxing).</div>
+        </div>
+      </div>
+
+      <div class="ec-step">
+        <div class="ec-step-number">04</div>
+        <div class="ec-step-body">
+          <div class="ec-step-text">Entferne alle Überblendungen oder andere Übergänge.</div>
+        </div>
+      </div>
+
+      <div class="ec-step">
+        <div class="ec-step-number">05</div>
+        <div class="ec-step-body">
+          <div class="ec-step-text">Schließe Anpassungen an Positionen oder Zooms ab, da diese in die Farbkorrektur gebacken werden.</div>
+        </div>
+      </div>
+
+      <div class="ec-step">
+        <div class="ec-step-number">06</div>
+        <div class="ec-step-body">
+          <div class="ec-step-text">Grafiken, Texteinblendungen, Overlays und andere nicht für's Grading relevante Elemente entfernen.</div>
+          <div class="ec-step-note"><strong>Ausnahme:</strong> Wenn du die finalen Exporte in Resolve erstellen möchtest, lass alle Elemente unverändert und exportiere sie als separates Quicktime mit Alpha (ohne Footage!).</div>
+        </div>
+      </div>
+
+      <div class="ec-step">
+        <div class="ec-step-number">07</div>
+        <div class="ec-step-body">
+          <div class="ec-step-text">Filter und LUTs entfernen.</div>
+        </div>
+      </div>
+
+      <div class="ec-step">
+        <div class="ec-step-number">08</div>
+        <div class="ec-step-body">
+          <div class="ec-step-text">Tausche alle Proxies oder transkodierten Clips gegen die Original-Quellclips aus.</div>
+        </div>
+      </div>
+
+      <div class="ec-step-group-label">Export &amp; Übergabe</div>
+
+      <div class="ec-step">
+        <div class="ec-step-number">09</div>
+        <div class="ec-step-body">
+          <div class="ec-step-text">Exportiere eine <code>EDL</code>, <code>XML</code> oder <code>AAF</code> der Sequenz.</div>
+        </div>
+      </div>
+
+      <div class="ec-step">
+        <div class="ec-step-number">10</div>
+        <div class="ec-step-body">
+          <div class="ec-step-text">Exportiere ein Quicktime der Sequenz in nativer Auflösung als <code>ProRes 4444</code>.</div>
+        </div>
+      </div>
+
+      <div class="ec-limitations">
+        <h3>Einschränkungen dieses Workflows</h3>
+        <ul>
+          <li>Überblendungen oder andere Übergänge in der Sequenz können nicht übernommen werden. Diese müssen im Nachhinein manuell wieder hinzugefügt werden.</li>
+          <li>Die finale Renderauflösung ist auf die Auflösung des gelieferten Flat-Quicktime beschränkt, unabhängig von der ursprünglichen Footage-Auflösung.</li>
+          <li>Alle zusammengesetzten Elemente werden als ein einzelnes flaches Element bearbeitet.</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+(function () {
+  var tabs = document.querySelectorAll('.ec-workflow-tab');
+  tabs.forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      var id = this.dataset.tab;
+      tabs.forEach(function (t) { t.classList.remove('active'); });
+      document.querySelectorAll('.ec-workflow-section').forEach(function (s) {
+        s.classList.remove('active');
+      });
+      this.classList.add('active');
+      document.getElementById(id).classList.add('active');
+    });
+  });
+}());
+</script>
+
+{{ end }}

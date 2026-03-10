@@ -14,14 +14,22 @@ videos:
 video_posters:
   - "/images/projects/generali-idole/poster.jpg"
 credits:
-  Produktion: Monacoframe
-  Regie: Michael Baumberger
-  Redaktion: Chantal Haug
-  Kamera: Maximilian Lamm, Michael Baumberger
-  Licht: Fabian Erdt
-  Ton: Sebastian Breitner, Jochen Wolkersdorfer
-  AC: Ferdinand Soldan
-  Grading: Maximilian Lamm
+  - role: Produktion
+    name: Monacoframe
+  - role: Regie
+    name: Michael Baumberger
+  - role: Redaktion
+    name: Chantal Haug
+  - role: Kamera
+    name: Maximilian Lamm, Michael Baumberger
+  - role: Licht
+    name: Fabian Erdt
+  - role: Ton
+    name: Sebastian Breitner, Jochen Wolkersdorfer
+  - role: AC
+    name: Ferdinand Soldan
+  - role: Grading
+    name: Maximilian Lamm
 gallery:
 translationKey: "generali-idole"
 ---

@@ -16,14 +16,22 @@ video_posters:
   - "/images/projects/bmw-social/poster-01.jpg"
   - "/images/projects/bmw-social/poster-02.jpg"
 credits:
-  Kunde: BMW
-  Agentur: Pacific UEG
-  Produktion: BDX Media x ace.studio
-  Regie: Sebastian Wolf
-  DP: Maximilian Lamm
-  Hair & Make-Up: Maria Stefanidou
-  Talents: Cherifa Akili, Edith Bowman, Michelle Y
-  Post Production: Simon Steinbrecher
+  - role: Kunde
+    name: BMW
+  - role: Agentur
+    name: Pacific UEG
+  - role: Produktion
+    name: BDX Media x ace.studio
+  - role: Regie
+    name: Sebastian Wolf
+  - role: DP
+    name: Maximilian Lamm
+  - role: Hair & Make-Up
+    name: Maria Stefanidou
+  - role: Talents
+    name: Cherifa Akili, Edith Bowman, Michelle Y
+  - role: Post Production
+    name: Simon Steinbrecher
 gallery:
   - "/images/projects/bmw-social/01.jpg"
   - "/images/projects/bmw-social/02.jpg"

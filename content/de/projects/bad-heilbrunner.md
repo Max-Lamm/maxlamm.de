@@ -11,20 +11,34 @@ types:
 videos:
   - https://www.youtube.com/watch?v=U5R8OEkZ378
 credits:
-  Client: Bad Heilbrunner
-  Agency: Territory
-  Director: Michael Baumberger
-  DoP: Maximilian Lamm
-  Producer: Benedikt Höll
-  1st AC: Alex Fink
-  AD: Chantal Haug
-  Best Boy: Moritz Fuchs, Moritz Frank
-  Sound: Andreas Sorré
-  Hair & Make-Up: Fritzi Feldmann
-  Photographer: Stefan Grau
-  Edit: DCT Film, Maximilian Gibas
-  Color: Nicholas Coleman
-  Mixing: Studio4
+  - role: Client
+    name: Bad Heilbrunner
+  - role: Agency
+    name: Territory
+  - role: Director
+    name: Michael Baumberger
+  - role: DoP
+    name: Maximilian Lamm
+  - role: Producer
+    name: Benedikt Höll
+  - role: 1st AC
+    name: Alex Fink
+  - role: AD
+    name: Chantal Haug
+  - role: Best Boy
+    name: Moritz Fuchs, Moritz Frank
+  - role: Sound
+    name: Andreas Sorré
+  - role: Hair & Make-Up
+    name: Fritzi Feldmann
+  - role: Photographer
+    name: Stefan Grau
+  - role: Edit
+    name: DCT Film, Maximilian Gibas
+  - role: Color
+    name: Nicholas Coleman
+  - role: Mixing
+    name: Studio4
 gallery:
   - "/images/projects/bad-heilbrunner/01.jpg"
   - "/images/projects/bad-heilbrunner/02.jpg"

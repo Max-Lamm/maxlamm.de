@@ -1,6 +1,7 @@
 ---
 title: "EDIT CONFORM ANLEITUNG"
 url: "/edit-conform/"
+layout: "edit-conform"
 ---
 
 Diese Anleitung hilft dir, deinen Schnitt für die Weiterverarbeitung (Conform) in DaVinci Resolve vorzubereiten.

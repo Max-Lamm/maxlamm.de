@@ -12,15 +12,24 @@ types:
 videos:
   - https://www.youtube.com/watch?v=GpfV5zk4PfA
 credits:
-  Produktion: Monacoframe
-  Cast: Yumina Otsuka, Ronja Zick, Sidney Haas, Daniel Söll
-  Regie: Michael Baumberger
-  Kamera & Grading: Maximilian Lamm
-  1st AC: Sebastian Mögele
-  Edit: Kim Enzo Steinocher
-  Recording: ISSA Musik
-  Mixing: Maximilian Wörle
-  Mastering: Dimi Conidas
+  - role: Produktion
+    name: Monacoframe
+  - role: Cast
+    name: Yumina Otsuka, Ronja Zick, Sidney Haas, Daniel Söll
+  - role: Regie
+    name: Michael Baumberger
+  - role: Kamera & Grading
+    name: Maximilian Lamm
+  - role: 1st AC
+    name: Sebastian Mögele
+  - role: Edit
+    name: Kim Enzo Steinocher
+  - role: Recording
+    name: ISSA Musik
+  - role: Mixing
+    name: Maximilian Wörle
+  - role: Mastering
+    name: Dimi Conidas
 gallery:
   - "/images/projects/john-garner-picture-of-my-mind/01.jpg"
   - "/images/projects/john-garner-picture-of-my-mind/02.jpg"

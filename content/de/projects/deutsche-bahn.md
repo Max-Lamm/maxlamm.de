@@ -18,16 +18,26 @@ video_posters:
   - "/images/projects/deutsche-bahn/poster-03.jpg"
 video_size: medium
 credits:
-  Kunde: Deutsche Bahn Konzern
-  Agentur: Territory
-  Produktion: Monacoframe
-  Regie: Michael Baumberger
-  DP: Armin Kottek
-  1st AC: 
-  Licht: 
-  Ton: 
-  Schnitt: Maximilian Gibas
-  Grading: Maximilian Lamm
+  - role: Kunde
+    name: Deutsche Bahn Konzern
+  - role: Agentur
+    name: Territory
+  - role: Produktion
+    name: Monacoframe
+  - role: Regie
+    name: Michael Baumberger
+  - role: DP
+    name: Armin Kottek
+  - role: 1st AC
+    name:
+  - role: Licht
+    name:
+  - role: Ton
+    name:
+  - role: Schnitt
+    name: Maximilian Gibas
+  - role: Grading
+    name: Maximilian Lamm
 gallery:
   - "/images/projects/deutsche-bahn/01.jpg"
   - "/images/projects/deutsche-bahn/02.jpg"

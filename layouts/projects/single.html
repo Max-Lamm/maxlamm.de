@@ -86,9 +86,9 @@
   {{- with .Params.credits -}}
   <div class="project-credits">
     <dl>
-      {{- range $key, $val := . -}}
-      <dt>{{ $key }}:</dt>
-      <dd>{{ $val }}</dd>
+      {{- range . -}}
+      <dt>{{ index . "role" }}:</dt>
+      <dd>{{ index . "name" }}</dd>
       {{- end -}}
     </dl>
   </div>

@@ -14,13 +14,20 @@ videos:
 video_posters:
   - "/images/projects/generali-ueberwintern/poster.jpg"
 credits:
-  Produktion: Monacoframe
-  Regie: Michael Baumberger
-  Kamera: Maximilian Rödl, Maximilian Lamm
-  Licht: Alex Fink
-  Ton: Andreas Sorré
-  AC: Ferdinand Soldan
-  Grading: Maximilian Lamm
+  - role: Produktion
+    name: Monacoframe
+  - role: Regie
+    name: Michael Baumberger
+  - role: Kamera
+    name: Maximilian Rödl, Maximilian Lamm
+  - role: Licht
+    name: Alex Fink
+  - role: Ton
+    name: Andreas Sorré
+  - role: AC
+    name: Ferdinand Soldan
+  - role: Grading
+    name: Maximilian Lamm
 gallery:
   - "/images/projects/generali-ueberwintern/01.jpg"
   - "/images/projects/generali-ueberwintern/02.jpg"

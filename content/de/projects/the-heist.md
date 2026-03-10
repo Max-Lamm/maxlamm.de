@@ -11,15 +11,24 @@ types:
 videos:
   - "https://www.youtube.com/watch?v=58CwpENy0ps"
 credits:
-  Produktion: Monacoframe
-  Agentur: territory
-  Executive Producer: Michael Baumberger
-  Producer: Benedikt Höll
-  Regie: Mark Hartmann
-  DoP: Philip Roth
-  B-Camera: Maximilian Lamm
-  AC: Ferdinand Soldan
-  Gaffer: Dennis Fischer
+  - role: Produktion
+    name: Monacoframe
+  - role: Agentur
+    name: territory
+  - role: Executive Producer
+    name: Michael Baumberger
+  - role: Producer
+    name: Benedikt Höll
+  - role: Regie
+    name: Mark Hartmann
+  - role: DoP
+    name: Philip Roth
+  - role: B-Camera
+    name: Maximilian Lamm
+  - role: AC
+    name: Ferdinand Soldan
+  - role: Gaffer
+    name: Dennis Fischer
 translationKey: "the-heist"
 ---
 

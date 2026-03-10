@@ -12,10 +12,14 @@ types:
 videos:
   - "https://www.youtube.com/watch?v=qoAi8rJ8s6U"
 credits:
-  Regie: Andreas Eckert
-  DoP, Editor, Colorist: Maximilian Lamm
-  B Kamera: Johannes Fendt
-  Kameraassistenz: Laura Schneider
+  - role: Regie
+    name: Andreas Eckert
+  - role: DoP, Editor, Colorist
+    name: Maximilian Lamm
+  - role: B Kamera
+    name: Johannes Fendt
+  - role: Kameraassistenz
+    name: Laura Schneider
 gallery:
   - "/images/projects/pampamida-hoassa-droht/01.jpg"
   - "/images/projects/pampamida-hoassa-droht/02.jpg"
