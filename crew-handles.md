@@ -74,5 +74,8 @@ Wird vom `/new-project`-Workflow genutzt, um Captions automatisch zu befüllen.
 | Fabian Pfriem           | @fabipfr                    |
 | Hannes Schindler        | @hannesthegaffer            |
 | Ferdinand Soldan        | @fersold                    |
+| Leslie Miller           | @frauleslieann              |
+| Sophia Sommer           | @sommernachtsalptraum       |
+| Luna Elisa Federowicz   | @lunaelisafederowicz        |
 
 <!-- Neue Einträge einfach als neue Zeile ergänzen. -->
