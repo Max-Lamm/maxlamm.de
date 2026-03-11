@@ -187,6 +187,11 @@ a:hover { color: var(--accent-hover); }
   box-shadow: 0 1px 20px rgba(0,0,0,.4);
 }
 
+.site-nav.scrolled a,
+.site-nav.scrolled .site-nav__brand {
+  color: var(--text-white);
+}
+
 .site-nav__inner {
   display: flex;
   justify-content: space-between;
@@ -202,8 +207,9 @@ a:hover { color: var(--accent-hover); }
   font-size: 1.1rem;
   letter-spacing: .06em;
   text-transform: uppercase;
-  color: var(--text-white) !important;
+  color: var(--accent);
   opacity: .9;
+  transition: color .3s;
 }
 
 .site-nav__links {
@@ -212,15 +218,15 @@ a:hover { color: var(--accent-hover); }
 }
 
 .site-nav a {
-  color: var(--text-white);
+  color: var(--accent);
   font-family: var(--font-nav);
   font-weight: 700;
   font-size: 1.1rem;
   letter-spacing: .03em;
-  transition: opacity .2s;
+  transition: opacity .2s, color .3s;
 }
 
-.site-nav a:hover { opacity: 1; color: var(--text-white); }
+.site-nav a:hover { opacity: 1; }
 .site-nav__links a.active { color: var(--accent); opacity: 1; }
 
 /* ============================================================
