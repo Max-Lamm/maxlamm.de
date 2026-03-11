@@ -182,24 +182,33 @@ a:hover { color: var(--accent-hover); }
 }
 
 .site-nav {
-  position: absolute;
-  bottom: 2.5rem;
-  top: auto;
+  position: fixed;
+  top: 0;
+  bottom: auto;
   left: 0;
   right: 0;
   z-index: 100;
   padding: 1rem 0;
   transition: background .3s, box-shadow .3s;
+}
+
+.site-nav--hero {
+  position: absolute;
+  top: auto;
+  bottom: 2.5rem;
   animation: navSlideUp .6s ease both;
 }
 
 .site-nav.scrolled {
-  position: fixed;
-  bottom: auto;
-  top: 0;
   background: rgba(20,20,20,.95);
   backdrop-filter: blur(10px);
   box-shadow: 0 1px 20px rgba(0,0,0,.4);
+}
+
+.site-nav--hero.scrolled {
+  position: fixed;
+  top: 0;
+  bottom: auto;
 }
 
 
@@ -584,30 +593,39 @@ a:hover { color: var(--accent-hover); }
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
-  width: 3rem;
-  height: 3rem;
+  width: 3.5rem;
+  height: 40vh;
+  min-height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.8rem;
   line-height: 1;
   color: var(--text-white);
-  background: rgba(30,30,30,.7);
-  backdrop-filter: blur(8px);
-  border-radius: 50%;
-  transition: background .2s, opacity .2s;
-  opacity: .6;
+  background: rgba(255,255,255,.03);
+  border: 1px solid rgba(255,255,255,.06);
+  transition: background .25s, opacity .25s, border-color .25s;
+  opacity: .5;
   z-index: 100;
 }
 
 .project-float-nav:hover {
-  background: rgba(60,60,60,.9);
+  background: rgba(232,85,78,.06);
+  border-color: rgba(232,85,78,.2);
   opacity: 1;
   color: var(--text-white);
 }
 
-.project-float-nav--prev { left: 1.5rem; }
-.project-float-nav--next { right: 1.5rem; }
+.project-float-nav--prev {
+  left: 0;
+  border-radius: 0 6px 6px 0;
+  border-left: none;
+}
+.project-float-nav--next {
+  right: 0;
+  border-radius: 6px 0 0 6px;
+  border-right: none;
+}
 
 .project-header {
   max-width: 900px;
@@ -1070,8 +1088,38 @@ a:hover { color: var(--accent-hover); }
    RESPONSIVE
    ============================================================ */
 @media (max-width: 768px) {
-  .project-float-nav--prev { left: .5rem; }
-  .project-float-nav--next { right: .5rem; }
+  .project-float-nav {
+    top: auto;
+    bottom: 0;
+    transform: none;
+    width: 50%;
+    height: 3.5rem;
+    min-height: unset;
+    border-radius: 0;
+    background: rgba(20,20,20,.92);
+    border: none;
+    border-top: 1px solid rgba(255,255,255,.08);
+    opacity: 1;
+    transition: transform .3s ease, background .25s;
+  }
+  .project-float-nav:hover {
+    background: rgba(232,85,78,.12);
+    border-color: transparent;
+    opacity: 1;
+  }
+  .project-float-nav--prev {
+    left: 0;
+    border-radius: 0;
+    border-right: 1px solid rgba(255,255,255,.08);
+  }
+  .project-float-nav--next {
+    right: 0;
+    left: auto;
+    border-radius: 0;
+  }
+  .project-float-nav.nav-hidden {
+    transform: translateY(100%);
+  }
 
 
   .project-grid,

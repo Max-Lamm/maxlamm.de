@@ -4,6 +4,17 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  /* --- Mobile project nav auto-hide --- */
+  const floatNavs = document.querySelectorAll('.project-float-nav');
+  if (floatNavs.length && window.innerWidth <= 768) {
+    let lastY = window.scrollY;
+    window.addEventListener('scroll', () => {
+      const currentY = window.scrollY;
+      floatNavs.forEach(el => el.classList.toggle('nav-hidden', currentY > lastY && currentY > 80));
+      lastY = currentY;
+    }, { passive: true });
+  }
+
   /* --- Sticky Nav scroll state --- */
   const nav = document.querySelector('.site-nav');
   if (nav) {
