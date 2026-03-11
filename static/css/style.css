@@ -171,26 +171,37 @@ a:hover { color: var(--accent-hover); }
 /* ============================================================
    HEADER / NAV (sticky on scroll)
    ============================================================ */
+@keyframes navSlideUp {
+  from { transform: translateY(100%); }
+  to   { transform: translateY(0); }
+}
+
+@keyframes navSlideDown {
+  from { transform: translateY(-100%); }
+  to   { transform: translateY(0); }
+}
+
 .site-nav {
-  position: fixed;
-  top: 0;
+  position: absolute;
+  bottom: 2.5rem;
+  top: auto;
   left: 0;
   right: 0;
   z-index: 100;
   padding: 1rem 0;
   transition: background .3s, box-shadow .3s;
+  animation: navSlideUp .6s ease both;
 }
 
 .site-nav.scrolled {
+  position: fixed;
+  bottom: auto;
+  top: 0;
   background: rgba(20,20,20,.95);
   backdrop-filter: blur(10px);
   box-shadow: 0 1px 20px rgba(0,0,0,.4);
 }
 
-.site-nav.scrolled a,
-.site-nav.scrolled .site-nav__brand {
-  color: var(--text-white);
-}
 
 .site-nav__inner {
   display: flex;
@@ -207,9 +218,13 @@ a:hover { color: var(--accent-hover); }
   font-size: 1.1rem;
   letter-spacing: .06em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--text-white);
+  opacity: 0;
+  transition: color .3s, opacity .3s;
+}
+
+.site-nav.scrolled .site-nav__brand {
   opacity: .9;
-  transition: color .3s;
 }
 
 .site-nav__links {
@@ -218,7 +233,7 @@ a:hover { color: var(--accent-hover); }
 }
 
 .site-nav a {
-  color: var(--accent);
+  color: var(--text-white);
   font-family: var(--font-nav);
   font-weight: 700;
   font-size: 1.1rem;
@@ -226,7 +241,7 @@ a:hover { color: var(--accent-hover); }
   transition: opacity .2s, color .3s;
 }
 
-.site-nav a:hover { opacity: 1; }
+.site-nav a:hover { opacity: 1; color: var(--accent); }
 .site-nav__links a.active { color: var(--accent); opacity: 1; }
 
 /* ============================================================

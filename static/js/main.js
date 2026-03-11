@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (nav) {
     const hero = document.querySelector('.hero');
     window.addEventListener('scroll', () => {
-      const threshold = hero ? hero.offsetHeight : 80;
+      const threshold = hero ? hero.offsetHeight - nav.offsetHeight - 40 : 80;
       nav.classList.toggle('scrolled', window.scrollY > threshold);
     }, { passive: true });
   }
