@@ -1,7 +1,7 @@
 ---
 title: "Mini App"
 date: 2026-03-10
-draft: false
+draft: true
 featured: true
 thumbnail: "/images/projects/mini-app/thumb.jpg"
 orientation: landscape
