@@ -1411,10 +1411,10 @@ a:hover { color: var(--accent-hover); }
 /* EC-specific: restore the step-aligned padding inside workflow content */
 .ec-workflow-content .section-label {
   border-bottom: none;
-  padding-bottom: 0;
   margin: 0;
   padding: 32px 0 12px 60px;
   color: var(--text-light);
+  font-weight: 500;
 }
 
 /* Limitations / warning box */
