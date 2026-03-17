@@ -7,7 +7,7 @@ Zweisprachige (DE/EN) Portfolio-Website für Cinematographer & Colorist Maximili
 ```bash
 hugo server -D          # Dev-Server auf localhost:1313 (inkl. Drafts)
 hugo --minify --gc      # Production Build → public/
-./deploy.sh             # Build + rsync zu Uberspace (hernmann.uberspace.de)
+./deploy.sh             # Build + rsync zu Uberspace (test.maxlamm.de)
 hugo new projects/xyz.md  # Neues Projekt anlegen (nutzt archetypes/projects.md)
 ```
 
@@ -28,13 +28,24 @@ hugo new projects/xyz.md  # Neues Projekt anlegen (nutzt archetypes/projects.md)
 │   │   ├── single.html           # Statische Seiten (pages/)
 │   │   └── list.html             # Kategorie/Tag-Archive
 │   ├── partials/
-│   │   └── footer.html           # Globaler Footer
+│   │   ├── footer.html           # Globaler Footer
+│   │   ├── img-url.html          # Bildpfad-Helper (Hugo-Assets vs. static)
+│   │   ├── thumb.html            # Thumbnail-Rendering mit Image Processing
+│   │   └── vimeo-src.html        # Vimeo-URL-Extraktion aus Embed-Links
+│   ├── pages/
+│   │   └── edit-conform.html     # Edit Conform Seite (Custom Layout)
 │   ├── projects/
+│   │   ├── list.html             # /work/ Portfolio-Grid
 │   │   └── single.html           # Projekt-Detailseite
 │   └── index.html                # Homepage
 ├── static/
 │   ├── css/style.css             # Gesamtes CSS (kein SCSS!)
-│   ├── js/main.js                # Scroll-Verhalten, Lightbox, Kontaktformular
+│   ├── js/
+│   │   ├── main.js               # Scroll-Verhalten, Lightbox, Kontaktformular
+│   │   └── klaro-config.js       # Cookie-Consent Konfiguration (Klaro.js)
+│   ├── fonts/                    # Lokal gehostete Webfonts (Raleway, Work Sans)
+│   ├── contact/                  # Kontaktformular-Backend (PHP)
+│   ├── email-handler/            # E-Mail-Versand-Backend (PHP)
 │   └── images/
 │       ├── portrait.jpg
 │       ├── favicon.svg
@@ -71,7 +82,7 @@ videos:
   - "https://www.youtube.com/watch?v=VIDEOID"
 video_posters:            # Optional: individuelle Poster pro Video (sonst thumb.jpg)
   - "/images/projects/<slug>/poster-01.jpg"
-video_size: large         # large (default) | small — nur bei landscape, einzelnem Video
+video_size: large         # large (default) | medium | small — nur bei landscape, einzelnem Video
 credits:
   - role: Kunde
     name: Firmenname
@@ -105,61 +116,19 @@ Videos werden als Poster-Bild gerendert und erst beim Klick geladen (Privacy-fre
 
 ## /new-project — Automatisierter Projekt-Workflow
 
-### Ablauf
+Neues Projekt per `/new-project` Skill erstellen. Der Skill enthält alle Details zu Textgenerierung, Front-Matter-Regeln und Instagram-Captions.
 
-1. Nutzer füllt `new-project-input.md` aus
-2. Nutzer gibt den Befehl `/new-project` (oder "neues Projekt erstellen")
-3. Claude liest `new-project-input.md` und `crew-handles.md`
-4. Claude erstellt:
-   - `content/de/projects/<slug>.md`
-   - `content/en/projects/<slug>.md`
-   - Instagram Caption (EN) — direkt im Chat ausgegeben
-5. Nutzer reviewt alles, schlägt Änderungen vor
-6. Nach Bestätigung: git add + commit + push + deploy (Standard-Workflow)
+**Kurzablauf:** `new-project-input.md` ausfüllen → `/new-project` → Review → Commit + Deploy
 
-### Projekttexte generieren
+**Dateien:**
+- `new-project-input.md` — Eingabe-Template (wiederverwendbar)
+- `crew-handles.md` — Name → Instagram-Handle Mapping
 
-Aus Beschreibung + technischen Details einen ausführlichen Portfolio-Text bauen (1–3 Absätze):
-- **Stil und Ton**: Erste Person, persönliche Handschrift — "Für X durfte ich…" (DE) / "For X, I had the opportunity…" (EN). Orientierung an den bestehenden Projekttexten, insbesondere `content/de/projects/porsche-roads.md`.
-- **Struktur**: Aufgabe/Rolle → visueller/technischer Ansatz → Ergebnis
-- **Technik**: Kamera, Linsen, Look organisch einweben — keine trockene Aufzählung
-- **DE und EN**: Inhaltlich gleich, aber nicht wortwörtlich übersetzt — natürlich klingende Texte in beiden Sprachen
+## Gotchas
 
-### Front Matter generieren
-
-- `thumbnail`: `/images/projects/<slug>/thumb.jpg`
-- `gallery`: Aus den angegebenen Dateinamen zusammensetzen (`/images/projects/<slug>/01.jpg` etc.)
-- `video_posters`: Nur eintragen wenn explizit angegeben — sonst Feld weglassen (Fallback: thumb.jpg)
-- `translationKey`: Gleich dem `slug` — in DE und EN identisch
-- **Credits-Rollen übersetzen** für EN: Kunde → Client, Agentur → Agency, Regie → Director, Licht → Gaffer, Schnitt → Editor, Grading → Grading, DP → DP (unverändert)
-- Felder mit leerem Wert einfach weglassen (Credits ohne Namen, leere Galerien etc.)
-
-### Instagram Caption generieren
-
-Format:
-```
-[Hook / Projekteröffnung — 1–2 Sätze, direkt und spezifisch]
-
-[Kurzbeschreibung des Projekts und meiner Rolle]
-
-—
-[Rolle]: [Handle oder Name]
-[Rolle]: [Handle oder Name]
-...
-
-[Optionale Hashtags falls im Input angegeben]
-```
-
-**Handle-Lookup**: Namen aus den Credits gegen `crew-handles.md` abgleichen. Bekannte Namen → Handle ersetzen. Unbekannte Namen → Namen unverändert übernehmen.
-
-### Dateien
-
-| Datei | Zweck |
-|-------|-------|
-| `new-project-input.md` | Eingabe-Template (nach Nutzung für nächstes Projekt wiederverwenden) |
-| `crew-handles.md` | Name → Instagram-Handle Mapping (bei neuen Crewmitgliedern ergänzen) |
-
----
+- **Hugo Module Mounts**: `hugo.toml` mountet `static/images` zusätzlich nach `assets/images` — dadurch funktioniert Hugo Image Processing auf statische Bilder. Beim Ändern der Mounts darauf achten, dass beide Pfade konsistent bleiben.
+- **`resources/_gen/`**: Enthält gecachte Ergebnisse von Hugo Image Processing. Kann gelöscht werden, wird beim nächsten Build neu generiert.
+- **Fonts sind self-hosted**: Raleway + Work Sans liegen in `static/fonts/` — kein CDN, kein externer Request. Neue Font-Weights dort ablegen und in `baseof.html` referenzieren.
 
 ## Workflow
 
