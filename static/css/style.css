@@ -151,7 +151,7 @@ a:hover { color: var(--accent-hover); }
   font-style: italic;
   font-weight: 300;
   font-size: 1.25rem;
-  color: rgba(255,255,255,.7);
+  color: var(--accent);
   margin-top: .5rem;
 }
 
