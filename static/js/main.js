@@ -157,12 +157,18 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* --- Project category filter --- */
-  const filterBtns = document.querySelectorAll('.filter-btn');
+  const filterBtns = document.querySelectorAll('.filter-badge');
   if (filterBtns.length) {
     filterBtns.forEach(btn => {
       btn.addEventListener('click', () => {
-        filterBtns.forEach(b => b.classList.remove('active'));
+        filterBtns.forEach(b => {
+          b.classList.remove('active');
+          if (!b.classList.contains('badge--outline')) {
+            b.classList.add('badge--outline');
+          }
+        });
         btn.classList.add('active');
+        btn.classList.remove('badge--outline');
         const cat = btn.dataset.cat;
         document.querySelectorAll('#projects-grid .project-card').forEach(card => {
           const cats = card.dataset.cats ? card.dataset.cats.split(',') : [];
