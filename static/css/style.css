@@ -690,6 +690,7 @@ a:hover { color: var(--accent-hover); }
   margin-right: 0;
 }
 
+.project-video--large  { max-width: 900px; }
 .project-video--medium { max-width: 600px; }
 .project-video--small  { max-width: 400px; }
 

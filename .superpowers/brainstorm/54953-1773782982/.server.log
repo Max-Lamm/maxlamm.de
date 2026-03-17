@@ -1,0 +1,21 @@
+node:fs:435
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open '/Users/maximilianlamm/GitHub/maxlamm.de/.superpowers/brainstorm/54953-1773782982/frame-template.html'
+    at Object.readFileSync (node:fs:435:20)
+    at Object.<anonymous> (/Users/maximilianlamm/GitHub/maxlamm.de/.superpowers/brainstorm/54953-1773782982/server.cjs:99:26)
+    at Module._compile (node:internal/modules/cjs/loader:1811:14)
+    at Object..js (node:internal/modules/cjs/loader:1942:10)
+    at Module.load (node:internal/modules/cjs/loader:1532:32)
+    at Module._load (node:internal/modules/cjs/loader:1334:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/maximilianlamm/GitHub/maxlamm.de/.superpowers/brainstorm/54953-1773782982/frame-template.html'
+}
+
+Node.js v25.6.1

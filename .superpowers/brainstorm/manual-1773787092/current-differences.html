@@ -1,0 +1,220 @@
+<style>
+  .comparison { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 24px 0; }
+  .page-mock { background: #1a1a1a; border-radius: 8px; overflow: hidden; border: 1px solid #333; }
+  .page-mock h4 { padding: 12px 16px; background: #222; color: #E8554E; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; margin: 0; }
+  .page-body { padding: 0; }
+
+  /* Mini nav */
+  .mini-nav { display: flex; justify-content: space-between; padding: 8px 16px; background: rgba(20,20,20,.95); font-size: 10px; color: #f0f0f0; }
+  .mini-nav .brand { font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+  .mini-nav .links { display: flex; gap: 12px; }
+  .mini-nav .links span.active { color: #E8554E; }
+  .mini-nav .brand.hidden { opacity: 0.2; }
+
+  /* Mini hero */
+  .mini-hero { background: linear-gradient(135deg, #111 0%, #333 100%); padding: 40px 16px; text-align: center; position: relative; }
+  .mini-hero .title { font-size: 18px; font-weight: 700; color: #f0f0f0; text-transform: uppercase; letter-spacing: 2px; }
+  .mini-hero .sub { font-size: 10px; color: #E8554E; font-style: italic; margin-top: 4px; }
+  .mini-hero .nav-bottom { position: absolute; bottom: 8px; left: 0; right: 0; display: flex; justify-content: space-between; padding: 0 16px; font-size: 9px; color: rgba(255,255,255,.7); }
+  .mini-hero .nav-bottom .brand { opacity: 0.2; font-weight: 700; text-transform: uppercase; }
+
+  /* Mini grid */
+  .mini-grid { display: grid; gap: 4px; padding: 12px; }
+  .mini-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .mini-grid.cols-4 { grid-template-columns: repeat(4, 1fr); }
+  .mini-card { aspect-ratio: 16/9; background: #333; border-radius: 2px; }
+
+  /* Mini header */
+  .mini-work-header { display: flex; justify-content: space-between; align-items: center; padding: 12px 16px 4px; }
+  .mini-work-header .heading { font-size: 11px; font-weight: 800; color: #f0f0f0; text-transform: uppercase; }
+  .mini-work-header .filters { display: flex; gap: 3px; }
+  .mini-work-header .filter-pill { font-size: 7px; padding: 2px 6px; border-radius: 2px; text-transform: uppercase; letter-spacing: 1px; }
+  .mini-work-header .filter-pill.active { background: #E8554E; color: #fff; }
+  .mini-work-header .filter-pill.outline { border: 1px solid #E8554E; color: #E8554E; background: transparent; }
+
+  /* Mini sections */
+  .mini-about { background: #141414; padding: 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; align-items: center; }
+  .mini-about .portrait { background: #333; aspect-ratio: 3/4; border-radius: 2px; }
+  .mini-about .text { font-size: 8px; color: #999; line-height: 1.6; }
+  .mini-about .text .label { font-size: 10px; color: #f0f0f0; font-weight: 600; text-transform: uppercase; margin-bottom: 6px; }
+
+  .mini-contact { padding: 16px; text-align: center; }
+  .mini-contact .label { font-size: 10px; color: #f0f0f0; font-weight: 600; text-transform: uppercase; margin-bottom: 8px; }
+  .mini-contact .form-field { background: transparent; border: 1px solid #444; height: 20px; margin: 4px auto; width: 60%; border-radius: 2px; }
+  .mini-contact .form-area { height: 40px; }
+
+  .mini-footer { background: #141414; padding: 12px; text-align: center; font-size: 8px; color: #666; }
+
+  /* More btn */
+  .mini-btn { text-align: center; padding: 12px; }
+  .mini-btn span { display: inline-block; padding: 4px 12px; background: #E8554E; color: #fff; font-size: 8px; border-radius: 2px; text-transform: uppercase; letter-spacing: 1px; }
+
+  /* Rounded top */
+  .rounded-top { border-radius: 12px 12px 0 0; margin-top: -12px; position: relative; z-index: 1; background: #1a1a1a; }
+
+  /* Diff markers */
+  .diff { position: relative; }
+  .diff::after { content: attr(data-diff); position: absolute; top: 2px; right: 4px; font-size: 7px; background: #E8554E; color: #fff; padding: 1px 5px; border-radius: 2px; letter-spacing: 0.5px; z-index: 2; }
+
+  /* Project detail mock */
+  .mini-project-header { max-width: 70%; margin: 0 auto; padding: 16px 16px 0; }
+  .mini-project-header .title { font-size: 13px; font-weight: 800; color: #f0f0f0; text-transform: uppercase; }
+  .mini-project-header .badges { display: flex; gap: 3px; margin-top: 4px; }
+  .mini-project-header .badge { font-size: 7px; padding: 2px 6px; border-radius: 2px; background: #E8554E; color: #fff; text-transform: uppercase; }
+  .mini-video-area { max-width: 70%; margin: 8px auto; padding: 0 16px; }
+  .mini-video { aspect-ratio: 16/9; background: #333; border-radius: 2px; display: flex; align-items: center; justify-content: center; }
+  .mini-video .play { width: 20px; height: 20px; border-radius: 50%; background: rgba(255,255,255,.2); border: 1px solid rgba(255,255,255,.3); }
+  .mini-credits { max-width: 70%; margin: 0 auto; padding: 8px 16px; font-size: 7px; color: #999; }
+  .mini-related { padding: 12px 16px; }
+  .mini-related .label { font-size: 8px; color: #E8554E; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 6px; }
+</style>
+
+<h2>Aktuelle Unterschiede: Homepage vs. /work vs. Projekt</h2>
+<p class="subtitle">Die roten Labels zeigen die wesentlichen Abweichungen</p>
+
+<div class="comparison" style="grid-template-columns: 1fr 1fr 1fr;">
+
+  <!-- HOMEPAGE -->
+  <div class="page-mock">
+    <h4>Homepage</h4>
+    <div class="page-body">
+      <div class="mini-hero diff" data-diff="Hero">
+        <div class="nav-bottom">
+          <span class="brand">maxlamm</span>
+          <span>Work &nbsp; About &nbsp; Contact</span>
+        </div>
+        <div class="title">Maximilian Lamm</div>
+        <div class="sub">DoP & Colorist</div>
+      </div>
+      <div class="rounded-top diff" data-diff="3 Spalten">
+        <div class="mini-grid cols-3">
+          <div class="mini-card"></div><div class="mini-card"></div><div class="mini-card"></div>
+          <div class="mini-card"></div><div class="mini-card"></div><div class="mini-card"></div>
+          <div class="mini-card"></div><div class="mini-card"></div><div class="mini-card"></div>
+        </div>
+        <div class="mini-btn"><span>Mehr Projekte</span></div>
+      </div>
+      <div class="mini-about diff" data-diff="About-Sektion">
+        <div class="portrait"></div>
+        <div class="text">
+          <div class="label">About</div>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+        </div>
+      </div>
+      <div class="mini-contact diff" data-diff="Kontakt">
+        <div class="label">Contact</div>
+        <div class="form-field"></div>
+        <div class="form-field"></div>
+        <div class="form-field form-area"></div>
+      </div>
+      <div class="mini-footer">maxlamm &copy; 2025</div>
+    </div>
+  </div>
+
+  <!-- /WORK -->
+  <div class="page-mock">
+    <h4>/work</h4>
+    <div class="page-body">
+      <div class="mini-nav diff" data-diff="Nav sofort sichtbar">
+        <span class="brand">maxlamm</span>
+        <div class="links"><span class="active">Work</span> <span>About</span> <span>Contact</span></div>
+      </div>
+      <div class="mini-work-header diff" data-diff="Header + Filter">
+        <span class="heading">Ausgewählte Projekte</span>
+        <div class="filters">
+          <span class="filter-pill active">All</span>
+          <span class="filter-pill outline">Colorist</span>
+          <span class="filter-pill outline">DP</span>
+        </div>
+      </div>
+      <div class="diff" data-diff="4 Spalten · 1100px">
+        <div class="mini-grid cols-4">
+          <div class="mini-card"></div><div class="mini-card"></div><div class="mini-card"></div><div class="mini-card"></div>
+          <div class="mini-card"></div><div class="mini-card"></div><div class="mini-card"></div><div class="mini-card"></div>
+          <div class="mini-card"></div><div class="mini-card"></div><div class="mini-card"></div><div class="mini-card"></div>
+        </div>
+      </div>
+      <div class="mini-footer">maxlamm &copy; 2025</div>
+    </div>
+  </div>
+
+  <!-- PROJECT DETAIL -->
+  <div class="page-mock">
+    <h4>Projektseite</h4>
+    <div class="page-body">
+      <div class="mini-nav">
+        <span class="brand">maxlamm</span>
+        <div class="links"><span class="active">Work</span> <span>About</span> <span>Contact</span></div>
+      </div>
+      <div class="diff" data-diff="max-width: 900px">
+        <div class="mini-project-header">
+          <div class="title">Porsche Roads</div>
+          <div class="badges">
+            <span class="badge">Colorist</span>
+            <span class="badge">Documentary</span>
+          </div>
+        </div>
+        <div class="mini-video-area">
+          <div class="mini-video"><div class="play"></div></div>
+        </div>
+        <div class="mini-credits">
+          Client: Porsche &nbsp;&nbsp; Grading: Maximilian Lamm
+        </div>
+      </div>
+      <div class="mini-related">
+        <div class="label">Related</div>
+        <div class="mini-grid cols-4" style="padding: 0;">
+          <div class="mini-card"></div><div class="mini-card"></div><div class="mini-card"></div><div class="mini-card"></div>
+        </div>
+      </div>
+      <div class="mini-footer">maxlamm &copy; 2025</div>
+    </div>
+  </div>
+
+</div>
+
+<div class="section" style="margin-top: 32px;">
+  <h3>Zusammenfassung der Unterschiede</h3>
+  <table style="width: 100%; font-size: 13px; border-collapse: collapse; margin-top: 12px;">
+    <thead>
+      <tr style="border-bottom: 1px solid #444; text-align: left;">
+        <th style="padding: 8px;">Aspekt</th>
+        <th style="padding: 8px;">Homepage</th>
+        <th style="padding: 8px;">/work</th>
+        <th style="padding: 8px;">Projektseite</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom: 1px solid #333;">
+        <td style="padding: 8px; color: #E8554E;">Nav</td>
+        <td style="padding: 8px;">Unten im Hero, Brand versteckt</td>
+        <td style="padding: 8px;">Oben fixiert, Brand sichtbar</td>
+        <td style="padding: 8px;">Oben fixiert, Brand sichtbar</td>
+      </tr>
+      <tr style="border-bottom: 1px solid #333;">
+        <td style="padding: 8px; color: #E8554E;">Grid-Spalten</td>
+        <td style="padding: 8px;">3 Spalten</td>
+        <td style="padding: 8px;">3 Spalten (max 1100px)</td>
+        <td style="padding: 8px;">4 Spalten (Related, 900px)</td>
+      </tr>
+      <tr style="border-bottom: 1px solid #333;">
+        <td style="padding: 8px; color: #E8554E;">Grid-Header</td>
+        <td style="padding: 8px;">Keiner</td>
+        <td style="padding: 8px;">Heading + Filter-Badges</td>
+        <td style="padding: 8px;">Section-Label "Related"</td>
+      </tr>
+      <tr style="border-bottom: 1px solid #333;">
+        <td style="padding: 8px; color: #E8554E;">Max-Width</td>
+        <td style="padding: 8px;">1200px (var)</td>
+        <td style="padding: 8px;">1100px</td>
+        <td style="padding: 8px;">900px (Content)</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; color: #E8554E;">Zusatz-Sektionen</td>
+        <td style="padding: 8px;">About + Kontakt</td>
+        <td style="padding: 8px;">Keine</td>
+        <td style="padding: 8px;">Video, Credits, Gallery</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

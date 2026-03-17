@@ -1,9 +1,9 @@
 ---
-title: "Craft Teamsport Deutschland"
+title: "Craft Teamsport DE"
 date: 2024-06-26
 draft: false
 featured: true
-thumbnail: "/images/projects/craft-teamsport-deutschland/thumb.jpg"
+thumbnail: "/images/projects/craft-teamsport-de/thumb.jpg"
 categories:
   - colorist
 types:
@@ -18,7 +18,7 @@ credits:
   - role: Dir/DP
     name: Hubert Neufeld
 gallery: []
-translationKey: "craft-teamsport-deutschland"
+translationKey: "craft-teamsport-de"
 ---
 
 Deutschland Kampagne für die CRAFT Teamsport Ausstattung. Vier deutsche Profiteams in Aktion als Ambassador*innen für die schwedische Marke in Deutschland.

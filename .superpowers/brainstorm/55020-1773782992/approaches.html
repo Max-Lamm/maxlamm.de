@@ -1,0 +1,118 @@
+<h2>Work Page — 3 Ansätze</h2>
+<p class="subtitle">Alle nutzen das Design-Vokabular der Projektseiten (section-labels, badges, gleiche Typografie). Klick auf deinen Favoriten.</p>
+
+<div class="cards">
+
+  <!-- Approach A -->
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding:24px;background:#1a1a1a;">
+      <!-- Mockup A: Inline filter as badges -->
+      <div style="max-width:600px;margin:0 auto;">
+        <!-- Section label like on project pages -->
+        <div style="font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#E8554E;font-weight:600;border-bottom:1px solid #2a2a2a;padding-bottom:6px;margin-bottom:14px;">Work</div>
+        <!-- Filter as badges row -->
+        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:20px;">
+          <span style="display:inline-block;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;padding:3px 9px;border-radius:3px;background:#E8554E;color:#fff;">All</span>
+          <span style="display:inline-block;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;padding:3px 9px;border-radius:3px;background:transparent;border:1px solid #E8554E;color:#E8554E;">Colorist</span>
+          <span style="display:inline-block;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;padding:3px 9px;border-radius:3px;background:transparent;border:1px solid #E8554E;color:#E8554E;">DP</span>
+        </div>
+        <!-- Grid mockup -->
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px;">
+          <div style="aspect-ratio:16/9;background:#2a2a2a;border-radius:2px;"></div>
+          <div style="aspect-ratio:16/9;background:#2a2a2a;border-radius:2px;"></div>
+          <div style="aspect-ratio:16/9;background:#2a2a2a;border-radius:2px;"></div>
+          <div style="aspect-ratio:16/9;background:#2a2a2a;border-radius:2px;"></div>
+          <div style="aspect-ratio:16/9;background:#2a2a2a;border-radius:2px;"></div>
+          <div style="aspect-ratio:16/9;background:#2a2a2a;border-radius:2px;"></div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A — Badge-Filter links</h3>
+      <p>Section-Label "Work" oben links, darunter die Kategorien als <code>badge</code> / <code>badge--outline</code> — exakt wie auf den Projektseiten. Linksbündig, kein zentriertes UI-Element. Filter fühlt sich an wie ein natürlicher Teil der Seite.</p>
+    </div>
+  </div>
+
+  <!-- Approach B -->
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding:24px;background:#1a1a1a;">
+      <div style="max-width:600px;margin:0 auto;">
+        <!-- Sticky sub-nav style -->
+        <div style="display:flex;align-items:baseline;gap:20px;border-bottom:1px solid #2a2a2a;padding-bottom:10px;margin-bottom:20px;">
+          <span style="font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#E8554E;font-weight:600;">Work</span>
+          <div style="display:flex;gap:16px;">
+            <span style="font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#f0f0f0;font-weight:600;">All</span>
+            <span style="font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#999;">Colorist</span>
+            <span style="font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#999;">DP</span>
+          </div>
+        </div>
+        <!-- Grid mockup -->
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px;">
+          <div style="aspect-ratio:16/9;background:#2a2a2a;border-radius:2px;"></div>
+          <div style="aspect-ratio:16/9;background:#2a2a2a;border-radius:2px;"></div>
+          <div style="aspect-ratio:16/9;background:#2a2a2a;border-radius:2px;"></div>
+          <div style="aspect-ratio:16/9;background:#2a2a2a;border-radius:2px;"></div>
+          <div style="aspect-ratio:16/9;background:#2a2a2a;border-radius:2px;"></div>
+          <div style="aspect-ratio:16/9;background:#2a2a2a;border-radius:2px;"></div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B — Inline-Nav mit Label</h3>
+      <p>Section-Label "Work" und Kategorien in einer Zeile, getrennt durch Abstand. Aktive Kategorie in Weiß, Rest in Grau. Wie eine Sub-Navigation, die durch die <code>border-bottom</code>-Linie an die section-labels anknüpft. Könnte sticky werden beim Scrollen.</p>
+    </div>
+  </div>
+
+  <!-- Approach C -->
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding:24px;background:#1a1a1a;">
+      <div style="max-width:600px;margin:0 auto;">
+        <!-- Section label -->
+        <div style="font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#E8554E;font-weight:600;border-bottom:1px solid #2a2a2a;padding-bottom:6px;margin-bottom:14px;">Work</div>
+        <!-- Two-row: heading + filter in same block -->
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
+          <span style="font-family:'Work Sans',sans-serif;font-size:22px;font-weight:700;text-transform:uppercase;color:#f0f0f0;letter-spacing:0.03em;">Selected Projects</span>
+          <div style="display:flex;gap:6px;">
+            <span style="display:inline-block;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;padding:3px 9px;border-radius:3px;background:#E8554E;color:#fff;">All</span>
+            <span style="display:inline-block;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;padding:3px 9px;border-radius:3px;background:#2a2a2a;color:#999;">Colorist</span>
+            <span style="display:inline-block;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;padding:3px 9px;border-radius:3px;background:#2a2a2a;color:#999;">DP</span>
+          </div>
+        </div>
+        <!-- Grid mockup -->
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px;">
+          <div style="aspect-ratio:16/9;background:#2a2a2a;border-radius:2px;"></div>
+          <div style="aspect-ratio:16/9;background:#2a2a2a;border-radius:2px;"></div>
+          <div style="aspect-ratio:16/9;background:#2a2a2a;border-radius:2px;"></div>
+          <div style="aspect-ratio:16/9;background:#2a2a2a;border-radius:2px;"></div>
+          <div style="aspect-ratio:16/9;background:#2a2a2a;border-radius:2px;"></div>
+          <div style="aspect-ratio:16/9;background:#2a2a2a;border-radius:2px;"></div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C — Header + Badge-Filter rechts</h3>
+      <p>Section-Label oben, darunter eine Zeile mit Heading links ("Selected Projects") und Badge-Filter rechts. Gibt der Seite mehr Gewicht und Kontext. Badges in <code>badge--muted</code> statt outline — dezenter, aktiver Filter in Accent.</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="pros-cons" style="margin-top:32px;">
+  <div class="pros">
+    <h4>Gemeinsam bei allen Ansätzen</h4>
+    <ul>
+      <li>Section-Label "Work" wie auf Projektseiten</li>
+      <li>Filter-Elemente nutzen Badge-Styles statt generische Buttons</li>
+      <li>Linksbündig oder strukturiert — nicht mehr zentriert/freistehend</li>
+      <li>max-width: 900px wie Projektseiten-Content</li>
+    </ul>
+  </div>
+  <div class="cons">
+    <h4>Unterschiede</h4>
+    <ul>
+      <li><strong>A</strong> — Minimalistisch, nah am Projektseitenflow</li>
+      <li><strong>B</strong> — Nav-artig, könnte sticky werden, sehr clean</li>
+      <li><strong>C</strong> — Mehr visuelles Gewicht, "rahmt" die Seite ein</li>
+    </ul>
+  </div>
+</div>
