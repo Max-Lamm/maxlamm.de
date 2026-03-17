@@ -292,6 +292,12 @@ a:hover { color: var(--accent-hover); }
   overflow: hidden;
   aspect-ratio: 16/9;
   cursor: pointer;
+  transition: opacity .3s ease, transform .3s ease;
+}
+
+.project-card.card-hidden {
+  opacity: 0;
+  transform: scale(.95);
 }
 
 .project-card--landscape {

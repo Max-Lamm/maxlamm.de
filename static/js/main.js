@@ -172,7 +172,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const cat = btn.dataset.cat;
         document.querySelectorAll('#projects-grid .project-card').forEach(card => {
           const cats = card.dataset.cats ? card.dataset.cats.split(',') : [];
-          card.style.display = (cat === 'all' || cats.includes(cat)) ? '' : 'none';
+          const show = cat === 'all' || cats.includes(cat);
+          if (show) {
+            card.style.display = '';
+            requestAnimationFrame(() => card.classList.remove('card-hidden'));
+          } else {
+            card.classList.add('card-hidden');
+            setTimeout(() => { card.style.display = 'none'; }, 300);
+          }
         });
       });
     });
