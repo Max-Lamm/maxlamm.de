@@ -170,17 +170,65 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.classList.add('active');
         btn.classList.remove('badge--outline');
         const cat = btn.dataset.cat;
-        document.querySelectorAll('#projects-grid .project-card').forEach(card => {
+        const cards = document.querySelectorAll('#projects-grid .project-card');
+
+        /* FIRST — record current positions */
+        const firstRects = new Map();
+        cards.forEach(c => firstRects.set(c, c.getBoundingClientRect()));
+
+        /* fade-out + zoom-out cards to hide */
+        const toHide = [];
+        cards.forEach(card => {
           const cats = card.dataset.cats ? card.dataset.cats.split(',') : [];
-          const show = cat === 'all' || cats.includes(cat);
-          if (show) {
-            card.style.display = '';
-            requestAnimationFrame(() => card.classList.remove('card-hidden'));
-          } else {
+          if (cat !== 'all' && !cats.includes(cat)) {
             card.classList.add('card-hidden');
-            setTimeout(() => { card.style.display = 'none'; }, 300);
+            toHide.push(card);
           }
         });
+
+        /* after fade-out: reflow grid, then FLIP visible cards */
+        setTimeout(() => {
+          /* toggle display */
+          toHide.forEach(c => c.style.display = 'none');
+          cards.forEach(card => {
+            const cats = card.dataset.cats ? card.dataset.cats.split(',') : [];
+            const show = cat === 'all' || cats.includes(cat);
+            if (show) {
+              card.style.display = '';
+              card.classList.remove('card-hidden');
+            }
+          });
+
+          /* LAST — record new positions & INVERT */
+          cards.forEach(card => {
+            if (card.style.display === 'none') return;
+            const first = firstRects.get(card);
+            const last = card.getBoundingClientRect();
+            const dx = first.left - last.left;
+            const dy = first.top - last.top;
+            if (dx === 0 && dy === 0) return;
+            card.style.transform = `translate(${dx}px, ${dy}px)`;
+            card.style.transition = 'none';
+          });
+
+          /* PLAY — animate to final position */
+          requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+              cards.forEach(card => {
+                if (card.style.display === 'none') return;
+                card.style.transform = '';
+                card.style.transition = 'transform .35s ease, opacity .25s ease';
+              });
+              /* clean up inline styles after animation */
+              setTimeout(() => {
+                cards.forEach(card => {
+                  card.style.transition = '';
+                  card.style.transform = '';
+                });
+              }, 400);
+            });
+          });
+        }, 250);
       });
     });
   }
