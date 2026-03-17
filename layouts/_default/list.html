@@ -4,7 +4,7 @@
   <div class="site-nav__inner">
     <a class="site-nav__brand" href="{{ if eq .Lang "de" }}/{{ else }}/en/{{ end }}">maxlamm</a>
     <div class="site-nav__links">
-      <a href="{{ if eq .Lang "de" }}/work/{{ else }}/en/work/{{ end }}">Work</a>
+      <a href="{{ if eq .Lang "de" }}/work/{{ else }}/en/work/{{ end }}" class="active">Work</a>
       <a href="{{ if eq .Lang "de" }}/#about{{ else }}/en/#about{{ end }}">About</a>
       <a href="{{ if eq .Lang "de" }}/#contact{{ else }}/en/#contact{{ end }}">Contact</a>
     </div>
@@ -13,13 +13,16 @@
 
 <div class="work-page">
 
-  <div class="filter-bar">
-    <button class="filter-btn active" data-cat="all">All</button>
-    {{- $cats := slice -}}
-    {{- range .Pages -}}{{- range .Params.categories -}}{{- $cats = $cats | append . -}}{{- end -}}{{- end -}}
-    {{- range ($cats | uniq) -}}
-    <button class="filter-btn" data-cat="{{ . }}">{{ . }}</button>
-    {{- end -}}
+  <div class="work-header">
+    <h1>{{ .Site.Language.Params.workHeading }}</h1>
+    <div class="work-filter">
+      <button class="badge filter-badge active" data-cat="all">All</button>
+      {{- $cats := slice -}}
+      {{- range .Pages -}}{{- range .Params.categories -}}{{- $cats = $cats | append . -}}{{- end -}}{{- end -}}
+      {{- range ($cats | uniq) -}}
+      <button class="badge badge--outline filter-badge" data-cat="{{ . }}">{{ . }}</button>
+      {{- end -}}
+    </div>
   </div>
 
   <div class="project-grid" id="projects-grid">
