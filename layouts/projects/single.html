@@ -22,9 +22,19 @@
   <a class="project-float-nav project-float-nav--next" href="{{ .RelPermalink }}" aria-label="Nächstes Projekt">&#8250;</a>
   {{- end -}}
 
-  <!-- Title -->
+  <!-- Title + Badges -->
   <div class="project-header">
     <h1>{{ .Title }}</h1>
+    {{- if or .Params.categories .Params.types -}}
+    <div class="project-badges">
+      {{- range .Params.categories -}}
+      <span class="badge">{{ . }}</span>
+      {{- end -}}
+      {{- range .Params.types -}}
+      <span class="badge badge--outline">{{ . }}</span>
+      {{- end -}}
+    </div>
+    {{- end -}}
   </div>
 
   <!-- Description -->
@@ -85,18 +95,24 @@
   <!-- Credits -->
   {{- with .Params.credits -}}
   <div class="project-credits">
-    <dl>
+    <div class="section-label">Credits</div>
+    <div class="credits-list">
       {{- range . -}}
-      <dt>{{ index . "role" }}:</dt>
-      <dd>{{ index . "name" }}</dd>
+      {{- if index . "name" -}}
+      <div class="credit-row">
+        <span class="credit-role">{{ index . "role" }}</span>
+        <span class="credit-name">{{ index . "name" }}</span>
+      </div>
       {{- end -}}
-    </dl>
+      {{- end -}}
+    </div>
   </div>
   {{- end -}}
 
   <!-- Gallery -->
   {{- with .Params.gallery -}}
   <div class="project-gallery">
+    <div class="section-label">{{ if eq $.Lang "de" }}Galerie{{ else }}Gallery{{ end }}</div>
     <div class="gallery-grid" style="--cols: {{ $.Params.gallery_columns | default 3 }}">
       {{- range . -}}
       {{- $galSrc := . -}}
