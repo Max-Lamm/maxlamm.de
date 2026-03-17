@@ -916,45 +916,55 @@ a:hover { color: var(--accent-hover); }
   padding-top: 80px;
 }
 
-.filter-bar {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .5rem;
-  justify-content: center;
-  padding: 2rem var(--gap);
-  max-width: var(--max-width);
+.work-header {
+  max-width: 900px;
   margin: 0 auto;
-}
-
-.project-grid--4col {
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.project-filter {
+  padding: 2rem var(--gap) 1.5rem;
   display: flex;
-  flex-wrap: wrap;
-  gap: .5rem;
-  padding: 2rem 2rem 0;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.filter-btn {
-  padding: .4rem 1rem;
-  background: transparent;
-  border: 1px solid rgba(255,255,255,.2);
-  color: var(--text-light);
-  font-family: var(--font-body);
-  font-size: .8rem;
-  letter-spacing: .05em;
+.work-header h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  font-weight: 800;
   text-transform: uppercase;
+  color: var(--text-white);
+  letter-spacing: .03em;
+}
+
+.work-filter {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.filter-badge {
   cursor: pointer;
   transition: background .2s ease, border-color .2s ease, color .2s ease;
 }
 
-.filter-btn:hover,
-.filter-btn.active {
+.filter-badge:hover {
   background: var(--accent);
   border-color: var(--accent);
   color: #fff;
+}
+
+.filter-badge.badge--outline.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.work-page .project-grid {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 var(--gap) 4rem;
+}
+
+.project-grid--4col {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .archive-page h1 {
@@ -1122,6 +1132,12 @@ a:hover { color: var(--accent-hover); }
    RESPONSIVE
    ============================================================ */
 @media (max-width: 768px) {
+  .work-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
   .project-float-nav {
     top: auto;
     bottom: 0;
