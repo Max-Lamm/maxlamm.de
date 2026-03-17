@@ -940,9 +940,15 @@ a:hover { color: var(--accent-hover); }
   flex-wrap: wrap;
 }
 
-.filter-badge {
+button.filter-badge {
   cursor: pointer;
+  border: none;
+  font-family: inherit;
   transition: background .2s ease, border-color .2s ease, color .2s ease;
+}
+
+button.filter-badge.badge--outline {
+  border: 1px solid var(--accent);
 }
 
 .filter-badge:hover {

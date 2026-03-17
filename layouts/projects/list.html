@@ -11,27 +11,27 @@
   </div>
 </nav>
 
-{{- $cats := slice -}}
-{{- range .Pages -}}
-  {{- range .Params.categories -}}
-    {{- $cats = $cats | append . -}}
-  {{- end -}}
-{{- end -}}
-{{- $cats = $cats | uniq | sort -}}
+<div class="work-page">
 
-<div class="archive-page">
-  {{- if gt (len $cats) 1 -}}
-  <div class="project-filter">
-    <button class="filter-btn active" data-cat="all">{{ if eq .Lang "de" }}Alle{{ else }}All{{ end }}</button>
-    {{- range $cats -}}
-    <button class="filter-btn" data-cat="{{ . }}">{{ . }}</button>
+  <div class="work-header">
+    <h1>{{ .Site.Language.Params.workHeading }}</h1>
+    {{- $cats := slice -}}
+    {{- range .Pages -}}{{- range .Params.categories -}}{{- $cats = $cats | append . -}}{{- end -}}{{- end -}}
+    {{- $cats = $cats | uniq | sort -}}
+    {{- if gt (len $cats) 1 -}}
+    <div class="work-filter">
+      <button class="badge filter-badge active" data-cat="all">{{ if eq .Lang "de" }}Alle{{ else }}All{{ end }}</button>
+      {{- range $cats -}}
+      <button class="badge badge--outline filter-badge" data-cat="{{ . }}">{{ . }}</button>
+      {{- end -}}
+    </div>
     {{- end -}}
   </div>
-  {{- end -}}
 
-  <div class="project-grid project-grid--4col" id="projects-grid">
+  <div class="project-grid" id="projects-grid">
     {{- range .Pages -}}
-    <a class="project-card" href="{{ .RelPermalink }}" data-cats="{{ delimit .Params.categories "," }}">
+    <a class="project-card" href="{{ .RelPermalink }}"
+       data-cats="{{ delimit (.Params.categories | default slice) "," }}">
       {{- with .Params.thumbnail -}}
       {{ partial "thumb.html" . }}
       {{- end -}}
@@ -47,6 +47,7 @@
     </a>
     {{- end -}}
   </div>
+
 </div>
 
 {{ end }}
