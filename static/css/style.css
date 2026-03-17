@@ -236,6 +236,11 @@ a:hover { color: var(--accent-hover); }
   opacity: .9;
 }
 
+.site-nav.scrolled .site-nav__brand:hover {
+  opacity: 1;
+  color: var(--accent);
+}
+
 .site-nav__links {
   display: flex;
   gap: 2.5rem;
