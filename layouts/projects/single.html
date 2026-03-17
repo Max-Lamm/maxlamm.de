@@ -140,7 +140,7 @@
   {{- end -}}
   {{- if gt (len $related) 0 -}}
   <div class="related-projects">
-    <h3>{{ .Site.Language.Params.moreProjects }}</h3>
+    <div class="section-label">{{ .Site.Language.Params.moreProjects }}</div>
     <div class="project-grid">
       {{- range $related -}}
       <a class="project-card" href="{{ .RelPermalink }}">
