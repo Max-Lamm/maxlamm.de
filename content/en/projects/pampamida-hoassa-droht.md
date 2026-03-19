@@ -6,7 +6,7 @@ draft: false
 featured: false
 thumbnail: "/images/projects/pampamida-hoassa-droht/thumb.jpg"
 categories:
-  - dop
+  - cinematographer
   - colorist
 types: 
   - music video

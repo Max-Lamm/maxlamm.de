@@ -6,7 +6,7 @@ draft: false
 featured: false
 thumbnail: "/images/projects/missingtype-2022/thumb.jpg"
 categories:
-  - dop
+  - cinematographer
 types:
   - commercial
 videos:

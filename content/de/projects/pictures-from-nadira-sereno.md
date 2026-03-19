@@ -6,7 +6,7 @@ draft: false
 featured: true
 thumbnail: "/images/projects/pictures-from-nadira-sereno/thumb.jpg"
 categories:
-  - dop
+  - cinematographer
   - colorist
 types:
   - music video

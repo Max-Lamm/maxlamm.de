@@ -18,7 +18,7 @@
     {{- $catsRaw := slice -}}
     {{- range .Pages -}}{{- range .Params.categories -}}{{- $catsRaw = $catsRaw | append . -}}{{- end -}}{{- end -}}
     {{- $catsRaw = $catsRaw | uniq -}}
-    {{- $order := slice "dop" "colorist" "weitere" -}}
+    {{- $order := slice "cinematographer" "colorist" "weitere" -}}
     {{- $cats := slice -}}
     {{- range $order -}}{{- $o := . -}}{{- range $catsRaw -}}{{- if eq . $o -}}{{- $cats = $cats | append . -}}{{- end -}}{{- end -}}{{- end -}}
     {{- range $catsRaw -}}{{- if not (in $order .) -}}{{- $cats = $cats | append . -}}{{- end -}}{{- end -}}

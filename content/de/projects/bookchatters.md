@@ -6,7 +6,7 @@ draft: false
 featured: false
 thumbnail: "/images/projects/bookchatters/thumb.jpg"
 categories:
-  - dop
+  - cinematographer
 types:
   - social media
 videos:

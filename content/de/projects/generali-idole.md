@@ -6,7 +6,7 @@ draft: false
 featured: false
 thumbnail: "/images/projects/generali-idole/thumb.jpg"
 categories:
-  - dop
+  - cinematographer
   - colorist
 types:
   - social media

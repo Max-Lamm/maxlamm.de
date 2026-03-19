@@ -44,7 +44,7 @@ pagination.pagerSize = 50
     contentDir = "content/en"
     [languages.en.params]
       description = "Cinematographer & Colorist Munich, Germany"
-      subtitle = "DoP & Colorist"
+      subtitle = "Cinematographer & Colorist"
       aboutHeading = "Hey, I'm Max"
       contactHeading = "Got a project in mind? Or interested in working together? I'd love to hear from you."
       workHeading = "Selected Projects"

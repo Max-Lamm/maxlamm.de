@@ -6,7 +6,7 @@ draft: false
 featured: false
 thumbnail: "/images/projects/john-garner-picture-of-my-mind/thumb.jpg"
 categories:
-  - dop
+  - cinematographer
   - colorist
 types:
   - music video

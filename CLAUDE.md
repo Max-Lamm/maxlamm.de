@@ -7,7 +7,8 @@ Zweisprachige (DE/EN) Portfolio-Website für Cinematographer & Colorist Maximili
 ```bash
 hugo server -D          # Dev-Server auf localhost:1313 (inkl. Drafts)
 hugo --minify --gc      # Production Build → public/
-./deploy.sh             # Build + rsync zu Uberspace (test.maxlamm.de)
+./deploy.sh             # Build + rsync zu Staging (test.maxlamm.de)
+./deploy.sh --prod      # Build + rsync zu Production (maxlamm.de) — mit Bestätigung
 hugo new projects/xyz.md  # Neues Projekt anlegen (nutzt archetypes/projects.md)
 ```
 
@@ -76,7 +77,7 @@ featured: false           # true = erscheint im Featured-Bereich der Homepage
 thumbnail: "/images/projects/<slug>/thumb.jpg"
 orientation: landscape    # landscape (default) | portrait (für Hochformat-Video-Paare)
 categories:
-  - colorist              # colorist | dop | weitere
+  - colorist              # colorist | cinematographer | weitere
 types:
   - commercial            # commercial | documentary | branded-content | social media
 videos:
@@ -135,10 +136,9 @@ Neues Projekt per `/new-project` Skill erstellen. Der Skill enthält alle Detail
 
 ## Workflow
 
-Nach jeder abgeschlossenen Aufgabe automatisch:
-1. `git add` der geänderten Dateien (gezielt, keine Binaries/`public/`)
-2. `git commit` mit sinnvoller Commit-Message
-3. `git push origin master`
-4. `./deploy.sh` (Hugo Build + rsync zu Uberspace)
+Commit, Push und Deploy **nur auf explizite Anfrage** — nicht automatisch nach jeder Aufgabe.
 
-Ausnahme: Reine Recherche/Analyse ohne Dateiänderungen → kein Commit.
+- `git add` gezielt (keine Binaries/`public/`)
+- `git commit` mit sinnvoller Commit-Message
+- `git push origin master`
+- `./deploy.sh` für Staging, `./deploy.sh --prod` für Production

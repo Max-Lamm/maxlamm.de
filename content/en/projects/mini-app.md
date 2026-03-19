@@ -7,7 +7,7 @@ featured: true
 thumbnail: "/images/projects/mini-app/thumb.jpg"
 orientation: landscape
 categories:
-  - dop
+  - cinematographer
   - colorist
 types:
   - commercial

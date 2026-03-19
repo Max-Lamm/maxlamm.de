@@ -6,7 +6,7 @@ draft: false
 featured: true
 thumbnail: "/images/projects/rasendoktor/thumb.jpg"
 categories:
-  - dop
+  - cinematographer
   - colorist
 types:
   - social media commercial

@@ -6,7 +6,7 @@ draft: false
 featured: true
 thumbnail: "/images/projects/sportec-ferdinand-s/thumb.jpg"
 categories:
-  - dop
+  - cinematographer
   - colorist
 types:
   - commercial

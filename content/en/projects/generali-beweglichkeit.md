@@ -6,7 +6,7 @@ draft: false
 featured: false
 thumbnail: "/images/projects/generali-beweglichkeit/thumb.jpg"
 categories:
-  - dop
+  - cinematographer
   - colorist
 types:
   - scoial media

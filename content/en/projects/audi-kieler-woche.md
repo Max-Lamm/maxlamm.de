@@ -6,7 +6,7 @@ draft: false
 featured: true
 thumbnail: "/images/projects/audi-kieler-woche/thumb.jpg"
 categories:
-  - dop
+  - cinematographer
 types:
   - social media
   - event

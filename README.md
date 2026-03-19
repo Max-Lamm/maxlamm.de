@@ -126,7 +126,7 @@ content/en/projects/porsche-roads.md  →  translationKey: "porsche-roads"
 
 Die drei Hauptkategorien:
 - `colorist` / `colorist` (DE/EN)
-- `dop` / `cinematographer` (DE/EN)
+- `cinematographer` / `cinematographer` (DE/EN)
 - `weitere` / `others` (DE/EN)
 
 Werden automatisch als Archiv-Seiten generiert.
@@ -138,22 +138,6 @@ Projekte mit `featured: true` erscheinen auf der Startseite. Wenn kein Projekt a
 ## Kontaktformular
 
 Das Formular sendet aktuell an `/email-handler/`. Du kannst das durch einen der folgenden Dienste ersetzen:
-
-- **Formspree** (kostenlos bis 50 Submissions/Monat): Form-Action auf `https://formspree.io/f/YOUR_ID` ändern
-- **Eigenes PHP-Script** auf Uberspace (dein bisheriger email-handler)
-- **Netlify Forms** falls du mal Netlify nutzt
-
-## Migration von WordPress
-
-Die bestehenden ~80 Projekte können schrittweise migriert werden:
-
-1. Projektseite auf maxlamm.de öffnen
-2. Text, Credits, Video-URLs, Tags kopieren
-3. Markdown-Datei erstellen (Archetype nutzen!)
-4. Bilder herunterladen und in `static/images/projects/` ablegen
-5. Optional: EN-Version erstellen
-
-**Tipp:** Die WordPress-Bilder liegen unter `maxlamm.de/wp-content/uploads/` – diese können per Script heruntergeladen werden.
 
 ## Technische Details
 

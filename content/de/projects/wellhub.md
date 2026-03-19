@@ -6,7 +6,7 @@ draft: false
 featured: false
 thumbnail: "/images/projects/wellhub/thumb.jpg"
 categories:
-  - dop
+  - cinematographer
 types:
   - image video
 videos:

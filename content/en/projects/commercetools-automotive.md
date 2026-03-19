@@ -6,7 +6,7 @@ draft: false
 featured: false
 thumbnail: "/images/projects/commercetools-automotive/thumb.jpg"
 categories:
-  - dop
+  - cinematographer
   - colorist
 types:
   - web video

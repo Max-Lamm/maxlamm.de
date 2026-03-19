@@ -6,7 +6,7 @@ draft: false
 featured: false
 thumbnail: "/images/projects/bad-heilbrunner/thumb.jpg"
 categories:
-  - dop
+  - cinematographer
 types:
   - imagefilm
 videos:

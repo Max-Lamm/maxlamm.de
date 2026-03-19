@@ -6,7 +6,7 @@ draft: false
 featured: false
 thumbnail: "/images/projects/lienne-fuck-you-very-much/thumb.jpg"
 categories:
-  - dop
+  - cinematographer
   - colorist
 types:
   - music video

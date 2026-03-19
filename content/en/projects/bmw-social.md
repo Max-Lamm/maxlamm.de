@@ -6,7 +6,7 @@ draft: false
 featured: true
 thumbnail: "/images/projects/bmw-social/thumb.jpg"
 categories:
-  - dop
+  - cinematographer
 types:
   - social media
 orientation: portrait
