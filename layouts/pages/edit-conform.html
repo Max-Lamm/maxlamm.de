@@ -14,22 +14,22 @@
 <div class="ec-page">
 
   <section class="static-page">
-    <h1>Edit Conform Anleitung</h1>
+    <h1>{{ if eq .Lang "en" }}Edit Conform Guide{{ else }}Edit Conform Anleitung{{ end }}</h1>
     <p>
-      Diese Anleitung hilft dir, deinen Schnitt für die Weiterverarbeitung (Conform) in DaVinci Resolve vorzubereiten.
+      {{ if eq .Lang "en" }}This guide helps you prepare your edit for further processing (conform) in DaVinci Resolve.{{ else }}Diese Anleitung hilft dir, deinen Schnitt für die Weiterverarbeitung (Conform) in DaVinci Resolve vorzubereiten.{{ end }}
     </p>
   </section>
 
   <div class="ec-workflow-nav">
     <div class="ec-workflow-tab active" data-tab="source">
-      <span class="ec-tab-badge">Empfohlen</span>
+      <span class="ec-tab-badge">{{ if eq .Lang "en" }}Recommended{{ else }}Empfohlen{{ end }}</span>
       <div class="ec-tab-title">Source Media Workflow</div>
-      <div class="ec-tab-desc">Originalmedien werden referenziert – maximale Flexibilität bei Auflösung und Farbkorrektur.</div>
+      <div class="ec-tab-desc">{{ if eq .Lang "en" }}Original media is referenced – maximum flexibility for resolution and colour grading.{{ else }}Originalmedien werden referenziert – maximale Flexibilität bei Auflösung und Farbkorrektur.{{ end }}</div>
     </div>
     <div class="ec-workflow-tab" data-tab="flat">
-      <span class="ec-tab-badge">Alternative</span>
+      <span class="ec-tab-badge">{{ if eq .Lang "en" }}Alternative{{ else }}Alternative{{ end }}</span>
       <div class="ec-tab-title">Flat Quicktime Workflow</div>
-      <div class="ec-tab-desc">Ein geflattetes Quicktime dient als Basis – einfacher, aber mit Einschränkungen.</div>
+      <div class="ec-tab-desc">{{ if eq .Lang "en" }}A flattened Quicktime serves as the basis – simpler, but with limitations.{{ else }}Ein geflattetes Quicktime dient als Basis – einfacher, aber mit Einschränkungen.{{ end }}</div>
     </div>
   </div>
 
@@ -38,87 +38,87 @@
     <!-- Source Media Workflow -->
     <div class="ec-workflow-section active" id="source">
 
-      <div class="section-label">Sequenz vorbereiten</div>
+      <div class="section-label">{{ if eq .Lang "en" }}Prepare sequence{{ else }}Sequenz vorbereiten{{ end }}</div>
 
       <div class="ec-step">
         <div class="ec-step-number">01</div>
         <div class="ec-step-body">
-          <div class="ec-step-text">Erstelle eine Kopie deiner Sequenz und füge einen beschreibenden Suffix hinzu, z.B. <code>forColor</code>.</div>
+          <div class="ec-step-text">{{ if eq .Lang "en" }}Create a copy of your sequence and add a descriptive suffix, e.g. <code>forColor</code>.{{ else }}Erstelle eine Kopie deiner Sequenz und füge einen beschreibenden Suffix hinzu, z.B. <code>forColor</code>.{{ end }}</div>
         </div>
       </div>
 
       <div class="ec-step">
         <div class="ec-step-number">02</div>
         <div class="ec-step-body">
-          <div class="ec-step-text">Grafiken, Texteinblendungen, Overlays und andere nicht für's Grading relevante Elemente entfernen.</div>
-          <div class="note-box"><strong>Ausnahme:</strong> Falls ich die finalen Exporte in Resolve erstellen soll, lass alle Elemente unverändert.</div>
+          <div class="ec-step-text">{{ if eq .Lang "en" }}Remove graphics, text overlays and other elements not relevant for grading.{{ else }}Grafiken, Texteinblendungen, Overlays und andere nicht für's Grading relevante Elemente entfernen.{{ end }}</div>
+          <div class="note-box"><strong>{{ if eq .Lang "en" }}Exception:{{ else }}Ausnahme:{{ end }}</strong> {{ if eq .Lang "en" }}If I am to create the final exports in Resolve, leave all elements unchanged.{{ else }}Falls ich die finalen Exporte in Resolve erstellen soll, lass alle Elemente unverändert.{{ end }}</div>
         </div>
       </div>
 
       <div class="ec-step">
         <div class="ec-step-number">03</div>
         <div class="ec-step-body">
-          <div class="ec-step-text">Reduziere die Clips und Bearbeitungen auf so wenige Videospuren wie möglich – idealerweise nur 1–2. Nach Abschluss sollten keine Clips oder Clip-Bereiche in der Sequenz vorhanden sein, die im finalen Schnitt nicht sichtbar sind.</div>
+          <div class="ec-step-text">{{ if eq .Lang "en" }}Reduce the clips and edits to as few video tracks as possible – ideally just 1–2. When finished, there should be no clips or clip sections in the sequence that are not visible in the final cut.{{ else }}Reduziere die Clips und Bearbeitungen auf so wenige Videospuren wie möglich – idealerweise nur 1–2. Nach Abschluss sollten keine Clips oder Clip-Bereiche in der Sequenz vorhanden sein, die im finalen Schnitt nicht sichtbar sind.{{ end }}</div>
         </div>
       </div>
 
       <div class="ec-step">
         <div class="ec-step-number">04</div>
         <div class="ec-step-body">
-          <div class="ec-step-text">Verbinde alle durchgehenden Edits, es sei denn, sie dienen der Unterteilung von Geschwindigkeitsänderungen oder Reframes.</div>
+          <div class="ec-step-text">{{ if eq .Lang "en" }}Join all through edits, unless they serve to subdivide speed changes or reframes.{{ else }}Verbinde alle durchgehenden Edits, es sei denn, sie dienen der Unterteilung von Geschwindigkeitsänderungen oder Reframes.{{ end }}</div>
         </div>
       </div>
 
       <div class="ec-step">
         <div class="ec-step-number">05</div>
         <div class="ec-step-body">
-          <div class="ec-step-text">Ersetze alle Multi-Cam-Clips, verschachtelte Sequenzen oder Compound Clips durch ihre Quellclips.</div>
+          <div class="ec-step-text">{{ if eq .Lang "en" }}Replace all multi-cam clips, nested sequences or compound clips with their source clips.{{ else }}Ersetze alle Multi-Cam-Clips, verschachtelte Sequenzen oder Compound Clips durch ihre Quellclips.{{ end }}</div>
         </div>
       </div>
 
       <div class="ec-step">
         <div class="ec-step-number">06</div>
         <div class="ec-step-body">
-          <div class="ec-step-text">Tausche alle Proxies oder transkodierten Clips gegen die Original-Quellclips aus.</div>
+          <div class="ec-step-text">{{ if eq .Lang "en" }}Swap all proxies or transcoded clips for the original source clips.{{ else }}Tausche alle Proxies oder transkodierten Clips gegen die Original-Quellclips aus.{{ end }}</div>
         </div>
       </div>
 
-      <div class="section-label">Aufräumen</div>
+      <div class="section-label">{{ if eq .Lang "en" }}Clean up{{ else }}Aufräumen{{ end }}</div>
 
       <div class="ec-step">
         <div class="ec-step-number">07</div>
         <div class="ec-step-body">
-          <div class="ec-step-text">Leere Videospuren löschen.</div>
+          <div class="ec-step-text">{{ if eq .Lang "en" }}Delete empty video tracks.{{ else }}Leere Videospuren löschen.{{ end }}</div>
         </div>
       </div>
 
       <div class="ec-step">
         <div class="ec-step-number">08</div>
         <div class="ec-step-body">
-          <div class="ec-step-text">Alle Audiospuren und Clips löschen. Und durch einen Audio-Mixdown ersetzten.</div>
+          <div class="ec-step-text">{{ if eq .Lang "en" }}Delete all audio tracks and clips. Replace with an audio mixdown.{{ else }}Alle Audiospuren und Clips löschen. Und durch einen Audio-Mixdown ersetzten.{{ end }}</div>
         </div>
       </div>
 
-      <div class="section-label">Export &amp; Übergabe</div>
+      <div class="section-label">{{ if eq .Lang "en" }}Export &amp; Handoff{{ else }}Export &amp; Übergabe{{ end }}</div>
 
       <div class="ec-step">
         <div class="ec-step-number">09</div>
         <div class="ec-step-body">
-          <div class="ec-step-text">Kopiere alle Originalmedien auf ein Arbeitslaufwerk.</div>
+          <div class="ec-step-text">{{ if eq .Lang "en" }}Copy all original media to a working drive.{{ else }}Kopiere alle Originalmedien auf ein Arbeitslaufwerk.{{ end }}</div>
         </div>
       </div>
 
       <div class="ec-step">
         <div class="ec-step-number">10</div>
         <div class="ec-step-body">
-          <div class="ec-step-text">Exportiere eine <code>XML</code> oder <code>AAF</code> der Sequenz.</div>
+          <div class="ec-step-text">{{ if eq .Lang "en" }}Export an <code>XML</code> or <code>AAF</code> of the sequence.{{ else }}Exportiere eine <code>XML</code> oder <code>AAF</code> der Sequenz.{{ end }}</div>
         </div>
       </div>
 
       <div class="ec-step">
         <div class="ec-step-number">11</div>
         <div class="ec-step-body">
-          <div class="ec-step-text">Exportiere ein Quicktime Video der Sequenz in nativer Auflösung als <code>ProRes LT</code> oder <code>H.264</code>.</div>
+          <div class="ec-step-text">{{ if eq .Lang "en" }}Export a Quicktime of the sequence in native resolution as <code>ProRes LT</code> or <code>H.264</code>.{{ else }}Exportiere ein Quicktime Video der Sequenz in nativer Auflösung als <code>ProRes LT</code> oder <code>H.264</code>.{{ end }}</div>
         </div>
       </div>
 
@@ -127,87 +127,87 @@
     <!-- Flat Quicktime Workflow -->
     <div class="ec-workflow-section" id="flat">
 
-      <div class="section-label">Sequenz vorbereiten</div>
+      <div class="section-label">{{ if eq .Lang "en" }}Prepare sequence{{ else }}Sequenz vorbereiten{{ end }}</div>
 
       <div class="ec-step">
         <div class="ec-step-number">01</div>
         <div class="ec-step-body">
-          <div class="ec-step-text">Erstelle eine Kopie deiner Sequenz und füge einen beschreibenden Suffix hinzu, z.B. <code>forColor</code>.</div>
+          <div class="ec-step-text">{{ if eq .Lang "en" }}Create a copy of your sequence and add a descriptive suffix, e.g. <code>forColor</code>.{{ else }}Erstelle eine Kopie deiner Sequenz und füge einen beschreibenden Suffix hinzu, z.B. <code>forColor</code>.{{ end }}</div>
         </div>
       </div>
 
       <div class="ec-step">
         <div class="ec-step-number">02</div>
         <div class="ec-step-body">
-          <div class="ec-step-text">Stelle sicher, dass die Sequenzauflösung mit der gewünschten finalen Auslieferungsauflösung übereinstimmt.</div>
+          <div class="ec-step-text">{{ if eq .Lang "en" }}Make sure the sequence resolution matches the desired final delivery resolution.{{ else }}Stelle sicher, dass die Sequenzauflösung mit der gewünschten finalen Auslieferungsauflösung übereinstimmt.{{ end }}</div>
         </div>
       </div>
 
       <div class="ec-step">
         <div class="ec-step-number">03</div>
         <div class="ec-step-body">
-          <div class="ec-step-text">Überprüfe, dass alle Clips das Bild vollständig ausfüllen, ohne schwarze Balken (Pillarboxing oder Letterboxing).</div>
+          <div class="ec-step-text">{{ if eq .Lang "en" }}Verify that all clips fill the frame completely without black bars (pillarboxing or letterboxing).{{ else }}Überprüfe, dass alle Clips das Bild vollständig ausfüllen, ohne schwarze Balken (Pillarboxing oder Letterboxing).{{ end }}</div>
         </div>
       </div>
 
       <div class="ec-step">
         <div class="ec-step-number">04</div>
         <div class="ec-step-body">
-          <div class="ec-step-text">Entferne alle Überblendungen oder andere Übergänge.</div>
+          <div class="ec-step-text">{{ if eq .Lang "en" }}Remove all dissolves or other transitions.{{ else }}Entferne alle Überblendungen oder andere Übergänge.{{ end }}</div>
         </div>
       </div>
 
       <div class="ec-step">
         <div class="ec-step-number">05</div>
         <div class="ec-step-body">
-          <div class="ec-step-text">Schließe Anpassungen an Positionen oder Zooms ab, da diese in die Farbkorrektur gebacken werden.</div>
+          <div class="ec-step-text">{{ if eq .Lang "en" }}Finalise any position or zoom adjustments, as these will be baked into the colour grade.{{ else }}Schließe Anpassungen an Positionen oder Zooms ab, da diese in die Farbkorrektur gebacken werden.{{ end }}</div>
         </div>
       </div>
 
       <div class="ec-step">
         <div class="ec-step-number">06</div>
         <div class="ec-step-body">
-          <div class="ec-step-text">Grafiken, Texteinblendungen, Overlays und andere nicht für's Grading relevante Elemente entfernen.</div>
-          <div class="note-box"><strong>Ausnahme:</strong> Wenn du die finalen Exporte in Resolve erstellen möchtest, lass alle Elemente unverändert und exportiere sie als separates Quicktime mit Alpha (ohne Footage!).</div>
+          <div class="ec-step-text">{{ if eq .Lang "en" }}Remove graphics, text overlays and other elements not relevant for grading.{{ else }}Grafiken, Texteinblendungen, Overlays und andere nicht für's Grading relevante Elemente entfernen.{{ end }}</div>
+          <div class="note-box"><strong>{{ if eq .Lang "en" }}Exception:{{ else }}Ausnahme:{{ end }}</strong> {{ if eq .Lang "en" }}If you want to create the final exports in Resolve, leave all elements unchanged and export them as a separate Quicktime with alpha (without footage!).{{ else }}Wenn du die finalen Exporte in Resolve erstellen möchtest, lass alle Elemente unverändert und exportiere sie als separates Quicktime mit Alpha (ohne Footage!).{{ end }}</div>
         </div>
       </div>
 
       <div class="ec-step">
         <div class="ec-step-number">07</div>
         <div class="ec-step-body">
-          <div class="ec-step-text">Filter und LUTs entfernen.</div>
+          <div class="ec-step-text">{{ if eq .Lang "en" }}Remove filters and LUTs.{{ else }}Filter und LUTs entfernen.{{ end }}</div>
         </div>
       </div>
 
       <div class="ec-step">
         <div class="ec-step-number">08</div>
         <div class="ec-step-body">
-          <div class="ec-step-text">Tausche alle Proxies oder transkodierten Clips gegen die Original-Quellclips aus.</div>
+          <div class="ec-step-text">{{ if eq .Lang "en" }}Swap all proxies or transcoded clips for the original source clips.{{ else }}Tausche alle Proxies oder transkodierten Clips gegen die Original-Quellclips aus.{{ end }}</div>
         </div>
       </div>
 
-      <div class="section-label">Export &amp; Übergabe</div>
+      <div class="section-label">{{ if eq .Lang "en" }}Export &amp; Handoff{{ else }}Export &amp; Übergabe{{ end }}</div>
 
       <div class="ec-step">
         <div class="ec-step-number">09</div>
         <div class="ec-step-body">
-          <div class="ec-step-text">Exportiere eine <code>EDL</code>, <code>XML</code> oder <code>AAF</code> der Sequenz.</div>
+          <div class="ec-step-text">{{ if eq .Lang "en" }}Export an <code>EDL</code>, <code>XML</code> or <code>AAF</code> of the sequence.{{ else }}Exportiere eine <code>EDL</code>, <code>XML</code> oder <code>AAF</code> der Sequenz.{{ end }}</div>
         </div>
       </div>
 
       <div class="ec-step">
         <div class="ec-step-number">10</div>
         <div class="ec-step-body">
-          <div class="ec-step-text">Exportiere ein Quicktime der Sequenz in nativer Auflösung als <code>ProRes 4444</code>.</div>
+          <div class="ec-step-text">{{ if eq .Lang "en" }}Export a Quicktime of the sequence in native resolution as <code>ProRes 4444</code>.{{ else }}Exportiere ein Quicktime der Sequenz in nativer Auflösung als <code>ProRes 4444</code>.{{ end }}</div>
         </div>
       </div>
 
       <div class="warning-box">
-        <h3>Einschränkungen dieses Workflows</h3>
+        <h3>{{ if eq .Lang "en" }}Limitations of this workflow{{ else }}Einschränkungen dieses Workflows{{ end }}</h3>
         <ul>
-          <li>Überblendungen oder andere Übergänge in der Sequenz können nicht übernommen werden. Diese müssen im Nachhinein manuell wieder hinzugefügt werden.</li>
-          <li>Die finale Renderauflösung ist auf die Auflösung des gelieferten Flat-Quicktime beschränkt, unabhängig von der ursprünglichen Footage-Auflösung.</li>
-          <li>Alle zusammengesetzten Elemente werden als ein einzelnes flaches Element bearbeitet.</li>
+          <li>{{ if eq .Lang "en" }}Dissolves or other transitions in the sequence cannot be carried over. These must be manually re-added afterwards.{{ else }}Überblendungen oder andere Übergänge in der Sequenz können nicht übernommen werden. Diese müssen im Nachhinein manuell wieder hinzugefügt werden.{{ end }}</li>
+          <li>{{ if eq .Lang "en" }}The final render resolution is limited to the resolution of the delivered flat Quicktime, regardless of the original footage resolution.{{ else }}Die finale Renderauflösung ist auf die Auflösung des gelieferten Flat-Quicktime beschränkt, unabhängig von der ursprünglichen Footage-Auflösung.{{ end }}</li>
+          <li>{{ if eq .Lang "en" }}All composited elements will be treated as a single flat element.{{ else }}Alle zusammengesetzten Elemente werden als ein einzelnes flaches Element bearbeitet.{{ end }}</li>
         </ul>
       </div>
 
