@@ -13,6 +13,8 @@ name_en: "Mini App"      # Anzeigename (EN) — weglassen wenn gleich
 slug: mini-app           # URL-freundlich, z.B. "porsche-roads"
 date: 2026-03-10              # Datum für Sortierung im Grid (neuere = weiter oben)
 client: Mini            # Auftraggeber
+description_de: ""   # Leer lassen → Claude generiert automatisch aus Beschreibung + Rolle
+description_en: ""   # Leer lassen → Claude generiert automatisch aus Beschreibung + Rolle
 
 featured: true               # true = erscheint im Featured-Bereich der Homepage
 orientation: landscape        # landscape | portrait (für Hochformat-Video-Paare)

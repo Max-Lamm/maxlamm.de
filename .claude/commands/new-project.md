@@ -20,6 +20,10 @@ Aus Beschreibung + technischen Details einen ausführlichen Portfolio-Text bauen
 
 ## Front Matter
 
+- `description`: 1–2 Sätze SEO-Text — Rolle + Kunde + Projektkern. DE und EN separat formulieren.
+  Format: "[Rolle] für [Kunde/Projekt] – [Projektkern in einem Satz]."
+  Beispiel DE: "Kamera und Color Grading für Mini App Werbefilm – DoP & Colorist Maximilian Lamm. Retro vs. Moderne in fünf Vignetten."
+  Das Feld direkt nach `draft: false` platzieren. Falls `description_de`/`description_en` im Input angegeben → diese verwenden, sonst automatisch generieren.
 - `thumbnail`: `/images/projects/<slug>/thumb.jpg`
 - `gallery`: Dateinamen aus dem Input zu vollständigen Pfaden zusammensetzen
 - `video_posters`: Nur wenn explizit angegeben — sonst Feld weglassen
