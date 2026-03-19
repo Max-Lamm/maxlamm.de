@@ -31,6 +31,7 @@ hugo new projects/xyz.md  # Neues Projekt anlegen (nutzt archetypes/projects.md)
 │   │   ├── footer.html           # Globaler Footer
 │   │   ├── img-url.html          # Bildpfad-Helper (Hugo-Assets vs. static)
 │   │   ├── thumb.html            # Thumbnail-Rendering mit Image Processing
+│   │   ├── schema-video.html     # Structured Data (VideoObject JSON-LD) für Projekt-Seiten
 │   │   └── vimeo-src.html        # Vimeo-URL-Extraktion aus Embed-Links
 │   ├── pages/
 │   │   └── edit-conform.html     # Edit Conform Seite (Custom Layout)
@@ -70,6 +71,7 @@ hugo new projects/xyz.md  # Neues Projekt anlegen (nutzt archetypes/projects.md)
 title: "Projekttitel"
 date: 2024-01-01          # Sortierreihenfolge im Grid (neuere = weiter oben)
 draft: false
+description: "Kurze Beschreibung für SEO (meta description, OG-Tag)"
 featured: false           # true = erscheint im Featured-Bereich der Homepage
 thumbnail: "/images/projects/<slug>/thumb.jpg"
 orientation: landscape    # landscape (default) | portrait (für Hochformat-Video-Paare)
@@ -129,6 +131,7 @@ Neues Projekt per `/new-project` Skill erstellen. Der Skill enthält alle Detail
 - **Hugo Module Mounts**: `hugo.toml` mountet `static/images` zusätzlich nach `assets/images` — dadurch funktioniert Hugo Image Processing auf statische Bilder. Beim Ändern der Mounts darauf achten, dass beide Pfade konsistent bleiben.
 - **`resources/_gen/`**: Enthält gecachte Ergebnisse von Hugo Image Processing. Kann gelöscht werden, wird beim nächsten Build neu generiert.
 - **Fonts sind self-hosted**: Raleway + Work Sans liegen in `static/fonts/` — kein CDN, kein externer Request. Neue Font-Weights dort ablegen und in `baseof.html` referenzieren.
+- **SEO**: `baseof.html` rendert automatisch OG-Tags, canonical URLs und JSON-LD (VideoObject via `schema-video.html`). Das `description`-Front-Matter-Feld befüllt meta description und og:description — bei neuen Projekten immer ausfüllen.
 
 ## Workflow
 
