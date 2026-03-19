@@ -1,5 +1,6 @@
 ---
 title: "Home"
+description: "Maximilian Lamm – Kameramann (DoP) und Colorist aus München. Portfolio mit Werbefilmen, Imagefilmen, Musikvideos und Social Media Content."
 ---
 
 Kameramann und Colorist aus München mit einer Leidenschaft für visuelle Geschichten.

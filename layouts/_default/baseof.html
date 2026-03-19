@@ -5,8 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ if .IsHome }}{{ .Site.Title }} – {{ .Site.Params.description }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <link rel="canonical" href="{{ .Permalink }}">
   {{ range .AllTranslations }}<link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
-  {{ end }}<link rel="stylesheet" href="/css/style.css">
+  {{ end }}
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }} – {{ .Site.Params.description }}{{ else }}{{ .Title }}{{ end }}">
+  <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:locale" content="{{ replace .Lang "-" "_" }}">
+  <meta property="og:site_name" content="{{ .Site.Title }}">
+  {{- with .Params.thumbnail }}
+  <meta property="og:image" content="{{ . | absURL }}">
+  {{- else }}
+  <meta property="og:image" content="{{ "images/portrait.jpg" | absURL }}">
+  {{- end }}
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }} – {{ .Site.Params.description }}{{ else }}{{ .Title }}{{ end }}">
+  <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  {{- with .Params.thumbnail }}
+  <meta name="twitter:image" content="{{ . | absURL }}">
+  {{- else }}
+  <meta name="twitter:image" content="{{ "images/portrait.jpg" | absURL }}">
+  {{- end }}
+  <!-- Schema.org Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "{{ .Site.Params.author }}",
+    "url": "{{ .Site.BaseURL }}",
+    "jobTitle": "Cinematographer & Colorist",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Munich",
+      "addressCountry": "DE"
+    },
+    "sameAs": [
+      "{{ .Site.Params.instagram }}",
+      "{{ .Site.Params.linkedin }}"
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/css/style.css">
   <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
   <!-- Klaro Cookie Consent -->
   <script defer src="/js/klaro-config.js"></script>

@@ -70,9 +70,9 @@ pagination.pagerSize = 50
 
 [params]
   author = "Maximilian Lamm"
-  description = "Cinematographer & Colorist"
-  email = "hi@maxlamm.de"
-  phone = "+49 176 69262318"
+  description = "DoP & Colorist aus München"
+  email = "/contact/"
+  phone = "+4917669262318"
   instagram = "https://www.instagram.com/maxlamm/"
   linkedin = "https://www.linkedin.com/in/maxlamm/"
   accentColor = "#E05A4E"

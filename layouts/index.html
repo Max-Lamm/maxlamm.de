@@ -35,9 +35,10 @@
       {{- $display = first 12 $projects -}}
     {{- end -}}
     {{- range $display -}}
+    {{- $title := .Title -}}
     <a class="project-card" href="{{ .RelPermalink }}">
       {{- with .Params.thumbnail -}}
-      {{ partial "thumb.html" . }}
+      {{ partial "thumb.html" (dict "src" . "alt" $title) }}
       {{- end -}}
       <div class="project-card__overlay">
         {{- with .Params.types -}}
@@ -62,7 +63,7 @@
     <div class="about-section__image">
       {{- $portrait := resources.Get "images/portrait.jpg" -}}
       {{- if $portrait -}}{{- $portrait = ($portrait.Resize "800x webp q80") -}}{{- end -}}
-      <img src="{{ if $portrait }}{{ $portrait.RelPermalink }}{{ else }}/images/portrait.jpg{{ end }}" alt="{{ .Site.Params.author }}">
+      <img src="{{ if $portrait }}{{ $portrait.RelPermalink }}{{ else }}/images/portrait.jpg{{ end }}" alt="{{ .Site.Params.author }} – {{ .Site.Params.description }}">
     </div>
     <div class="about-section__content">
       <h2>{{ .Site.Language.Params.aboutHeading }}</h2>

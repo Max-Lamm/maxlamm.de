@@ -1,5 +1,7 @@
 {{ define "main" }}
 
+{{- partial "schema-video.html" . -}}
+
 <!-- NAV (for subpages: regular links) -->
 <nav class="site-nav scrolled">
   <div class="site-nav__inner">
@@ -114,14 +116,15 @@
   <div class="project-gallery">
     <div class="section-label">{{ if eq $.Lang "de" }}Galerie{{ else }}Gallery{{ end }}</div>
     <div class="gallery-grid" style="--cols: {{ $.Params.gallery_columns | default 3 }}">
-      {{- range . -}}
-      {{- $galSrc := . -}}
+      {{- range $i, $g := . -}}
+      {{- $galSrc := $g -}}
+      {{- $galAlt := printf "%s – %s %d" $.Title (cond (eq $.Lang "de") "Bild" "Image") (add $i 1) -}}
       {{- $galImg := resources.Get (strings.TrimPrefix "/" $galSrc) -}}
       {{- if $galImg -}}
         {{- $galThumb := $galImg.Resize "800x webp q80" -}}
-        <img src="{{ $galThumb.RelPermalink }}" data-full="{{ $galSrc }}" alt="" loading="lazy">
+        <img src="{{ $galThumb.RelPermalink }}" data-full="{{ $galSrc }}" alt="{{ $galAlt }}" loading="lazy">
       {{- else -}}
-        <img src="{{ $galSrc }}" alt="" loading="lazy">
+        <img src="{{ $galSrc }}" alt="{{ $galAlt }}" loading="lazy">
       {{- end -}}
       {{- end -}}
     </div>
@@ -143,9 +146,10 @@
     <div class="section-label">{{ .Site.Language.Params.moreProjects }}</div>
     <div class="project-grid">
       {{- range $related -}}
+      {{- $title := .Title -}}
       <a class="project-card" href="{{ .RelPermalink }}">
         {{- with .Params.thumbnail -}}
-        {{ partial "thumb.html" . }}
+        {{ partial "thumb.html" (dict "src" . "alt" $title) }}
         {{- end -}}
         <div class="project-card__overlay">
           <span class="project-card__title">{{ .Title }}</span>

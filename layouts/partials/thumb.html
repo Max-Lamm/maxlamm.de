@@ -1,8 +1,15 @@
-{{- $src := . -}}
+{{- $src := "" -}}
+{{- $alt := "" -}}
+{{- if reflect.IsMap . -}}
+  {{- $src = .src -}}
+  {{- $alt = .alt -}}
+{{- else -}}
+  {{- $src = . -}}
+{{- end -}}
 {{- $img := resources.Get (strings.TrimPrefix "/" $src) -}}
 {{- if $img -}}
   {{- $t := $img.Fill "768x432 webp q80" -}}
-  <img src="{{ $t.RelPermalink }}" width="{{ $t.Width }}" height="{{ $t.Height }}" alt="" loading="lazy">
+  <img src="{{ $t.RelPermalink }}" width="{{ $t.Width }}" height="{{ $t.Height }}" alt="{{ $alt }}" loading="lazy">
 {{- else -}}
-  <img src="{{ $src }}" alt="" loading="lazy">
+  <img src="{{ $src }}" alt="{{ $alt }}" loading="lazy">
 {{- end -}}

@@ -1,5 +1,6 @@
 ---
 title: "Home"
+description: "Maximilian Lamm – Cinematographer (DoP) and Colorist based in Munich. Portfolio featuring commercials, branded content, music videos and social media."
 ---
 
 Cinematographer and Colorist based in Munich with a passion for visual storytelling.

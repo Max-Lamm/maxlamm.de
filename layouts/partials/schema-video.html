@@ -1,0 +1,14 @@
+{{- with .Params.videos -}}
+{{- range $i, $v := . -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "{{ $.Title }}{{ if gt (len $.Params.videos) 1 }} ({{ add $i 1 }}){{ end }}",
+  "description": "{{ with $.Description }}{{ . }}{{ else }}{{ $.Site.Params.description }}{{ end }}",
+  "thumbnailUrl": "{{ $.Params.thumbnail | absURL }}",
+  "uploadDate": "{{ $.Date.Format "2006-01-02" }}"
+}
+</script>
+{{- end -}}
+{{- end -}}

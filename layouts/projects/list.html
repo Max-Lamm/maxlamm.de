@@ -34,10 +34,11 @@
 
   <div class="project-grid" id="projects-grid">
     {{- range .Pages -}}
+    {{- $title := .Title -}}
     <a class="project-card" href="{{ .RelPermalink }}"
        data-cats="{{ delimit (.Params.categories | default slice) "," }}">
       {{- with .Params.thumbnail -}}
-      {{ partial "thumb.html" . }}
+      {{ partial "thumb.html" (dict "src" . "alt" $title) }}
       {{- end -}}
       <div class="project-card__overlay">
         {{- with .Params.types -}}
