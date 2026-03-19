@@ -1,5 +1,18 @@
 {{- with .Params.videos -}}
 {{- range $i, $v := . -}}
+{{- $embedUrl := "" -}}
+{{- if findRE "vimeo\\.com" $v -}}
+  {{- $path := replaceRE ".*vimeo\\.com/" "" $v -}}
+  {{- $parts := split $path "/" -}}
+  {{- if gt (len $parts) 1 -}}
+    {{- $embedUrl = printf "https://player.vimeo.com/video/%s?h=%s" (index $parts 0) (index $parts 1) -}}
+  {{- else -}}
+    {{- $embedUrl = printf "https://player.vimeo.com/video/%s" (index $parts 0) -}}
+  {{- end -}}
+{{- else if findRE "youtube\\.com|youtu\\.be" $v -}}
+  {{- $videoId := replaceRE `.*[?&v=]([^&]+).*` "$1" $v -}}
+  {{- $embedUrl = printf "https://www.youtube-nocookie.com/embed/%s" $videoId -}}
+{{- end -}}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -7,7 +20,8 @@
   "name": "{{ $.Title }}{{ if gt (len $.Params.videos) 1 }} ({{ add $i 1 }}){{ end }}",
   "description": "{{ with $.Description }}{{ . }}{{ else }}{{ $.Site.Params.description }}{{ end }}",
   "thumbnailUrl": "{{ $.Params.thumbnail | absURL }}",
-  "uploadDate": "{{ $.Date.Format "2006-01-02" }}"
+  "uploadDate": "{{ $.Date.Format "2006-01-02" }}"{{ with $embedUrl }},
+  "embedUrl": "{{ . }}"{{ end }}
 }
 </script>
 {{- end -}}
