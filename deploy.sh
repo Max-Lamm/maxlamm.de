@@ -1,6 +1,6 @@
 #!/bin/bash
 # ============================================================
-# DEPLOY SCRIPT — test.maxlamm.de Hugo Site
+# DEPLOY SCRIPT — maxlamm.de Hugo Site
 # Builds the site and deploys to Uberspace via rsync
 # ============================================================
 
@@ -9,7 +9,7 @@ set -e
 # Config — passe diese Werte an dein Setup an
 REMOTE_USER="maxlamm"                    # Dein Uberspace-Username
 REMOTE_HOST="hernmann.uberspace.de"      # Dein Uberspace-Host
-REMOTE_PATH="/var/www/virtual/${REMOTE_USER}/test.maxlamm.de/"  # DocumentRoot
+REMOTE_PATH="/var/www/virtual/${REMOTE_USER}/maxlamm.de/"  # DocumentRoot
 
 # Colors
 GREEN='\033[0;32m'
@@ -27,4 +27,4 @@ public/ ${REMOTE_USER}@${REMOTE_HOST}:${REMOTE_PATH}
 #rsync -avz --delete -e "ssh -i ~/.ssh/id_ed25519 -o IdentitiesOnly=yes" public/ ${REMOTE_USER}@${REMOTE_HOST}:${REMOTE_PATH}
 
 echo ""
-echo -e "${GREEN}✓ Done! Site is live at https://test.maxlamm.de${NC}"
+echo -e "${GREEN}✓ Done! Site is live at https://maxlamm.de${NC}"
