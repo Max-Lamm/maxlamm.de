@@ -17,7 +17,7 @@ credits:
     name: HTN Films
   - role: Dir/DP
     name: Hubert Neufeld
-translationKey: "craft-teamsport-germany"
+translationKey: "craft-teamsport-de"
 ---
 
 Deutschland Kampagne für die CRAFT Teamsport Ausstattung. Vier deutsche Profiteams in Aktion als Ambassador*innen für die schwedische Marke in Deutschland.

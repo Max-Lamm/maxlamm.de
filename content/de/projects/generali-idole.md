@@ -31,7 +31,7 @@ credits:
   - role: Grading
     name: Maximilian Lamm
 gallery:
-translationKey: "generali-idols"
+translationKey: "generali-idole"
 ---
 
 Zwei Kunstturner, Fabian Hambüchen und Gabriel Eichhorn. In den Minuten vor dem Training sitzen sie in der Umkleide auf einem Kasten, streifen die Handschuhe mit den Fingerlöchern über, bandagieren die Handgelenke, klatschen die Handflächen gegeneinander und lassen das Magnesia stauben. Für das Generali Online Journal durfte ich das Monacoframe Team als DP und Colorist unterstützen.

@@ -42,7 +42,7 @@ gallery:
   - "/images/projects/generali-beweglichkeit/09.jpg"
   - "/images/projects/generali-beweglichkeit/10.jpg"
 gallery_columns: 5
-translationKey: "generali-mobility"
+translationKey: "generali-beweglichkeit"
 ---
 
 Bouldern hat vor allem mit Vorbereitung zu tun, denn nur ein gutes Training bringt den eigenen Körper dazu, die Hürden dieser Sportart zu meistern. Alma gehört zu den Besten ihrer sportlichen Disziplin und das ist nicht nur ihrem Talent geschuldet. Auch ihr hartes Training und der Wille, die Beste zu sein, haben Alma dahin gebracht, wo sie heute ist. 
