@@ -1,5 +1,6 @@
 ---
 title: "Generali – Nonstop Ausdauer"
+description: "Kamera und Color Grading für Generali Social Media Video zum Thema Ausdauer – DoP & Colorist Maximilian Lamm."
 date: 2022-09-16
 draft: false
 featured: false

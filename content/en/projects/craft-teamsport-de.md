@@ -1,5 +1,6 @@
 ---
 title: "Craft Teamsport Germany"
+description: "Color grading for Craft Sportswear Germany campaign commercial – Colorist Maximilian Lamm."
 date: 2024-06-26
 draft: false
 featured: true

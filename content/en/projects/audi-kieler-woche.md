@@ -1,5 +1,6 @@
 ---
 title: "Audi Sailing"
+description: "Social media cinematography for Audi at Kieler Woche sailing event – DoP Maximilian Lamm captures real-time content."
 date: 2024-06-29
 draft: false
 featured: true

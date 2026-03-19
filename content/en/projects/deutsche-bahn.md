@@ -1,5 +1,6 @@
 ---
 title: "Deutsche Bahn"
+description: "Color grading for Deutsche Bahn corporate social media campaign – Colorist Maximilian Lamm creates a unified look."
 date: 2023-10-20
 draft: false
 featured: false

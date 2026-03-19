@@ -1,5 +1,6 @@
 ---
 title: "#missingType 2022"
+description: "Cinematography for German Red Cross #missingType blood donation campaign commercial – DoP Maximilian Lamm."
 date: 2022-06-14
 draft: false
 featured: false

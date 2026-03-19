@@ -1,5 +1,6 @@
 ---
 title: "Generali – Nonstop Endurance"
+description: "Cinematography and color grading for Generali social media content – DoP & Colorist Maximilian Lamm."
 date: 2022-09-16
 draft: false
 featured: false

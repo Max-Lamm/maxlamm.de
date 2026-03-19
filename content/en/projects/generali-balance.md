@@ -1,5 +1,6 @@
 ---
 title: "Generali – Focus on balance"
+description: "Cinematography and color grading for Generali social media portrait – DoP & Colorist Maximilian Lamm."
 date: 2022-08-16
 draft: false
 featured: false

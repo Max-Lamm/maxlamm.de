@@ -1,5 +1,6 @@
 ---
 title: "Jan Wannemacher – Heischnupfa"
+description: "Direction, cinematography, and color grading for Jan Wannemacher music video – DoP & Colorist Maximilian Lamm."
 date: 2022-06-16
 draft: false
 featured: false

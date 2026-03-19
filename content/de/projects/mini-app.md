@@ -1,5 +1,6 @@
 ---
 title: "Mini App"
+description: "Kamera und Color Grading für Mini App Werbefilm – DoP & Colorist Maximilian Lamm. Retro vs. Moderne in fünf Vignetten."
 date: 2026-03-10
 draft: true
 featured: true

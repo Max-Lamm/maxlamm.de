@@ -1,5 +1,6 @@
 ---
 title: "Audi Segeln"
+description: "Kamera für Audi Social Media Content auf der Kieler Woche – Kameramann Maximilian Lamm. Echtzeit-Event-Content."
 date: 2024-06-29
 draft: false
 featured: true

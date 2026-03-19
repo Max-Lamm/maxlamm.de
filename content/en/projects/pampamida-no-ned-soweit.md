@@ -1,5 +1,6 @@
 ---
 title: "Pam Pam Ida – No Ned Soweit"
+description: "Direction, cinematography, and color grading for Pam Pam Ida music video – DoP & Colorist Maximilian Lamm."
 date: 2020-09-24
 draft: false
 featured: false

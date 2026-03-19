@@ -1,5 +1,6 @@
 ---
 title: "How to draw a Mini"
+description: "Color grading for Mini behind-the-scenes social media video – Colorist Maximilian Lamm grades the Resolute Edition reveal."
 date: 2022-01-12
 draft: false
 featured: false

@@ -1,5 +1,6 @@
 ---
 title: "BMW Island"
+description: "Kamera für BMW Global Social Media Content-Produktion – Kameramann Maximilian Lamm. 25+ Assets für 30 Länder."
 date: 2022-08-01
 draft: false
 featured: false

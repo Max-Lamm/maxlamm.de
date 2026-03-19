@@ -1,5 +1,6 @@
 ---
 title: "Mini Aceman"
+description: "Color grading for Mini Aceman product video – Colorist Maximilian Lamm grades the all-electric vehicle launch film."
 date: 2024-05-27
 draft: false
 featured: true

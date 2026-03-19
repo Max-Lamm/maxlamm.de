@@ -1,5 +1,6 @@
 ---
 title: "Cambodont"
+description: "Color Grading für Cambodont Werbefilm und Kinospot – Colorist Maximilian Lamm. Vintage-Western-Look auf RED Helium 8K."
 date: 2024-04-23
 draft: false
 featured: true

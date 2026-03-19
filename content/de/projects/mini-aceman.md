@@ -1,5 +1,6 @@
 ---
 title: "Mini Aceman"
+description: "Color Grading für Mini Aceman Produktvideo – Colorist Maximilian Lamm. Präzise Farbabstimmung für den vollelektrischen Mini."
 date: 2024-05-27
 draft: false
 featured: true

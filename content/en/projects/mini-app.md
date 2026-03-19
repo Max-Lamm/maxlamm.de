@@ -1,5 +1,6 @@
 ---
 title: "Mini App"
+description: "Cinematography and color grading for Mini App commercial – DoP & Colorist Maximilian Lamm shoots retro-meets-modern spots."
 date: 2026-03-10
 draft: true
 featured: true

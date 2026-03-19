@@ -1,5 +1,6 @@
 ---
 title: "Generali – Die Zukunft beginnt jetzt"
+description: "Kamera und Color Grading für Generali Basisrente Werbefilm – DoP & Colorist Maximilian Lamm."
 date: 2023-10-06
 draft: false
 featured: false

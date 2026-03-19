@@ -1,5 +1,6 @@
 ---
 title: "Hugendubel BookChatters"
+description: "Cinematography for Hugendubel BookChatters social media series – DoP Maximilian Lamm films a multi-set production."
 date: 2021-11-19
 draft: false
 featured: false

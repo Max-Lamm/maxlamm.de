@@ -1,5 +1,6 @@
 ---
 title: "BMW iX1, X3, i4"
+description: "Kamera für BMW Social-Media-Kurzformate – DoP Maximilian Lamm. Drei dynamische Clips für iX1, X3 und i4."
 date: 2026-01-28
 draft: false
 featured: true

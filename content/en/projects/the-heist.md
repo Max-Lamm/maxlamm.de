@@ -1,5 +1,6 @@
 ---
 title: "BMW – The Heist"
+description: "B-camera operation for BMW Service commercial – camera operator Maximilian Lamm supports the Monacoframe production."
 date: 2021-10-01
 draft: false
 featured: false

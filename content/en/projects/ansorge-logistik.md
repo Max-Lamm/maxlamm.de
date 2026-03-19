@@ -1,5 +1,6 @@
 ---
 title: "Ansorge Logistics"
+description: "Color grading for Ansorge Logistik web videos – Colorist Maximilian Lamm delivers a cohesive look for corporate content."
 date: 2023-09-05
 draft: false
 featured:  false

@@ -1,5 +1,6 @@
 ---
 title: "How to draw a Mini"
+description: "Color Grading und B-Cam für Mini Social Media Video – Colorist Maximilian Lamm. Resolute Edition Design-Prozess."
 date: 2022-01-12
 draft: false
 featured: false

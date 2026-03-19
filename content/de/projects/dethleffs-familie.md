@@ -1,5 +1,6 @@
 ---
 title: "Dethleffs – Es lebe deine Familie"
+description: "Color Grading und 1st AC für Dethleffs Werbefilm – Colorist Maximilian Lamm. Gedreht in Graubünden, Schweiz."
 date: 2023-08-14
 draft: false
 featured: false

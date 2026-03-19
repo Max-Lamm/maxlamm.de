@@ -1,5 +1,6 @@
 ---
 title: "Generali – Fokus auf Balance"
+description: "Kamera und Color Grading für Generali Social Media Video – DoP & Colorist Maximilian Lamm. Slackliner Friedi Kühne."
 date: 2022-08-16
 draft: false
 featured: false

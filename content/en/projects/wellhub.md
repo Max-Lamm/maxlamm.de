@@ -1,5 +1,6 @@
 ---
 title: "Wellhub"
+description: "Cinematography for Wellhub (Gympass) image video – DoP Maximilian Lamm captures diverse fitness and wellness content."
 date: 2024-02-10
 draft: false
 featured: false

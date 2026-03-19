@@ -1,5 +1,6 @@
 ---
 title: "FARMY – Für Frisches. Und alles Andere"
+description: "Kamera für Farmy Social Media Werbefilme – DoP Maximilian Lamm. Drei Clips für den Schweizer Online-Supermarkt."
 date: 2023-09-04
 draft: false
 featured: false

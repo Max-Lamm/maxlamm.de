@@ -1,5 +1,6 @@
 ---
 title: "Porsche Roads"
+description: "Color grading for Porsche Roads App social media campaign – Colorist Maximilian Lamm grades an autumn drive film."
 date: 2024-03-08
 draft: false
 featured: true

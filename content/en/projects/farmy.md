@@ -1,5 +1,6 @@
 ---
 title: "FARMY – For fresh. And everything else"
+description: "Cinematography for Farmy commercial clips – DoP Maximilian Lamm shoots social media spots for the Swiss online supermarket."
 date: 2023-09-04
 draft: false
 featured: false

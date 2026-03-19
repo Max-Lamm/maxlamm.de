@@ -1,5 +1,6 @@
 ---
 title: "Dethleffs – Trend"
+description: "Color grading for Dethleffs Trend commercial – Colorist Maximilian Lamm enhances a summer look for the camper brand."
 date: 2024-02-07
 draft: false
 featured: false

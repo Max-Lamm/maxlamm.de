@@ -1,5 +1,6 @@
 ---
 title: "BMW Iceland"
+description: "Social media content production for BMW Global in Iceland – camera operator Maximilian Lamm on a multi-country campaign."
 date: 2022-08-01
 draft: false
 featured: false

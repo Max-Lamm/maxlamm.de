@@ -1,5 +1,6 @@
 ---
 title: "John Garner – Picture of my Mind"
+description: "Kamera und Color Grading für John Garner Musikvideo Picture of my Mind – DoP & Colorist Maximilian Lamm."
 date: 2023-12-01
 draft: false
 featured: false

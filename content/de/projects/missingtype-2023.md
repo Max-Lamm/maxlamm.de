@@ -1,5 +1,6 @@
 ---
 title: "#MissingType 2023"
+description: "Color Grading für DRK #MissingType Kampagne 2023 – Colorist Maximilian Lamm. Mit Laura Wontorra und Mats Hummels."
 date: 2023-06-14
 draft: false
 featured: false

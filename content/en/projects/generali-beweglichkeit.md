@@ -1,5 +1,6 @@
 ---
 title: "Generali – Focus on Mobility"
+description: "Cinematography and color grading for Generali social media content about bouldering – DoP & Colorist Maximilian Lamm."
 date: 2021-12-19
 draft: false
 featured: false

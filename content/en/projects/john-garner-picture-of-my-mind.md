@@ -1,5 +1,6 @@
 ---
 title: "John Garner – Picture of my Mind"
+description: "Cinematography and color grading for John Garner split-screen music video – DoP & Colorist Maximilian Lamm."
 date: 2023-12-01
 draft: false
 featured: false

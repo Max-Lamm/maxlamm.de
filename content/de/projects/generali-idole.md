@@ -1,5 +1,6 @@
 ---
 title: "Generali – Idole Hautnah"
+description: "Kamera und Color Grading für Generali Social Media Video mit Fabian Hambüchen – DoP & Colorist Maximilian Lamm."
 date: 2022-10-16
 draft: false
 featured: false

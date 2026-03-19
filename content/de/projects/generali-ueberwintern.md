@@ -1,5 +1,6 @@
 ---
 title: "Generali – Einfach überwintern"
+description: "Kamera und Color Grading für Generali Social Media Video zum Thema Überwintern – DoP & Colorist Maximilian Lamm."
 date: 2022-01-19
 draft: false
 featured: false

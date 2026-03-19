@@ -1,5 +1,6 @@
 ---
 title: "Rasendoktor"
+description: "Kamera und Color Grading für Rasendoktor Social Media Spots mit Ralf Rangnick – DoP & Colorist Maximilian Lamm."
 date: 2026-02-23
 draft: false
 featured: true

@@ -1,5 +1,6 @@
 ---
 title: "Generali – Simply wintering"
+description: "Cinematography and color grading for Generali social media content on ice swimming – DoP & Colorist Maximilian Lamm."
 date: 2022-01-19
 draft: false
 featured: false

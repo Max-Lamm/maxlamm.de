@@ -1,5 +1,6 @@
 ---
 title: "Childrens Hospice St. Nikolaus"
+description: "Color grading for Children's Hospice St. Nikolaus cinema commercial – Colorist Maximilian Lamm supports a charitable cause."
 date: 2021-12-15
 draft: false
 featured: false

@@ -1,5 +1,6 @@
 ---
 title: "Bad Heilbrunner"
+description: "Cinematography for Bad Heilbrunner promotional film – DoP Maximilian Lamm shoots a brand image film on location."
 date: 2023-10-11
 draft: false
 featured: false

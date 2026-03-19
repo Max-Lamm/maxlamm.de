@@ -1,5 +1,6 @@
 ---
 title: "Generali – Future Starts Now"
+description: "Cinematography and color grading for Generali pension campaign commercial – DoP & Colorist Maximilian Lamm."
 date: 2023-10-06
 draft: false
 featured: false

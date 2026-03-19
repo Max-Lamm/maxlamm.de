@@ -1,5 +1,6 @@
 ---
 title: "Cambodont"
+description: "Color grading for Cambodont cinema commercial – Colorist Maximilian Lamm creates a vintage western look on RED 8K footage."
 date: 2024-04-23
 draft: false
 featured: true

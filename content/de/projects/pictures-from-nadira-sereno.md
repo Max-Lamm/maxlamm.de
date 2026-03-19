@@ -1,5 +1,6 @@
 ---
 title: "Pictures from Nadira – Sereno"
+description: "Kamera und Color Grading für Pictures from Nadira Musikvideo Sereno – DoP & Colorist Maximilian Lamm. 600fps Zeitlupe."
 date: 2025-02-20
 draft: false
 featured: true

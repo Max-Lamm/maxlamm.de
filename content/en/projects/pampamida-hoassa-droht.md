@@ -1,5 +1,6 @@
 ---
 title: "Pam Pam Ida – Hoaßa Droht"
+description: "Cinematography and color grading for Pam Pam Ida music video – DoP & Colorist Maximilian Lamm directs the visual concept."
 date: 2020-07-17
 draft: false
 featured: false

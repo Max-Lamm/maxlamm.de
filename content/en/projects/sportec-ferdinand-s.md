@@ -1,5 +1,6 @@
 ---
 title: "Sportec Ferdinand S"
+description: "Cinematography for Sportec Ferdinand S automotive commercial – DoP Maximilian Lamm captures a vehicle reveal film."
 date: 2025-07-07
 draft: false
 featured: true

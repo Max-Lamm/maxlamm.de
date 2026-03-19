@@ -1,5 +1,6 @@
 ---
 title: "Hugendubel BookChatters"
+description: "Kamera für Hugendubel BookChatters Social Media Serie – DoP Maximilian Lamm. Vier Drehtage mit fünf Sets."
 date: 2021-11-19
 draft: false
 featured: false

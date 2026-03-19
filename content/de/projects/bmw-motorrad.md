@@ -1,5 +1,6 @@
 ---
 title: "BMW Motorrad – Prototypen"
+description: "3rd Unit DP und Rigging für BMW Motorrad Social Media Clips zur IAA 2021 – Kameramann Maximilian Lamm."
 date: 2021-09-02
 draft: false
 featured: false

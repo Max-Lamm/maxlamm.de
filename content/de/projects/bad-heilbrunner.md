@@ -1,5 +1,6 @@
 ---
 title: "Bad Heilbrunner"
+description: "Kamera für Bad Heilbrunner Imagefilm – DoP Maximilian Lamm. Gedreht in Bad Heilbronn und Benediktbeuren."
 date: 2023-10-11
 draft: false
 featured: false

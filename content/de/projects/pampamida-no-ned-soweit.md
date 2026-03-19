@@ -1,5 +1,6 @@
 ---
 title: "Pam Pam Ida – No Ned Soweit"
+description: "Regie, Kamera und Color Grading für Pam Pam Ida Musikvideo No ned soweit – DoP & Colorist Maximilian Lamm."
 date: 2020-09-24
 draft: false
 featured: false

@@ -1,5 +1,6 @@
 ---
 title: "BMW – The Heist"
+description: "B-Kamera für BMW Werbespot The Heist – Kameramann Maximilian Lamm. Gedreht auf Arri Alexa Mini und RED Komodo."
 date: 2021-10-01
 draft: false
 featured: false

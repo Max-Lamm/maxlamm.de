@@ -1,5 +1,6 @@
 ---
 title: "commercetools Automotive"
+description: "Kamera und Color Grading für Commercetools Webvideo – DoP & Colorist Maximilian Lamm. In-Car Commerce Thema."
 date: 2021-09-01
 draft: false
 featured: false

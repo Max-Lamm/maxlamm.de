@@ -1,5 +1,6 @@
 ---
 title: "Lienne – Fuck you very much"
+description: "Kamera und Color Grading für LIENNE Musikvideo – DoP & Colorist Maximilian Lamm. Dynamisches Performance Video."
 date: 2021-07-17
 draft: false
 featured: false

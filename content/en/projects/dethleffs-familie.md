@@ -1,5 +1,6 @@
 ---
 title: "Dethleffs – Embrace your family"
+description: "Color grading for Dethleffs commercial – Colorist Maximilian Lamm delivers the visual finish for a camper brand film."
 date: 2023-08-14
 draft: false
 featured: false

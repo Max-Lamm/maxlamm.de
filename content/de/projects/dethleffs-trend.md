@@ -1,5 +1,6 @@
 ---
 title: "Dethleffs – Voll im Trend"
+description: "Color Grading und 1st AC für Dethleffs Werbefilm – Colorist Maximilian Lamm. Sommerlicher Look, gedreht in Kroatien."
 date: 2024-02-07
 draft: false
 featured: false

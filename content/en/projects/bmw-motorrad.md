@@ -1,5 +1,6 @@
 ---
 title: "BMW Motorrad – Prototypes"
+description: "Social media production for BMW Motorrad concept vehicles at IAA 2021 – 3rd Unit DP Maximilian Lamm."
 date: 2021-09-02
 draft: false
 featured: false

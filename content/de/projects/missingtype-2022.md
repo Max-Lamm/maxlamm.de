@@ -1,5 +1,6 @@
 ---
 title: "#MissingType 2022"
+description: "Kamera für DRK #MissingType Kampagne 2022 – DoP Maximilian Lamm. Mit Vanessa Mai und Leon Goretzka."
 date: 2022-06-14
 draft: false
 featured: false

@@ -1,5 +1,6 @@
 ---
 title: "Kinderhospiz St. Nikolaus"
+description: "Color Grading und Kamera für Kinderhospiz St. Nikolaus Kinospot – Colorist Maximilian Lamm. Emotionaler Werbefilm."
 date: 2021-12-15
 draft: false
 featured: false

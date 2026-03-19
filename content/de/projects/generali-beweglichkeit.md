@@ -1,5 +1,6 @@
 ---
 title: "Generali – Fokus auf Beweglichkeit"
+description: "Kamera und Color Grading für Generali Social Media Video zum Thema Bouldern – DoP & Colorist Maximilian Lamm."
 date: 2021-12-19
 draft: false
 featured: false

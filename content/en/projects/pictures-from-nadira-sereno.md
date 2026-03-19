@@ -1,5 +1,6 @@
 ---
 title: "Pictures from Nadira – Sereno"
+description: "Cinematography and color grading for Pictures from Nadira slow-motion music video – DoP & Colorist Maximilian Lamm."
 date: 2025-02-20
 draft: false
 featured: true

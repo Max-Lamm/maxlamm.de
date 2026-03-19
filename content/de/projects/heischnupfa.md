@@ -1,5 +1,6 @@
 ---
 title: "Jan Wannemacher – Heischnupfa"
+description: "Regie, Kamera und Color Grading für Musikvideo Heischnupfa – DoP & Colorist Maximilian Lamm. RED Komodo mit Canon FD."
 date: 2022-06-16
 draft: false
 featured: false

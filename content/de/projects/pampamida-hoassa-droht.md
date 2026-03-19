@@ -1,5 +1,6 @@
 ---
 title: "Pam Pam Ida – Hoaßa Droht"
+description: "Kamera und Color Grading für Pam Pam Ida Musikvideo Hoaßa Droht – DoP & Colorist Maximilian Lamm."
 date: 2020-07-17
 draft: false
 featured: false

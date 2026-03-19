@@ -1,5 +1,6 @@
 ---
 title: "Sportec Ferdinand S"
+description: "Kamera für Sportec FERDINAND S Werbefilm – DoP Maximilian Lamm. RED V-Raptor mit Vintage- und modernen Linsen."
 date: 2025-07-07
 draft: false
 featured: true

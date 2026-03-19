@@ -1,5 +1,6 @@
 ---
 title: "Wellhub"
+description: "Kamera und Color Grading für Gympass/Wellhub Imagefilm – DoP & Colorist Maximilian Lamm. Fitness-Kampagnenvideo."
 date: 2024-02-10
 draft: false
 featured: false

@@ -1,5 +1,6 @@
 ---
 title: "Deutsche Bahn"
+description: "Color Grading für Deutsche Bahn Konzernkampagne 2023 – Colorist Maximilian Lamm. Social Media Content."
 date: 2023-10-20
 draft: false
 featured: false

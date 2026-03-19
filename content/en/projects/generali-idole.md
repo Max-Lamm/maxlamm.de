@@ -1,5 +1,6 @@
 ---
 title: "Generali – Idols Up Close"
+description: "Cinematography and color grading for Generali social media portrait of gymnasts – DoP & Colorist Maximilian Lamm."
 date: 2022-10-16
 draft: false
 featured: false

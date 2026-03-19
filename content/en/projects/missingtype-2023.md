@@ -1,5 +1,6 @@
 ---
 title: "#missingType 2023"
+description: "Color grading for German Red Cross #missingType 2023 campaign commercial – Colorist Maximilian Lamm."
 date: 2023-06-14
 draft: false
 featured: false

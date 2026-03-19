@@ -1,5 +1,6 @@
 ---
 title: "BMW iX1, X3, i4"
+description: "Cinematography for BMW short-form social media content – DoP Maximilian Lamm captures dynamic brand visuals."
 date: 2026-01-28
 draft: false
 featured: true

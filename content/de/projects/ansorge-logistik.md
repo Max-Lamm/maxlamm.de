@@ -1,5 +1,6 @@
 ---
 title: "Ansorge Logistik"
+description: "Color Grading für Ansorge Logistik Webvideos – Colorist Maximilian Lamm. Loopvideos für die Firmenhomepage."
 date: 2023-09-05
 draft: false
 featured:  false

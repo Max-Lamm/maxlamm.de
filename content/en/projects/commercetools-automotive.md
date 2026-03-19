@@ -1,5 +1,6 @@
 ---
 title: "commercetools Automotive"
+description: "Cinematography and color grading for commercetools web video – DoP & Colorist Maximilian Lamm."
 date: 2021-09-01
 draft: false
 featured: false
