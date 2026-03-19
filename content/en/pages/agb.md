@@ -1,5 +1,6 @@
 ---
 title: "General Terms and Conditions"
+description: "Terms and conditions by Maximilian Lamm for film and post-production services."
 url: "/en/terms/"
 ---
 

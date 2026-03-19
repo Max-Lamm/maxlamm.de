@@ -1,5 +1,6 @@
 ---
 title: "PRIVACY POLICY"
+description: "Privacy policy for maxlamm.de – Information about the collection and processing of personal data."
 url: "/en/privacy/"
 ---
 

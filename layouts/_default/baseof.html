@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ if .IsHome }}{{ .Site.Title }} – {{ .Site.Params.description }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+  <title>{{ if .IsHome }}{{ .Site.Params.author }} – {{ .Site.Params.description }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   <link rel="canonical" href="{{ .Permalink }}">
   {{ range .AllTranslations }}<link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
@@ -11,7 +11,7 @@
   {{- range .AllTranslations }}{{- if eq .Lang "de" }}<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
   {{- end }}{{- end }}
   <!-- Open Graph -->
-  <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }} – {{ .Site.Params.description }}{{ else }}{{ .Title }}{{ end }}">
+  <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Params.author }} – {{ .Site.Params.description }}{{ else }}{{ .Title }}{{ end }}">
   <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   <meta property="og:type" content="{{ if and .IsPage .Params.videos }}video.other{{ else if .IsPage }}article{{ else }}website{{ end }}">
   <meta property="og:url" content="{{ .Permalink }}">
@@ -29,7 +29,7 @@
   {{- end }}
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }} – {{ .Site.Params.description }}{{ else }}{{ .Title }}{{ end }}">
+  <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Params.author }} – {{ .Site.Params.description }}{{ else }}{{ .Title }}{{ end }}">
   <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   {{- with .Params.thumbnail }}
   <meta name="twitter:image" content="{{ . | absURL }}">
@@ -55,6 +55,34 @@
     ]
   }
   </script>
+  <!-- Schema.org ProfessionalService (Local SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Maximilian Lamm – Cinematographer & Colorist",
+    "url": "{{ .Site.BaseURL }}",
+    "image": "{{ "images/portrait.jpg" | absURL }}",
+    "telephone": "{{ .Site.Params.phone }}",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Munich",
+      "addressRegion": "Bavaria",
+      "addressCountry": "DE"
+    },
+    "areaServed": [
+      { "@type": "Country", "name": "Germany" },
+      { "@type": "Place", "name": "Worldwide" }
+    ],
+    "knowsAbout": ["Cinematography", "Color Grading", "Commercial Film Production", "Music Video Production"],
+    "sameAs": [
+      "{{ .Site.Params.instagram }}",
+      "{{ .Site.Params.linkedin }}"
+    ]
+  }
+  </script>
+  <link rel="dns-prefetch" href="https://cdn.kiprotect.com">
+  <link rel="dns-prefetch" href="https://cloud.umami.is">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
   <!-- Klaro Cookie Consent -->

@@ -11,7 +11,8 @@ pagination.pagerSize = 50
     weight = 1
     contentDir = "content/de"
     [languages.de.params]
-      subtitle = "DoP & Colorist"
+      description = "Cinematographer & Colorist München"
+      subtitle = "Cinematographer & Colorist"
       aboutHeading = "Hey, ich bin Max"
       contactHeading = "Hast du ein Projekt im Kopf? Oder Lust auf eine Zusammenarbeit? Ich freue mich von dir zu hören."
       workHeading = "Ausgewählte Projekte"
@@ -42,6 +43,7 @@ pagination.pagerSize = 50
     weight = 2
     contentDir = "content/en"
     [languages.en.params]
+      description = "Cinematographer & Colorist Munich, Germany"
       subtitle = "DoP & Colorist"
       aboutHeading = "Hey, I'm Max"
       contactHeading = "Got a project in mind? Or interested in working together? I'd love to hear from you."
@@ -70,7 +72,7 @@ pagination.pagerSize = 50
 
 [params]
   author = "Maximilian Lamm"
-  description = "DoP & Colorist aus München"
+  description = "Cinematographer & Colorist München"
   email = "/contact/"
   phone = "+4917669262318"
   instagram = "https://www.instagram.com/maxlamm/"

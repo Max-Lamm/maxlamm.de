@@ -1,5 +1,6 @@
 ---
 title: "EDIT CONFORM ANLEITUNG"
+description: "Anleitung für den Edit Conform Workflow – Schnitt-Export für professionelles Color Grading bei Maximilian Lamm."
 url: "/edit-conform/"
 layout: "edit-conform"
 ---
