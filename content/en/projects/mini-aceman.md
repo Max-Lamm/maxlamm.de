@@ -1,0 +1,51 @@
+---
+title: "Mini Aceman"
+date: 2024-05-27
+draft: false
+featured: true
+thumbnail: "/images/projects/mini-aceman/thumb.jpg"
+categories:
+  - colorist
+types:
+  - product video
+videos:
+  - "https://www.youtube.com/watch?v=uc4q3RcTnRY"
+credits:
+  - role: Client
+    name: Mini
+  - role: Production
+    name: Monacoframe
+  - role: Director/DoP
+    name: Michael Baumberger
+  - role: Trinity Operator
+    name: Christoph Werner
+  - role: 1st AC
+    name: Andreas Thomas
+  - role: Gaffer
+    name: Lucas Gebauer
+  - role: ADR
+    name: Benedikt Mühle
+  - role: Editor
+    name: Maximilian Gibas
+gallery:
+  - "/images/projects/mini-aceman/01.jpg"
+  - "/images/projects/mini-aceman/02.jpg"
+  - "/images/projects/mini-aceman/03.jpg"
+  - "/images/projects/mini-aceman/04.jpg"
+  - "/images/projects/mini-aceman/05.jpg"
+  - "/images/projects/mini-aceman/06.jpg"
+  - "/images/projects/mini-aceman/07.jpg"
+  - "/images/projects/mini-aceman/thumb.jpg"
+  - "/images/projects/mini-aceman/09.jpg"
+  - "/images/projects/mini-aceman/10.jpg"
+  - "/images/projects/mini-aceman/11.jpg"
+  - "/images/projects/mini-aceman/12.jpg"
+  - "/images/projects/mini-aceman/poster.jpg"
+  - "/images/projects/mini-aceman/14.jpg"
+  - "/images/projects/mini-aceman/15.jpg"
+  - "/images/projects/mini-aceman/16.jpg"
+gallery_columns: 4
+translationKey: "mini-aceman"
+---
+
+Für Monacoframe durfte ich das Vorstellungsvideo des neuen vollelektrischen Mini Aceman color graden. Die besondere Herausforderung war es die Lackfarben des Fahrzeugs exakt abzustimmen und die verschiedenen Texturen im Innenraum detailgetreu herauszuarbeiten. Das Ergebnis ist ein Video, das die Eleganz und Innovation des Mini Aceman eindrucksvoll zur Geltung bringt.

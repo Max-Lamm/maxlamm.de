@@ -1,11 +1,10 @@
 ---
 title: "Mini App"
 date: 2026-03-10
-draft: false
+draft: true
 featured: true
 thumbnail: "/images/projects/mini-app/thumb.jpg"
 orientation: landscape
-video_size: large
 categories:
   - dop
   - colorist
@@ -14,6 +13,7 @@ types:
   - social media
 videos:
   - https://www.youtube.com/watch?v=XtNELF38-IQ
+video_size: large
 credits:
   - role: Client
     name: Mini
