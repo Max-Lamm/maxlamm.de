@@ -27,10 +27,18 @@
       <a href="{{ .URL }}">{{ .Name }}</a>
     {{ end }}
     <!-- Language switch -->
-    {{ if eq $.Lang "de" }}
-      <a class="lang-switch" href="/en/">🇬🇧 English</a>
+    {{ if $.Translations }}
+      {{ range $.Translations }}
+        <a class="lang-switch" href="{{ .Permalink }}">
+          {{- if eq .Lang "de" }}🇩🇪 Deutsch{{ else }}🇬🇧 English{{ end -}}
+        </a>
+      {{ end }}
     {{ else }}
-      <a class="lang-switch" href="/">🇩🇪 Deutsch</a>
+      {{ if eq $.Lang "de" }}
+        <a class="lang-switch" href="/en/">🇬🇧 English</a>
+      {{ else }}
+        <a class="lang-switch" href="/">🇩🇪 Deutsch</a>
+      {{ end }}
     {{ end }}
   </nav>
 </footer>
