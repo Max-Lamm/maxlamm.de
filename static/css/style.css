@@ -168,6 +168,15 @@ a:hover { color: var(--accent-hover); }
   50% { transform: translateY(8px); }
 }
 
+/* Temporary: accent background instead of video */
+.hero--no-video { background: var(--accent); }
+.hero--no-video .hero__video { display: none; }
+.hero--no-video .hero__title { color: var(--bg); }
+.hero--no-video .hero__subtitle { color: var(--bg); }
+.hero--no-video .hero__scroll { color: rgba(26,26,26,.5); }
+.hero--no-video .site-nav a { color: var(--bg); }
+.hero--no-video .site-nav a:hover { color: var(--bg-dark); }
+
 /* ============================================================
    HEADER / NAV (sticky on scroll)
    ============================================================ */
