@@ -15,9 +15,13 @@
 
   <div class="work-header">
     <h1>{{ .Site.Language.Params.workHeading }}</h1>
+    {{- $catsRaw := slice -}}
+    {{- range .Pages -}}{{- range .Params.categories -}}{{- $catsRaw = $catsRaw | append . -}}{{- end -}}{{- end -}}
+    {{- $catsRaw = $catsRaw | uniq -}}
+    {{- $order := slice "dop" "colorist" "weitere" -}}
     {{- $cats := slice -}}
-    {{- range .Pages -}}{{- range .Params.categories -}}{{- $cats = $cats | append . -}}{{- end -}}{{- end -}}
-    {{- $cats = $cats | uniq | sort -}}
+    {{- range $order -}}{{- $o := . -}}{{- range $catsRaw -}}{{- if eq . $o -}}{{- $cats = $cats | append . -}}{{- end -}}{{- end -}}{{- end -}}
+    {{- range $catsRaw -}}{{- if not (in $order .) -}}{{- $cats = $cats | append . -}}{{- end -}}{{- end -}}
     {{- if gt (len $cats) 1 -}}
     <div class="work-filter">
       <button class="badge filter-badge active" data-cat="all">{{ if eq .Lang "de" }}Alle{{ else }}All{{ end }}</button>
