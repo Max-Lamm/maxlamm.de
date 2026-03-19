@@ -174,8 +174,8 @@ a:hover { color: var(--accent-hover); }
 .hero--no-video .hero__title { color: var(--bg); }
 .hero--no-video .hero__subtitle { color: var(--bg); }
 .hero--no-video .hero__scroll { color: rgba(26,26,26,.5); }
-.hero--no-video .site-nav a { color: var(--bg); }
-.hero--no-video .site-nav a:hover { color: var(--bg-dark); }
+.hero--no-video .site-nav:not(.scrolled) a { color: var(--bg); }
+.hero--no-video .site-nav:not(.scrolled) a:hover { color: var(--bg-dark); }
 
 /* ============================================================
    HEADER / NAV (sticky on scroll)
