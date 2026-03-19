@@ -37,7 +37,7 @@ gallery:
   - "/images/projects/generali-ueberwintern/06.jpg"
   - "/images/projects/generali-ueberwintern/07.jpg"
   - "/images/projects/generali-ueberwintern/08.jpg"
-translationKey: "generali-ueberwintern"
+translationKey: "generali-wintering"
 ---
 
 Im Winter, wenn es kalt wird, zieht es uns Menschen nach drinnen, ins Warme. Für das Generali Online Journal durfte ich das Monacoframe Team als 2nd Unit DP und Colorist unterstützen. Das Thema Überwintern begleitet verschiedene Menschen bei ihren Strategien, die kalte Jahreszeit zu überstehen.

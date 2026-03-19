@@ -48,4 +48,4 @@ gallery_columns: 4
 translationKey: "mini-aceman"
 ---
 
-Für Monacoframe durfte ich das Vorstellungsvideo des neuen vollelektrischen Mini Aceman color graden. Die besondere Herausforderung war es die Lackfarben des Fahrzeugs exakt abzustimmen und die verschiedenen Texturen im Innenraum detailgetreu herauszuarbeiten. Das Ergebnis ist ein Video, das die Eleganz und Innovation des Mini Aceman eindrucksvoll zur Geltung bringt.
+For the Monacoframe collective, I had the opportunity to color grade the introduction video for the new all-electric Mini Aceman. The special challenge was to precisely match the vehicle’s paint colors and accurately bring out the various textures in the interior. The result is a video that impressively showcases the elegance and innovation of the Mini Aceman.

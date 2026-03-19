@@ -19,7 +19,7 @@ video_posters:
 video_size: medium
 credits:
   - role: Client
-    name: Deutsche Bahn Konzern
+    name: Deutsche Bahn
   - role: Agency
     name: Territory
   - role: Production
@@ -58,4 +58,4 @@ gallery_columns: 5
 translationKey: "deutsche-bahn"
 ---
 
-Für die Deutsche Bahn und ihre Konzernkampagne 2023 durfte ich das Color Grading übernehmen. Die größte Herausforderung war es aus den Teils unterschiedlichen Wetterbedingungen am Set ein stimmiges Gesamtbild zu kreieren.
+For the German Railway (Deutsche Bahn) and its corporate campaign in 2023, I had the privilege of handling the color grading. The most significant challenge was creating a cohesive overall look from the varying weather conditions on set. The result is these three videos.

@@ -1,5 +1,5 @@
 ---
-title: "DRK – #MissingType 2022"
+title: "#MissingType 2022"
 date: 2022-06-14
 draft: false
 featured: false

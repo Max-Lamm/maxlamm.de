@@ -32,5 +32,5 @@ credits:
 translationKey: "the-heist"
 ---
 
-Was auch passiert: BMW Service ist für dich da.
-Für diesen Spot durfte ich das Monacoframe Team als B-Kamera-Operator unterstützen. Gedreht haben wir an einem langen Drehtag in Augsburg auf Arri Alexa Mini und RED Komodo.
+No matter how bizarre, funny, dangerous, or emotional, we’re here to help. It might have been a nerve-wracking experience, but whatever happens, BMW Service makes sure our drivers get what they need.
+I had the privilege of supporting the Monacoframe crew as a B Camera Operator for this claim. We shot on a long day in Augsburg using Arri Alexa Mini and RED Komodo.

@@ -1,5 +1,5 @@
 ---
-title: "Craft Teamsport DE"
+title: "Craft Teamsport Germany"
 date: 2024-06-26
 draft: false
 featured: true
@@ -21,4 +21,4 @@ gallery: []
 translationKey: "craft-teamsport-de"
 ---
 
-Deutschland Kampagne für die CRAFT Teamsport Ausstattung. Vier deutsche Profiteams in Aktion als Ambassador*innen für die schwedische Marke in Deutschland.
+Germany campaign for CRAFT’s team sports apparel. Four professional German teams in action as brand ambassadors for the Swedish label in Germany.

@@ -51,8 +51,8 @@ gallery:
 translationKey: "rasendoktor"
 ---
 
-Für Rasendoktor durfte ich als Director of Photography und Colorist drei Social-Media-Spots sowie einen Expertentalk produzieren – alles in einem einzigen Drehtag am malerischen Dilly Resort in Oberösterreich. Als Testimonial war Ralf Rangnick mit an Bord, was dem Projekt Profil und Reichweite verlieh.
+For Rasendoktor, I worked as Director of Photography and Colorist on three social media spots and an expert interview – all shot in a single day at the beautiful Dilly Resort. With Ralf Rangnick on board as the brand’s testimonial, the project had both character and reach.
 
-Die größte Herausforderung war das straffe Timing: Mit einem kleinen Team und überschaubarem Budget war konsequentes Arbeiten mit dem natürlichen Licht gesetzt – keine Option, sondern Notwendigkeit. Das hat den Look der Spots aber auch geprägt: warm, direkt, authentisch. Die offene Landschaft rund ums Resort und das weiche Herbstlicht gaben den Bildern genau das, was ein Produkt wie Rasendoktor braucht – Natürlichkeit und Glaubwürdigkeit.
+The main challenge was the tight schedule: with a small crew and a lean budget, working with natural light was not a stylistic choice but a practical necessity – and ultimately what gave the spots their look. Warm, direct, and believable. The open landscape around the resort and soft autumn light did exactly what a product like Rasendoktor needs: it looked real.
 
-Im Grading habe ich diesen Look weitergeführt: sattes Grün, warme Hauttöne, klare Kontraste ohne harten Eingriff.
+In the grade, I carried that feel through – rich greens, warm skin tones, clean contrast without heavy-handed correction.

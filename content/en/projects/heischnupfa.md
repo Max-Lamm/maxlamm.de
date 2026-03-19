@@ -36,4 +36,4 @@ gallery:
 translationKey: "heischnupfa"
 ---
 
-Für den Münsinger Liedermacher Jan Wannemacher durfte ich als Regisseur, Kameramann, Editor und Colorist das Musikvideo zum Song „Heischnupfa“ umsetzen. Gedreht wurde an zwei Drehtagen in und um Münsing. Zum Einsatz kam dabei die RED Komodo mit Canon FD Vintage Objektiven.
+For the Münsing singer-songwriter Jan Wannemacher, I had the pleasure of directing, filming, editing, and color grading the music video for the song “Heischnupfa.” The video was shot over two days in and around Münsing, using the RED Komodo with Canon FD Vintage lenses.

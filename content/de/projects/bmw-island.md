@@ -38,7 +38,7 @@ gallery:
   - "/images/projects/bmw-island/07.jpg"
   - "/images/projects/bmw-island/08.jpg"
 gallery_columns: 4
-translationKey: "bmw-island"
+translationKey: "bmw-iceland"
 ---
 
 Content Produktion für 30+ Länder – Von SEO Werbespot bis zu Kurzformaten mit Influencern. Insgesamt 25 Assets plus Fotoproduktion für BMW Global.

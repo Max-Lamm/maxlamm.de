@@ -37,8 +37,8 @@ gallery_columns: 5
 translationKey: "pampamida-hoassa-droht"
 ---
 
-Für die Band Pam Pam Ida durfte ich das Musikvideo zur neuen Single “Hoaßa Droht” vom kommenden Album “FREI” umsetzten.
-Worum geht es?
-Rückwärtsgehend auf der Suche nach der richtigen Richtung. Einer weiß besser als der andere, wo es hingehen soll. Streit und Erschöpfung. Hört sich ganz nach aktuellem politischem Weltgeschehen an. Darum geht es bei Pam Pam Ida aber nicht. Jedenfalls nicht nur. Womöglich geht es einfach um Landleben? Oder um philosophische Erkenntnis. Gehört ja manchmal zusammen. Auf jeden Fall bringt die Leichtigkeit einer Vorwärtsbewegung die Vollbremsung. Und eine Erkenntnis: Vorwärts macht mehr Sinn (und Freude)!
-Das Konzept wurde dabei von der Band selbst entwickelt die visuelle Umsetzung stammt aus meiner Feder. Unterstützt wurde ich dabei vom zweiten Kameramann Johannes Fendt und der Kameraassistentin Laura Schneider. Die finale Post-Produktion wurde in enger Zusammenarbeit mit der Band wieder von mir gemacht.
-Die große Herausforderung bestand darin das Video an zwei aufeinanderfolgenden Tagen jeweils zum Sonnen Auf- und Untergang zu drehen. Mit insgesamt sechs unterschiedlichen Locations haben wir das technische Setup bewusst klein gehalten und hauptsächlich mit natürlichem Licht gedreht.
+For the band Pam Pam Ida, I had the opportunity to create the music video for their new single ‘Hoaßa Droht’ from the upcoming album ‘FREI.’ What is it about? Going backward in search of the right direction. Everyone seems to know better than the other where it should go. Conflict and exhaustion. It sounds like current political events, but that’s not what Pam Pam Ida is about. At least, not only that. Perhaps it’s simply about rural life? Or philosophical realization. Sometimes they go hand in hand. In any case, the ease of forward movement brings a full stop. And a realization: moving forward makes more sense (and joy)!
+
+The concept was developed by the band themselves, and the visual implementation comes from my creative direction. I was supported by the second cameraman Johannes Fendt and camera assistant Laura Schneider. The final post-production was done in close collaboration with the band, once again by me.
+
+The significant challenge was to shoot the video on two consecutive days, each during sunrise and sunset. With a total of six different locations, we intentionally kept the technical setup small and mainly shot with natural light.

@@ -1,5 +1,5 @@
 ---
-title: "FARMY – Für Frisches. Und alles Andere"
+title: "FARMY – For fresh. And everything else"
 date: 2023-09-04
 draft: false
 featured: false
@@ -36,4 +36,4 @@ gallery:
 translationKey: "farmy"
 ---
 
-Für den Schweizer Online-Hofladen und Supermarkt Farmy hatte ich das Vergnügen, als DP drei kurze Social-Media-Clips zu produzieren. Das Ziel bestand darin, das Markenimage als Bio-Hofladen um klassische Supermarktprodukte zu erweitern. Die Dreharbeiten fanden vor Ort auf der Jucker Farm in Seegräben, Schweiz, statt.
+For the Swiss online farm shop and supermarket Farmy, I had the pleasure of serving as a DP to produce three short social media clips. The objective was to expand the brand image of being an organic farm shop to include traditional supermarket products. The filming took place on location at Jucker Farm in Seegräben, Switzerland.

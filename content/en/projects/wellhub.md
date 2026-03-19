@@ -37,5 +37,6 @@ gallery:
 translationKey: "wellhub"
 ---
 
-Mit einer kleinen Crew konnten wir Ende des Jahres dieses kurze Kampagnenvideo für Gympass realisieren. An zwei aufregenden Drehtagen haben wir versucht, die vielfältigen Möglichkeiten, die Gympass bietet, einzufangen. Dabei haben wir uns bemüht, die Bandbreite der verfügbaren Fitnessangebote und -erlebnisse hervorzuheben, angefangen von dynamischen Workouts bis hin zu entspannenden Wellnessaktivitäten.
-Unser Ziel war es, die Zuschauer mit ansprechenden visuellen Eindrücken zu fesseln und gleichzeitig die Vielseitigkeit von Gympass als Plattform für ein ganzheitliches Fitnesserlebnis zu betonen.
+With a small crew, we were able to create this short campaign video for Gympass at the end of the year. Over two exciting shooting days, we aimed to capture the diverse possibilities that Gympass offers. We made an effort to highlight the range of available fitness options and experiences, ranging from dynamic workouts to relaxing wellness activities.
+
+Our goal was to captivate the audience with engaging visual impressions while emphasizing the versatility of Gympass as a platform for a comprehensive fitness experience.

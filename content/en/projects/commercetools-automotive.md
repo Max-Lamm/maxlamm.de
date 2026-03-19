@@ -27,4 +27,4 @@ credits:
 translationKey: "commercetools-automotive"
 ---
 
-Vernetzte Fahrzeuge und autonomes Fahren haben erhebliche Veränderung in der Automotive Industrie hervorgebracht, besonders für Automobilhersteller die in Technologie investieren die die Kundenerfahrung verbessert. Commercetools ist stolz die Zukunft der Mobilität mitzugestalten indem sie In-Car Commerce Funktionalität und Microservices für verschiedene Automobilhersteller bereitstellen.
+Connected vehicles and autonomous driving have brought about significant changes in the automotive industry, especially for automakers investing in technology that enhances the customer experience. Commercetools is proud to shape the future of mobility by providing in-car commerce functionality and microservices for various car manufactures.

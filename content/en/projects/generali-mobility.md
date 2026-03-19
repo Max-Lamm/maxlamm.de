@@ -1,5 +1,5 @@
 ---
-title: "Generali – Fokus auf Beweglichkeit"
+title: "Generali – Focus on Mobility"
 date: 2021-12-19
 draft: false
 featured: false
@@ -45,5 +45,6 @@ gallery_columns: 5
 translationKey: "generali-beweglichkeit"
 ---
 
-Bouldern hat vor allem mit Vorbereitung zu tun, denn nur ein gutes Training bringt den eigenen Körper dazu, die Hürden dieser Sportart zu meistern. Alma gehört zu den Besten ihrer sportlichen Disziplin und das ist nicht nur ihrem Talent geschuldet. Auch ihr hartes Training und der Wille, die Beste zu sein, haben Alma dahin gebracht, wo sie heute ist. 
-Für das Generali Online Journal durfte ich das Monacoframe Team als 1st AC, DoP und Colorist an insgesamt zwei Drehtagen unterstützen.
+Bouldering is primarily about preparation because only good training enables the body to overcome the challenges of this sport. Alma is among the best in her athletic discipline, and it’s not just due to her talent. Alma’s hard training and the determination to be the best have brought her to where she is today.
+
+For the Generali Online Journal, I had the privilege of supporting the Monacoframe team as a 1st AC, DoP, and Colorist on a total of two shoot days.

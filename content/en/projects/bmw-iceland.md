@@ -1,5 +1,5 @@
 ---
-title: "BMW Island"
+title: "BMW Iceland"
 date: 2022-08-01
 draft: false
 featured: false
@@ -41,4 +41,6 @@ gallery_columns: 4
 translationKey: "bmw-island"
 ---
 
-Content Produktion für 30+ Länder – Von SEO Werbespot bis zu Kurzformaten mit Influencern. Insgesamt 25 Assets plus Fotoproduktion für BMW Global.
+Content production for 30+ countries – from SEO-driven commercials to short-form content with influencers.
+
+A total of 25 assets plus a full photo production for BMW Global.

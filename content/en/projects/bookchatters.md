@@ -32,4 +32,4 @@ gallery: []
 translationKey: "bookchatters"
 ---
 
-Für die diesjährige Staffel der Hugendubel BookChatters durfte ich die Jungs von Dojo Digital als DP unterstützen. Gedreht wurde in einem Wohnhaus an vier Tagen. Das Haus hat uns die Möglichkeit gegeben, die insgesamt fünf verschiedenen Sets in allen möglichen Kombinationen gleichzeitig zu bespielen.
+For this year’s season of Hugendubel BookChatters, I had the privilege of supporting the team at Dojo Digital as a DP. We filmed in a residential building over four days. The house provided us the opportunity to use a total of five different sets in various combinations simultaneously.

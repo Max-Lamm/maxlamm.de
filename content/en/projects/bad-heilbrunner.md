@@ -54,4 +54,4 @@ gallery_columns: 5
 translationKey: "bad-heilbrunner"
 ---
 
-Für den neuen Imagefilm für Bad Heilbrunner durfte ich zwei wundervolle Tage mit einem großartigen Team vor Ort in Bad Heilbronn und Benediktbeuren drehen.
+For the new promotional film for Bad Heilbrunner, I had the opportunity to spend two wonderful days on location in Bad Heilbrunn and Benediktbeuren with an amazing team.

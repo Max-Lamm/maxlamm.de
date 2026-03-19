@@ -1,5 +1,5 @@
 ---
-title: "Ansorge Logistik"
+title: "Ansorge Logistics"
 date: 2023-09-05
 draft: false
 featured:  false
@@ -30,4 +30,4 @@ gallery:
 translationKey: "ansorge-logistik"
 ---
 
-Für die neue Homepage der Firma Ansorge Logistik durfte ich in Zusammenarbeit mit dem Monacoframe Kollektiv das Grading für die Loopvideos übernehmen. Herausgekommen sind dabei eine Vielzahl von kurzen Clips.
+For the new website of Ansorge Logistik, I had the privilege of collaborating with the Monacoframe Collective to handle the grading for the loop videos. This resulted in a variety of short clips.

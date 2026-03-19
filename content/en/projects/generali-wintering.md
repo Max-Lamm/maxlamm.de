@@ -1,5 +1,5 @@
 ---
-title: "Generali – Einfach überwintern"
+title: "Generali – Simply wintering"
 date: 2022-01-19
 draft: false
 featured: false
@@ -40,4 +40,4 @@ gallery:
 translationKey: "generali-ueberwintern"
 ---
 
-Im Winter, wenn es kalt wird, zieht es uns Menschen nach drinnen, ins Warme. Für das Generali Online Journal durfte ich das Monacoframe Team als 2nd Unit DP und Colorist unterstützen. Das Thema Überwintern begleitet verschiedene Menschen bei ihren Strategien, die kalte Jahreszeit zu überstehen.
+In winter, when it gets cold, we humans are drawn indoors, to the warmth. We take a winter break, give our bodies and minds some rest, and stay predominantly in the warmth. But not all of us. While most comfortably hibernate at home, others kick into high gear. Because once you have the right strategy and tricks up your sleeve, sports in winter take on a special enchantment, even bordering on magical. For Julia Wittig, ice swimming has something magical… and she lets us be a part of it. For the Generali Online Journal, I had the privilege of supporting the Monacoframe team as a 2nd Unit DP and Colorist.

@@ -46,4 +46,4 @@ gallery:
 translationKey: "how-to-draw-a-mini"
 ---
 
-Für Mini durfte ich zusammen mit den Jungs von Monacoframe Exterior Designer Josef Kuhlmann und CMF Designerin Evelin Hartmann bei der Entstehung der Mini Resolute Edition über die Schulter schauen.
+For Mini, I had the opportunity to take a behind-the-scenes look at the creation of the Mini Resolute Edition with Exterior Designer Josef Kuhlmann and CMF Designer Evelin Hartmann, alongside the Monacoframe team. You can find the full article on mini.com.

@@ -1,5 +1,5 @@
 ---
-title: "#MissingType 2023"
+title: "#missingType 2023"
 date: 2023-06-14
 draft: false
 featured: false
@@ -64,5 +64,4 @@ gallery-columns: 3
 translationKey: "missingtype-2023"
 ---
 
-Die Versorgung mit Blutspenden kann für kranke und verletzte Menschen lebenswichtig sein. Wie bereits in den zwei Jahren zuvor konnte ich auch dieses Jahr das Kollektiv von Monacoframe bei der Umsetzung der Kampagne unterstützen.
-Um darauf aufmerksam zu machen, nutzen wir gemeinsam mit Laura Wontorra, Mats Hummels, Motsi Mabuse und vielen weiteren Unterstützern eine simple Idee mit großer Wirkung: Rund um den Weltblutspendetag verzichten wir auf die Buchstaben der dringend benötigten Blutgruppen A, B, AB und 0.
+The supply of blood donations can be crucial for sick and injured individuals. As in the two previous years, I was able to support the Monacoframe collective in implementing the campaign this year as well. To draw attention to this cause, we, along with Laura Wontorra, Mats Hummels, Motsi Mabuse, and many other supporters, are using a simple idea with a powerful impact: Around World Blood Donor Day, we abstain from using the letters corresponding to the urgently needed blood groups A, B, AB, and O.

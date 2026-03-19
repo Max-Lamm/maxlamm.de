@@ -1,5 +1,5 @@
 ---
-title: "Dethleffs – Voll im Trend"
+title: "Dethleffs – Trend"
 date: 2024-02-07
 draft: false
 featured: false
@@ -53,4 +53,4 @@ gallery:
 translationKey: "dethleffs-trend"
 ---
 
-Für die Firma Dethleffs durfte ich Anfang Dezember das Team von Monacoframe beim Dreh unterstützen. Aufgrund des noch milden Klimas fiel die Wahl des Drehorts auf Kroatien. Dort konnten wir bei angenehmen Außentemperaturen zwei Tage lang auf einem verlassenen Campingplatz filmen. Zurück zuhause konnte ich im Color Grading das sommerliche Gefühl der Bilder noch weiter betonen.
+In early December, I had the opportunity to assist the Monacoframe crew during a shoot for Dethleffs. The choice of Croatia as the location was influenced by the still mild climate. There, we were able to shoot for two days at an empty campsite, enjoying pleasant outdoor temperatures. Back home, during the color grading process, I further enhanced the summer vibe of the footage.

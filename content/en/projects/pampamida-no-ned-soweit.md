@@ -19,8 +19,8 @@ credits:
 translationKey: "pampamida-no-ned-soweit"
 ---
 
-Für Pam Pam Ida durfte ich das Musikvideo zur neuen Single “No ned soweit” umsetzen.
+I had the opportunity to create the music video for Pam Pam Ida’s new single, “No ned soweit.”
 
-Das Konzept wurde von der Band selbst entwickelt, die visuelle Umsetzung stammt aus meiner Feder. Die Post-Produktion entstand in enger Zusammenarbeit mit der Band.
+The concept was developed by the band itself, while the visual execution was in my hands. The post-production was carried out in close collaboration with the band.
 
-Die größte Herausforderung bei diesem Projekt lag in den vielen Übergängen. Jedes Bild fügt sich im Schnitt fast nahtlos an das nächste an – allerdings wurde nicht chronologisch gedreht. Präzises Timing, exakte Kameraarbeit und eine klare visuelle Planung waren essenziell, um diese Illusion zu perfektionieren.
+The biggest challenge in this project was the numerous transitions. Each shot blends almost seamlessly into the next in the edit – however, the video was not filmed chronologically. Precise timing, exact camera work, and a well-thought-out visual plan were essential to perfecting this illusion.

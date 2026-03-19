@@ -1,5 +1,5 @@
 ---
-title: "Generali – Nonstop Ausdauer"
+title: "Generali – Nonstop Endurance"
 date: 2022-09-16
 draft: false
 featured: false
@@ -34,4 +34,4 @@ gallery:
 translationKey: "generali-ausdauer"
 ---
 
-Was ist Ausdauer? Eva Sperger braucht keine ausschweifenden Erklärungen, vier Wörter genügen: „Einfach anfangen, niemals aufhören." Für das Generali Online Journal durfte ich das Monacoframe Team als DP und Colorist unterstützen.
+What is endurance? Eva Sperger needs no elaborate explanations; four words are enough: “Just start, never stop.” For the Generali Online Journal, I had the privilege of supporting the Monacoframe team as a DP and Colorist.

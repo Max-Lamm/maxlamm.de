@@ -1,5 +1,5 @@
 ---
-title: "Audi Kieler Woche"
+title: "Audi Segeln"
 date: 2024-06-29
 draft: false
 featured: true
@@ -49,7 +49,7 @@ gallery:
   - "/images/projects/audi-kieler-woche/11.jpg"
   - "/images/projects/audi-kieler-woche/12.jpg"
 gallery_columns: 6
-translationKey: "audi-kieler-woche"
+translationKey: "audi-sailing"
 ---
 
 Zusammen mit dem Monacoframe Kollektiv durfte ich Audi auf der Kieler Woche als Kameramann unterstützen. Vor Ort haben wir in Echtzeit Social-Media-Content produziert – vom Filmen spannender Momente bis hin zum direkten Schnitt und Upload auf die Kanäle. So konnten wir die Dynamik und Atmosphäre des Events unmittelbar erlebbar machen.

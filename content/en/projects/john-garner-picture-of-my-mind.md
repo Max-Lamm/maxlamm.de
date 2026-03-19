@@ -46,4 +46,4 @@ gallery:
 translationKey: "john-garner-picture-of-my-mind"
 ---
 
-Für die Augsburger Folk-Band John Garner durfte ich das Musikvideo zu ihrem neuen Song „Picture of my Mind“ umsetzten. Die besondere Herausforderung beim Dreh bestand darin, dass über den gesamten Film zwei Storylines parallel im Splitscreen laufen. Daher mussten auch alle Szenen mehr oder weniger doppelt gedreht werden. Ich empfehle daher dringend das Video zweimal anzuschauen.
+For the Augsburg folk band John Garner, I had the opportunity to create the music video for their new song “Picture of my Mind.” The unique challenge during the shoot was that throughout the entire film, two storylines run in parallel on a split screen. Consequently, all scenes had to be filmed more or less twice. I strongly recommend watching the video twice for a complete experience.

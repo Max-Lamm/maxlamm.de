@@ -31,7 +31,7 @@ credits:
   - role: Grading
     name: Maximilian Lamm
 gallery:
-translationKey: "generali-ausdauer"
+translationKey: "generali-endurance"
 ---
 
 Was ist Ausdauer? Eva Sperger braucht keine ausschweifenden Erklärungen, vier Wörter genügen: „Einfach anfangen, niemals aufhören." Für das Generali Online Journal durfte ich das Monacoframe Team als DP und Colorist unterstützen.

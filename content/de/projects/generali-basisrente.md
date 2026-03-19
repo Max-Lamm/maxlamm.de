@@ -1,5 +1,5 @@
 ---
-title: "Generali – Basisrente"
+title: "Generali – Die Zukunft beginnt jetzt"
 date: 2023-10-06
 draft: false
 featured: false

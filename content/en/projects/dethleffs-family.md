@@ -1,5 +1,5 @@
 ---
-title: "Dethleffs – Es lebe deine Familie"
+title: "Dethleffs – Embrace your family"
 date: 2023-08-14
 draft: false
 featured: false
@@ -48,4 +48,4 @@ gallery:
 translationKey: "dethleffs-familie"
 ---
 
-„Dethleffs – Ein Freund der Familie“. Zu diesem Motto durfte ich die Produktion um Monacoframe als Focus Puller und Colorist unterstützen. Gedreht wurde an zwei Tagen in der Graubünden in der Schweiz.
+"Dethleffs - A Friend of the Family." Under this motto, I had the opportunity to support the production with Monacoframe as a Focus Puller and Colorist. The shooting took place over two days in Graubünden, Switzerland.

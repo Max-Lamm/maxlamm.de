@@ -1,5 +1,5 @@
 ---
-title: "Generali – Fokus auf Balance"
+title: "Generali – Focus on balance"
 date: 2022-08-16
 draft: false
 featured: false
@@ -32,4 +32,4 @@ gallery:
 translationKey: "generali-balance"
 ---
 
-Für Profi-Slackliner Friedi Kühne ist das Balancieren in großer Höhe die ultimative Lebensmetapher. Für das Generali Online Journal durfte ich das Monacoframe Team als DP und Colorist unterstützen.
+For professional slackliner Friedi Kühne, balancing at great heights is the ultimate metaphor for life. To find out more about what lies behind this, check out the Generali Journal. I had the privilege of accompanying Friedi as a DP during the traversal of a highline at Wendelstein. Additionally, I was able to add the finishing touches to the images during the grading process.

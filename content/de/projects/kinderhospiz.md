@@ -34,7 +34,7 @@ credits:
     name: Maximilian Lamm
   - role: Requisite
     name: Lorenz Regler
-translationKey: "kinderhospiz"
+translationKey: "kinderhospice"
 ---
 
 Das Kinderhospiz St. Nikolaus begleitet Familien mit einem unheilbar und lebensverkürzend erkrankten Kind oder Jugendlichen während der Krankheit und auch während der Sterbe- und Trauerphase. Aber es ist nicht nur ein Ort der Trauer, sondern auch ein Ort, der Phantasien leben lässt. Das Ziel ist, den betroffenen Familien ein Stück Lebensqualität zu geben.

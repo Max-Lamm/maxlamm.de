@@ -1,5 +1,5 @@
 ---
-title: "Generali – Basisrente"
+title: "Generali – Future Starts Now"
 date: 2023-10-06
 draft: false
 featured: false
@@ -29,4 +29,4 @@ credits:
 translationKey: "generali-basisrente"
 ---
 
-Bei der Kampagne zur Basisrente von Generali durfte ich die Agentur territory bei der Umsetzung unterstützen. Ich konnte mich dabei als DP und Colorist einbringen. 
+I had the opportunity to support the agency territory in the implementation of the Generali basic pension campaign. I contributed as a DP and Colorist.

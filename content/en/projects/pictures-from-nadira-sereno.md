@@ -33,10 +33,10 @@ gallery_columns: 4
 translationKey: "pictures-from-nadira-sereno"
 ---
 
-Für die Münchner Post-Rock-Band Pictures from Nadira durfte ich das Musikvideo zur Single „Sereno“ umsetzen – ein Projekt, das die Wahrnehmung von Zeit neu definiert.
+For the Munich-based post-rock band Pictures from Nadira, I had the opportunity to create the music video for their single “Sereno” — a project that redefines the perception of time.
 
-Der Song wurde von dem gleichnamigen italienischen Gedicht „Sereno“ von Giuseppe Ungaretti inspiriert, das von einem Moment der Klarheit und Erneuerung erzählt. 
+The song was inspired by the Italian poem “Sereno” by Giuseppe Ungaretti, which speaks of a moment of clarity and renewal.
 
-Diese Thematik spiegelt sich in der visuellen Umsetzung wider: Das gesamte 8-minütige Musikvideo spielt sich in Zeitlupe ab. Gedreht wurde es in gerade einmal 20 Sekunden – ermöglicht durch eine Kamera mit 600 Frames pro Sekunde.
+This theme is reflected in the visual execution: The entire 8-minute music video unfolds in slow motion. It was filmed in just 20 seconds, made possible by a camera capturing 600 frames per second.
 
-Die größte Herausforderung lag im präzisen Timing: Die Bewegungen der Kamera und die Performance der Schauspielerin mussten perfekt aufeinander abgestimmt sein, um den fließenden, fast surrealen Look des Videos zu erzeugen. Ein technischer Kraftakt, der die Idee hinter „Sereno“ eindrucksvoll zum Leben erweckt.
+The biggest challenge lay in precise timing: The camera movements and the actress’s performance had to be perfectly synchronized to create the fluid, almost surreal look of the video. A technical feat that brings the essence of “Sereno” to life in a striking way.

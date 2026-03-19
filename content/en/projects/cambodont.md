@@ -52,6 +52,6 @@ gallery_columns: 4
 translationKey: "cambodont"
 ---
 
-Für einen Zahnarzt aus Kempten konnte ich das Kollektiv Monacoframe beim Color Grading für einen Kinospot unterstützen. Gedreht wurde mit einer RED Helium 8k und Atlas Anamorphoten, was mir eine Vielzahl an Möglichkeiten in der Farbbearbeitung bot. Die Herausforderung bestand darin, die verschiedenen Aufnahmen nahtlos miteinander zu verbinden und gleichzeitig den gewünschten visuellen Stil zu erreichen. Besonders wichtig war es, einen leichten Vintage-Western-Look zu etablieren ohne dabei an Authentizität zu verlieren.
+For a dentist from Kempten, I had the opportunity to assist the Monacoframe collective with color grading for a cinema ad. The footage was shot using a RED Helium 8k and Atlas anamorphic lenses, providing me with a wide range of options in color manipulation. The challenge lay in seamlessly blending the different shots while achieving the desired visual style. It was particularly important to establish a subtle vintage western look without compromising authenticity.
 
-Für die Kinovorführung wurde ein intensiveres Grading angewendet, um die Details auf der großen Leinwand optimal zur Geltung zu bringen, während für die Webausspielung ein etwas sanfterer Look gewählt wurde, der auch auf kleineren Bildschirmen gut zur Geltung kommt.
+For the cinema screening, a more intense grading was applied to showcase the details optimally on the big screen. In contrast, a slightly softer look was chosen for web distribution, ensuring it would still be effective on smaller screens.

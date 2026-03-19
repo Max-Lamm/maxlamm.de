@@ -49,6 +49,5 @@ gallery_columns: 6
 translationKey: "bmw-social"
 ---
 
-Für BMW durfte ich als Director of Photography drei Social-Media-Kurzformate visuell umsetzen. Ziel war es, die Marke in einem prägnanten, zeitgemäßen Format erlebbar zu machen – klar, dynamisch und auf den Punkt erzählt.
-
-Der Fokus lag auf einer reduzierten, präzisen Bildsprache, die auch im Short-Format funktioniert und den Charakter der Marke transportiert. Durch gezielte Kamerabewegungen, kontrollierte Lichtsetzung und eine klare visuelle Struktur entstanden kompakte Clips, die sowohl im Feed als auch im mobilen Kontext überzeugen.
+For BMW, I took on the role of Director of Photography for three short-form social media productions. The goal was to capture the brand in a concise, contemporary format — clear, dynamic, and straight to the point.
+The focus was on a precise, reduced visual language that holds up in short-form content and carries the character of the brand. Deliberate camera movement, controlled lighting, and a clean visual structure came together to produce compact clips that work both in the feed and on mobile.

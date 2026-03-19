@@ -33,4 +33,4 @@ credits:
 translationKey: "lienne-fuck-you-very-much"
 ---
 
-Für die Augsburger Künstlerin LIENNE durfte ich den Regisseur Michael Baumberger an zwei Tagen als DP und Colorist unterstützen. Herausgekommen ist dabei ein dynamisches Performance Video.
+For the Augsburg-based artist LIENNE, I had the opportunity to support director Michael Baumberger as a DP and Colorist over two days. The result is a dynamic performance video.

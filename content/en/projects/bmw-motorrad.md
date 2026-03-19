@@ -1,5 +1,5 @@
 ---
-title: "BMW Motorrad – Prototypen"
+title: "BMW Motorrad – Prototypes"
 date: 2021-09-02
 draft: false
 featured: false
@@ -24,5 +24,4 @@ credits:
 translationKey: "bmw-motorrad"
 ---
 
-Für mehrere Konzeptfahrzeuge von BMW Motorrad durfte ich zur IAA 2021 die Filmproduktion 27km als 3rd Unit DP und Rigging Unit unterstützen.
-An insgesamt fünf Drehtagen in München und am Sylvensteinspeicher sind dabei ganz unterschiedliche Social Media Clips entstanden. Mehr dazu auch auf [Instagram](https://www.instagram.com/tv/CTUzbQGIMKc/).
+For several concept vehicles from BMW Motorrad, I had the opportunity to support the film production company 27km as a 3rd Unit DP and Rigging Unit for the IAA 2021. Over a total of five shoot days in Munich and at the Sylvensteinspeicher, a variety of social media clips were created. See more on [Instagram](https://www.instagram.com/tv/CTUzbQGIMKc/).

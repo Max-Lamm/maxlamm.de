@@ -1,5 +1,5 @@
 ---
-title: "Audi Kieler Woche"
+title: "Audi Sailing"
 date: 2024-06-29
 draft: false
 featured: true
@@ -52,4 +52,4 @@ gallery_columns: 6
 translationKey: "audi-kieler-woche"
 ---
 
-Zusammen mit dem Monacoframe Kollektiv durfte ich Audi auf der Kieler Woche als Kameramann unterstützen. Vor Ort haben wir in Echtzeit Social-Media-Content produziert – vom Filmen spannender Momente bis hin zum direkten Schnitt und Upload auf die Kanäle. So konnten wir die Dynamik und Atmosphäre des Events unmittelbar erlebbar machen.
+Together with the Monacoframe collective, I had the opportunity to support Audi as a cameraman at Kieler Woche. On-site, we produced real-time social media content – from capturing exciting moments to immediate editing and uploading to the channels. This allowed us to make the dynamics and atmosphere of the event directly tangible.

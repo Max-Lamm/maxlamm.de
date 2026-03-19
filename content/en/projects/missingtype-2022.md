@@ -1,5 +1,5 @@
 ---
-title: "DRK – #MissingType 2022"
+title: "#missingType 2022"
 date: 2022-06-14
 draft: false
 featured: false
@@ -42,4 +42,4 @@ credits:
 translationKey: "missingtype-2022"
 ---
 
-Wie schon im letzten Jahr durfte ich wieder gemeinsam mit den Kollegen von Monacoframe den DRK Blutspendedienst bei ihrer #missingtype Kampagne unterstützen. Diesmal hinter der Kamera.
+As in the previous year, I had the opportunity to once again support the German Red Cross Blood Donation Service with their #missingtype campaign, this time behind the camera, alongside my colleagues from Monacoframe.

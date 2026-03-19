@@ -43,12 +43,12 @@ gallery_columns: 3
 translationKey: "sportec-ferdinand-s"
 ---
 
-Für die Präsentation des FERDINAND S durfte ich als Director of Photography die visuelle Umsetzung verantworten. Ziel war es, nicht nur ein Fahrzeug zu zeigen, sondern Haltung, Präzision und Leidenschaft sichtbar zu machen.
+For the presentation of the FERDINAND S, I had the privilege of taking on the role of Director of Photography and overseeing the visual concept of the film. The goal was not simply to showcase a vehicle, but to make its attitude, precision, and passion truly tangible.
 
-Die Kameraarbeit war zweigeteilt: Für die abstrakten, erzählerischen Elemente kam eine RED V-Raptor mit Canon FD Vintage-Linsen zum Einsatz. Die weiche, organische Bildanmutung dieser Kombination passte perfekt zur emotionalen Tonalität der Storyelemente.
+The camera approach was twofold: For the abstract, narrative-driven elements, we used a RED V-Raptor paired with Canon FD vintage lenses. This combination provided a soft, organic look that perfectly complemented the emotional tone of the story sequences.
 
-Für die technischen Fahrzeugdetails wurde sowohl mit der RED V-Raptor als auch mit der RED Komodo gearbeitet – diesmal mit Canon RF Linsen, die eine moderne, scharfe Ästhetik ermöglichten. Die Verbindung beider Welten – analog wirkender Bildlook und gestochen scharfe Detailaufnahmen – schafft ein spannendes visuelles Spannungsfeld.
+For the technical detail shots of the vehicle, both the RED V-Raptor and RED Komodo were used – this time with Canon RF lenses, delivering a crisp, modern aesthetic. The interplay of these two visual worlds – one evoking an analog feel, the other offering razor-sharp clarity – created a compelling visual tension.
 
-Gedreht wurde unter anspruchsvollen Lichtbedingungen. Von Sonnenaufgang über steile Mittagssonne und Dämmerung war fast alles dabei. Alles wie immer dem Zeitmangel geschuldet. Um die Linienführung des Fahrzeugs optimal herauszuarbeiten, kamen gezielte Lichtsetzung, kontrollierte Bounce-Flächen und präzise Kamerabewegungen zum Einsatz.
+We shot under challenging lighting conditions: from sunrise to harsh midday sun to fading twilight – all dictated, as usual, by time constraints. To bring out the vehicle’s contours and design, we relied on precise lighting, controlled bounce surfaces, and carefully choreographed camera movements.
 
-Der fertige Film ist ein visuelles Statement – geprägt von technischer Präzision und stilistischer Freiheit.
+The final film is a visual statement – defined by technical precision and stylistic freedom.
