@@ -235,6 +235,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 250);
       });
     });
+
+    // Auto-activate filter from URL param
+    const urlCat = new URLSearchParams(window.location.search).get('cat');
+    if (urlCat) {
+      const target = [...filterBtns].find(b => b.dataset.cat === urlCat);
+      if (target) target.click();
+    }
   }
 
   /* --- Smooth scroll for anchor links --- */

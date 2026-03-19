@@ -47,5 +47,14 @@ rsync -avz --delete --progress \
 -e "ssh -i ~/.ssh/id_ed25519 -o IdentitiesOnly=yes" \
 public/ ${REMOTE_USER}@${REMOTE_HOST}:${REMOTE_PATH}
 
+# Block crawlers on staging
+if [[ "$1" != "--prod" ]]; then
+    echo ""
+    echo -e "${GREEN}▸ Adding robots.txt (noindex) to staging...${NC}"
+    ssh -i ~/.ssh/id_ed25519 -o IdentitiesOnly=yes \
+        ${REMOTE_USER}@${REMOTE_HOST} \
+        "printf 'User-agent: *\nDisallow: /\n' > ${REMOTE_PATH}robots.txt"
+fi
+
 echo ""
 echo -e "${GREEN}✓ Done! Site is live at https://${TARGET_DOMAIN}${NC}"

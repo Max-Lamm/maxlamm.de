@@ -1341,6 +1341,14 @@ button.filter-badge.badge--outline {
   color: var(--accent);
 }
 
+a.badge {
+  text-decoration: none;
+  color: inherit;
+}
+a.badge.badge--outline {
+  color: var(--accent);
+}
+
 .badge--muted {
   background: #2a2a2a;
   color: var(--text-light);
