@@ -29,7 +29,7 @@
     <!-- Language switch -->
     {{ if $.Translations }}
       {{ range $.Translations }}
-        <a class="lang-switch" href="{{ .Permalink }}">
+        <a class="lang-switch" href="{{ .RelPermalink }}">
           {{- if eq .Lang "de" }}🇩🇪 Deutsch{{ else }}🇬🇧 English{{ end -}}
         </a>
       {{ end }}
