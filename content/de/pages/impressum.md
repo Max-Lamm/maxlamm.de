@@ -5,7 +5,7 @@ url: "/impressum/"
 
 Angaben gemäß § 5 TMG
 
-**Maximilian Lamm**  
+**Maximilian Lamm**<br>
 Schäftlarnstraße 93<br>
 81371 München
 
