@@ -4,16 +4,7 @@
 <section class="hero hero--no-video" id="home">
 
 <!-- NAV -->
-<nav class="site-nav site-nav--hero">
-  <div class="site-nav__inner">
-    <a class="site-nav__brand" href="#home">maxlamm</a>
-    <div class="site-nav__links">
-      <a href="{{ if eq .Lang "de" }}/work/{{ else }}/en/work/{{ end }}">Work</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </div>
-</nav>
+{{ partial "nav.html" (dict "page" . "isHero" true) }}
   <div class="hero__bg"></div>
   <video class="hero__video" autoplay muted loop playsinline>
     <source src="/videos/hero.mp4" type="video/mp4">

@@ -1,15 +1,6 @@
 {{ define "main" }}
 
-<nav class="site-nav scrolled">
-  <div class="site-nav__inner">
-    <a class="site-nav__brand" href="{{ if eq .Lang "de" }}/{{ else }}/en/{{ end }}">maxlamm</a>
-    <div class="site-nav__links">
-      <a href="{{ if eq .Lang "de" }}/work/{{ else }}/en/work/{{ end }}">Work</a>
-      <a href="{{ if eq .Lang "de" }}/#about{{ else }}/en/#about{{ end }}">About</a>
-      <a href="{{ if eq .Lang "de" }}/#contact{{ else }}/en/#contact{{ end }}">Contact</a>
-    </div>
-  </div>
-</nav>
+{{ partial "nav.html" (dict "page" .) }}
 
 <div class="static-page">
   <h1>{{ .Title }}</h1>

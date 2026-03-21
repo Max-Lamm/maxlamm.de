@@ -3,17 +3,7 @@
 {{- partial "schema-video.html" . -}}
 {{- partial "schema-breadcrumb.html" . -}}
 
-<!-- NAV (for subpages: regular links) -->
-<nav class="site-nav scrolled">
-  <div class="site-nav__inner">
-    <a class="site-nav__brand" href="{{ if eq .Lang "de" }}/{{ else }}/en/{{ end }}">maxlamm</a>
-    <div class="site-nav__links">
-      <a href="{{ if eq .Lang "de" }}/work/{{ else }}/en/work/{{ end }}" class="active">Work</a>
-      <a href="{{ if eq .Lang "de" }}/#about{{ else }}/en/#about{{ end }}">About</a>
-      <a href="{{ if eq .Lang "de" }}/#contact{{ else }}/en/#contact{{ end }}">Contact</a>
-    </div>
-  </div>
-</nav>
+{{ partial "nav.html" (dict "page" . "activeWork" true) }}
 
 <article class="project-page">
 
