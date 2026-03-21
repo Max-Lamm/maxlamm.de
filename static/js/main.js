@@ -50,6 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
     currentIndex = index;
     const img = galleryImages[index];
     lightboxImg.src = img.dataset.full || img.src;
+    lightboxImg.alt = img.alt || '';
     // Hide arrows at boundaries
     lightboxPrev?.classList.toggle('hidden', index === 0);
     lightboxNext?.classList.toggle('hidden', index === galleryImages.length - 1);
@@ -291,7 +292,6 @@ document.addEventListener('DOMContentLoaded', () => {
           });
         }, 250);
 
-        return cat; // return for callers that need the value
       });
     });
   }

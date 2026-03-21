@@ -188,6 +188,8 @@ a:hover { color: var(--accent-hover); }
 .hero--no-video .hero__scroll { color: rgba(26,26,26,.5); }
 .hero--no-video .site-nav:not(.scrolled) a { color: var(--bg); }
 .hero--no-video .site-nav:not(.scrolled) a:hover { color: var(--bg-dark); }
+.hero--no-video .site-nav:not(.scrolled) .site-nav__lang-active { color: var(--bg); }
+.hero--no-video .site-nav:not(.scrolled) .site-nav__lang-sep { color: rgba(26,26,26,.3); }
 
 /* ============================================================
    HEADER / NAV (sticky on scroll)
@@ -1022,7 +1024,7 @@ a:hover { color: var(--accent-hover); }
 
 button.filter-badge {
   cursor: pointer;
-  border: none;
+  border: 1px solid transparent;
   font-family: inherit;
   transition: background .2s ease, border-color .2s ease, color .2s ease;
 }
@@ -1053,7 +1055,7 @@ button.filter-badge.badge--outline {
 
 button.home-filter-badge {
   cursor: pointer;
-  border: none;
+  border: 1px solid transparent;
   font-family: inherit;
   transition: background .2s ease, border-color .2s ease, color .2s ease;
 }

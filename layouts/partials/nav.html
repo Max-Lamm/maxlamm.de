@@ -2,11 +2,11 @@
 {{- $activeWork := .activeWork | default false -}}
 <nav class="site-nav{{ if not $isHero }} scrolled{{ end }}{{ if $isHero }} site-nav--hero{{ end }}">
   <div class="site-nav__inner">
-    <a class="site-nav__brand" href="{{ if eq .page.Lang "de" }}/{{ else }}/en/{{ end }}">maxlamm</a>
+    <a class="site-nav__brand" href="{{ if $isHero }}#home{{ else if eq .page.Lang "de" }}/{{ else }}/en/{{ end }}">maxlamm</a>
     <div class="site-nav__links">
-      <a href="{{ if eq .page.Lang "de" }}/work/{{ else }}/en/work/{{ end }}"{{ if $activeWork }} class="active"{{ end }}>Work</a>
-      <a href="{{ if eq .page.Lang "de" }}/#about{{ else }}/en/#about{{ end }}">About</a>
-      <a href="{{ if eq .page.Lang "de" }}/#contact{{ else }}/en/#contact{{ end }}">Contact</a>
+      <a href="{{ if $isHero }}#projects{{ else if eq .page.Lang "de" }}/work/{{ else }}/en/work/{{ end }}"{{ if $activeWork }} class="active"{{ end }}>Work</a>
+      <a href="{{ if $isHero }}#about{{ else if eq .page.Lang "de" }}/#about{{ else }}/en/#about{{ end }}">About</a>
+      <a href="{{ if $isHero }}#contact{{ else if eq .page.Lang "de" }}/#contact{{ else }}/en/#contact{{ end }}">Contact</a>
       <span class="site-nav__lang">
         {{- if eq .page.Lang "de" -}}
           <span class="site-nav__lang-active">DE</span>
