@@ -7,7 +7,6 @@ featured: false
 thumbnail: "/images/projects/dethleffs-trend/thumb.jpg"
 categories:
   - colorist
-  - weitere
 types:
   - commercial
 videos:

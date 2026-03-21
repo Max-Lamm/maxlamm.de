@@ -21,10 +21,10 @@
     {{- if or .Params.categories .Params.types -}}
     <div class="project-badges">
       {{- range .Params.categories -}}
-      <a class="badge" href="{{ "work/" | relLangURL }}?cat={{ . }}">{{ . }}</a>
+      <a class="badge badge--outline" href="{{ "work/" | relLangURL }}?cat={{ . }}">{{ . }}</a>
       {{- end -}}
       {{- range .Params.types -}}
-      <span class="badge badge--outline">{{ . }}</span>
+      <span class="badge badge--outline-muted">{{ . }}</span>
       {{- end -}}
     </div>
     {{- end -}}

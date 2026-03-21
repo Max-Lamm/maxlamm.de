@@ -30,12 +30,15 @@ hugo new projects/xyz.md  # Neues Projekt anlegen (nutzt archetypes/projects.md)
 │   │   └── list.html             # Kategorie/Tag-Archive
 │   ├── partials/
 │   │   ├── footer.html           # Globaler Footer
+│   │   ├── nav.html              # Wiederverwendbare Site-Navigation (Header)
 │   │   ├── img-url.html          # Bildpfad-Helper (Hugo-Assets vs. static)
 │   │   ├── thumb.html            # Thumbnail-Rendering mit Image Processing
 │   │   ├── schema-video.html     # Structured Data (VideoObject JSON-LD) für Projekt-Seiten
+│   │   ├── schema-breadcrumb.html  # Structured Data (BreadcrumbList JSON-LD)
 │   │   └── vimeo-src.html        # Vimeo-URL-Extraktion aus Embed-Links
 │   ├── pages/
-│   │   └── edit-conform.html     # Edit Conform Seite (Custom Layout)
+│   │   ├── edit-conform.html     # Edit Conform Seite (Custom Layout)
+│   │   └── jaichwill.html        # Hochzeits-Landingpage (Custom Layout)
 │   ├── projects/
 │   │   ├── list.html             # /work/ Portfolio-Grid
 │   │   └── single.html           # Projekt-Detailseite
@@ -43,7 +46,7 @@ hugo new projects/xyz.md  # Neues Projekt anlegen (nutzt archetypes/projects.md)
 ├── static/
 │   ├── css/style.css             # Gesamtes CSS (kein SCSS!)
 │   ├── js/
-│   │   ├── main.js               # Scroll-Verhalten, Lightbox, Kontaktformular
+│   │   ├── main.js               # Scroll-Verhalten, Lightbox (inkl. Prev/Next, Keyboard, Swipe), Kontaktformular, Kategorie-Filter
 │   │   └── klaro-config.js       # Cookie-Consent Konfiguration (Klaro.js)
 │   ├── fonts/                    # Lokal gehostete Webfonts (Raleway, Work Sans)
 │   ├── contact/                  # Kontaktformular-Backend (PHP)
@@ -116,6 +119,7 @@ Videos werden als Poster-Bild gerendert und erst beim Klick geladen (Privacy-fre
 - **Sprachen**: DE ist Default (kein `/de/`-Prefix), EN unter `/en/`
 - **Credits**: Leere `name`-Felder werden im Template übersprungen — Credits-Einträge ohne Namen einfach weglassen
 - **Cookie-Banner**: Klaro.js, Fonts werden lokal eingebunden (kein CDN)
+- **Kategorie-Filter**: Aktiver Filter wird via `history.replaceState` in der URL persistiert (`?cat=colorist`) — kein Seitenreload
 
 ## /new-project — Automatisierter Projekt-Workflow
 

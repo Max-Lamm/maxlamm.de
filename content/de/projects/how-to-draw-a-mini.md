@@ -7,7 +7,6 @@ featured: false
 thumbnail: "/images/projects/how-to-draw-a-mini/thumb.jpg"
 categories:
   - colorist
-  - weitere
 types:
   - social media
 videos:

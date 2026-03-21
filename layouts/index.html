@@ -13,7 +13,7 @@
   <div class="hero__content">
     <h1 class="hero__title">{{ .Site.Params.author }}</h1>
     <p class="hero__subtitle">{{ .Site.Language.Params.subtitle }}</p>
-    <a href="#projects" class="btn btn--hero">{{ .Site.Language.Params.heroButton }}</a>
+    <!--<a href="#projects" class="btn btn--hero">{{ .Site.Language.Params.heroButton }}</a>-->
   </div>
   <a href="#projects" class="hero__scroll">&#8964;</a>
 </section>
@@ -21,15 +21,12 @@
 <!-- PROJECTS GRID -->
 <section class="projects-section" id="projects">
   {{- $projects := where .Site.RegularPages "Section" "projects" -}}
-  {{- $featured := where $projects ".Params.featured" true -}}
-  {{- $display := $featured -}}
-  {{- if eq (len $featured) 0 -}}
-    {{- $display = first 12 $projects -}}
-  {{- end -}}
+  {{- $primary := first 9 $projects -}}
+  {{- $reserve := after 9 $projects -}}
 
-  {{- /* Collect unique categories from displayed projects */ -}}
+  {{- /* Collect unique categories from primary projects */ -}}
   {{- $cats := slice -}}
-  {{- range $display -}}{{- range .Params.categories -}}{{- $cats = $cats | append . -}}{{- end -}}{{- end -}}
+  {{- range $primary -}}{{- range .Params.categories -}}{{- $cats = $cats | append . -}}{{- end -}}{{- end -}}
   {{- $cats = $cats | uniq -}}
 
   {{- if gt (len $cats) 1 -}}
@@ -42,10 +39,30 @@
   {{- end -}}
 
   <div class="project-grid" id="home-projects-grid">
-    {{- range $display -}}
+    {{- range $primary -}}
     {{- $title := .Title -}}
     <a class="project-card" href="{{ .RelPermalink }}"
        data-cats="{{ delimit (.Params.categories | default slice) "," }}">
+      {{- with .Params.thumbnail -}}
+      {{ partial "thumb.html" (dict "src" . "alt" $title) }}
+      {{- end -}}
+      <div class="project-card__overlay">
+        {{- with .Params.types -}}
+        <span class="project-card__tags">{{ delimit . " · " }}</span>
+        {{- end -}}
+        <span class="project-card__title">{{ .Title }}</span>
+        {{- with .Params.categories -}}
+        <span class="project-card__categories">{{ delimit . " · " }}</span>
+        {{- end -}}
+      </div>
+    </a>
+    {{- end -}}
+    {{- range $reserve -}}
+    {{- $title := .Title -}}
+    <a class="project-card" href="{{ .RelPermalink }}"
+       data-cats="{{ delimit (.Params.categories | default slice) "," }}"
+       data-reserve="true"
+       style="display:none">
       {{- with .Params.thumbnail -}}
       {{ partial "thumb.html" (dict "src" . "alt" $title) }}
       {{- end -}}
@@ -88,10 +105,18 @@
     <form class="contact-form" action="/email-handler/" method="POST">
       <input type="text" name="website" tabindex="-1" autocomplete="off" style="display:none">
       <input type="hidden" name="form_time" id="form_time" value="">
-      <input type="text" id="name" name="name" placeholder="Name" required>
-      <input type="email" id="email" name="email" placeholder="Email" required>
-      <textarea id="message" name="message" placeholder="{{ if eq .Lang "de" }}Nachricht{{ else }}Message{{ end }}" required></textarea>
-
+      <div class="form-group">
+        <input type="text" id="name" name="name" placeholder=" " required>
+        <label for="name">Name</label>
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" name="email" placeholder=" " required>
+        <label for="email">Email</label>
+      </div>
+      <div class="form-group">
+        <textarea id="message" name="message" placeholder=" " required></textarea>
+        <label for="message">{{ if eq .Lang "de" }}Nachricht{{ else }}Message{{ end }}</label>
+      </div>
       <button type="submit" class="btn">{{ if eq .Lang "de" }}Senden{{ else }}Send{{ end }}</button>
     </form>
     <script>document.getElementById('form_time').value = Date.now();</script>

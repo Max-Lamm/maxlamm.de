@@ -1,0 +1,69 @@
+<h2>Mobile Project Navigation — 3 Approaches</h2>
+<p class="subtitle">All use swipe with thumbnail+title peek. The difference is how the nav is surfaced and what else is available.</p>
+
+<div class="options">
+
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>Swipe-Only (Purist)</h3>
+      <p>No visible nav buttons at all. Swipe left/right on the project page to peek the next/prev project card sliding in from the edge. Swipe far enough to commit, or release to snap back.</p>
+      <div class="pros-cons">
+        <div class="pros"><h4>Pros</h4><ul>
+          <li>Maximum clean — nothing competes with content</li>
+          <li>Feels native, like iOS Photos</li>
+          <li>No bottom bar, no browser UI conflict</li>
+        </ul></div>
+        <div class="cons"><h4>Cons</h4><ul>
+          <li>Zero discoverability — new visitors won't know they can swipe</li>
+          <li>No "back to grid" shortcut</li>
+          <li>Accessibility concerns (no tap target)</li>
+        </ul></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>Swipe + Subtle Hint Bar</h3>
+      <p>Same swipe-to-peek gesture, but a minimal bar at the bottom shows prev/next project titles (truncated). Tapping either side also navigates. A small grid icon in the center returns to /work/. The bar is always visible — no hide-on-scroll.</p>
+      <div class="pros-cons">
+        <div class="pros"><h4>Pros</h4><ul>
+          <li>Discoverable — titles hint that more projects exist</li>
+          <li>Tap fallback for users who don't swipe</li>
+          <li>Grid shortcut solves the "back to portfolio" problem</li>
+          <li>Always visible = no disorientation</li>
+        </ul></div>
+        <div class="cons"><h4>Cons</h4><ul>
+          <li>Still a bottom bar (though thinner and more informative)</li>
+          <li>Slightly more visual weight than pure swipe</li>
+        </ul></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="c" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>Swipe + Edge Peek Indicators</h3>
+      <p>No bottom bar. Instead, thin accent-colored edges on left/right hint at swipeable content. On first visit, a subtle one-time animation peeks the next project card 40px in from the right, then snaps back — teaching the gesture. A floating grid button (top-right, near nav) provides the back-to-grid shortcut.</p>
+      <div class="pros-cons">
+        <div class="pros"><h4>Pros</h4><ul>
+          <li>No bottom bar at all — zero browser UI conflict</li>
+          <li>Onboarding animation teaches the gesture naturally</li>
+          <li>Edge indicators are minimal but discoverable</li>
+          <li>Grid button integrated with existing nav area</li>
+        </ul></div>
+        <div class="cons"><h4>Cons</h4><ul>
+          <li>Edge indicators alone may not be enough for all users</li>
+          <li>One-time animation only helps first-time visitors</li>
+          <li>Slightly more complex to implement</li>
+        </ul></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<p class="subtitle" style="margin-top:20px;">My recommendation is <strong>B</strong> — it balances the premium swipe feel with real-world usability. The always-visible titles give context ("where am I in the portfolio"), the grid icon solves the back-navigation problem, and tap still works for people who don't swipe.</p>

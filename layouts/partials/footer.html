@@ -26,19 +26,5 @@
     {{ range .Site.Menus.footer }}
       <a href="{{ .URL }}">{{ .Name }}</a>
     {{ end }}
-    <!-- Language switch -->
-    {{ if $.Translations }}
-      {{ range $.Translations }}
-        <a class="lang-switch" href="{{ .RelPermalink }}">
-          {{- if eq .Lang "de" }}🇩🇪 Deutsch{{ else }}🇬🇧 English{{ end -}}
-        </a>
-      {{ end }}
-    {{ else }}
-      {{ if eq $.Lang "de" }}
-        <a class="lang-switch" href="/en/">🇬🇧 English</a>
-      {{ else }}
-        <a class="lang-switch" href="/">🇩🇪 Deutsch</a>
-      {{ end }}
-    {{ end }}
   </nav>
 </footer>

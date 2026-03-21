@@ -7,7 +7,6 @@ featured: true
 thumbnail: "/images/projects/porsche-roads/thumb.jpg"
 categories:
   - colorist
-  - weitere
 types:
   - social media
 videos:

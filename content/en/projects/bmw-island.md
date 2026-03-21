@@ -6,7 +6,7 @@ draft: false
 featured: false
 thumbnail: "/images/projects/bmw-island/thumb.jpg"
 categories:
-  - others
+  - cinematographer
 types: 
   - social media
 orientation: portrait

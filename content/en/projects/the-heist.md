@@ -6,7 +6,7 @@ draft: false
 featured: false
 thumbnail: "/images/projects/the-heist/thumb.jpg"
 categories:
-  - others
+  - cinematographer
 types:
   - commercial
 videos:

@@ -6,7 +6,7 @@ draft: false
 featured: false
 thumbnail: "/images/projects/bmw-motorrad/thumb.jpg"
 categories:
-  - others
+  - cinematographer
 types:
   - social media
 videos:

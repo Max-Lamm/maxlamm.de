@@ -7,7 +7,6 @@ featured: false
 thumbnail: "/images/projects/missingtype-2023/thumb.jpg"
 categories:
   - colorist
-  - others
 types:
   - commercial
 videos:

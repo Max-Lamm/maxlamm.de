@@ -156,9 +156,13 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
       const btn = form.querySelector('.btn');
+      const formGroups = form.querySelectorAll('.form-group');
       const originalText = btn.textContent;
+
+      // Sending state
       btn.textContent = t.sending;
       btn.disabled = true;
+      btn.classList.add('btn--sending');
 
       const data = new FormData(form);
 
@@ -170,16 +174,51 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         if (resp.ok) {
+          // Success state
+          btn.classList.remove('btn--sending');
+          btn.classList.add('btn--success');
           btn.textContent = t.sent;
-          form.reset();
-          setTimeout(() => { btn.textContent = originalText; btn.disabled = false; }, 3000);
+
+          // Fade out form groups
+          formGroups.forEach(g => g.classList.add('fade-out'));
+
+          // After delay: slide button away, then reset everything
+          setTimeout(() => {
+            btn.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+            btn.style.opacity = '0';
+            btn.style.transform = 'translateY(10px)';
+
+            setTimeout(() => {
+              // Reset form and classes
+              btn.classList.remove('btn--success');
+              btn.textContent = originalText;
+              btn.disabled = false;
+              btn.style.opacity = '';
+              btn.style.transform = '';
+              btn.style.transition = '';
+              form.reset();
+
+              // Fade form groups back in
+              formGroups.forEach(g => {
+                g.classList.remove('fade-out');
+                g.classList.add('fade-in');
+              });
+              setTimeout(() => formGroups.forEach(g => g.classList.remove('fade-in')), 300);
+            }, 300);
+          }, 2500);
         } else {
           throw new Error('Send failed');
         }
       } catch (err) {
+        // Error state
+        btn.classList.remove('btn--sending');
+        btn.classList.add('btn--error');
         btn.textContent = t.error;
         btn.disabled = false;
-        setTimeout(() => { btn.textContent = originalText; }, 3000);
+        setTimeout(() => {
+          btn.classList.remove('btn--error');
+          btn.textContent = originalText;
+        }, 3000);
       }
     });
   }
@@ -200,6 +239,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const heroVideo = document.querySelector('.hero__video');
   const heroBg = document.querySelector('.hero__bg');
   const heroEl = document.querySelector('.hero');
+  const homeFilter = document.querySelector('.home-filter');
   if ((heroVideo || heroBg) && heroEl) {
     window.addEventListener('scroll', () => {
       const heroH = heroEl.offsetHeight;
@@ -216,6 +256,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       if (heroVideo) heroVideo.style.opacity = opacity;
       if (heroBg) heroBg.style.opacity = opacity;
+      if (homeFilter) homeFilter.style.opacity = 1 - opacity;
     }, { passive: true });
   }
 
@@ -320,9 +361,90 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  /* --- Homepage filter --- */
+  /* --- Homepage filter (keeps grid at 9, fills from reserve) --- */
+  function initHomeCategoryFilter(filterBtns, gridSelector) {
+    if (!filterBtns.length) return;
+    const grid = document.querySelector(gridSelector);
+    if (!grid) return;
+
+    function showNine(cat) {
+      const all = [...grid.querySelectorAll('.project-card')];
+      const primary = all.filter(c => !c.dataset.reserve);
+      const reserve = all.filter(c => c.dataset.reserve);
+
+      let pool;
+      if (cat === 'all') {
+        pool = primary;
+      } else {
+        const match = c => (c.dataset.cats || '').split(',').includes(cat);
+        pool = [...primary.filter(match), ...reserve.filter(match)].slice(0, 9);
+      }
+      const poolSet = new Set(pool);
+
+      // FIRST — record positions of currently visible cards
+      const firstRects = new Map();
+      all.forEach(c => {
+        if (c.style.display !== 'none') firstRects.set(c, c.getBoundingClientRect());
+      });
+
+      // Fade out departing cards
+      const toHide = all.filter(c => !poolSet.has(c) && c.style.display !== 'none');
+      toHide.forEach(c => c.classList.add('card-hidden'));
+
+      setTimeout(() => {
+        all.forEach(c => {
+          if (poolSet.has(c)) {
+            c.style.display = '';
+            c.classList.remove('card-hidden');
+          } else {
+            c.style.display = 'none';
+          }
+        });
+
+        // FLIP animate cards that were already visible
+        pool.forEach(card => {
+          const first = firstRects.get(card);
+          if (!first) return; // newly surfaced reserve card — just appear
+          const last = card.getBoundingClientRect();
+          const dx = first.left - last.left;
+          const dy = first.top - last.top;
+          if (dx === 0 && dy === 0) return;
+          card.style.transform = `translate(${dx}px, ${dy}px)`;
+          card.style.transition = 'none';
+        });
+
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            pool.forEach(card => {
+              card.style.transform = '';
+              card.style.transition = 'transform .35s ease, opacity .25s ease';
+            });
+            setTimeout(() => {
+              pool.forEach(card => {
+                card.style.transition = '';
+                card.style.transform = '';
+              });
+            }, 400);
+          });
+        });
+      }, 250);
+    }
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => {
+          b.classList.remove('active');
+          b.classList.add('badge--outline');
+        });
+        btn.classList.add('active');
+        btn.classList.remove('badge--outline');
+        showNine(btn.dataset.cat);
+      });
+    });
+  }
+
   const homeFilterBtns = document.querySelectorAll('.home-filter-badge');
-  initCategoryFilter(homeFilterBtns, '#home-projects-grid');
+  initHomeCategoryFilter(homeFilterBtns, '#home-projects-grid');
 
   /* --- Smooth scroll for anchor links --- */
   document.querySelectorAll('a[href^="#"]').forEach(a => {

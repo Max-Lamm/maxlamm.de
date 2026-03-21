@@ -1,0 +1,63 @@
+<h2>Current Mobile Project Navigation</h2>
+<p class="subtitle">Let's review what you have now, then explore alternatives</p>
+
+<div class="section">
+  <h3>Current Behavior</h3>
+  <div class="mockup">
+    <div class="mockup-header">Mobile Project Page (≤768px)</div>
+    <div class="mockup-body" style="background:#1a1a1a; color:#d4d4d4; position:relative; min-height:500px; overflow:hidden; font-family:system-ui;">
+
+      <!-- Top Nav -->
+      <div style="background:rgba(20,20,20,.95); backdrop-filter:blur(10px); padding:12px 16px; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid rgba(255,255,255,.08);">
+        <span style="color:#f0f0f0; font-weight:700; font-size:14px;">maxlamm</span>
+        <div style="display:flex; gap:16px; font-size:12px; text-transform:uppercase; letter-spacing:1px;">
+          <span style="color:#E8554E;">Work</span>
+          <span style="color:#999;">About</span>
+          <span style="color:#999;">Contact</span>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div style="padding:20px 16px;">
+        <h1 style="color:#f0f0f0; font-size:22px; text-transform:uppercase; margin:0 0 8px; font-family:system-ui; font-weight:700;">BMW Island</h1>
+        <div style="display:flex; gap:6px; margin-bottom:16px;">
+          <span style="background:#E8554E; color:white; padding:2px 8px; border-radius:3px; font-size:10px; text-transform:uppercase;">weitere</span>
+          <span style="border:1px solid rgba(255,255,255,.2); color:#999; padding:2px 8px; border-radius:3px; font-size:10px; text-transform:uppercase;">social media</span>
+        </div>
+        <div style="background:#333; border-radius:4px; height:180px; display:flex; align-items:center; justify-content:center; margin-bottom:12px;">
+          <div style="width:40px; height:40px; border-radius:50%; background:rgba(255,255,255,.15); backdrop-filter:blur(4px); display:flex; align-items:center; justify-content:center;">
+            <span style="color:white; font-size:16px; margin-left:2px;">▶</span>
+          </div>
+        </div>
+        <p style="color:#999; font-size:13px; line-height:1.5;">Project description text goes here...</p>
+        <div style="margin-top:16px; color:#666; font-size:11px;">[Credits, Gallery, Related Projects below ↓]</div>
+      </div>
+
+      <!-- Bottom Nav Bar (current) -->
+      <div style="position:absolute; bottom:0; left:0; right:0; display:flex; border-top:1px solid rgba(255,255,255,.08);">
+        <a style="flex:1; height:3.5rem; background:rgba(20,20,20,.92); display:flex; align-items:center; justify-content:center; color:#f0f0f0; font-size:24px; text-decoration:none; border-right:1px solid rgba(255,255,255,.08);">‹</a>
+        <a style="flex:1; height:3.5rem; background:rgba(20,20,20,.92); display:flex; align-items:center; justify-content:center; color:#f0f0f0; font-size:24px; text-decoration:none;">›</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>Issues with Current Approach</h3>
+  <div style="display:grid; gap:12px;">
+    <div style="background:rgba(232,85,78,.08); border-left:3px solid #E8554E; padding:12px 16px; border-radius:0 6px 6px 0;">
+      <strong style="color:#E8554E;">Hide on scroll down</strong> — The nav disappears when scrolling down. User has to scroll up to get it back. Easy to lose, disorienting.
+    </div>
+    <div style="background:rgba(232,85,78,.08); border-left:3px solid #E8554E; padding:12px 16px; border-radius:0 6px 6px 0;">
+      <strong style="color:#E8554E;">No context</strong> — Just ‹ and › arrows. No project name, no indication of what's next or where you are in the portfolio.
+    </div>
+    <div style="background:rgba(232,85,78,.08); border-left:3px solid #E8554E; padding:12px 16px; border-radius:0 6px 6px 0;">
+      <strong style="color:#E8554E;">Bottom bar competes with browser UI</strong> — On iOS Safari / Chrome, the bottom bar sits right where the browser's own controls are. Accidental taps, visual clutter.
+    </div>
+    <div style="background:rgba(232,85,78,.08); border-left:3px solid #E8554E; padding:12px 16px; border-radius:0 6px 6px 0;">
+      <strong style="color:#E8554E;">No "back to grid" shortcut</strong> — To return to /work/, user must scroll all the way up to the nav bar.
+    </div>
+  </div>
+</div>
+
+<p class="subtitle" style="margin-top:24px;">Take a look — does this match your frustrations? What bothers you most?</p>
