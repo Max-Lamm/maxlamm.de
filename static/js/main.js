@@ -89,21 +89,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* --- Contact Form (sends to email handler or Formspree) --- */
+  /* --- Contact Form --- */
   const form = document.querySelector('.contact-form');
   if (form) {
+    const lang = document.documentElement.lang || 'de';
+    const i18n = {
+      de: { sending: 'Sende...', sent: '\u2713 Gesendet!', error: 'Fehler \u2013 bitte erneut versuchen' },
+      en: { sending: 'Sending...', sent: '\u2713 Sent!', error: 'Error \u2013 please try again' }
+    };
+    const t = i18n[lang] || i18n.de;
+
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
       const btn = form.querySelector('.btn');
       const originalText = btn.textContent;
-      btn.textContent = 'Sende...';
+      btn.textContent = t.sending;
       btn.disabled = true;
 
       const data = new FormData(form);
 
       try {
-        // Option 1: Use your own email handler endpoint
-        // Option 2: Use Formspree or similar
         const resp = await fetch(form.action, {
           method: 'POST',
           body: data,
@@ -111,14 +116,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         if (resp.ok) {
-          btn.textContent = '✓ Gesendet!';
+          btn.textContent = t.sent;
           form.reset();
           setTimeout(() => { btn.textContent = originalText; btn.disabled = false; }, 3000);
         } else {
           throw new Error('Send failed');
         }
       } catch (err) {
-        btn.textContent = 'Fehler – bitte erneut versuchen';
+        btn.textContent = t.error;
         btn.disabled = false;
         setTimeout(() => { btn.textContent = originalText; }, 3000);
       }
