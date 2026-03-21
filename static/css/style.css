@@ -447,6 +447,26 @@ a:hover { color: var(--accent-hover); }
   transform: translateY(-1px);
 }
 
+.btn--hero {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  margin-top: 1.5rem;
+}
+.btn--hero:hover {
+  background: var(--accent);
+  color: #fff;
+}
+/* Adapt for accent-background hero variant */
+.hero--no-video .btn--hero {
+  color: var(--bg);
+  border-color: var(--bg);
+}
+.hero--no-video .btn--hero:hover {
+  background: var(--bg);
+  color: var(--accent);
+}
+
 /* ============================================================
    ABOUT SECTION
    ============================================================ */
