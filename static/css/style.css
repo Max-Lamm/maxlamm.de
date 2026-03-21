@@ -1232,14 +1232,20 @@ button.home-filter-badge.badge--outline {
 
 .lightbox__close {
   position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
+  top: 1rem;
+  right: 1rem;
   color: #fff;
-  font-size: 2rem;
+  font-size: 2.4rem;
   cursor: pointer;
   background: none;
   border: none;
   line-height: 1;
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
 }
 
 /* ============================================================
