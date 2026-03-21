@@ -1548,3 +1548,129 @@ a.badge.badge--outline {
     padding: 20px 24px;
   }
 }
+
+/* ============================================================
+   404 PAGE
+   ============================================================ */
+/* ── 404 Page ── */
+
+.not-found {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 1.5rem 4rem;
+  background: radial-gradient(ellipse at center, var(--bg) 0%, var(--bg-dark) 70%);
+}
+
+.not-found__inner {
+  text-align: center;
+  max-width: 700px;
+  width: 90%;
+  animation: nf-fadeIn .8s ease both;
+}
+
+.not-found__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-white);
+  letter-spacing: .08em;
+  margin-bottom: .5rem;
+}
+
+.not-found__text {
+  color: var(--text-light);
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.not-found__actions {
+  display: flex;
+  justify-content: center;
+}
+
+.not-found__link {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: .95rem;
+}
+
+.not-found__link:hover {
+  text-decoration: underline;
+}
+
+/* ── Media Offline Frame ── */
+
+.media-offline-frame {
+  aspect-ratio: 2.39 / 1;
+  border: 1px solid rgba(153, 153, 153, .3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 2.5rem;
+  background: rgba(232, 85, 78, 0.06);
+  overflow: hidden;
+}
+
+.media-offline__icon {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 36px solid transparent;
+  border-right: 36px solid transparent;
+  border-bottom: 62px solid var(--accent);
+  margin-bottom: 1rem;
+  opacity: .6;
+}
+
+.media-offline__icon::after {
+  content: "!";
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--bg-dark);
+  line-height: 1;
+}
+
+.media-offline__text {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--accent);
+  opacity: .6;
+  letter-spacing: .05em;
+  user-select: none;
+}
+
+/* ── 404 Animation ── */
+
+@keyframes nf-fadeIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 480px) {
+  .media-offline__icon {
+    border-left-width: 24px;
+    border-right-width: 24px;
+    border-bottom-width: 42px;
+  }
+  .media-offline__icon::after {
+    font-size: 1.1rem;
+    top: 12px;
+  }
+  .media-offline__text {
+    font-size: 1rem;
+  }
+  .not-found__title {
+    font-size: 1.2rem;
+  }
+}

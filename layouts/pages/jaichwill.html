@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ja ich will</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+  <link rel="preload" href="/fonts/raleway-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/work-sans-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <style>
+    @font-face {
+      font-family: 'Raleway';
+      src: url('/fonts/raleway-400-normal.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Raleway';
+      src: url('/fonts/raleway-700-normal.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Work Sans';
+      src: url('/fonts/work-sans-600-normal.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Work Sans';
+      src: url('/fonts/work-sans-700-normal.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    :root {
+      --cream: #FAF7F2;
+      --warm-white: #FFFDF9;
+      --sage: #7A8B6F;
+      --sage-light: #A8B89E;
+      --sage-dark: #5C6B52;
+      --text: #3A3632;
+      --text-light: #6B6560;
+      --gold: #C4A96A;
+      --gold-light: #E8D5A8;
+      --border: #E8E2D8;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 16px;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Raleway', 'Helvetica Neue', sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Password Gate ── */
+    #pw-gate {
+      position: fixed;
+      inset: 0;
+      z-index: 1000;
+      background: var(--cream);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.6s ease, visibility 0.6s ease;
+    }
+
+    #pw-gate.hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .pw-inner {
+      text-align: center;
+      padding: 2rem;
+      max-width: 400px;
+    }
+
+    .pw-inner label {
+      display: block;
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.1rem;
+      color: var(--text-light);
+      margin-bottom: 1.5rem;
+      letter-spacing: 0.02em;
+    }
+
+    .pw-inner input {
+      display: block;
+      width: 100%;
+      max-width: 260px;
+      margin: 0 auto 1rem;
+      padding: 0.8rem 1.2rem;
+      font-family: 'Work Sans', sans-serif;
+      font-size: 1rem;
+      border: 1.5px solid var(--border);
+      border-radius: 6px;
+      background: var(--warm-white);
+      color: var(--text);
+      text-align: center;
+      outline: none;
+      transition: border-color 0.3s ease;
+    }
+
+    .pw-inner input:focus {
+      border-color: var(--sage);
+    }
+
+    .pw-inner input.error {
+      border-color: #C47A7A;
+      animation: shake 0.4s ease;
+    }
+
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      20%, 60% { transform: translateX(-6px); }
+      40%, 80% { transform: translateX(6px); }
+    }
+
+    .pw-inner button {
+      display: inline-block;
+      padding: 0.7rem 2.4rem;
+      font-family: 'Raleway', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--warm-white);
+      background: var(--sage);
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .pw-inner button:hover {
+      background: var(--sage-dark);
+      transform: translateY(-1px);
+    }
+
+    /* ── Main Content ── */
+    #content {
+      display: none;
+      opacity: 0;
+      transition: opacity 0.8s ease;
+    }
+
+    #content.visible {
+      display: block;
+      opacity: 1;
+    }
+
+    .page-wrapper {
+      max-width: 620px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 4rem;
+    }
+
+    /* ── Hero ── */
+    .hero {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .hero img {
+      max-width: 420px;
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    /* ── Decorative divider ── */
+    .divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      margin: 2.5rem 0;
+    }
+
+    .divider::before,
+    .divider::after {
+      content: '';
+      flex: 1;
+      max-width: 80px;
+      height: 1px;
+      background: var(--gold-light);
+    }
+
+    .divider span {
+      color: var(--gold);
+      font-size: 1.2rem;
+      line-height: 1;
+    }
+
+    /* ── Intro Text ── */
+    .intro {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .intro p {
+      margin-bottom: 1rem;
+      font-size: 1.05rem;
+      color: var(--text);
+    }
+
+    .intro p:last-child {
+      margin-bottom: 0;
+    }
+
+    .intro strong {
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    /* ── Q&A Section ── */
+    .qa-section {
+      margin-bottom: 2.5rem;
+    }
+
+    .qa-item {
+      text-align: center;
+      padding: 1.5rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .qa-item:last-child {
+      border-bottom: none;
+    }
+
+    .qa-item h2 {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--sage);
+      margin-bottom: 0.5rem;
+    }
+
+    .qa-item p {
+      font-size: 1.05rem;
+      color: var(--text);
+    }
+
+    .qa-item em {
+      font-style: italic;
+      color: var(--text-light);
+    }
+
+    /* ── Map ── */
+    .map-wrapper {
+      margin: 2rem 0 2.5rem;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+
+    .map-wrapper iframe {
+      display: block;
+      width: 100%;
+      height: 300px;
+      border: 0;
+    }
+
+    /* ── Buttons ── */
+    .actions {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      margin: 2.5rem 0 3rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.85rem 2.8rem;
+      font-family: 'Raleway', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      border: none;
+      text-align: center;
+      min-width: 220px;
+    }
+
+    .btn-primary {
+      background: var(--sage);
+      color: var(--warm-white);
+    }
+
+    .btn-primary:hover {
+      background: var(--sage-dark);
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--sage);
+      border: 1.5px solid var(--sage);
+    }
+
+    .btn-secondary:hover {
+      background: var(--sage);
+      color: var(--warm-white);
+      transform: translateY(-1px);
+    }
+
+    /* ── Footer note ── */
+    .footer-note {
+      text-align: center;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--text-light);
+      font-size: 0.9rem;
+    }
+
+    /* ── Animations ── */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .fade-in.in-view {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 480px) {
+      .page-wrapper {
+        padding: 2rem 1.2rem 3rem;
+      }
+
+      .hero img {
+        max-width: 320px;
+      }
+
+      .btn {
+        min-width: 200px;
+        padding: 0.75rem 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Password Gate -->
+  <div id="pw-gate">
+    <div class="pw-inner">
+      <label for="pw-input">Wie heißt unsere Tochter?</label>
+      <input type="text" id="pw-input" autocomplete="off" autofocus>
+      <button type="button" id="pw-submit">Weiter</button>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div id="content">
+    <div class="page-wrapper">
+
+      <div class="hero fade-in">
+        <img src="/images/jaichwill/hero.png" alt="Ja ich will">
+      </div>
+
+      <div class="divider fade-in"><span>&bull;</span></div>
+
+      <div class="intro fade-in">
+        <p>Gemeinsam laden wir euch ein, mit uns zu feiern.</p>
+        <p>Am <strong>26. Juni 2026</strong> sagen wir &bdquo;Ja&ldquo; und möchten diesen Tag nicht groß, sondern gemeinsam verbringen. Ohne Programm, ohne Dresscode, ohne großes Tamtam. Eher wie ein langes Sommerfest mit den Menschen, die uns wichtig sind.</p>
+        <p><strong>Ab 16 Uhr</strong> treffen wir uns am <strong>Flaucher</strong> in München zu einem großen Picknick. Wir sorgen für eine Grundausstattung an Getränken – alles Weitere entsteht dadurch, dass jede*r etwas zum Teilen mitbringt. Was genau, organisieren wir vorab über eine Liste (damit am Ende nicht nur Nudelsalat da ist).</p>
+        <p>Zieht an, worin ihr euch wohlfühlt.</p>
+        <p>Falls das Wetter nicht mitspielt, rücken wir einfach enger zusammen und verlegen das Ganze spontan zu uns nach Hause.</p>
+        <p>Gebt uns bitte kurz Bescheid ob ihr dabei seid.</p>
+        <p>Wir freuen uns auf einen entspannten Nachmittag mit euch.</p>
+      </div>
+
+      <div class="divider fade-in"><span>&bull;</span></div>
+
+      <div class="qa-section">
+        <div class="qa-item fade-in">
+          <h2>Wann?</h2>
+          <p>26. Juni 2026<br>ab 16 Uhr</p>
+        </div>
+
+        <div class="qa-item fade-in">
+          <h2>Wo?</h2>
+          <p>Wiese gegenüber Zum Flaucher Biergarten</p>
+          <div class="map-wrapper">
+            <iframe
+              loading="lazy"
+              src="https://maps.google.com/maps?q=4H55%2BR26%20M%C3%BCnchen&t=m&z=15&output=embed&iwloc=near"
+              title="Flaucher München"
+              aria-label="Flaucher München"
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="qa-item fade-in">
+          <h2>Was?</h2>
+          <p>Großes Picknick mit Familie &amp; Freunden</p>
+        </div>
+
+        <div class="qa-item fade-in">
+          <h2>Dresscode?</h2>
+          <p>Zieht an, worin ihr euch wohlfühlt</p>
+        </div>
+
+        <div class="qa-item fade-in">
+          <h2>Muss ich was mitbringen?</h2>
+          <p>Was immer ihr zum Essen und Trinken beisteuern möchtet<br><em>(Grundausstattung an Getränken ist da!)</em></p><br>
+          <p><a href="https://docs.google.com/spreadsheets/d/1uJ3iJy_KKFqlVlq4GfTZSp-c1zPne9r1ZoxgAmE7zxI/edit?usp=sharing" target="_blank" rel="noopener" class="btn btn-secondary">Essensliste</a></p>
+        </div>
+
+        <div class="qa-item fade-in">
+          <h2>Bist du dabei?</h2>
+          <p><button type="button" class="btn btn-primary" data-tally-open="KYVOz8" data-tally-layout="modal">Anmelden</button></p>
+      </div>
+
+      <div class="qa-item fade-in">
+          <p>Wir freuen uns auf euch.</p>
+        </div>
+    </div>
+  </div>
+
+  <!-- Tally.so -->
+  <script async src="https://tally.so/widgets/embed.js"></script>
+
+  <script>
+  (function() {
+    var gate = document.getElementById('pw-gate');
+    var content = document.getElementById('content');
+    var input = document.getElementById('pw-input');
+    var submit = document.getElementById('pw-submit');
+
+    function unlock() {
+      var val = input.value.trim().toLowerCase();
+      if (val === 'ruby') {
+        gate.classList.add('hidden');
+        content.classList.add('visible');
+        initScrollAnimations();
+      } else {
+        input.classList.add('error');
+        input.value = '';
+        input.focus();
+        setTimeout(function() { input.classList.remove('error'); }, 500);
+      }
+    }
+
+    submit.addEventListener('click', unlock);
+    input.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') unlock();
+    });
+
+    function initScrollAnimations() {
+      var els = document.querySelectorAll('.fade-in');
+      if (!('IntersectionObserver' in window)) {
+        els.forEach(function(el) { el.classList.add('in-view'); });
+        return;
+      }
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      els.forEach(function(el) { observer.observe(el); });
+    }
+  })();
+  </script>
+
+</body>
+</html>

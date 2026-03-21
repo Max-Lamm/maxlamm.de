@@ -82,6 +82,7 @@ pagination.pagerSize = 50
 
 [permalinks]
   projects = "/work/:slug/"
+  pages = "/:slug/"
 
 [imaging]
   quality = 80

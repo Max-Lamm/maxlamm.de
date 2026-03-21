@@ -1,0 +1,30 @@
+{{ define "main" }}
+
+<nav class="site-nav scrolled">
+  <div class="site-nav__inner">
+    <a class="site-nav__brand" href="/">maxlamm</a>
+    <div class="site-nav__links">
+      <a href="/work/">Work</a>
+      <a href="/#about">About</a>
+      <a href="/#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<div class="not-found">
+  <div class="not-found__inner">
+
+    <div class="media-offline-frame">
+      <div class="media-offline__icon"></div>
+      <span class="media-offline__text">Media Offline</span>
+    </div>
+
+    <h1 class="not-found__title">404</h1>
+    <p class="not-found__text">Die angeforderte Seite existiert nicht.</p>
+    <div class="not-found__actions">
+      <a href="/" class="not-found__link">Startseite &rarr;</a>
+    </div>
+  </div>
+</div>
+
+{{ end }}
