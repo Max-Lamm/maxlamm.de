@@ -238,12 +238,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* --- /work/ page filter --- */
+  /* --- /work/ page filter with URL persistence --- */
   const workFilterBtns = document.querySelectorAll('.filter-badge');
   initCategoryFilter(workFilterBtns, '#projects-grid');
 
-  // Auto-activate filter from URL param (/work/ page)
   if (workFilterBtns.length) {
+    // Add URL persistence on click
+    workFilterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const cat = btn.dataset.cat;
+        const url = cat === 'all'
+          ? window.location.pathname
+          : `${window.location.pathname}?cat=${cat}`;
+        history.replaceState(null, '', url);
+      });
+    });
+
+    // Auto-activate filter from URL param
     const urlCat = new URLSearchParams(window.location.search).get('cat');
     if (urlCat) {
       const target = [...workFilterBtns].find(b => b.dataset.cat === urlCat);
