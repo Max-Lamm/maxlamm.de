@@ -1043,6 +1043,34 @@ button.filter-badge.badge--outline {
   color: var(--bg);
 }
 
+.home-filter {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 var(--gap) 1.5rem;
+}
+
+button.home-filter-badge {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  transition: background .2s ease, border-color .2s ease, color .2s ease;
+}
+button.home-filter-badge.badge--outline {
+  border: 1px solid var(--accent);
+}
+.home-filter-badge:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--bg);
+}
+.home-filter-badge.badge--outline.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--bg);
+}
+
 .work-page .project-grid {
   max-width: 1100px;
   margin: 0 auto;

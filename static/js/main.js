@@ -160,9 +160,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
   }
 
-  /* --- Project category filter --- */
-  const filterBtns = document.querySelectorAll('.filter-badge');
-  if (filterBtns.length) {
+  /* --- Reusable FLIP category filter --- */
+  function initCategoryFilter(filterBtns, gridSelector) {
+    if (!filterBtns.length) return;
+
     filterBtns.forEach(btn => {
       btn.addEventListener('click', () => {
         filterBtns.forEach(b => {
@@ -174,7 +175,7 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.classList.add('active');
         btn.classList.remove('badge--outline');
         const cat = btn.dataset.cat;
-        const cards = document.querySelectorAll('#projects-grid .project-card');
+        const cards = document.querySelectorAll(`${gridSelector} .project-card`);
 
         /* FIRST — record current positions */
         const firstRects = new Map();
@@ -192,7 +193,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         /* after fade-out: reflow grid, then FLIP visible cards */
         setTimeout(() => {
-          /* toggle display */
           toHide.forEach(c => c.style.display = 'none');
           cards.forEach(card => {
             const cats = card.dataset.cats ? card.dataset.cats.split(',') : [];
@@ -223,7 +223,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 card.style.transform = '';
                 card.style.transition = 'transform .35s ease, opacity .25s ease';
               });
-              /* clean up inline styles after animation */
               setTimeout(() => {
                 cards.forEach(card => {
                   card.style.transition = '';
@@ -233,16 +232,28 @@ document.addEventListener('DOMContentLoaded', () => {
             });
           });
         }, 250);
+
+        return cat; // return for callers that need the value
       });
     });
+  }
 
-    // Auto-activate filter from URL param
+  /* --- /work/ page filter --- */
+  const workFilterBtns = document.querySelectorAll('.filter-badge');
+  initCategoryFilter(workFilterBtns, '#projects-grid');
+
+  // Auto-activate filter from URL param (/work/ page)
+  if (workFilterBtns.length) {
     const urlCat = new URLSearchParams(window.location.search).get('cat');
     if (urlCat) {
-      const target = [...filterBtns].find(b => b.dataset.cat === urlCat);
+      const target = [...workFilterBtns].find(b => b.dataset.cat === urlCat);
       if (target) target.click();
     }
   }
+
+  /* --- Homepage filter --- */
+  const homeFilterBtns = document.querySelectorAll('.home-filter-badge');
+  initCategoryFilter(homeFilterBtns, '#home-projects-grid');
 
   /* --- Smooth scroll for anchor links --- */
   document.querySelectorAll('a[href^="#"]').forEach(a => {
