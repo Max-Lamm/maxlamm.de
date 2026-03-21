@@ -1247,6 +1247,38 @@ button.home-filter-badge.badge--outline {
   justify-content: center;
   z-index: 10;
 }
+.lightbox__prev,
+.lightbox__next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,.1);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,.15);
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .2s, opacity .2s;
+  z-index: 10;
+  line-height: 1;
+}
+.lightbox__prev { left: 1.5rem; }
+.lightbox__next { right: 1.5rem; }
+.lightbox__prev:hover,
+.lightbox__next:hover {
+  background: rgba(255,255,255,.2);
+}
+.lightbox__prev.hidden,
+.lightbox__next.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
 
 /* ============================================================
    RESPONSIVE
