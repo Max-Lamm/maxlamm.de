@@ -1313,6 +1313,14 @@ button.home-filter-badge.badge--outline {
     aspect-ratio: 16/9;
   }
 
+  .project-video-pair {
+    overflow: hidden;
+  }
+  .video-wrapper--portrait {
+    flex: 1 1 auto;
+    max-width: calc(50% - 0.75rem);
+  }
+
   .about-section__inner {
     grid-template-columns: 1fr;
     gap: 2rem;
