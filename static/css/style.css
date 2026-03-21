@@ -283,6 +283,33 @@ a:hover { color: var(--accent-hover); }
 .site-nav a:hover { opacity: 1; color: var(--accent); }
 .site-nav__links a.active { color: var(--accent); opacity: 1; }
 
+.site-nav__lang {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  margin-left: .5rem;
+  padding-left: 1.5rem;
+  border-left: 1px solid rgba(255,255,255,.15);
+  font-size: .85rem;
+  font-weight: 600;
+  letter-spacing: .05em;
+}
+.site-nav__lang a {
+  color: var(--text-light);
+  font-size: .85rem;
+}
+.site-nav__lang a:hover {
+  color: var(--accent);
+}
+.site-nav__lang-active {
+  color: var(--accent);
+  font-size: .85rem;
+}
+.site-nav__lang-sep {
+  color: rgba(255,255,255,.2);
+  font-weight: 300;
+}
+
 /* ============================================================
    PROJECT GRID
    ============================================================ */
