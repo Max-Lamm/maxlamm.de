@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Close handlers
   lightbox?.addEventListener('click', (e) => {
-    if (e.target === lightbox || e.target === lightboxClose) closeLightbox();
+    if (e.target === lightbox || lightboxClose?.contains(e.target)) closeLightbox();
   });
 
   // Prev/next button clicks
