@@ -3,16 +3,28 @@
 {{- partial "schema-video.html" . -}}
 {{- partial "schema-breadcrumb.html" . -}}
 
-{{ partial "nav.html" (dict "page" . "activeWork" true) }}
+{{ partial "nav.html" (dict "page" . "activeWork" true "isProject" true) }}
 
 <article class="project-page">
 
-  <!-- Floating Prev / Next -->
+  <!-- Floating Prev / Next (desktop only, hidden on mobile via CSS) -->
   {{- with .PrevInSection -}}
-  <a class="project-float-nav project-float-nav--prev" href="{{ .RelPermalink }}" aria-label="Vorheriges Projekt">&#8249;</a>
+  <a class="project-float-nav project-float-nav--prev" href="{{ .RelPermalink }}" aria-label="Vorheriges Projekt">
+    <span class="project-float-nav__arrow">&#8249;</span>
+    <div class="project-float-nav__preview">
+      <div class="project-float-nav__bg" style="background-image:url('{{ partial "img-url.html" (dict "src" (.Params.thumbnail | default (printf "/images/projects/%s/thumb.jpg" .File.ContentBaseName)) "size" "400x webp q70") }}')"></div>
+      <span class="project-float-nav__title">{{ .Title }}</span>
+    </div>
+  </a>
   {{- end -}}
   {{- with .NextInSection -}}
-  <a class="project-float-nav project-float-nav--next" href="{{ .RelPermalink }}" aria-label="Nächstes Projekt">&#8250;</a>
+  <a class="project-float-nav project-float-nav--next" href="{{ .RelPermalink }}" aria-label="Nächstes Projekt">
+    <span class="project-float-nav__arrow">&#8250;</span>
+    <div class="project-float-nav__preview">
+      <div class="project-float-nav__bg" style="background-image:url('{{ partial "img-url.html" (dict "src" (.Params.thumbnail | default (printf "/images/projects/%s/thumb.jpg" .File.ContentBaseName)) "size" "400x webp q70") }}')"></div>
+      <span class="project-float-nav__title">{{ .Title }}</span>
+    </div>
+  </a>
   {{- end -}}
 
   <!-- Title + Badges -->

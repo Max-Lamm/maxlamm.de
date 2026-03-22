@@ -1,5 +1,6 @@
 {{- $isHero := .isHero | default false -}}
 {{- $activeWork := .activeWork | default false -}}
+{{- $isProject := .isProject | default false -}}
 <nav class="site-nav{{ if not $isHero }} scrolled{{ end }}{{ if $isHero }} site-nav--hero{{ end }}">
   <div class="site-nav__inner">
     <a class="site-nav__brand" href="{{ if $isHero }}#home{{ else if eq .page.Lang "de" }}/{{ else }}/en/{{ end }}">maxlamm</a>
@@ -27,6 +28,23 @@
         {{- end -}}
       </span>
     </div>
+    {{- if $isProject -}}
+    <div class="site-nav__project-nav">
+      {{- with .page.PrevInSection -}}
+      <a href="{{ .RelPermalink }}" class="site-nav__arrow" aria-label="Previous Project">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2L4 8l6 6"/></svg>
+      </a>
+      {{- end -}}
+      <a href="{{ if eq .page.Lang "de" }}/work/{{ else }}/en/work/{{ end }}" class="site-nav__grid" aria-label="All Projects">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><rect x="0" y="0" width="7" height="7" rx="1"/><rect x="9" y="0" width="7" height="7" rx="1"/><rect x="0" y="9" width="7" height="7" rx="1"/><rect x="9" y="9" width="7" height="7" rx="1"/></svg>
+      </a>
+      {{- with .page.NextInSection -}}
+      <a href="{{ .RelPermalink }}" class="site-nav__arrow" aria-label="Next Project">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2l6 6-6 6"/></svg>
+      </a>
+      {{- end -}}
+    </div>
+    {{- end -}}
     <button class="site-nav__burger" aria-label="Menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
