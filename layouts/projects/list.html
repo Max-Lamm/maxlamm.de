@@ -31,6 +31,10 @@
       {{- with .Params.thumbnail -}}
       {{ partial "thumb.html" (dict "src" . "alt" $title) }}
       {{- end -}}
+      {{- with .Params.preview -}}
+      <video class="project-card__preview" muted loop playsinline preload="none"
+             data-src="{{ . }}"></video>
+      {{- end -}}
       <div class="project-card__overlay">
         {{- with .Params.types -}}
         <span class="project-card__tags">{{ delimit . " · " }}</span>

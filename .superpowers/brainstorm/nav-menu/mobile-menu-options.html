@@ -1,0 +1,129 @@
+<h2>Mobile Nav Menu — Open State</h2>
+<p class="subtitle">Which style fits the minimal, editorial feel of your portfolio?</p>
+
+<div class="cards">
+
+  <!-- Option A: Slide-down panel -->
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding:0;overflow:hidden;">
+      <div style="background:#0e0e0e;width:100%;height:320px;position:relative;font-family:-apple-system,sans-serif;color:#fff;">
+        <!-- Nav bar -->
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:14px 20px;background:rgba(20,20,20,.95);backdrop-filter:blur(10px);">
+          <span style="font-size:14px;font-weight:600;letter-spacing:2px;opacity:.9;">maxlamm</span>
+          <div style="display:flex;flex-direction:column;gap:4px;width:22px;">
+            <span style="display:block;height:2px;background:#fff;transform:translateY(3px) rotate(45deg);"></span>
+            <span style="display:block;height:2px;background:#fff;opacity:0;"></span>
+            <span style="display:block;height:2px;background:#fff;transform:translateY(-3px) rotate(-45deg);"></span>
+          </div>
+        </div>
+        <!-- Slide-down panel -->
+        <div style="background:rgba(20,20,20,.98);padding:24px 20px 28px;border-bottom:1px solid rgba(255,255,255,.08);">
+          <div style="display:flex;flex-direction:column;gap:18px;">
+            <a style="color:#fff;font-size:15px;font-weight:300;letter-spacing:1px;text-decoration:none;opacity:.85;">Work</a>
+            <a style="color:#fff;font-size:15px;font-weight:300;letter-spacing:1px;text-decoration:none;opacity:.85;">About</a>
+            <a style="color:#fff;font-size:15px;font-weight:300;letter-spacing:1px;text-decoration:none;opacity:.85;">Contact</a>
+            <div style="display:flex;gap:8px;font-size:13px;opacity:.5;padding-top:4px;border-top:1px solid rgba(255,255,255,.06);">
+              <span style="color:#fff;opacity:1;">DE</span>
+              <span>|</span>
+              <span>EN</span>
+            </div>
+          </div>
+        </div>
+        <!-- Dimmed content behind -->
+        <div style="opacity:.3;padding:20px;">
+          <div style="background:rgba(255,255,255,.05);height:40px;border-radius:4px;margin-bottom:12px;"></div>
+          <div style="background:rgba(255,255,255,.05);height:40px;border-radius:4px;margin-bottom:12px;"></div>
+          <div style="background:rgba(255,255,255,.05);height:40px;border-radius:4px;"></div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A — Slide-Down Panel</h3>
+      <p>Nav bar expands downward. Compact, lightweight. Links appear right below the bar as a small column. Page content dims behind it.</p>
+    </div>
+  </div>
+
+  <!-- Option B: Side drawer -->
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding:0;overflow:hidden;">
+      <div style="background:#0e0e0e;width:100%;height:320px;position:relative;font-family:-apple-system,sans-serif;color:#fff;">
+        <!-- Nav bar -->
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:14px 20px;background:rgba(20,20,20,.95);position:relative;z-index:2;">
+          <span style="font-size:14px;font-weight:600;letter-spacing:2px;opacity:.9;">maxlamm</span>
+          <div style="display:flex;flex-direction:column;gap:4px;width:22px;">
+            <span style="display:block;height:2px;background:#fff;transform:translateY(3px) rotate(45deg);"></span>
+            <span style="display:block;height:2px;background:#fff;opacity:0;"></span>
+            <span style="display:block;height:2px;background:#fff;transform:translateY(-3px) rotate(-45deg);"></span>
+          </div>
+        </div>
+        <!-- Dimmed background -->
+        <div style="position:absolute;inset:0;background:rgba(0,0,0,.5);z-index:1;"></div>
+        <!-- Side drawer from right -->
+        <div style="position:absolute;right:0;top:0;bottom:0;width:65%;background:rgba(18,18,18,.98);backdrop-filter:blur(16px);z-index:3;display:flex;flex-direction:column;padding:70px 28px 28px;border-left:1px solid rgba(255,255,255,.06);">
+          <div style="display:flex;flex-direction:column;gap:28px;">
+            <a style="color:#fff;font-size:18px;font-weight:300;letter-spacing:1.5px;text-decoration:none;opacity:.9;">Work</a>
+            <a style="color:#fff;font-size:18px;font-weight:300;letter-spacing:1.5px;text-decoration:none;opacity:.9;">About</a>
+            <a style="color:#fff;font-size:18px;font-weight:300;letter-spacing:1.5px;text-decoration:none;opacity:.9;">Contact</a>
+          </div>
+          <div style="margin-top:auto;display:flex;gap:10px;font-size:13px;opacity:.5;">
+            <span style="color:#fff;opacity:1;">DE</span>
+            <span>|</span>
+            <span>EN</span>
+          </div>
+        </div>
+        <!-- Page content behind (dimmed) -->
+        <div style="opacity:.15;padding:20px;position:relative;z-index:0;">
+          <div style="background:rgba(255,255,255,.1);height:40px;border-radius:4px;margin-bottom:12px;"></div>
+          <div style="background:rgba(255,255,255,.1);height:40px;border-radius:4px;margin-bottom:12px;"></div>
+          <div style="background:rgba(255,255,255,.1);height:40px;border-radius:4px;"></div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B — Side Drawer</h3>
+      <p>Narrow panel slides in from the right (~65% width). Links left-aligned with generous spacing. Rest of page dims. Elegant, cinematic feel.</p>
+    </div>
+  </div>
+
+  <!-- Option C: Dropdown card -->
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding:0;overflow:hidden;">
+      <div style="background:#0e0e0e;width:100%;height:320px;position:relative;font-family:-apple-system,sans-serif;color:#fff;">
+        <!-- Nav bar -->
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:14px 20px;background:rgba(20,20,20,.95);backdrop-filter:blur(10px);">
+          <span style="font-size:14px;font-weight:600;letter-spacing:2px;opacity:.9;">maxlamm</span>
+          <div style="display:flex;flex-direction:column;gap:4px;width:22px;">
+            <span style="display:block;height:2px;background:#fff;transform:translateY(3px) rotate(45deg);"></span>
+            <span style="display:block;height:2px;background:#fff;opacity:0;"></span>
+            <span style="display:block;height:2px;background:#fff;transform:translateY(-3px) rotate(-45deg);"></span>
+          </div>
+        </div>
+        <!-- Floating dropdown card -->
+        <div style="position:absolute;right:16px;top:54px;background:rgba(24,24,24,.98);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:16px 22px;box-shadow:0 8px 32px rgba(0,0,0,.5);z-index:10;">
+          <div style="display:flex;flex-direction:column;gap:16px;">
+            <a style="color:#fff;font-size:14px;font-weight:300;letter-spacing:1px;text-decoration:none;opacity:.9;">Work</a>
+            <a style="color:#fff;font-size:14px;font-weight:300;letter-spacing:1px;text-decoration:none;opacity:.9;">About</a>
+            <a style="color:#fff;font-size:14px;font-weight:300;letter-spacing:1px;text-decoration:none;opacity:.9;">Contact</a>
+            <div style="display:flex;gap:8px;font-size:12px;opacity:.5;padding-top:6px;border-top:1px solid rgba(255,255,255,.06);">
+              <span style="color:#fff;opacity:1;">DE</span>
+              <span>|</span>
+              <span>EN</span>
+            </div>
+          </div>
+        </div>
+        <!-- Page content (not dimmed - card is small) -->
+        <div style="padding:20px;opacity:.7;">
+          <div style="background:rgba(255,255,255,.05);height:40px;border-radius:4px;margin-bottom:12px;"></div>
+          <div style="background:rgba(255,255,255,.05);height:40px;border-radius:4px;margin-bottom:12px;"></div>
+          <div style="background:rgba(255,255,255,.05);height:40px;border-radius:4px;margin-bottom:12px;"></div>
+          <div style="background:rgba(255,255,255,.05);height:40px;border-radius:4px;"></div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C — Dropdown Card</h3>
+      <p>Small floating card anchored to the hamburger. Minimal footprint — almost like a context menu. No overlay, page stays visible. Clean and unobtrusive.</p>
+    </div>
+  </div>
+
+</div>

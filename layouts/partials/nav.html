@@ -4,7 +4,34 @@
   <div class="site-nav__inner">
     <a class="site-nav__brand" href="{{ if $isHero }}#home{{ else if eq .page.Lang "de" }}/{{ else }}/en/{{ end }}">maxlamm</a>
     <div class="site-nav__links">
-      <a href="{{ if $isHero }}#projects{{ else if eq .page.Lang "de" }}/work/{{ else }}/en/work/{{ end }}"{{ if $activeWork }} class="active"{{ end }}>Work</a>
+      <a href="{{ if eq .page.Lang "de" }}/work/{{ else }}/en/work/{{ end }}"{{ if $activeWork }} class="active"{{ end }}>Work</a>
+      <a href="{{ if $isHero }}#about{{ else if eq .page.Lang "de" }}/#about{{ else }}/en/#about{{ end }}">About</a>
+      <a href="{{ if $isHero }}#contact{{ else if eq .page.Lang "de" }}/#contact{{ else }}/en/#contact{{ end }}">Contact</a>
+      <span class="site-nav__lang">
+        {{- if eq .page.Lang "de" -}}
+          <span class="site-nav__lang-active">DE</span>
+          <span class="site-nav__lang-sep">|</span>
+          {{- if .page.Translations -}}
+            <a href="{{ (index .page.Translations 0).RelPermalink }}">EN</a>
+          {{- else -}}
+            <a href="/en/">EN</a>
+          {{- end -}}
+        {{- else -}}
+          {{- if .page.Translations -}}
+            <a href="{{ (index .page.Translations 0).RelPermalink }}">DE</a>
+          {{- else -}}
+            <a href="/">DE</a>
+          {{- end -}}
+          <span class="site-nav__lang-sep">|</span>
+          <span class="site-nav__lang-active">EN</span>
+        {{- end -}}
+      </span>
+    </div>
+    <button class="site-nav__burger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="site-nav__dropdown">
+      <a href="{{ if eq .page.Lang "de" }}/work/{{ else }}/en/work/{{ end }}"{{ if $activeWork }} class="active"{{ end }}>Work</a>
       <a href="{{ if $isHero }}#about{{ else if eq .page.Lang "de" }}/#about{{ else }}/en/#about{{ end }}">About</a>
       <a href="{{ if $isHero }}#contact{{ else if eq .page.Lang "de" }}/#contact{{ else }}/en/#contact{{ end }}">Contact</a>
       <span class="site-nav__lang">

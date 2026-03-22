@@ -78,6 +78,7 @@ draft: false
 description: "Kurze Beschreibung für SEO (meta description, OG-Tag)"
 featured: false           # true = erscheint im Featured-Bereich der Homepage
 thumbnail: "/images/projects/<slug>/thumb.jpg"
+preview: "/images/projects/<slug>/preview.mp4"  # Optional: hover preview video (short loop, no audio)
 orientation: landscape    # landscape (default) | portrait (für Hochformat-Video-Paare)
 categories:
   - colorist              # colorist | cinematographer | weitere
