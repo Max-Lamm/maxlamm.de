@@ -5,6 +5,7 @@ date: 2025-07-07
 draft: false
 featured: true
 thumbnail: "/images/projects/sportec-ferdinand-s/thumb.jpg"
+preview: "/videos/projects/sportec-ferdinand-s/preview.webm"
 categories:
   - cinematographer
   - colorist

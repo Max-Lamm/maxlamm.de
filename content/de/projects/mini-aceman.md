@@ -5,6 +5,7 @@ date: 2024-05-27
 draft: false
 featured: true
 thumbnail: "/images/projects/mini-aceman/thumb.jpg"
+preview: "/videos/projects/mini-aceman/preview.webm"
 categories:
   - colorist
 types:

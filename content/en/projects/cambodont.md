@@ -5,6 +5,7 @@ date: 2024-04-23
 draft: false
 featured: true
 thumbnail: "/images/projects/cambodont/thumb.jpg"
+preview: "/videos/projects/cambodont/preview.webm"
 categories:
   - colorist
 types:

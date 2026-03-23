@@ -5,6 +5,7 @@ date: 2024-06-26
 draft: false
 featured: true
 thumbnail: "/images/projects/craft-teamsport-de/thumb.jpg"
+preview: "/videos/projects/craft-teamsport-de/preview.webm"
 categories:
   - colorist
 types:
