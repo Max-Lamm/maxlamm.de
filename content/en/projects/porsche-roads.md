@@ -5,6 +5,7 @@ date: 2024-03-08
 draft: false
 featured: true
 thumbnail: "/images/projects/porsche-roads/thumb.jpg"
+preview: "/videos/projects/porsche-roads/preview.webm"
 categories:
   - colorist
 types:

@@ -5,6 +5,7 @@ date: 2021-12-15
 draft: false
 featured: false
 thumbnail: "/images/projects/kinderhospiz/thumb.jpg"
+preview: "/videos/projects/kinderhospiz/preview.webm"
 categories:
   - colorist
 types:

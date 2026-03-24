@@ -5,6 +5,7 @@ date: 2020-07-17
 draft: false
 featured: false
 thumbnail: "/images/projects/pampamida-hoassa-droht/thumb.jpg"
+preview: "/videos/projects/pampamida-hoassa-droht.webm"
 categories:
   - cinematographer
   - colorist

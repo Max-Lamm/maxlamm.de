@@ -5,6 +5,7 @@ date: 2022-10-16
 draft: false
 featured: false
 thumbnail: "/images/projects/generali-idole/thumb.jpg"
+preview: "/videos/projects/generali-idole.webm"
 categories:
   - cinematographer
   - colorist

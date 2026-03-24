@@ -5,6 +5,7 @@ date: 2021-09-02
 draft: false
 featured: false
 thumbnail: "/images/projects/bmw-motorrad/thumb.jpg"
+preview: "/videos/projects/bmw-motorrad/preview.webm"
 categories:
   - cinematographer
 types:

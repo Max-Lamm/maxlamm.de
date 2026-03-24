@@ -5,6 +5,7 @@ date: 2023-08-14
 draft: false
 featured: false
 thumbnail: "/images/projects/dethleffs-familie/thumb.jpg"
+preview: "/videos/projects/dethleffs-familie/preview.webm"
 categories:
   - colorist
 types:

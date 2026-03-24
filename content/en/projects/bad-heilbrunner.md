@@ -5,6 +5,7 @@ date: 2023-10-11
 draft: false
 featured: false
 thumbnail: "/images/projects/bad-heilbrunner/thumb.jpg"
+preview: "/videos/projects/bad-heilbrunner/preview.webm"
 categories:
   - cinematographer
 types:

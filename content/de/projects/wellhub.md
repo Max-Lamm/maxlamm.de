@@ -5,6 +5,7 @@ date: 2024-02-10
 draft: false
 featured: false
 thumbnail: "/images/projects/wellhub/thumb.jpg"
+preview: "/videos/projects/wellhub.webm"
 categories:
   - cinematographer
 types:

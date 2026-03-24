@@ -5,6 +5,7 @@ date: 2021-12-19
 draft: false
 featured: false
 thumbnail: "/images/projects/generali-beweglichkeit/thumb.jpg"
+preview: "/videos/projects/generali-beweglichkeit/preview.webm"
 categories:
   - cinematographer
   - colorist

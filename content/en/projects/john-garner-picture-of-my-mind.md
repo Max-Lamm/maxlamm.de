@@ -5,6 +5,7 @@ date: 2023-12-01
 draft: false
 featured: false
 thumbnail: "/images/projects/john-garner-picture-of-my-mind/thumb.jpg"
+preview: "/videos/projects/john-garner-picture-of-my-mind/preview.webm"
 categories:
   - cinematographer
   - colorist

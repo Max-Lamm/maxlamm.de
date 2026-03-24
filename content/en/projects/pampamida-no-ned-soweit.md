@@ -5,6 +5,7 @@ date: 2020-09-24
 draft: false
 featured: false
 thumbnail: "/images/projects/pampamida-no-ned-soweit/thumb.jpg"
+preview: "/videos/projects/pampamida-no-ned-soweit/preview.webm"
 categories:
   - cinematographer
   - colorist

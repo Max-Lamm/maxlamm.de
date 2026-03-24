@@ -5,6 +5,7 @@ date: 2022-06-16
 draft: false
 featured: false
 thumbnail: "/images/projects/heischnupfa/thumb.jpg"
+preview: "/videos/projects/heischnupfa.webm"
 categories:
   - cinematographer
   - colorist

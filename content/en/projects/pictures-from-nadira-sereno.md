@@ -5,6 +5,7 @@ date: 2025-02-20
 draft: false
 featured: true
 thumbnail: "/images/projects/pictures-from-nadira-sereno/thumb.jpg"
+preview: "/videos/projects/pictures-from-nadira-sereno/preview.webm"
 categories:
   - cinematographer
   - colorist

@@ -5,6 +5,7 @@ date: 2022-08-01
 draft: false
 featured: false
 thumbnail: "/images/projects/bmw-island/thumb.jpg"
+preview: "/videos/projects/bmw-island/preview.webm"
 categories:
   - cinematographer
 types: 

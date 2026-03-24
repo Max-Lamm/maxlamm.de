@@ -5,6 +5,7 @@ date: 2026-01-28
 draft: false
 featured: true
 thumbnail: "/images/projects/bmw-social/thumb.jpg"
+preview: "/videos/projects/bmw-social.webm"
 categories:
   - cinematographer
 types:

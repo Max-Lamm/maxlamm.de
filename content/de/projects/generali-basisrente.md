@@ -5,6 +5,7 @@ date: 2023-10-06
 draft: false
 featured: false
 thumbnail: "/images/projects/generali-basisrente/thumb.jpg"
+preview: "/videos/projects/generali-basisrente.webm"
 categories:
   - cinematographer
   - colorist

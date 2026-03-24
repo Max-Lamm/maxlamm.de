@@ -5,6 +5,7 @@ date: 2022-06-14
 draft: false
 featured: false
 thumbnail: "/images/projects/missingtype-2022/thumb.jpg"
+preview: "/videos/projects/missingtype-2022/preview.webm"
 categories:
   - cinematographer
 types:

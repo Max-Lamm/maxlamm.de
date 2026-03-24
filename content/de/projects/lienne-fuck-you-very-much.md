@@ -5,6 +5,7 @@ date: 2021-07-17
 draft: false
 featured: false
 thumbnail: "/images/projects/lienne-fuck-you-very-much/thumb.jpg"
+preview: "/videos/projects/lienne-fuck-you-very-much.webm"
 categories:
   - cinematographer
   - colorist

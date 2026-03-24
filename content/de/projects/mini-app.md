@@ -5,6 +5,7 @@ date: 2026-03-10
 draft: true
 featured: true
 thumbnail: "/images/projects/mini-app/thumb.jpg"
+preview: "/videos/projects/mini-app.webm"
 orientation: landscape
 categories:
   - cinematographer

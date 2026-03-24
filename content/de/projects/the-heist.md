@@ -5,6 +5,7 @@ date: 2021-10-01
 draft: false
 featured: false
 thumbnail: "/images/projects/the-heist/thumb.jpg"
+preview: "/videos/projects/the-heist.webm"
 categories:
   - cinematographer
 types:

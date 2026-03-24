@@ -5,7 +5,7 @@ date: 2024-06-29
 draft: false
 featured: true
 thumbnail: "/images/projects/audi-kieler-woche/thumb.jpg"
-preview: "/videos/projects/audi-kieler-woche/preview.webm"
+preview: "/videos/projects/audi-kieler-woche.webm"
 categories:
   - cinematographer
 types:

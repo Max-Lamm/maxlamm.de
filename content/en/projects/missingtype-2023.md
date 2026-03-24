@@ -5,6 +5,7 @@ date: 2023-06-14
 draft: false
 featured: false
 thumbnail: "/images/projects/missingtype-2023/thumb.jpg"
+preview: "/videos/projects/missingtype-2023/preview.webm"
 categories:
   - colorist
 types:

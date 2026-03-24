@@ -5,6 +5,7 @@ date: 2022-09-16
 draft: false
 featured: false
 thumbnail: "/images/projects/generali-ausdauer/thumb.jpg"
+preview: "/videos/projects/generali-ausdauer.webm"
 categories:
   - cinematographer
   - colorist
