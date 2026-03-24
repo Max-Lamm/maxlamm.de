@@ -5,7 +5,7 @@ date: 2024-02-07
 draft: false
 featured: false
 thumbnail: "/images/projects/dethleffs-trend/thumb.jpg"
-preview: "/videos/projects/dethleffs-trend/preview.webm"
+preview: "/videos/projects/dethleffs-trend.webm"
 categories:
   - colorist
 types:

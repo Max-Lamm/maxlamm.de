@@ -5,7 +5,7 @@ date: 2023-09-04
 draft: false
 featured: false
 thumbnail: "/images/projects/farmy/thumb.jpg"
-preview: "/videos/projects/farmy/preview.webm"
+preview: "/videos/projects/farmy.webm"
 categories:
   - cinematographer
 types:

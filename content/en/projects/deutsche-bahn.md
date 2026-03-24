@@ -5,7 +5,7 @@ date: 2023-10-20
 draft: false
 featured: false
 thumbnail: "/images/projects/deutsche-bahn/thumb.jpg"
-preview: "/videos/projects/deutsche-bahn/preview.webm"
+preview: "/videos/projects/deutsche-bahn.webm"
 categories:
   - colorist
 types:

@@ -5,7 +5,7 @@ date: 2021-09-01
 draft: false
 featured: false
 thumbnail: "/images/projects/commercetools-automotive/thumb.jpg"
-preview: "/videos/projects/commercetools-automotive/preview.webm"
+preview: "/videos/projects/commercetools-automotive.webm"
 categories:
   - cinematographer
   - colorist

@@ -9,7 +9,7 @@ preview: "/videos/projects/sparda-bank.webm"
 orientation: landscape
 video_size: large
 categories:
-  - dop
+  - cinematographer
   - colorist
 types:
   - commercial

@@ -5,7 +5,7 @@ date: 2022-08-16
 draft: false
 featured: false
 thumbnail: "/images/projects/generali-balance/thumb.jpg"
-preview: "/videos/projects/generali-balance/preview.webm"
+preview: "/videos/projects/generali-balance.webm"
 categories:
   - cinematographer
   - colorist

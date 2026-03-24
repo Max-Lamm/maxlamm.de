@@ -5,7 +5,7 @@ date: 2023-09-05
 draft: false
 featured:  false
 thumbnail: "/images/projects/ansorge-logistik/thumb.jpg"
-preview: "/videos/projects/ansorge-logistik/preview.webm"
+preview: "/videos/projects/ansorge-logistik.webm"
 categories:
   - colorist
 types:

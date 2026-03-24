@@ -5,7 +5,7 @@ date: 2022-01-19
 draft: false
 featured: false
 thumbnail: "/images/projects/generali-ueberwintern/thumb.jpg"
-preview: "/videos/projects/generali-ueberwintern/preview.webm"
+preview: "/videos/projects/generali-ueberwintern.webm"
 categories:
   - cinematographer
   - colorist

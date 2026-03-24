@@ -5,11 +5,11 @@ draft: false
 description: "Cinematography and color grading for Sparda Bank Munich commercial – DoP & Colorist Maximilian Lamm. A humorous spot about the inner doubter."
 featured: true
 thumbnail: "/images/projects/sparda-bank/thumb.jpg"
-preview: "/videos/projects/sparda-bank/preview.webm"
+preview: "/videos/projects/sparda-bank.webm"
 orientation: landscape
 video_size: large
 categories:
-  - dop
+  - cinematographer
   - colorist
 types:
   - commercial

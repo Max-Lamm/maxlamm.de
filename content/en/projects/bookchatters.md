@@ -5,7 +5,7 @@ date: 2021-11-19
 draft: false
 featured: false
 thumbnail: "/images/projects/bookchatters/thumb.jpg"
-preview: "/videos/projects/bookchatters/preview.webm"
+preview: "/videos/projects/bookchatters.webm"
 categories:
   - cinematographer
 types:

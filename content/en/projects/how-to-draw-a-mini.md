@@ -5,7 +5,7 @@ date: 2022-01-12
 draft: false
 featured: false
 thumbnail: "/images/projects/how-to-draw-a-mini/thumb.jpg"
-preview: "/videos/projects/how-to-draw-a-mini/preview.webm"
+preview: "/videos/projects/how-to-draw-a-mini.webm"
 categories:
   - colorist
 types:

@@ -5,7 +5,7 @@ date: {{ .Date }}
 draft: false
 featured: false
 thumbnail: "/images/projects/THUMBNAIL.jpg"
-# preview: "/images/projects/PROJECT-NAME/preview.mp4"
+# preview: "/videos/projects/PROJECT-NAME.webm"
 orientation: landscape
   # portrait
 categories:

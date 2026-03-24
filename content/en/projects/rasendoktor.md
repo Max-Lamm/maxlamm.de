@@ -5,7 +5,7 @@ date: 2026-02-23
 draft: false
 featured: true
 thumbnail: "/images/projects/rasendoktor/thumb.jpg"
-preview: "/videos/projects/rasendoktor/preview.webm"
+preview: "/videos/projects/rasendoktor.webm"
 categories:
   - cinematographer
   - colorist
