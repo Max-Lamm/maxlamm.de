@@ -1655,6 +1655,24 @@ button.home-filter-badge.badge--outline {
   .site-nav__inner {
     position: relative;
   }
+
+  /* Homepage cards: show overlay permanently in /work style on mobile */
+  .home-card .project-card__overlay {
+    opacity: 1;
+    background: linear-gradient(to top, rgba(0,0,0,.8) 0%, rgba(0,0,0,.4) 45%, rgba(0,0,0,.1) 60%, transparent 100%);
+    justify-content: flex-end;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .home-card:hover .project-card__title {
+    transform: none;
+  }
+
+  .home-card:hover .project-card__tags,
+  .home-card:hover .project-card__categories {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 480px) {

@@ -84,7 +84,7 @@
   <link rel="dns-prefetch" href="https://cdn.kiprotect.com">
   <link rel="dns-prefetch" href="https://cloud.umami.is">
   <link rel="stylesheet" href="/css/style.css">
-  <script>if(/^#(home|projects|about|contact)$/.test(location.hash))document.documentElement.classList.add('lang-entering');</script>
+  <script>if(/^#(home|projects|about|contact)$/.test(location.hash)){document.documentElement.classList.add('lang-entering');setTimeout(function(){document.documentElement.classList.remove('lang-entering')},150);}</script>
   <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
   <link rel="preload" href="/fonts/raleway-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/work-sans-700-normal.woff2" as="font" type="font/woff2" crossorigin>
@@ -110,6 +110,29 @@
   <!-- Scroll to top -->
   <button class="scroll-top" aria-label="Scroll to top">&#8593;</button>
 
+  <!-- Language switch: scroll to section + fade in (before main.js for speed) -->
+  <script>
+  (function(){
+    var root = document.documentElement;
+    if (!root.classList.contains('lang-entering')) return;
+    var hash = location.hash.replace('#','');
+    var ids = ['home','projects','about','contact'];
+    if (ids.indexOf(hash) === -1) { root.classList.remove('lang-entering'); return; }
+    var target = document.getElementById(hash);
+    if (!target) { root.classList.remove('lang-entering'); return; }
+    var ps = document.querySelector('.projects-section');
+    if (ps) ps.classList.add('section-visible');
+    window.scrollTo(0, target.offsetTop);
+    requestAnimationFrame(function(){
+      root.classList.add('lang-ready');
+      var done = false;
+      var cleanup = function(){ if(done) return; done = true; root.classList.remove('lang-entering','lang-ready'); };
+      root.addEventListener('transitionend', cleanup, {once:true});
+      setTimeout(cleanup, 600);
+      history.replaceState(null,'', location.pathname + location.search);
+    });
+  })();
+  </script>
   <script src="/js/main.js"></script>
 </body>
 </html>

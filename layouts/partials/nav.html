@@ -5,9 +5,9 @@
   <div class="site-nav__inner">
     <a class="site-nav__brand" href="{{ if $isHero }}#home{{ else if eq .page.Lang "de" }}/{{ else }}/en/{{ end }}">maxlamm</a>
     <div class="site-nav__links">
-      <a href="{{ if eq .page.Lang "de" }}/work/{{ else }}/en/work/{{ end }}"{{ if $activeWork }} class="active"{{ end }}>Work</a>
-      <a href="{{ if $isHero }}#about{{ else if eq .page.Lang "de" }}/#about{{ else }}/en/#about{{ end }}">About</a>
-      <a href="{{ if $isHero }}#contact{{ else if eq .page.Lang "de" }}/#contact{{ else }}/en/#contact{{ end }}">Contact</a>
+      <a href="{{ if eq .page.Lang "de" }}/work/{{ else }}/en/work/{{ end }}"{{ if $activeWork }} class="active"{{ end }}>{{ if eq .page.Lang "de" }}Projekte{{ else }}Work{{ end }}</a>
+      <a href="{{ if $isHero }}#about{{ else if eq .page.Lang "de" }}/#about{{ else }}/en/#about{{ end }}">{{ if eq .page.Lang "de" }}Über mich{{ else }}About{{ end }}</a>
+      <a href="{{ if $isHero }}#contact{{ else if eq .page.Lang "de" }}/#contact{{ else }}/en/#contact{{ end }}">{{ if eq .page.Lang "de" }}Kontakt{{ else }}Contact{{ end }}</a>
       <span class="site-nav__lang">
         {{- if eq .page.Lang "de" -}}
           <span class="site-nav__lang-active">DE</span>
@@ -49,9 +49,9 @@
       <span></span><span></span><span></span>
     </button>
     <div class="site-nav__dropdown">
-      <a href="{{ if eq .page.Lang "de" }}/work/{{ else }}/en/work/{{ end }}"{{ if $activeWork }} class="active"{{ end }}>Work</a>
-      <a href="{{ if $isHero }}#about{{ else if eq .page.Lang "de" }}/#about{{ else }}/en/#about{{ end }}">About</a>
-      <a href="{{ if $isHero }}#contact{{ else if eq .page.Lang "de" }}/#contact{{ else }}/en/#contact{{ end }}">Contact</a>
+      <a href="{{ if eq .page.Lang "de" }}/work/{{ else }}/en/work/{{ end }}"{{ if $activeWork }} class="active"{{ end }}>{{ if eq .page.Lang "de" }}Projekte{{ else }}Work{{ end }}</a>
+      <a href="{{ if $isHero }}#about{{ else if eq .page.Lang "de" }}/#about{{ else }}/en/#about{{ end }}">{{ if eq .page.Lang "de" }}Über mich{{ else }}About{{ end }}</a>
+      <a href="{{ if $isHero }}#contact{{ else if eq .page.Lang "de" }}/#contact{{ else }}/en/#contact{{ end }}">{{ if eq .page.Lang "de" }}Kontakt{{ else }}Contact{{ end }}</a>
       <span class="site-nav__lang">
         {{- if eq .page.Lang "de" -}}
           <span class="site-nav__lang-active">DE</span>

@@ -505,28 +505,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    // On load with section hash — already hidden via inline script on <html>
-    const root = document.documentElement;
-    const hash = window.location.hash.replace('#', '');
-    if (sectionIds.includes(hash) && root.classList.contains('lang-entering')) {
-      const target = document.getElementById(hash);
-      if (target) {
-        // Skip projects fade-in animation — show immediately
-        if (projectsSection) projectsSection.classList.add('section-visible');
-        // Scroll instantly while hidden
-        window.scrollTo(0, target.offsetTop);
-        // Fade in
-        requestAnimationFrame(() => {
-          root.classList.add('lang-ready');
-          // Clean up after transition
-          root.addEventListener('transitionend', () => {
-            root.classList.remove('lang-entering', 'lang-ready');
-          }, { once: true });
-          // Clean the hash from URL
-          history.replaceState(null, '', window.location.pathname + window.location.search);
-        });
-      }
-    }
+    // Lang-entering scroll + fade-in is handled by inline script in baseof.html (before main.js)
   }
 
   /* --- Preview video on hover (desktop only) --- */
