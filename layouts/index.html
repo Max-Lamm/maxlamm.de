@@ -117,6 +117,7 @@
         <textarea id="message" name="message" placeholder=" " required></textarea>
         <label for="message">{{ if eq .Lang "de" }}Nachricht{{ else }}Message{{ end }}</label>
       </div>
+      <div class="cf-turnstile" data-sitekey="0x4AAAAAAC6okCVICQ-UccDv" data-theme="light"></div>
       <button type="submit" class="btn">{{ if eq .Lang "de" }}Senden{{ else }}Send{{ end }}</button>
     </form>
     <script>document.getElementById('form_time').value = Date.now();</script>

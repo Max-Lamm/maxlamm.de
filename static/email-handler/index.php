@@ -22,6 +22,29 @@ if ($form_time === 0 || (time() * 1000 - $form_time) < 3000) {
     exit;
 }
 
+// Cloudflare Turnstile Verification
+$turnstile_token = $_POST['cf-turnstile-response'] ?? '';
+$turnstile_secret = trim(file_get_contents($_SERVER['HOME'] . '/turnstile-secret.txt'));
+
+$verify_response = file_get_contents('https://challenges.cloudflare.com/turnstile/v0/siteverify', false, stream_context_create([
+    'http' => [
+        'method' => 'POST',
+        'header' => 'Content-Type: application/x-www-form-urlencoded',
+        'content' => http_build_query([
+            'secret' => $turnstile_secret,
+            'response' => $turnstile_token,
+            'remoteip' => $_SERVER['REMOTE_ADDR']
+        ])
+    ]
+]));
+
+$verify_result = json_decode($verify_response, true);
+if (!$verify_result || !$verify_result['success']) {
+    http_response_code(400);
+    echo json_encode(['ok' => false]);
+    exit;
+}
+
 $name    = strip_tags(trim($_POST['name']    ?? ''));
 $email   = strip_tags(trim($_POST['email']   ?? ''));
 $message = strip_tags(trim($_POST['message'] ?? ''));
