@@ -2,6 +2,7 @@
 title: "Legal Notice"
 description: "Legal notice for Maximilian Lamm – Cinematographer & Colorist based in Munich, Germany."
 url: "/en/imprint/"
+noindex: true
 ---
 
 Information in accordance with § 5 TMG

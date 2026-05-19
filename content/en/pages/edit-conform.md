@@ -3,6 +3,7 @@ title: "EDIT CONFORM GUIDE"
 description: "Guide for the edit conform workflow – exporting your edit for professional color grading by Maximilian Lamm."
 url: "/en/edit-conform/"
 layout: "edit-conform"
+noindex: true
 ---
 
 This guide helps you prepare your edit for further processing (conform) in DaVinci Resolve.

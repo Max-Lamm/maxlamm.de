@@ -2,6 +2,7 @@
 title: "DATENSCHUTZERKLÄRUNG"
 description: "Datenschutzerklärung von maxlamm.de – Informationen zur Erhebung und Verarbeitung personenbezogener Daten."
 url: "/datenschutz/"
+noindex: true
 ---
 
 ## 1. DATENSCHUTZ AUF EINEN BLICK

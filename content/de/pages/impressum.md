@@ -2,6 +2,7 @@
 title: "Impressum"
 description: "Impressum von Maximilian Lamm – Cinematographer & Colorist aus München. Kontaktdaten und rechtliche Angaben."
 url: "/impressum/"
+noindex: true
 ---
 
 Angaben gemäß § 5 TMG

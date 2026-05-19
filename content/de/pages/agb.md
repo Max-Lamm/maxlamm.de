@@ -2,6 +2,7 @@
 title: "Allgemeine Geschäftsbedingungen"
 description: "AGB von Maximilian Lamm – Allgemeine Geschäftsbedingungen für Film- und Postproduktionsleistungen."
 url: "/agb/"
+noindex: true
 ---
 
 Maximilian Lamm<br>
