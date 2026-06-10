@@ -77,5 +77,16 @@ Wird vom `/new-project`-Workflow genutzt, um Captions automatisch zu befüllen.
 | Leslie Miller           | @frauleslieann              |
 | Sophia Sommer           | @sommernachtsalptraum       |
 | Luna Elisa Federowicz   | @lunaelisafederowicz        |
+| We Play Forward         | @weplayforward              |
+| Rafael Quesada          | @rafaques                   |
+| Jasper Claussen         | @jasperclaussen             |
+| Maria Schenker          | @marylipstick               |
+| Asal Sahin              | @asalsahin                  |
+| Esra Tamkoc             | @setdesign_tamtam           |
+| Ben Schlemper           | @benschlemper               |
+| Thore Schölermann       | @thoreschoelermann          |
+| Jana Wosnitza           | @janawosnitza               |
+| Stefano Zarrella        | @stefanozarrella            |
+| Loris Karius            | @loriskarius                |
 
 <!-- Neue Einträge einfach als neue Zeile ergänzen. -->
