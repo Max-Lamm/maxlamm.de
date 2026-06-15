@@ -5,6 +5,7 @@ date: 2026-05-04
 draft: false
 featured: true
 thumbnail: "/images/projects/freilich/thumb.jpg"
+preview: "/videos/projects/freilich.webm"
 orientation: landscape
 video_size: medium
 categories:
