@@ -1,15 +1,18 @@
 {{ define "main" }}
 
 <!-- HERO -->
-<section class="hero hero--no-video" id="home">
+{{- $heroVideo := .Site.Params.heroVideo | default false -}}
+<section class="hero{{ if not $heroVideo }} hero--no-video{{ end }}" id="home">
 
 <!-- NAV -->
 {{ partial "nav.html" (dict "page" . "isHero" true) }}
   <div class="hero__bg"></div>
-  <video class="hero__video" autoplay muted loop playsinline>
-    <source src="/videos/hero.mp4" type="video/mp4">
+  {{- if $heroVideo }}
+  <video class="hero__video" autoplay muted loop playsinline preload="metadata"{{ with .Site.Params.heroPoster }} poster="{{ . }}"{{ end }}>
     <source src="/videos/hero.webm" type="video/webm">
+    <source src="/videos/hero.mp4" type="video/mp4">
   </video>
+  {{- end }}
   <div class="hero__content">
     <h1 class="hero__title">{{ .Site.Params.author }}</h1>
     <p class="hero__subtitle">{{ .Site.Language.Params.subtitle }}</p>

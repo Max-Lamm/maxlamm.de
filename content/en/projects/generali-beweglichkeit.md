@@ -10,7 +10,7 @@ categories:
   - cinematographer
   - colorist
 types:
-  - scoial media
+  - social media
 videos:
   - "https://www.youtube.com/watch?v=jYLE6-NhtkE"
 video_posters:

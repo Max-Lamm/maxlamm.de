@@ -9,7 +9,12 @@
 {{- $img := resources.Get (strings.TrimPrefix "/" $src) -}}
 {{- if $img -}}
   {{- $t := $img.Fill "768x432 webp q80" -}}
-  <img src="{{ $t.RelPermalink }}" width="{{ $t.Width }}" height="{{ $t.Height }}" alt="{{ $alt }}" loading="lazy">
+  {{- if ge $img.Width 1536 -}}
+    {{- $t2x := $img.Fill "1536x864 webp q80" -}}
+    <img src="{{ $t.RelPermalink }}" srcset="{{ $t.RelPermalink }} 768w, {{ $t2x.RelPermalink }} 1536w" sizes="(max-width: 768px) 100vw, 33vw" width="{{ $t.Width }}" height="{{ $t.Height }}" alt="{{ $alt }}" loading="lazy">
+  {{- else -}}
+    <img src="{{ $t.RelPermalink }}" width="{{ $t.Width }}" height="{{ $t.Height }}" alt="{{ $alt }}" loading="lazy">
+  {{- end -}}
 {{- else -}}
   <img src="{{ $src }}" alt="{{ $alt }}" loading="lazy">
 {{- end -}}

@@ -9,7 +9,7 @@ preview: "/videos/projects/wellhub.webm"
 categories:
   - cinematographer
 types:
-  - image video
+  - imagefilm
 videos:
   - "https://www.youtube.com/watch?v=BqmMSGP1X3Q"
 credits:

@@ -10,24 +10,31 @@ hugo --minify --gc      # Production Build → public/
 ./deploy.sh             # Build + rsync zu Staging (test.maxlamm.de)
 ./deploy.sh --prod      # Build + rsync zu Production (maxlamm.de) — mit Bestätigung
 hugo new projects/xyz.md  # Neues Projekt anlegen (nutzt archetypes/projects.md)
+python generate_agb_pdf.py  # AGB als PDF neu generieren (on-demand, kein statisches PDF)
 ```
 
 ## Projektstruktur
 
 ```
 ├── hugo.toml                     # Haupt-Config (Sprachen, Menüs, Params)
-├── archetypes/projects.md        # Template für neue Projekte
+├── archetypes/
+│   ├── projects.md               # Template für neue Projekte
+│   └── default.md                # Hugo-Default-Archetype
+├── generate_agb_pdf.py           # Erzeugt AGB-PDF on-demand (kein statisches PDF im Repo)
+├── README.md                     # Projekt-Readme
+├── docs/                         # superpowers plans/specs (Planungs-/Spec-Dateien)
 ├── content/
 │   ├── de/
 │   │   ├── _index.md             # Homepage About-Text (DE)
 │   │   ├── projects/             # Projekte (DE) — Permalink: /work/<slug>/
-│   │   └── pages/                # Impressum, AGB, Datenschutz, Edit Conform
-│   └── en/                       # Gleiche Struktur für EN
+│   │   └── pages/                # Impressum, AGB, Datenschutz, Edit Conform, jaichwill (Hochzeits-Landingpage, nur DE)
+│   └── en/                       # Gleiche Struktur für EN (ohne jaichwill)
 ├── layouts/
 │   ├── _default/
 │   │   ├── baseof.html           # Base-Wrapper (head, body, Klaro Cookie-Banner, scripts)
 │   │   ├── single.html           # Statische Seiten (pages/)
 │   │   └── list.html             # Kategorie/Tag-Archive
+│   ├── 404.html                  # Custom 404-Seite
 │   ├── partials/
 │   │   ├── footer.html           # Globaler Footer
 │   │   ├── nav.html              # Wiederverwendbare Site-Navigation (Header)
@@ -43,14 +50,17 @@ hugo new projects/xyz.md  # Neues Projekt anlegen (nutzt archetypes/projects.md)
 │   │   ├── list.html             # /work/ Portfolio-Grid
 │   │   └── single.html           # Projekt-Detailseite
 │   └── index.html                # Homepage
+├── assets/
+│   ├── css/style.css             # Gesamtes CSS (kein SCSS!) — via Hugo Pipes minified + fingerprinted
+│   └── js/
+│       ├── main.js               # Scroll-Verhalten, Lightbox (inkl. Prev/Next, Keyboard, Swipe), Kontaktformular, Kategorie-Filter
+│       └── klaro-config.js       # Cookie-Consent Konfiguration (Klaro.js)
 ├── static/
-│   ├── css/style.css             # Gesamtes CSS (kein SCSS!)
-│   ├── js/
-│   │   ├── main.js               # Scroll-Verhalten, Lightbox (inkl. Prev/Next, Keyboard, Swipe), Kontaktformular, Kategorie-Filter
-│   │   └── klaro-config.js       # Cookie-Consent Konfiguration (Klaro.js)
 │   ├── fonts/                    # Lokal gehostete Webfonts (Raleway, Work Sans)
-│   ├── contact/                  # Kontaktformular-Backend (PHP)
+│   ├── contact/                  # Kontaktformular-Backend (PHP, mit Cloudflare Turnstile)
 │   ├── email-handler/            # E-Mail-Versand-Backend (PHP)
+│   ├── videos/projects/<slug>.webm  # Hover-Preview-Videos (preview-Front-Matter)
+│   ├── .htaccess                 # Apache-Regeln (Uberspace)
 │   └── images/
 │       ├── portrait.jpg
 │       ├── favicon.svg
@@ -114,23 +124,51 @@ Videos werden als Poster-Bild gerendert und erst beim Klick geladen (Privacy-fre
 
 ## Konventionen
 
-- **CSS**: Alles in `static/css/style.css` — kein SCSS, kein Build-Step
+- **CSS/JS**: Alles in `assets/css/style.css` bzw. `assets/js/` — kein SCSS; Einbindung via Hugo Pipes (`minify | fingerprint`) in `baseof.html`, dadurch Cache-Busting
+- **Hero-Video**: wird nur gerendert wenn `heroVideo = true` in `hugo.toml` `[params]` (optional `heroPoster` für Poster-Bild) — sonst `hero--no-video`-Variante ohne Video-Request
 - **Bilder**: Immer unter `/images/projects/<slug>/`, Thumbnails 768×432px
 - **Permalinks**: Projekte erscheinen unter `/work/<slug>/` (konfiguriert in `hugo.toml`)
 - **Sprachen**: DE ist Default (kein `/de/`-Prefix), EN unter `/en/`
 - **Credits**: Leere `name`-Felder werden im Template übersprungen — Credits-Einträge ohne Namen einfach weglassen
 - **Cookie-Banner**: Klaro.js, Fonts werden lokal eingebunden (kein CDN)
 - **Kategorie-Filter**: Aktiver Filter wird via `history.replaceState` in der URL persistiert (`?cat=colorist`) — kein Seitenreload
+- **Rechtliche Seiten (SEO)**: `noindex: true` im Front-Matter → `baseof.html` rendert `<meta name="robots" content="noindex">`. Gesetzt für AGB, Datenschutz, Impressum, Edit Conform.
+- **`/pages/`-Sektion**: hat via `build.render: never` (in `content/{de,en}/pages/_index.md`) keine eigene Listenseite — die Seiten sind nur direkt erreichbar.
+- **DE/EN-Asymmetrie**: `jaichwill` (Hochzeits-Landingpage) existiert nur auf DE, nicht auf EN.
+- **Kontaktformular**: Cloudflare Turnstile als Bot-Schutz (Keys/Config im PHP-Backend unter `static/contact/` beachten).
 
 ## /new-project — Automatisierter Projekt-Workflow
 
-Neues Projekt per `/new-project` Skill erstellen. Der Skill enthält alle Details zu Textgenerierung, Front-Matter-Regeln und Instagram-Captions.
+Neues Projekt per `/new-project` Skill (`.claude/commands/new-project.md`) erstellen. Der Skill deckt Textgenerierung, Front-Matter-Regeln, Credits-Übersetzung und Social-Texte ab. Alle Details stehen im Skill selbst.
 
-**Kurzablauf:** `new-project-input.md` ausfüllen → `/new-project` → Review → Commit + Deploy
+**7-Schritte-Ablauf:**
+1. `new-project-input.md` + `crew-handles.md` lesen
+2. `content/de/projects/<slug>.md` erstellen
+3. `content/en/projects/<slug>.md` erstellen
+4. Instagram-Caption (EN) → Notion-Unterseite unter „Instagram Posts - @maxlamm"
+5. LinkedIn-Post (DE, kurz) → Notion-Unterseite unter „LinkedIn Posts - @maxlamm"
+6. Review im Chat inkl. Notion-Links, auf Freigabe warten
+7. Nach Bestätigung: `git add` + `commit` + `push` + `./deploy.sh`
+
+**Schreibregeln (gelten für alle generierten Prosatexte — Portfolio DE/EN, `description`, Caption, LinkedIn):** keine Binde-/Gedankenstriche (`—` / `–`) als Satztrenner (stattdessen Komma, Semikolon oder Satz teilen), keine Bindestrich-Wortkonstruktionen als Stilmittel. Ausnahmen: Eigennamen/Technikbezeichnungen (`RED V-Raptor`, `Hair&Make-Up`), URL-Slugs, Hashtags, Instagram-Handles, Front-Matter-Keys.
+
+**Kurzablauf:** `new-project-input.md` ausfüllen → `/new-project` → Review (inkl. Notion-Links) → Commit + Deploy
 
 **Dateien:**
-- `new-project-input.md` — Eingabe-Template (wiederverwendbar)
+- `new-project-input.md` — Eingabe-Template (wiederverwendbar, per `.gitignore` ausgeschlossen)
 - `crew-handles.md` — Name → Instagram-Handle Mapping
+
+## Skills
+
+Projektnahe Skills liegen **user-global** unter `~/.claude/skills/` (= `/Users/maximilianlamm/.claude/skills/`) — sie werden **nicht mit dem Repo versioniert**:
+
+- `maxlamm-copy` — Homepage-Projekttexte + Instagram-Captions in Max' Stimme
+- `maxlamm-brand` — Brand-Guidelines für visuelle Artefakte (Farben, Typografie, Design)
+- `maxlamm-replymail` — E-Mail-Antworten in Max' Stimme (Trigger u.a. `/replymail`)
+- `cost-estimator` — grobe Kostenschätzung / Budgetrahmen für Videoproduktionen
+- `packlist-generator` — Equipment-Packlisten für Drehs (Kamera, Licht/Grip, Ton, Sonstiges)
+
+Der repo-eigene `/new-project` (`.claude/commands/new-project.md`) ist getrackt, siehe oben.
 
 ## Gotchas
 
@@ -138,6 +176,10 @@ Neues Projekt per `/new-project` Skill erstellen. Der Skill enthält alle Detail
 - **`resources/_gen/`**: Enthält gecachte Ergebnisse von Hugo Image Processing. Kann gelöscht werden, wird beim nächsten Build neu generiert.
 - **Fonts sind self-hosted**: Raleway + Work Sans liegen in `static/fonts/` — kein CDN, kein externer Request. Neue Font-Weights dort ablegen und in `baseof.html` referenzieren.
 - **SEO**: `baseof.html` rendert automatisch OG-Tags, canonical URLs und JSON-LD (VideoObject via `schema-video.html`). Das `description`-Front-Matter-Feld befüllt meta description und og:description — bei neuen Projekten immer ausfüllen.
+- **`.gitignore`**: schließt `.claude/`, `.superpowers/`, `.htaccess`, `.hugo_build.lock` und `new-project-input.md` aus. `settings.local.json` und `new-project-input.md` sind also lokal/unversioniert; `.claude/commands/new-project.md` wird dagegen bewusst getrackt.
+- **AGB-PDF**: nicht mehr statisch im Repo — wird on-demand via `generate_agb_pdf.py` erzeugt. Bei AGB-Änderung das Skript neu laufen lassen.
+- **`static/llms.txt`**: statische Übersicht für AI-Crawler (Leistungen, Portfolio-Links). Bei neuen Leistungsseiten oder geänderten Kontaktdaten manuell mitpflegen.
+- **SEO-Landingpages**: `content/{de,en}/pages/color-grading-*` und `kameramann-muenchen.md`/`cinematographer-munich.md` — verlinkt im Footer, mit `serviceType`/`faq`-Front-Matter für Service-/FAQPage-Schema (`layouts/partials/schema-service.html`). Diese Seiten NICHT auf `noindex` setzen.
 
 ## Workflow
 

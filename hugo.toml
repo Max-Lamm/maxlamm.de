@@ -35,9 +35,17 @@ pagination.pagerSize = 50
       url = "/agb/"
       weight = 3
     [[languages.de.menus.footer]]
+      name = "Color Grading"
+      url = "/color-grading-muenchen/"
+      weight = 4
+    [[languages.de.menus.footer]]
+      name = "Kameramann"
+      url = "/kameramann-muenchen/"
+      weight = 5
+    [[languages.de.menus.footer]]
       name = "Edit Conform"
       url = "/edit-conform/"
-      weight = 4
+      weight = 6
 
   [languages.en]
     languageName = "English"
@@ -68,9 +76,17 @@ pagination.pagerSize = 50
       url = "/en/terms/"
       weight = 3
     [[languages.en.menus.footer]]
+      name = "Color Grading"
+      url = "/en/color-grading-munich/"
+      weight = 4
+    [[languages.en.menus.footer]]
+      name = "Cinematographer"
+      url = "/en/cinematographer-munich/"
+      weight = 5
+    [[languages.en.menus.footer]]
       name = "Edit Conform"
       url = "/en/edit-conform/"
-      weight = 4
+      weight = 6
 
 [params]
   author = "Maximilian Lamm"
@@ -81,6 +97,9 @@ pagination.pagerSize = 50
   linkedin = "https://www.linkedin.com/in/maxlamm/"
   accentColor = "#E05A4E"
   logoText = "maxlamm"
+
+[taxonomies]
+  category = "categories"
 
 [permalinks]
   projects = "/work/:slug/"

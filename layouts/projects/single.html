@@ -100,7 +100,7 @@
   <!-- Credits -->
   {{- with .Params.credits -}}
   <div class="project-credits">
-    <div class="section-label">Credits</div>
+    <h2 class="section-label">Credits</h2>
     <div class="credits-list">
       {{- range . -}}
       {{- if index . "name" -}}
@@ -117,7 +117,7 @@
   <!-- Gallery -->
   {{- with .Params.gallery -}}
   <div class="project-gallery">
-    <div class="section-label">{{ if eq $.Lang "de" }}Galerie{{ else }}Gallery{{ end }}</div>
+    <h2 class="section-label">{{ if eq $.Lang "de" }}Galerie{{ else }}Gallery{{ end }}</h2>
     <div class="gallery-grid" style="--cols: {{ $.Params.gallery_columns | default 3 }}">
       {{- range $i, $g := . -}}
       {{- $galSrc := $g -}}
@@ -146,7 +146,7 @@
   {{- end -}}
   {{- if gt (len $related) 0 -}}
   <div class="related-projects">
-    <div class="section-label">{{ .Site.Language.Params.moreProjects }}</div>
+    <h2 class="section-label">{{ .Site.Language.Params.moreProjects }}</h2>
     <div class="project-grid">
       {{- range $related -}}
       {{- $title := .Title -}}

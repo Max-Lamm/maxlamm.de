@@ -14,7 +14,10 @@
 <div class="work-page">
 
   <div class="work-header">
-    <h1>{{ .Site.Language.Params.workHeading }}</h1>
+    <h1>{{ if eq .Kind "term" }}{{ .Title }}{{ else }}{{ .Site.Language.Params.workHeading }}{{ end }}</h1>
+    {{- with .Content }}
+    <div class="work-intro">{{ . }}</div>
+    {{- end }}
     <div class="work-filter">
       <button class="badge filter-badge active" data-cat="all">All</button>
       {{- $cats := slice -}}

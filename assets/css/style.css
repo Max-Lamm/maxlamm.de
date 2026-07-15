@@ -1304,6 +1304,21 @@ html.lang-entering.lang-ready { transition: opacity .4s ease; opacity: 1; }
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+.work-intro {
+  flex-basis: 100%;
+  order: 3;
+  max-width: 720px;
+  color: var(--text-light);
+  font-size: 15px;
+  line-height: 1.7;
+  margin-top: 1rem;
+}
+
+.work-intro p {
+  margin-bottom: .75rem;
 }
 
 .work-header h1 {
