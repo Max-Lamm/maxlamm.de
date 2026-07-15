@@ -1,5 +1,13 @@
 ErrorDocument 404 /404.html
 
+# Alte URLs mit "#" im Slug (vor slug-Fix) auf saubere URLs umleiten
+Redirect 301 /work/%23missingtype-2022/ /work/missingtype-2022/
+Redirect 301 /work/%23missingtype-2023/ /work/missingtype-2023/
+Redirect 301 /work/%23missingtype-2026/ /work/missingtype-2026/
+Redirect 301 /en/work/%23missingtype-2022/ /en/work/missingtype-2022/
+Redirect 301 /en/work/%23missingtype-2023/ /en/work/missingtype-2023/
+Redirect 301 /en/work/%23missingtype-2026/ /en/work/missingtype-2026/
+
 # CSS/JS sind fingerprinted (Hugo Pipes) — dürfen dauerhaft gecacht werden
 <IfModule mod_headers.c>
   <FilesMatch "\.(css|js)$">

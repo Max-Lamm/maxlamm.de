@@ -1,5 +1,6 @@
 ---
 title: "#missingtype 2026"
+slug: "missingtype-2026"
 description: "Cinematography and color grading for the DRK #missingtype campaign 2026 – cinematographer & colorist Maximilian Lamm. Four talents, three sets, one shoot day in Cologne."
 date: 2026-06-10
 draft: false

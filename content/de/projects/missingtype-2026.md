@@ -1,5 +1,6 @@
 ---
 title: "#missingtype 2026"
+slug: "missingtype-2026"
 description: "Kamera und Color Grading für die DRK #missingtype Kampagne 2026 – Cinematographer & Colorist Maximilian Lamm. Vier Talents, drei Sets, ein Drehtag im Kölner Cinegate Studio."
 date: 2026-06-10
 draft: false

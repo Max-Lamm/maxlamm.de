@@ -20,7 +20,7 @@
   "name": "{{ $.Title }}{{ if gt (len $.Params.videos) 1 }} ({{ add $i 1 }}){{ end }}",
   "description": "{{ with $.Description }}{{ . }}{{ else }}{{ $.Site.Params.description }}{{ end }}",
   "thumbnailUrl": "{{ $.Params.thumbnail | default (printf "/images/projects/%s/thumb.jpg" $.File.ContentBaseName) | absURL }}",
-  "uploadDate": "{{ $.Date.Format "2006-01-02" }}"{{ with $embedUrl }},
+  "uploadDate": "{{ $.Date.Format "2006-01-02T15:04:05-07:00" }}"{{ with $embedUrl }},
   "embedUrl": "{{ . }}"{{ end }}
 }
 </script>
