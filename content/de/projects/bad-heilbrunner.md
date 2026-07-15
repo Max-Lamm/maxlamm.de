@@ -1,6 +1,6 @@
 ---
 title: "Bad Heilbrunner"
-description: "Kamera für Bad Heilbrunner Imagefilm – DoP Maximilian Lamm. Gedreht in Bad Heilbronn und Benediktbeuren."
+description: "Kamera für Bad Heilbrunner Imagefilm – DoP Maximilian Lamm. Gedreht in Bad Heilbrunn und Benediktbeuern."
 date: 2023-10-11
 draft: false
 featured: false
@@ -56,4 +56,6 @@ gallery_columns: 5
 translationKey: "bad-heilbrunner"
 ---
 
-Für den neuen Imagefilm für Bad Heilbrunner durfte ich zwei wundervolle Tage mit einem großartigen Team vor Ort in Bad Heilbronn und Benediktbeuren drehen.
+Für den neuen Imagefilm für Bad Heilbrunner durfte ich als DoP zwei Tage mit einem großartigen Team vor Ort in Bad Heilbrunn und Benediktbeuern drehen.
+
+Gedreht habe ich auf einer RED Epic Helium 8K mit einem Set Cooke Panchro Classic. Diese Kombination trägt den angestrebten Look: naturnah, warm und leicht vintage. Der Dreh war eine gute Mischung aus Indoor und Outdoor. Innen kamen hauptsächlich klassische HMI und LED zum Einsatz, draußen habe ich mit großen Rahmen gearbeitet, je nach Setting mit Ultrabounce oder Diffusion. Die eigentliche Herausforderung war die schiere Anzahl an Shots in nur zwei Tagen. Dazu standen keine Models vor der Kamera, sondern die Mitarbeiterinnen und Mitarbeiter selbst, was am Set zusätzlich Ruhe und Führung verlangte.

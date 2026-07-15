@@ -60,4 +60,6 @@ gallery_columns: 5
 translationKey: "deutsche-bahn"
 ---
 
-For the German Railway (Deutsche Bahn) and its corporate campaign in 2023, I had the privilege of handling the color grading. The most significant challenge was creating a cohesive overall look from the varying weather conditions on set. The result is these three videos.
+For Deutsche Bahn and its corporate campaign in 2023, I handled the color grading. The biggest challenge was creating a cohesive overall look from the varying weather conditions on set.
+
+The footage was shot on RED RAW. I did the shot matching and balancing in linear gamma to stay as close as possible to the photochemical process. That way, overcast and sunny takes align cleanly without the mood tipping over. With no tight look brief from the client, I had a lot of creative freedom and settled on a modern, slightly warm look that stays consistent across all clips of the campaign.

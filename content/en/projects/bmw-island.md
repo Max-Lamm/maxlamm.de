@@ -43,6 +43,6 @@ gallery_columns: 4
 translationKey: "bmw-island"
 ---
 
-Content production for 30+ countries – from SEO-driven commercials to short-form content with influencers.
+Content production for 30+ countries, from SEO-driven commercials to short-form content with influencers. A total of 25 assets plus a full photo production for BMW Global.
 
-A total of 25 assets plus a full photo production for BMW Global.
+The shoot in Iceland ran with an agile team and several camera setups working in parallel, with no chance to scout the locations beforehand. The job split into two strands: documenting an influencer event for BMW and a separate content production with the vehicles. We had to plan the shooting time for the content part tightly around the flow of the event. We made deliberate use of the Icelandic summer light in June: the sun barely sets, so sunrises and sunsets stretch over hours and the blue hour lasts accordingly long. A large part of the footage was therefore captured at night.

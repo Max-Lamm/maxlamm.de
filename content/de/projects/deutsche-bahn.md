@@ -60,4 +60,6 @@ gallery_columns: 5
 translationKey: "deutsche-bahn"
 ---
 
-Für die Deutsche Bahn und ihre Konzernkampagne 2023 durfte ich das Color Grading übernehmen. Die größte Herausforderung war es aus den Teils unterschiedlichen Wetterbedingungen am Set ein stimmiges Gesamtbild zu kreieren.
+Für die Deutsche Bahn und ihre Konzernkampagne 2023 durfte ich das Color Grading übernehmen. Die größte Herausforderung war es, aus den teils unterschiedlichen Wetterbedingungen am Set ein stimmiges Gesamtbild zu schaffen.
+
+Gedreht wurde auf RED RAW. Das Shot Matching und die Balance habe ich im linearen Gamma gemacht, um möglichst nah am fotochemischen Prozess zu bleiben. So lassen sich bewölkte und sonnige Takes sauber angleichen, ohne dass die Bildstimmung kippt. Ohne enge Look-Vorgabe von Kundenseite hatte ich viel gestalterische Freiheit und habe mich für einen modernen, leicht warmen Look entschieden, der über alle Clips der Kampagne hinweg konsistent trägt.

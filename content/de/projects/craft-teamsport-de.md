@@ -2,7 +2,7 @@
 title: "Craft Teamsport DE"
 description: "Color Grading für Craft Sportswear Deutschland Kampagne – Colorist Maximilian Lamm. Vier deutsche Profiteams in Aktion."
 date: 2024-06-26
-draft: false
+draft: true
 featured: true
 thumbnail: "/images/projects/craft-teamsport-de/thumb.jpg"
 preview: "/videos/projects/craft-teamsport-de.webm"

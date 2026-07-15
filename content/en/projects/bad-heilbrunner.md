@@ -56,4 +56,6 @@ gallery_columns: 5
 translationKey: "bad-heilbrunner"
 ---
 
-For the new promotional film for Bad Heilbrunner, I had the opportunity to spend two wonderful days on location in Bad Heilbrunn and Benediktbeuren with an amazing team.
+For the new image film for Bad Heilbrunner, I got to shoot as DoP for two days on location in Bad Heilbrunn and Benediktbeuern with a great team.
+
+I shot on a RED Epic Helium 8K with a set of Cooke Panchro Classic lenses. That combination carries the intended look: natural, warm and slightly vintage. The shoot was a good mix of indoor and outdoor. Inside, I mostly used classic HMI and LED, while outside I worked with large frames, using ultra bounce or diffusion depending on the setting. The real challenge was the sheer number of shots in just two days. On top of that, there were no models in front of the camera but the employees themselves, which asked for extra calm and direction on set.

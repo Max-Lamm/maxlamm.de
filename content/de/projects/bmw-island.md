@@ -43,4 +43,6 @@ gallery_columns: 4
 translationKey: "bmw-island"
 ---
 
-Content Produktion für 30+ Länder – Von SEO Werbespot bis zu Kurzformaten mit Influencern. Insgesamt 25 Assets plus Fotoproduktion für BMW Global.
+Content Produktion für 30+ Länder, von SEO Werbespot bis zu Kurzformaten mit Influencern. Insgesamt 25 Assets plus Fotoproduktion für BMW Global.
+
+Der Dreh auf Island lief mit einem agilen Team und mehreren Kamera-Setups gleichzeitig, ein vorheriges Scouting der Locations war nicht möglich. Der Job teilte sich in zwei Stränge: die Doku eines Influencer-Events für BMW und eine davon unabhängige Content-Produktion mit den Fahrzeugen. Die Drehzeit für den Content-Teil mussten wir eng um den Ablauf des Events herumplanen. Das isländische Sommerlicht im Juni haben wir gezielt genutzt: Die Sonne geht kaum unter, dadurch ziehen sich Sonnenauf- und untergänge über Stunden und die blaue Stunde wird entsprechend lang. Ein Großteil der Aufnahmen ist deshalb nachts entstanden.
