@@ -63,13 +63,32 @@ class AGBPDF(FPDF):
     def add_paragraph_heading(self, text):
         self.set_font("RalewaySB", "", 11)
         self.set_text_color(*COLOR_TEXT)
-        self.cell(0, 7, text, ln=True)
+        # multi_cell statt cell: lange Paragraphentitel brechen um statt zu ueberlaufen
+        self.multi_cell(0, 5.5, text)
+        self.ln(1.5)
         # Accent underline
         y = self.get_y()
         self.set_draw_color(*COLOR_ACCENT)
         self.set_line_width(0.3)
         self.line(self.l_margin, y, self.l_margin + 40, y)
         self.ln(2)
+
+    def add_list_item(self, text):
+        """Rendert einen Markdown-Listenpunkt mit Bullet und haengendem Einzug."""
+        self.set_font("Raleway", "", 9.5)
+        self.set_text_color(*COLOR_BODY)
+        indent = 5
+        bullet_width = 4
+        self.set_x(self.l_margin + indent)
+        self.set_text_color(*COLOR_ACCENT)
+        self.cell(bullet_width, 4.5, "•")
+        self.set_text_color(*COLOR_BODY)
+        # Linken Rand temporaer versetzen, damit Folgezeilen buendig eingerueckt bleiben
+        outer_margin = self.l_margin
+        self.set_left_margin(outer_margin + indent + bullet_width)
+        self.set_x(outer_margin + indent + bullet_width)
+        self.multi_cell(0, 4.5, text)
+        self.set_left_margin(outer_margin)
 
     def add_separator_page(self):
         """Add a separator page between DE and EN sections."""
@@ -95,7 +114,8 @@ def render_markdown_to_pdf(pdf, md_content, title):
         if line.startswith("## "):
             break
         clean = line.replace("<br>", "").replace("<br><br>", "")
-        clean = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", clean)
+        # non-greedy, damit Linktexte mit eckigen Klammern (info[at]maxlamm.de) korrekt greifen
+        clean = re.sub(r"\[(.+?)\]\([^)]*\)", r"\1", clean)
         if clean.strip():
             header_lines.append(clean.strip())
         i += 1
@@ -130,24 +150,42 @@ def render_markdown_to_pdf(pdf, md_content, title):
                 pdf.ln(2)
             current_paragraph.clear()
 
+    in_list = False
+
+    def end_list():
+        """Schliesst eine laufende Liste mit etwas Abstand ab."""
+        nonlocal in_list
+        if in_list:
+            pdf.ln(2)
+            in_list = False
+
     while i < len(lines):
         line = lines[i].strip()
 
         if line.startswith("## "):
             flush_paragraph()
+            end_list()
             heading = line.replace("## ", "").strip()
             pdf.add_paragraph_heading(heading)
         elif line == "" or line == "<br><br>":
             flush_paragraph()
+            end_list()
         else:
             clean = line.replace("<br>", "")
-            clean = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", clean)
-            if clean.strip():
-                current_paragraph.append(clean.strip())
+            # non-greedy, damit Linktexte mit eckigen Klammern korrekt greifen
+            clean = re.sub(r"\[(.+?)\]\([^)]*\)", r"\1", clean).strip()
+            if clean.startswith("- "):
+                flush_paragraph()
+                item = re.sub(r"\*\*([^*]+)\*\*", r"\1", clean[2:].strip())
+                pdf.add_list_item(item)
+                in_list = True
+            elif clean:
+                current_paragraph.append(clean)
 
         i += 1
 
     flush_paragraph()
+    end_list()
 
 
 def main():

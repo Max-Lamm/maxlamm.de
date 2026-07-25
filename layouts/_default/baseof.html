@@ -6,7 +6,10 @@
   <title>{{ if .IsHome }}{{ .Site.Params.author }} – {{ .Site.Params.description }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   <link rel="canonical" href="{{ .Permalink }}">
-  {{- if .Params.noindex }}<meta name="robots" content="noindex">{{ end }}
+  <meta name="robots" content="{{ if .Params.noindex }}noindex, {{ end }}noai, noimageai">
+  {{- /* Nutzungsvorbehalt fuer Text und Data Mining nach § 44b Abs. 3 UrhG (TDMRep) */}}
+  <meta name="tdm-reservation" content="1">
+  <meta name="tdm-policy" content="{{ .Site.Language.Params.tdmPolicyURL | absURL }}">
   {{ range .AllTranslations }}<link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
   {{ end }}
   {{- range .AllTranslations }}{{- if eq .Lang "de" }}<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
@@ -104,6 +107,12 @@
   <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
   <link rel="preload" href="/fonts/raleway-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/work-sans-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  {{- if and .IsHome (not (.Site.Params.heroVideo | default false)) }}
+  {{- with .Site.Params.heroImage }}{{ with resources.Get (strings.TrimPrefix "/" .) }}
+  {{- $heroPreload := .Fill "1600x900 webp q80" }}
+  <link rel="preload" as="image" href="{{ $heroPreload.RelPermalink }}" fetchpriority="high">
+  {{- end }}{{ end }}
+  {{- end }}
   <!-- Cloudflare Turnstile (Spam Protection) -->
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
   <!-- Klaro Cookie Consent -->

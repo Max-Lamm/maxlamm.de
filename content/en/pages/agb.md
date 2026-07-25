@@ -12,7 +12,7 @@ Schäftlarnstraße 93<br>
 Tel.: +49 176 69262318<br>
 E-Mail: [info[at]maxlamm.de](/en/contact/)
 
-As of: April 2026
+As of: July 2026
 
 <br><br>
 
@@ -124,8 +124,8 @@ As of: April 2026
 
 **7.10** For services beyond the normal working time (usually 10 hours including 1 hour break), an overtime surcharge shall be payable for each commenced hour:
 
-From the beginning of the 11th hour, this surcharge amounts to 50% of the agreed hourly rate.
-From the beginning of the 13th hour, this surcharge amounts to 100% of the agreed hourly rate.
+- From the beginning of the 11th hour, this surcharge amounts to 50% of the agreed hourly rate.
+- From the beginning of the 13th hour, this surcharge amounts to 100% of the agreed hourly rate.
 
 **7.11** For assignments on Sundays and public holidays, a surcharge of 50% on Sundays and 100% on statutory public holidays shall be charged on the agreed daily rate.
 
@@ -146,9 +146,9 @@ The operation of production vehicles is generally considered working time. Withi
 
 **8.3** Unless otherwise agreed, the following instalment payment schedule applies:
 
-50% upon placing the order,
-30% at the start of production (shooting or post-production),
-20% upon final acceptance.
+- 50% upon placing the order,
+- 30% at the start of production (shooting or post-production),
+- 20% upon final acceptance.
 
 **8.4** Insofar as pre-production costs such as travel, casting and location scouting are listed in the price calculation, these shall become due in full upon placing the order.
 
@@ -174,7 +174,7 @@ Right of withdrawal notice
 
 Right of withdrawal: You have the right to withdraw from this contract within fourteen days without giving any reason. The withdrawal period is fourteen days from the date of conclusion of the contract.
 
-To exercise your right of withdrawal, you must inform me (Maximilian Lamm, Schäftlarnstraße 93, 81371 München, Tel.: +49 176 69262318, E-Mail: info[at]maxlamm.de) of your decision to withdraw from this contract by means of a clear declaration (e.g. a letter sent by post or e-mail). You may use the model withdrawal form for this purpose, but this is not mandatory.
+To exercise your right of withdrawal, you must inform me (Maximilian Lamm, Schäftlarnstraße 93, 81371 München, Tel.: +49 176 69262318, E-Mail: info@maxlamm.de) of your decision to withdraw from this contract by means of a clear declaration (e.g. a letter sent by post or e-mail). You may use the model withdrawal form for this purpose, but this is not mandatory.
 
 To meet the withdrawal deadline, it is sufficient for you to send your notification of exercising the right of withdrawal before the withdrawal period has expired.
 
@@ -252,16 +252,16 @@ The client has the right to revoke the contract before paying the first instalme
 
 **14.3** Unless otherwise agreed in writing, the rights of use include:
 
-The right to public display and performance
-The right to broadcast and distribute in all media (TV, online, mobile)
-The right to make publicly available (e.g. on websites, on social media)
-The right of reproduction (for own operational purposes)
+- The right to public display and performance
+- The right to broadcast and distribute in all media (TV, online, mobile)
+- The right to make publicly available (e.g. on websites, on social media)
+- The right of reproduction (for own operational purposes)
 
 Not included in the rights of use, unless expressly agreed in writing, are:
 
-The right to edit, redesign or modify the material
-The right to sell or commercially transfer to third parties
-The right to use for purposes other than those agreed
+- The right to edit, redesign or modify the material
+- The right to sell or commercially transfer to third parties
+- The right to use for purposes other than those agreed
 
 **14.4** Unless expressly agreed otherwise, the rights of use are granted for a period of one year from the delivery of the final product and spatially limited to the territory of the Federal Republic of Germany. Use after the expiry of this period, in other countries or for purposes other than those agreed requires a separate written agreement and additional appropriate remuneration. The client is obliged to contact me in good time before the expiry of the usage period to agree on an extension of the rights of use, if further use is desired.
 
@@ -271,9 +271,9 @@ The right to use for purposes other than those agreed
 
 For sensitive or confidential projects where the client has a legitimate interest in confidentiality or anonymisation, I undertake:
 
-To coordinate the reference use with the client in advance;
-To anonymise personal data, trademarks, company marks or other identifying features at the client's request;
-To refrain entirely from using certain projects as a reference at the client's request, provided this was agreed in writing at the time of conclusion of the contract.
+- To coordinate the reference use with the client in advance;
+- To anonymise personal data, trademarks, company marks or other identifying features at the client's request;
+- To refrain entirely from using certain projects as a reference at the client's request, provided this was agreed in writing at the time of conclusion of the contract.
 
 The client has the right to object in writing to the use for reference purposes within one month of acceptance of the film material. If the film contains confidential or protected information, the client must explicitly point this out when placing the order.
 
@@ -294,63 +294,76 @@ The right to my own use shall only apply once the client has the film available 
 **14.13** I reserve the right to be credited as the author in the credits or in the description for public screenings and publications of the film material, insofar as this is customary in the industry.
 
 
-## § 15 Confidentiality
+## § 15 Reservation of Rights for Text and Data Mining and for Training Artificial Intelligence
+
+**15.1** I hereby expressly reserve the use of all works and services created by me, in particular all film footage, visual works, photographs, colour gradings, concepts, scripts and other work results, for the purposes of text and data mining within the meaning of § 44b UrhG (German Copyright Act). This reservation covers in particular the reproduction, analysis and evaluation of these works for the purpose of developing, training, validating or fine-tuning artificial intelligence systems, machine learning processes, generative models and comparable technologies. This reservation applies against any party and irrespective of the form in which and the place where the works are made accessible.
+
+**15.2** The rights of use granted under § 14 do not include the right to use the works and work results for the purposes set out in 15.1, to make them accessible for that purpose or to provide them to third parties for that purpose. Use for the training of artificial intelligence constitutes a separate type of use. Granting it requires a separate written agreement and additional appropriate remuneration. This also applies where the client is otherwise granted comprehensive, unlimited in time and territory, or exclusive rights of use.
+
+**15.3** The client undertakes to pass on the reservation under 15.1 and the restriction under 15.2 to all third parties to whom the client provides or makes accessible the works within the scope of the agreed use, in particular to agencies, service providers, platform operators and sub-licensees, and to bind them accordingly. If the client uploads the works to platforms whose terms of use provide for the use of content for the development or training of artificial intelligence, this requires my prior written consent.
+
+**15.4** The client is obliged to leave unchanged and not to remove any authorship attributions, metadata and machine-readable reservations of use contained in the delivered files (for example IPTC and XMP fields as well as content provenance and authenticity information). If the client makes the works available online, the client will set a machine-readable reservation of use within the meaning of § 44b (3) UrhG, insofar as this is technically possible and reasonable.
+
+**15.5** Mandatory statutory limitations and exceptions remain unaffected, as does the use of software with AI features for the mere editing or technical processing of the works within the scope of the agreed use, provided that the works are not used as training material and do not enter third-party training datasets.
+
+
+## § 16 Confidentiality
 
 Both I and the client are mutually obliged to maintain the confidentiality of all business and trade secrets of the other party that become known as a result of the contractual relationship and the performance of the contract, and to ensure compliance with this obligation also with regard to employees by taking appropriate measures. The confidentiality obligation shall continue beyond the duration of the contract.
 
 
-## § 16 Data Protection
+## § 17 Data Protection
 
-**16.1** I process personal data of the client and their employees exclusively for the fulfilment of contractual and pre-contractual obligations in accordance with Art. 6 para. 1 lit. b GDPR as well as for the fulfilment of legal obligations in accordance with Art. 6 para. 1 lit. c GDPR.
+**17.1** I process personal data of the client and their employees exclusively for the fulfilment of contractual and pre-contractual obligations in accordance with Art. 6 para. 1 lit. b GDPR as well as for the fulfilment of legal obligations in accordance with Art. 6 para. 1 lit. c GDPR.
 
-**16.2** Insofar as personal data of third parties (such as actors, interview partners, employees of the client) are processed in the course of film production, Maximilian Lamm acts as a processor within the meaning of Art. 28 GDPR. The client remains the controller within the meaning of the GDPR responsible for the lawfulness of data processing and undertakes to obtain the necessary consents.
+**17.2** Insofar as personal data of third parties (such as actors, interview partners, employees of the client) are processed in the course of film production, Maximilian Lamm acts as a processor within the meaning of Art. 28 GDPR. The client remains the controller within the meaning of the GDPR responsible for the lawfulness of data processing and undertakes to obtain the necessary consents.
 
-**16.3** In the case of processing personal data on behalf of the client, a separate data processing agreement (DPA) shall be concluded, insofar as this is required by law.
+**17.3** In the case of processing personal data on behalf of the client, a separate data processing agreement (DPA) shall be concluded, insofar as this is required by law.
 
-**16.4** The client warrants that appropriate declarations of consent are or can be obtained for all persons appearing in the film material. The costs for additional declarations of consent or usage rights shall be borne by the client.
+**17.4** The client warrants that appropriate declarations of consent are or can be obtained for all persons appearing in the film material. The costs for additional declarations of consent or usage rights shall be borne by the client.
 
-**16.5** Detailed information on the handling of personal data is contained in my privacy policy, which is available on request.
-
-
-## § 17 Special Provisions for Online Content
-
-**17.1** The following additional provisions apply to the creation of content for digital media (websites, online platforms, apps, etc.).
-
-**17.2** The technical specifications (resolution, format, codecs, etc.) shall be agreed in writing before the start of production. Subsequent format adjustments may incur additional costs.
-
-**17.3** If optimisation for specific platforms or devices is desired, this must be expressly agreed upon when placing the order.
-
-**17.4** I do not guarantee compatibility with all browsers, operating systems or devices unless expressly agreed.
-
-**17.5** The client is responsible for the upload and technical integration of the produced content into the client's online platforms, unless otherwise agreed.
-
-**17.6** The use of the material for streaming platforms, video-on-demand services or other digital distribution channels requires a separate agreement and may result in additional remuneration, unless this has already been agreed at the time of conclusion of the contract.
-
-**17.7** The use of the produced material on social media (such as Facebook, Instagram, TikTok, LinkedIn, Twitter, YouTube, etc.) is only permitted within the scope of the contractually agreed rights of use and is subject to the time and territorial restrictions pursuant to § 14.
-
-**17.8** The client shall ensure that no third-party rights are infringed when using the material on social media, in particular with regard to music, images or depicted persons.
-
-**17.9** For paid advertising campaigns (ads) on social media, additional remuneration may apply unless otherwise agreed.
-
-**17.10** The use of the material by influencers or other third parties for the purpose of promoting the client requires my separate written consent.
-
-**17.11** The client is obliged to inform me upon request about the type and scope of the actual use on social media.
+**17.5** Detailed information on the handling of personal data is contained in my privacy policy, which is available on request.
 
 
-## § 18 Artists' Social Fund
+## § 18 Special Provisions for Online Content
+
+**18.1** The following additional provisions apply to the creation of content for digital media (websites, online platforms, apps, etc.).
+
+**18.2** The technical specifications (resolution, format, codecs, etc.) shall be agreed in writing before the start of production. Subsequent format adjustments may incur additional costs.
+
+**18.3** If optimisation for specific platforms or devices is desired, this must be expressly agreed upon when placing the order.
+
+**18.4** I do not guarantee compatibility with all browsers, operating systems or devices unless expressly agreed.
+
+**18.5** The client is responsible for the upload and technical integration of the produced content into the client's online platforms, unless otherwise agreed.
+
+**18.6** The use of the material for streaming platforms, video-on-demand services or other digital distribution channels requires a separate agreement and may result in additional remuneration, unless this has already been agreed at the time of conclusion of the contract.
+
+**18.7** The use of the produced material on social media (such as Facebook, Instagram, TikTok, LinkedIn, Twitter, YouTube, etc.) is only permitted within the scope of the contractually agreed rights of use and is subject to the time and territorial restrictions pursuant to § 14.
+
+**18.8** The client shall ensure that no third-party rights are infringed when using the material on social media, in particular with regard to music, images or depicted persons.
+
+**18.9** For paid advertising campaigns (ads) on social media, additional remuneration may apply unless otherwise agreed.
+
+**18.10** The use of the material by influencers or other third parties for the purpose of promoting the client requires my separate written consent.
+
+**18.11** The client is obliged to inform me upon request about the type and scope of the actual use on social media.
+
+
+## § 19 Artists' Social Fund
 
 The fees calculated by me may in whole or in part be subject to the levy obligation pursuant to § 24 Künstlersozialversicherungsgesetz (KSVG). The client is informed that when commissioning Maximilian Lamm as a non-legal entity, an artists' social security contribution (Künstlersozialabgabe) is to be paid to the Künstlersozialkasse (KSK) for services in the artistic and conceptual field pursuant to the Künstlersozialversicherungsgesetz (KSVG). This levy may not be deducted by the client from the invoice. The client is solely responsible for compliance with the registration and levy obligations.
 
 
-## § 19 Severability Clause
+## § 20 Severability Clause
 
-**19.1** Amendments to these general terms and conditions and any preceding special agreements must be made in writing. Declarations by fax or e-mail shall apply accordingly.
+**20.1** Amendments to these general terms and conditions and any preceding special agreements must be made in writing. Declarations by fax or e-mail shall apply accordingly.
 
-**19.2** The invalidity of any provision of these General Terms and Conditions shall not affect the validity of the remaining provisions.
+**20.2** The invalidity of any provision of these General Terms and Conditions shall not affect the validity of the remaining provisions.
 
 
-## § 20 Final Provisions and Jurisdiction
+## § 21 Final Provisions and Jurisdiction
 
-**20.1** The place of performance and exclusive place of jurisdiction is the registered office of Maximilian Lamm in München.
+**21.1** The place of performance and exclusive place of jurisdiction is the registered office of Maximilian Lamm in München.
 
-**20.2** German law shall apply. The application of the UN Convention on Contracts for the International Sale of Goods (CISG) is excluded.
+**21.2** German law shall apply. The application of the UN Convention on Contracts for the International Sale of Goods (CISG) is excluded.

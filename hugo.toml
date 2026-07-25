@@ -22,6 +22,8 @@ pagination.pagerSize = 50
       prevPost = "Vorheriges Projekt"
       nextPost = "Nächstes Projekt"
       backHome = "Zur Startseite"
+      # Ziel des tdm-policy Meta-Tags (Nutzungsvorbehalt nach § 44b Abs. 3 UrhG)
+      tdmPolicyURL = "/ki-vorbehalt/"
     [[languages.de.menus.footer]]
       name = "Impressum"
       url = "/impressum/"
@@ -46,6 +48,10 @@ pagination.pagerSize = 50
       name = "Edit Conform"
       url = "/edit-conform/"
       weight = 6
+    [[languages.de.menus.footer]]
+      name = "KI-Vorbehalt"
+      url = "/ki-vorbehalt/"
+      weight = 7
 
   [languages.en]
     languageName = "English"
@@ -63,6 +69,8 @@ pagination.pagerSize = 50
       prevPost = "Previous Project"
       nextPost = "Next Project"
       backHome = "Back Home"
+      # Target of the tdm-policy meta tag (reservation of rights, § 44b (3) UrhG)
+      tdmPolicyURL = "/en/ai-training-opt-out/"
     [[languages.en.menus.footer]]
       name = "Imprint"
       url = "/en/imprint/"
@@ -87,6 +95,10 @@ pagination.pagerSize = 50
       name = "Edit Conform"
       url = "/en/edit-conform/"
       weight = 6
+    [[languages.en.menus.footer]]
+      name = "AI Opt-Out"
+      url = "/en/ai-training-opt-out/"
+      weight = 7
 
 [params]
   author = "Maximilian Lamm"
@@ -95,8 +107,12 @@ pagination.pagerSize = 50
   phone = "+4917669262318"
   instagram = "https://www.instagram.com/maxlamm/"
   linkedin = "https://www.linkedin.com/in/maxlamm/"
-  accentColor = "#E05A4E"
+  accentColor = "#E8554E"
   logoText = "maxlamm"
+  # Dunkles Hero-Still (Landscape, min. ~2400px breit). Fehlt die Datei, faellt der Hero auf near-black zurueck (nie mehr Rot).
+  heroImage = "/images/hero.jpg"
+  # Optionaler Fokuspunkt fuers Still (object-position), z.B. "center 40%" oder "left". Leer = center.
+  # heroFocus = "center"
 
 [taxonomies]
   category = "categories"

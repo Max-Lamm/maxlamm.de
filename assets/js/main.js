@@ -251,9 +251,10 @@ document.addEventListener('DOMContentLoaded', () => {
   /* --- Hero video / background fade-out on scroll --- */
   const heroVideo = document.querySelector('.hero__video');
   const heroBg = document.querySelector('.hero__bg');
+  const heroImg = document.querySelector('.hero__img');
   const heroEl = document.querySelector('.hero');
   const homeFilter = document.querySelector('.home-filter');
-  if ((heroVideo || heroBg) && heroEl) {
+  if ((heroVideo || heroBg || heroImg) && heroEl) {
     window.addEventListener('scroll', () => {
       const heroH = heroEl.offsetHeight;
       const scrolled = window.scrollY;
@@ -269,6 +270,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       if (heroVideo) heroVideo.style.opacity = opacity;
       if (heroBg) heroBg.style.opacity = opacity;
+      if (heroImg) heroImg.style.opacity = opacity;
       if (homeFilter) homeFilter.style.opacity = 1 - opacity;
     }, { passive: true });
   }

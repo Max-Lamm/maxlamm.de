@@ -111,7 +111,7 @@ a:hover { color: var(--accent-hover); }
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #111;
+  background: var(--bg-dark);
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -129,19 +129,53 @@ a:hover { color: var(--accent-hover); }
 
 .hero__bg {
   display: none;
-  position: fixed;
+  position: absolute;
   inset: 0;
   z-index: 0;
-  background: var(--accent);
+  background: var(--bg-dark);
 }
 
-.hero--no-video .hero__bg {
+/* Kein Still, kein Video: ruhiger near-black Grund (nie Rot) */
+.hero--bare .hero__bg {
   display: block;
+}
+
+/* Dunkles Still als Hero */
+.hero__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+  transform: scale(1.03);
+  animation: heroZoom 24s ease-out both;
+}
+
+/* Dunkler Verlauf ueber Bild/Video fuer Textlesbarkeit */
+.hero--image::after,
+.hero--video::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(to bottom,
+    rgba(0,0,0,.5) 0%,
+    rgba(0,0,0,.24) 26%,
+    rgba(0,0,0,.44) 58%,
+    rgba(0,0,0,.8) 100%);
+}
+
+@keyframes heroZoom {
+  from { transform: scale(1.03); }
+  to   { transform: scale(1.12); }
 }
 
 .hero__content {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -149,7 +183,7 @@ a:hover { color: var(--accent-hover); }
 
 .hero__title {
   font-family: 'Work Sans', sans-serif;
-  font-size: 85px;
+  font-size: clamp(2.5rem, 8vw, 5rem);
   font-style: normal;
   font-weight: 600;
   text-transform: uppercase;
@@ -167,10 +201,22 @@ a:hover { color: var(--accent-hover); }
   margin-top: .5rem;
 }
 
+/* Bild fuehrt: Wortmarke tritt zurueck, Text bleibt lesbar ueberm Still */
+.hero--image .hero__title,
+.hero--video .hero__title {
+  font-size: clamp(2rem, 5.5vw, 3.5rem);
+  text-shadow: 0 2px 14px rgba(0,0,0,.7);
+}
+
+.hero--image .hero__subtitle,
+.hero--video .hero__subtitle {
+  text-shadow: 0 1px 16px rgba(0,0,0,.6);
+}
+
 .hero__scroll {
   position: relative;
-  z-index: 1;
-  color: rgba(255,255,255,.5);
+  z-index: 2;
+  color: rgba(255,255,255,.7);
   font-size: 1.5rem;
   animation: bob 2s ease-in-out infinite;
 }
@@ -180,17 +226,11 @@ a:hover { color: var(--accent-hover); }
   50% { transform: translateY(8px); }
 }
 
-/* Temporary: accent background instead of video */
-.hero--no-video { background: var(--accent); }
-.hero--no-video .hero__video { display: none; }
-.hero--no-video .hero__title { color: var(--bg); }
-.hero--no-video .hero__subtitle { color: var(--bg); }
-.hero--no-video .hero__scroll { color: rgba(26,26,26,.5); }
-.hero--no-video .site-nav:not(.scrolled) a { color: var(--bg); }
-.hero--no-video .site-nav:not(.scrolled) a:hover { color: var(--bg-dark); }
-.hero--no-video .site-nav:not(.scrolled) .site-nav__lang-active { color: var(--bg); }
-.hero--no-video .site-nav:not(.scrolled) .site-nav__lang-sep { color: rgba(26,26,26,.3); }
-.hero--no-video .site-nav:not(.scrolled) .site-nav__burger span { background: var(--bg); }
+/* Bewegung respektiert Nutzerpraeferenz: kein Zoom, kein Bob */
+@media (prefers-reduced-motion: reduce) {
+  .hero__img { animation: none; transform: none; }
+  .hero__scroll { animation: none; }
+}
 
 /* ============================================================
    HEADER / NAV (sticky on scroll)
@@ -580,7 +620,7 @@ html.lang-entering.lang-ready { transition: opacity .4s ease; opacity: 1; }
   border: none;
   border-radius: 3px;
   cursor: pointer;
-  transition: background .2s, transform .2s;
+  transition: background .2s, color .2s, transform .2s;
 }
 
 .btn:hover {
@@ -589,24 +629,24 @@ html.lang-entering.lang-ready { transition: opacity .4s ease; opacity: 1; }
   transform: translateY(-1px);
 }
 
-.btn--hero {
+/* Outline: der gemeinsame Button-Look der Startseite */
+.btn--outline {
   background: transparent;
   color: var(--accent);
   border: 1px solid var(--accent);
-  margin-top: 1.5rem;
 }
-.btn--hero:hover {
+.btn--outline:hover {
   background: var(--accent);
-  color: #fff;
-}
-/* Adapt for accent-background hero variant */
-.hero--no-video .btn--hero {
   color: var(--bg);
-  border-color: var(--bg);
 }
-.hero--no-video .btn--hero:hover {
-  background: var(--bg);
-  color: var(--accent);
+.btn--outline:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* Hero: nur die Position ueber dem Still */
+.btn--hero {
+  margin-top: 1.5rem;
 }
 
 /* ============================================================
@@ -754,7 +794,7 @@ html.lang-entering.lang-ready { transition: opacity .4s ease; opacity: 1; }
 /* --- Button States --- */
 .contact-form .btn {
   margin-top: 1.5rem;
-  transition: width 0.4s ease-out, background-color 0.3s, transform 0.3s;
+  transition: width 0.4s ease-out, background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
 .btn--sending {

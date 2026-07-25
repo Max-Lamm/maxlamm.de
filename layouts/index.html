@@ -2,7 +2,11 @@
 
 <!-- HERO -->
 {{- $heroVideo := .Site.Params.heroVideo | default false -}}
-<section class="hero{{ if not $heroVideo }} hero--no-video{{ end }}" id="home">
+{{- $heroImg := "" -}}
+{{- if not $heroVideo -}}{{- with .Site.Params.heroImage -}}{{- $heroImg = resources.Get (strings.TrimPrefix "/" .) -}}{{- end -}}{{- end -}}
+{{- $heroMode := "bare" -}}
+{{- if $heroVideo -}}{{- $heroMode = "video" -}}{{- else if $heroImg -}}{{- $heroMode = "image" -}}{{- end -}}
+<section class="hero hero--{{ $heroMode }}" id="home">
 
 <!-- NAV -->
 {{ partial "nav.html" (dict "page" . "isHero" true) }}
@@ -12,13 +16,24 @@
     <source src="/videos/hero.webm" type="video/webm">
     <source src="/videos/hero.mp4" type="video/mp4">
   </video>
+  {{- else if $heroImg }}
+  {{- $hBase := $heroImg.Fill "1600x900 webp q80" -}}
+  <img class="hero__img" src="{{ $hBase.RelPermalink }}"
+    {{- if ge $heroImg.Width 2400 }}
+    srcset="{{ ($heroImg.Fill "1200x675 webp q80").RelPermalink }} 1200w, {{ $hBase.RelPermalink }} 1600w, {{ ($heroImg.Fill "2400x1350 webp q82").RelPermalink }} 2400w"
+    {{- else if ge $heroImg.Width 1600 }}
+    srcset="{{ ($heroImg.Fill "1200x675 webp q80").RelPermalink }} 1200w, {{ $hBase.RelPermalink }} 1600w"
+    {{- end }}
+    sizes="100vw" width="{{ $hBase.Width }}" height="{{ $hBase.Height }}"
+    alt="" fetchpriority="high" decoding="async"
+    {{- with .Site.Params.heroFocus }} style="object-position: {{ . }}"{{ end }}>
   {{- end }}
   <div class="hero__content">
     <h1 class="hero__title">{{ .Site.Params.author }}</h1>
     <p class="hero__subtitle">{{ .Site.Language.Params.subtitle }}</p>
-    <!--<a href="#projects" class="btn btn--hero">{{ .Site.Language.Params.heroButton }}</a>-->
+    <a href="#projects" class="btn btn--outline btn--hero">{{ .Site.Language.Params.heroButton }}</a>
   </div>
-  <a href="#projects" class="hero__scroll">&#8964;</a>
+  <a href="#projects" class="hero__scroll" aria-label="{{ if eq .Lang "de" }}Zu den Projekten scrollen{{ else }}Scroll to projects{{ end }}">&#8964;</a>
 </section>
 
 <!-- PROJECTS GRID -->
@@ -82,7 +97,7 @@
     {{- end -}}
   </div>
   <div class="more-projects">
-    <a class="btn" href="{{ if eq .Lang "de" }}/work/{{ else }}/en/work/{{ end }}">{{ .Site.Language.Params.moreProjects }}</a>
+    <a class="btn btn--outline" href="{{ if eq .Lang "de" }}/work/{{ else }}/en/work/{{ end }}">{{ .Site.Language.Params.moreProjects }}</a>
   </div>
 </section>
 
@@ -121,7 +136,7 @@
         <label for="message">{{ if eq .Lang "de" }}Nachricht{{ else }}Message{{ end }}</label>
       </div>
       <div class="cf-turnstile" data-sitekey="0x4AAAAAAC6okCVICQ-UccDv" data-theme="light"></div>
-      <button type="submit" class="btn">{{ if eq .Lang "de" }}Senden{{ else }}Send{{ end }}</button>
+      <button type="submit" class="btn btn--outline">{{ if eq .Lang "de" }}Senden{{ else }}Send{{ end }}</button>
     </form>
     <script>document.getElementById('form_time').value = Date.now();</script>
   </div>

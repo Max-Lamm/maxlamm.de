@@ -4,6 +4,19 @@
 
 Kontakt: https://maxlamm.de/#contact | Telefon: +49 176 69262318
 
+## Nutzungsvorbehalt / Reservation of Rights
+
+Sämtliche Inhalte dieser Website und alle Werke von Maximilian Lamm sind urheberrechtlich geschützt. Die Nutzung für Text und Data Mining sowie für die Entwicklung, das Training, die Validierung oder die Feinabstimmung von Systemen künstlicher Intelligenz ist hiermit ausdrücklich vorbehalten (Nutzungsvorbehalt nach § 44b Abs. 3 UrhG). Der Vorbehalt gilt gegenüber jedermann und auch dann, wenn Nutzungsrechte an Dritte übertragen wurden.
+
+All content on this website and all works by Maximilian Lamm are protected by copyright. Use for text and data mining and for developing, training, validating or fine-tuning artificial intelligence systems is expressly reserved pursuant to § 44b (3) UrhG. This reservation applies against any party, including where rights of use have been transferred to third parties.
+
+Das Zitieren und Verlinken dieser Seite in KI-Suchergebnissen auf konkrete Nutzeranfrage ist davon ausdrücklich nicht betroffen und erwünscht.
+Quoting and linking this site in AI search results in response to a specific user query is expressly not affected and is welcome.
+
+- [KI-Vorbehalt (DE)](https://maxlamm.de/ki-vorbehalt/)
+- [AI Training Opt-Out (EN)](https://maxlamm.de/en/ai-training-opt-out/)
+- [Maschinenlesbar (TDMRep)](https://maxlamm.de/.well-known/tdmrep.json)
+
 ## Leistungen
 
 - [Color Grading München](https://maxlamm.de/color-grading-muenchen/): Farbkorrektur und Look-Entwicklung in DaVinci Resolve, remote oder vor Ort

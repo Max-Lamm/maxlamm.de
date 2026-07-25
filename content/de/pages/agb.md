@@ -12,7 +12,7 @@ Schäftlarnstraße 93<br>
 Tel.: +49 176 69262318<br>
 E-Mail: [info[at]maxlamm.de](/contact/)
 
-Stand: April 2026
+Stand: Juli 2026
 
 <br><br>
 
@@ -124,8 +124,8 @@ Stand: April 2026
 
 **7.10** Bei Leistungen über die normale Arbeitszeit (in der Regel 10 Stunden inkl. 1 Stunde Pause) hinaus wird pro angefangener Stunde ein Mehraufwandszuschlag fällig:
 
-Ab Beginn der 11. Stunde beträgt dieser Zuschlag 50 % des vereinbarten Stundenlohns.
-Ab Beginn der 13. Stunde beträgt dieser Zuschlag 100 % des vereinbarten Stundenlohns.
+- Ab Beginn der 11. Stunde beträgt dieser Zuschlag 50 % des vereinbarten Stundenlohns.
+- Ab Beginn der 13. Stunde beträgt dieser Zuschlag 100 % des vereinbarten Stundenlohns.
 
 **7.11** Für Einsätze an Sonn- und Feiertagen wird ein Zuschlag von sonntags 50 % und an gesetzlichen Feiertagen 100 % zum vereinbarten Tagessatz berechnet.
 
@@ -146,9 +146,9 @@ Das Bewegen von Produktionsfahrzeugen ist grundsätzlich Arbeitszeit. Innerhalb 
 
 **8.3** Sofern nichts anderes vereinbart ist, gilt folgende Abschlagszahlungsregelung:
 
-50 % bei Auftragserteilung,
-30 % bei Produktionsstart (Dreh bzw. Postproduktion),
-20 % bei finaler Abnahme.
+- 50 % bei Auftragserteilung,
+- 30 % bei Produktionsstart (Dreh bzw. Postproduktion),
+- 20 % bei finaler Abnahme.
 
 **8.4** Soweit in der Preiskalkulation Vorkosten wie Reisen, Casting und Motivsuche aufgeführt sind, werden diese bei Auftragserteilung in voller Höhe fällig.
 
@@ -174,7 +174,7 @@ Widerrufsbelehrung
 
 Widerrufsrecht: Sie haben das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen. Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag des Vertragsabschlusses.
 
-Um Ihr Widerrufsrecht auszuüben, müssen Sie mir (Maximilian Lamm, Schäftlarnstraße 93, 81371 München, Tel.: +49 176 69262318, E-Mail: info[at]maxlamm.de) mittels einer eindeutigen Erklärung (z. B. ein mit der Post versandter Brief oder E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren. Sie können dafür das Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist.
+Um Ihr Widerrufsrecht auszuüben, müssen Sie mir (Maximilian Lamm, Schäftlarnstraße 93, 81371 München, Tel.: +49 176 69262318, E-Mail: info@maxlamm.de) mittels einer eindeutigen Erklärung (z. B. ein mit der Post versandter Brief oder E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren. Sie können dafür das Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist.
 
 Zur Wahrung der Widerrufsfrist reicht es aus, dass Sie die Mitteilung über die Ausübung des Widerrufsrechts vor Ablauf der Widerrufsfrist absenden.
 
@@ -252,16 +252,16 @@ Der Auftraggeber hat das Recht, den Vertrag vor Zahlung des ersten Abschlags zu 
 
 **14.3** Die Nutzungsrechte umfassen, sofern nicht anders schriftlich vereinbart:
 
-Das Recht zur öffentlichen Vorführung und Aufführung
-Das Recht zur Sendung und Verbreitung in allen Medien (TV, Online, Mobile)
-Das Recht zur öffentlichen Zugänglichmachung (z. B. auf Websites, in sozialen Medien)
-Das Vervielfältigungsrecht (für eigene betriebliche Zwecke)
+- Das Recht zur öffentlichen Vorführung und Aufführung
+- Das Recht zur Sendung und Verbreitung in allen Medien (TV, Online, Mobile)
+- Das Recht zur öffentlichen Zugänglichmachung (z. B. auf Websites, in sozialen Medien)
+- Das Vervielfältigungsrecht (für eigene betriebliche Zwecke)
 
 Nicht umfasst von den Nutzungsrechten sind, sofern nicht ausdrücklich schriftlich vereinbart:
 
-Das Recht zur Bearbeitung, Umgestaltung oder Änderung des Materials
-Das Recht zum Verkauf oder zur kommerziellen Weitergabe an Dritte
-Das Recht zur Nutzung für andere als die vereinbarten Zwecke
+- Das Recht zur Bearbeitung, Umgestaltung oder Änderung des Materials
+- Das Recht zum Verkauf oder zur kommerziellen Weitergabe an Dritte
+- Das Recht zur Nutzung für andere als die vereinbarten Zwecke
 
 **14.4** Sofern nicht ausdrücklich anders vereinbart, werden die Nutzungsrechte zeitlich auf ein Jahr ab Lieferung des Endprodukts und räumlich auf das Gebiet der Bundesrepublik Deutschland begrenzt eingeräumt. Die Nutzung nach Ablauf dieses Zeitraums, in anderen Ländern oder für andere als die vereinbarten Zwecke bedarf einer gesonderten schriftlichen Vereinbarung und einer zusätzlichen angemessenen Vergütung. Der Auftraggeber ist verpflichtet, rechtzeitig vor Ablauf der Nutzungsfrist mit mir Kontakt aufzunehmen, um eine Verlängerung der Nutzungsrechte zu vereinbaren, sofern eine weitere Nutzung gewünscht ist.
 
@@ -271,9 +271,9 @@ Das Recht zur Nutzung für andere als die vereinbarten Zwecke
 
 Bei sensiblen oder vertraulichen Projekten, bei denen der Auftraggeber ein berechtigtes Interesse an der Geheimhaltung oder Anonymisierung hat, verpflichte ich mich:
 
-Die Referenznutzung vorab mit dem Auftraggeber abzustimmen;
-Auf Wunsch des Auftraggebers personenbezogene Daten, Markenzeichen, Unternehmenskennzeichen oder andere identifizierende Merkmale zu anonymisieren;
-Auf Wunsch des Auftraggebers auf die Verwendung bestimmter Projekte als Referenz vollständig zu verzichten, sofern dies bei Vertragsschluss schriftlich vereinbart wurde.
+- Die Referenznutzung vorab mit dem Auftraggeber abzustimmen;
+- Auf Wunsch des Auftraggebers personenbezogene Daten, Markenzeichen, Unternehmenskennzeichen oder andere identifizierende Merkmale zu anonymisieren;
+- Auf Wunsch des Auftraggebers auf die Verwendung bestimmter Projekte als Referenz vollständig zu verzichten, sofern dies bei Vertragsschluss schriftlich vereinbart wurde.
 
 Der Auftraggeber hat das Recht, der Verwendung zu Referenzzwecken innerhalb eines Monats nach Abnahme des Filmmaterials schriftlich zu widersprechen. Sollte der Film vertrauliche oder geschützte Informationen enthalten, muss der Auftraggeber bei Auftragserteilung explizit darauf hinweisen.
 
@@ -294,63 +294,76 @@ Das Recht zur eigenen Nutzung durch mich gilt erst, wenn dem Auftraggeber der Fi
 **14.13** Ich behalte mir das Recht vor, bei öffentlichen Vorführungen und Publikationen des Filmmaterials im Abspann oder in der Beschreibung als Urheber genannt zu werden, soweit dies branchenüblich ist.
 
 
-## § 15 Verschwiegenheit
+## § 15 Vorbehalt der Nutzung für Text und Data Mining und für das Training künstlicher Intelligenz
+
+**15.1** Ich behalte mir hiermit ausdrücklich die Nutzung sämtlicher von mir geschaffener Werke und Leistungen, insbesondere aller Filmaufnahmen, Bildwerke, Lichtbilder, Farbkorrekturen, Konzepte, Drehbücher und sonstiger Arbeitsergebnisse, für Zwecke des Text und Data Mining im Sinne des § 44b UrhG vor. Der Vorbehalt umfasst insbesondere die Vervielfältigung, Analyse und Auswertung dieser Werke zum Zweck der Entwicklung, des Trainings, der Validierung oder der Feinabstimmung von Systemen künstlicher Intelligenz, maschinellen Lernverfahren, generativen Modellen und vergleichbaren Technologien. Dieser Vorbehalt gilt gegenüber jedermann und unabhängig davon, in welcher Form und an welchem Ort die Werke zugänglich sind.
+
+**15.2** Die nach § 14 eingeräumten Nutzungsrechte umfassen nicht das Recht, die Werke und Arbeitsergebnisse für die in 15.1 genannten Zwecke zu nutzen, sie zu diesem Zweck zugänglich zu machen oder sie Dritten zu diesem Zweck zu überlassen. Die Nutzung für das Training künstlicher Intelligenz ist eine eigenständige Nutzungsart. Ihre Einräumung bedarf einer gesonderten schriftlichen Vereinbarung und einer zusätzlichen angemessenen Vergütung. Dies gilt auch dann, wenn dem Auftraggeber im Übrigen umfassende, zeitlich und räumlich unbeschränkte oder ausschließliche Nutzungsrechte eingeräumt werden.
+
+**15.3** Der Auftraggeber verpflichtet sich, den Vorbehalt nach 15.1 und die Beschränkung nach 15.2 an alle Dritten weiterzugeben, denen er die Werke im Rahmen der vereinbarten Nutzung überlässt oder zugänglich macht, insbesondere an Agenturen, Dienstleister, Plattformbetreiber und Unterlizenznehmer, und diese entsprechend zu verpflichten. Stellt der Auftraggeber die Werke auf Plattformen ein, deren Nutzungsbedingungen eine Verwendung der Inhalte für die Entwicklung oder das Training künstlicher Intelligenz vorsehen, bedarf dies meiner vorherigen schriftlichen Zustimmung.
+
+**15.4** Der Auftraggeber ist verpflichtet, in den gelieferten Dateien enthaltene Urheberbezeichnungen, Metadaten und maschinenlesbare Nutzungsvorbehalte (beispielsweise IPTC- und XMP-Felder sowie Angaben zur Herkunft und Authentizität von Inhalten) unverändert zu belassen und nicht zu entfernen. Macht der Auftraggeber die Werke online zugänglich, wird er einen maschinenlesbaren Nutzungsvorbehalt im Sinne des § 44b Abs. 3 UrhG setzen, soweit ihm dies technisch möglich und zumutbar ist.
+
+**15.5** Unberührt bleiben gesetzlich zwingende Schrankenregelungen sowie der Einsatz von Software mit KI-Funktionen zur bloßen Bearbeitung oder technischen Verarbeitung der Werke im Rahmen der vereinbarten Nutzung, sofern die Werke dabei nicht als Trainingsmaterial verwendet werden und nicht in Trainingsdatensätze Dritter einfließen.
+
+
+## § 16 Verschwiegenheit
 
 Ich und der Auftraggeber sind wechselseitig dazu verpflichtet, alle aufgrund des Vertragsverhältnisses und der Vertragsdurchführung bekannt werdenden Geschäfts- und Betriebsgeheimnisse des anderen Teils zu wahren und die Einhaltung dieser Verpflichtung auch hinsichtlich der Mitarbeiter durch geeignete Maßnahmen sicherzustellen. Die Geheimhaltungsverpflichtung besteht über die Dauer des Vertrages hinaus.
 
 
-## § 16 Datenschutz
+## § 17 Datenschutz
 
-**16.1** Ich verarbeite personenbezogene Daten des Auftraggebers und seiner Mitarbeiter ausschließlich zur Erfüllung der vertraglichen und vorvertraglichen Pflichten gemäß Art. 6 Abs. 1 lit. b DSGVO sowie zur Erfüllung gesetzlicher Verpflichtungen gemäß Art. 6 Abs. 1 lit. c DSGVO.
+**17.1** Ich verarbeite personenbezogene Daten des Auftraggebers und seiner Mitarbeiter ausschließlich zur Erfüllung der vertraglichen und vorvertraglichen Pflichten gemäß Art. 6 Abs. 1 lit. b DSGVO sowie zur Erfüllung gesetzlicher Verpflichtungen gemäß Art. 6 Abs. 1 lit. c DSGVO.
 
-**16.2** Sofern im Rahmen der Filmproduktion personenbezogene Daten Dritter (wie z. B. Darsteller, Interviewpartner, Mitarbeiter des Auftraggebers) verarbeitet werden, fungiert Maximilian Lamm als Auftragsverarbeiter im Sinne des Art. 28 DSGVO. Der Auftraggeber bleibt als Verantwortlicher im Sinne der DSGVO für die Rechtmäßigkeit der Datenverarbeitung verantwortlich und verpflichtet sich, die erforderlichen Einwilligungen einzuholen.
+**17.2** Sofern im Rahmen der Filmproduktion personenbezogene Daten Dritter (wie z. B. Darsteller, Interviewpartner, Mitarbeiter des Auftraggebers) verarbeitet werden, fungiert Maximilian Lamm als Auftragsverarbeiter im Sinne des Art. 28 DSGVO. Der Auftraggeber bleibt als Verantwortlicher im Sinne der DSGVO für die Rechtmäßigkeit der Datenverarbeitung verantwortlich und verpflichtet sich, die erforderlichen Einwilligungen einzuholen.
 
-**16.3** Bei der Verarbeitung personenbezogener Daten im Auftrag des Auftraggebers wird eine separate Vereinbarung zur Auftragsverarbeitung (AVV) abgeschlossen, sofern dies gesetzlich erforderlich ist.
+**17.3** Bei der Verarbeitung personenbezogener Daten im Auftrag des Auftraggebers wird eine separate Vereinbarung zur Auftragsverarbeitung (AVV) abgeschlossen, sofern dies gesetzlich erforderlich ist.
 
-**16.4** Der Auftraggeber sichert zu, dass für alle im Filmmaterial auftretenden Personen entsprechende Einwilligungserklärungen vorliegen oder eingeholt werden können. Die Kosten für zusätzliche Einwilligungserklärungen oder Nutzungsrechte trägt der Auftraggeber.
+**17.4** Der Auftraggeber sichert zu, dass für alle im Filmmaterial auftretenden Personen entsprechende Einwilligungserklärungen vorliegen oder eingeholt werden können. Die Kosten für zusätzliche Einwilligungserklärungen oder Nutzungsrechte trägt der Auftraggeber.
 
-**16.5** Detaillierte Informationen zum Umgang mit personenbezogenen Daten sind in meiner Datenschutzerklärung enthalten, die auf Anfrage zur Verfügung gestellt wird.
-
-
-## § 17 Besondere Bestimmungen für Online-Content
-
-**17.1** Bei der Erstellung von Inhalten für digitale Medien (Websites, Online-Plattformen, Apps etc.) gelten ergänzend folgende Bestimmungen.
-
-**17.2** Die technischen Spezifikationen (Auflösung, Format, Codecs, etc.) werden vor Produktionsbeginn schriftlich vereinbart. Nachträgliche Formatanpassungen können zusätzliche Kosten verursachen.
-
-**17.3** Sofern eine Optimierung für bestimmte Plattformen oder Endgeräte gewünscht ist, muss dies bei Auftragserteilung ausdrücklich vereinbart werden.
-
-**17.4** Ich übernehme keine Garantie für die Kompatibilität mit allen Browsern, Betriebssystemen oder Geräten, sofern nicht ausdrücklich vereinbart.
-
-**17.5** Für den Upload und die technische Integration der produzierten Inhalte in die Online-Plattformen des Auftraggebers ist der Auftraggeber selbst verantwortlich, sofern nicht anders vereinbart.
-
-**17.6** Die Nutzung des Materials für Streaming-Plattformen, Video-on-Demand-Dienste oder andere digitale Vertriebswege bedarf einer gesonderten Vereinbarung und kann zusätzliche Vergütungen nach sich ziehen, sofern dies nicht bereits bei Vertragsschluss vereinbart wurde.
-
-**17.7** Die Nutzung des erstellten Materials in sozialen Medien (wie Facebook, Instagram, TikTok, LinkedIn, Twitter, YouTube etc.) ist nur im Rahmen der vertraglich vereinbarten Nutzungsrechte gestattet und unterliegt den zeitlichen und räumlichen Beschränkungen gemäß § 14.
-
-**17.8** Der Auftraggeber stellt sicher, dass bei der Nutzung in sozialen Medien keine Rechte Dritter verletzt werden, insbesondere bezüglich verwendeter Musik, Bildmaterial oder dargestellter Personen.
-
-**17.9** Bei bezahlten Werbekampagnen (Ads) in sozialen Medien kann eine zusätzliche Vergütung anfallen, sofern nicht anders vereinbart.
-
-**17.10** Die Nutzung des Materials durch Influencer oder andere Dritte zum Zwecke der Bewerbung des Auftraggebers bedarf meiner gesonderten schriftlichen Zustimmung.
-
-**17.11** Der Auftraggeber ist verpflichtet, mich auf Anfrage über Art und Umfang der tatsächlichen Nutzung in sozialen Medien zu informieren.
+**17.5** Detaillierte Informationen zum Umgang mit personenbezogenen Daten sind in meiner Datenschutzerklärung enthalten, die auf Anfrage zur Verfügung gestellt wird.
 
 
-## § 18 Künstlersozialkasse
+## § 18 Besondere Bestimmungen für Online-Content
+
+**18.1** Bei der Erstellung von Inhalten für digitale Medien (Websites, Online-Plattformen, Apps etc.) gelten ergänzend folgende Bestimmungen.
+
+**18.2** Die technischen Spezifikationen (Auflösung, Format, Codecs, etc.) werden vor Produktionsbeginn schriftlich vereinbart. Nachträgliche Formatanpassungen können zusätzliche Kosten verursachen.
+
+**18.3** Sofern eine Optimierung für bestimmte Plattformen oder Endgeräte gewünscht ist, muss dies bei Auftragserteilung ausdrücklich vereinbart werden.
+
+**18.4** Ich übernehme keine Garantie für die Kompatibilität mit allen Browsern, Betriebssystemen oder Geräten, sofern nicht ausdrücklich vereinbart.
+
+**18.5** Für den Upload und die technische Integration der produzierten Inhalte in die Online-Plattformen des Auftraggebers ist der Auftraggeber selbst verantwortlich, sofern nicht anders vereinbart.
+
+**18.6** Die Nutzung des Materials für Streaming-Plattformen, Video-on-Demand-Dienste oder andere digitale Vertriebswege bedarf einer gesonderten Vereinbarung und kann zusätzliche Vergütungen nach sich ziehen, sofern dies nicht bereits bei Vertragsschluss vereinbart wurde.
+
+**18.7** Die Nutzung des erstellten Materials in sozialen Medien (wie Facebook, Instagram, TikTok, LinkedIn, Twitter, YouTube etc.) ist nur im Rahmen der vertraglich vereinbarten Nutzungsrechte gestattet und unterliegt den zeitlichen und räumlichen Beschränkungen gemäß § 14.
+
+**18.8** Der Auftraggeber stellt sicher, dass bei der Nutzung in sozialen Medien keine Rechte Dritter verletzt werden, insbesondere bezüglich verwendeter Musik, Bildmaterial oder dargestellter Personen.
+
+**18.9** Bei bezahlten Werbekampagnen (Ads) in sozialen Medien kann eine zusätzliche Vergütung anfallen, sofern nicht anders vereinbart.
+
+**18.10** Die Nutzung des Materials durch Influencer oder andere Dritte zum Zwecke der Bewerbung des Auftraggebers bedarf meiner gesonderten schriftlichen Zustimmung.
+
+**18.11** Der Auftraggeber ist verpflichtet, mich auf Anfrage über Art und Umfang der tatsächlichen Nutzung in sozialen Medien zu informieren.
+
+
+## § 19 Künstlersozialkasse
 
 Die von mir berechneten Honorare können unter Umständen ganz oder teilweise unter die Abgabepflicht gemäß § 24 Künstlersozialversicherungsgesetz (KSVG) fallen. Der Auftraggeber ist darüber informiert, dass bei der Auftragsvergabe an Maximilian Lamm als nichtjuristische Person für Dienstleistungen im künstlerischen und konzeptionellen Bereich nach dem Künstlersozialversicherungsgesetz (KSVG) eine Künstlersozialabgabe an die Künstlersozialkasse (KSK) zu leisten ist. Diese Abgabe darf vom Auftraggeber nicht von der Rechnung in Abzug gebracht werden. Für die Einhaltung der Anmelde- und Abgabepflicht ist alleine der Auftraggeber zuständig und selbst verantwortlich.
 
 
-## § 19 Salvatorische Klausel
+## § 20 Salvatorische Klausel
 
-**19.1** Abänderungen dieser allgemeinen Bedingungen und ihnen vorhergehender besonderer Vereinbarungen bedürfen der Schriftform. Erklärungen per Fax oder per E-Mail gelten entsprechend.
+**20.1** Abänderungen dieser allgemeinen Bedingungen und ihnen vorhergehender besonderer Vereinbarungen bedürfen der Schriftform. Erklärungen per Fax oder per E-Mail gelten entsprechend.
 
-**19.2** Die Unwirksamkeit einer Bestimmung dieser Allgemeinen Geschäftsbedingungen lässt die Geltung der übrigen Bestimmungen unberührt.
+**20.2** Die Unwirksamkeit einer Bestimmung dieser Allgemeinen Geschäftsbedingungen lässt die Geltung der übrigen Bestimmungen unberührt.
 
 
-## § 20 Schlussbestimmungen und Gerichtsstand
+## § 21 Schlussbestimmungen und Gerichtsstand
 
-**20.1** Erfüllungsort und ausschließlicher Gerichtsstand ist der Sitz von Maximilian Lamm in München.
+**21.1** Erfüllungsort und ausschließlicher Gerichtsstand ist der Sitz von Maximilian Lamm in München.
 
-**20.2** Es gilt deutsches Recht. Die Anwendung des UN-Kaufrechts (CISG) ist ausgeschlossen.
+**21.2** Es gilt deutsches Recht. Die Anwendung des UN-Kaufrechts (CISG) ist ausgeschlossen.

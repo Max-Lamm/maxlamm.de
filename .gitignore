@@ -8,5 +8,6 @@ resources/_gen/images/
 .htaccess
 .hugo_build.lock
 .claude
+.impeccable
 new-project-input.md
 static/.DS_Store
