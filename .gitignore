@@ -7,7 +7,8 @@ resources/_gen/images/
 .superpowers
 .htaccess
 .hugo_build.lock
-.claude
+.claude/*
+!.claude/commands/
 .impeccable
 new-project-input.md
 static/.DS_Store
