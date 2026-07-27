@@ -39,7 +39,50 @@ Aus Beschreibung + technischen Details einen ausführlichen Portfolio-Text bauen
 - DE und EN inhaltlich gleich, aber natürlich klingend in beiden Sprachen
 - Schreibregeln (keine Dashes) beachten
 
-## Front Matter
+## Dateien und Bilder ablegen
+
+1. Markdown-Datei in `content/de/projects/` (und ggf. `content/en/projects/`) erstellen
+2. Bilder nach `static/images/projects/<slug>/` legen
+3. `thumb.jpg` (768×432) als Grid-Thumbnail
+4. `translationKey` in DE und EN auf denselben Wert setzen → verbindet Sprachversionen
+
+## Front-Matter-Referenz
+
+Vollständige Feldliste mit erlaubten Werten und Defaults. Der Archetype `archetypes/projects.md` hat die Feldnamen, aber nicht die Semantik:
+
+```yaml
+---
+title: "Projekttitel"
+date: 2024-01-01          # Sortierreihenfolge im Grid (neuere = weiter oben)
+draft: false
+description: "Kurze Beschreibung für SEO (meta description, OG-Tag)"
+featured: false           # true = erscheint im Featured-Bereich der Homepage
+thumbnail: "/images/projects/<slug>/thumb.jpg"
+preview: "/videos/projects/<slug>.webm"  # Optional: hover preview video (short loop, no audio)
+orientation: landscape    # landscape (default) | portrait (für Hochformat-Video-Paare)
+categories:
+  - colorist              # colorist | cinematographer | weitere
+types:
+  - commercial            # commercial | documentary | branded-content | social media
+videos:
+  - "https://vimeo.com/VIDEOID/hash"
+  - "https://www.youtube.com/watch?v=VIDEOID"
+video_posters:            # Optional: individuelle Poster pro Video (sonst thumb.jpg)
+  - "/images/projects/<slug>/poster-01.jpg"
+video_size: large         # large (default) | medium | small — nur bei landscape, einzelnem Video
+credits:
+  - role: Kunde
+    name: Firmenname
+  - role: Grading
+    name: Maximilian Lamm
+gallery:
+  - "/images/projects/<slug>/01.jpg"
+gallery_columns: 3        # Spaltenanzahl im Galerie-Grid (default: 3)
+translationKey: "project-slug"  # Verknüpft DE/EN-Version miteinander
+---
+```
+
+## Front-Matter-Regeln
 
 - `description`: 1–2 Sätze SEO-Text, Rolle + Kunde + Projektkern. DE und EN separat formulieren.
   Format: „[Rolle] für [Kunde/Projekt]. [Projektkern in einem Satz]."
