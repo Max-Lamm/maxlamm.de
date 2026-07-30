@@ -44,7 +44,6 @@ Exception: If you want to create the final exports in Resolve, leave all element
 - Swap all proxies or transcoded clips for the original source clips.
 - Delete empty video tracks
 - Delete all audio tracks and clips
-- Export an EDL, XML or AAF of the sequence.
 - Export a Quicktime of the sequence in native resolution as **ProRes 4444**.
 <br><br>
 

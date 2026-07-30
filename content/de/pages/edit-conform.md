@@ -44,7 +44,6 @@ Ausnahme: Falls du die finalen Exporte in Resolve erstellen möchtest, lass alle
 - Tausche alle Proxies oder transkodierten Clips gegen die Original-Quellclips aus.
 - Leere Videospuren löschen
 - Alle Audiospuren und Clips löschen
-- Exportiere eine EDL, XML oder AAF der Sequenz.
 - Exportiere ein Quicktime der Sequenz in nativer Auflösung als **ProRes 4444**.
 <br><br> 
 
