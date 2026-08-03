@@ -105,8 +105,8 @@
   <link rel="stylesheet" href="{{ $css.RelPermalink }}">
   <script>if(/^#(home|projects|about|contact)$/.test(location.hash)){document.documentElement.classList.add('lang-entering');setTimeout(function(){document.documentElement.classList.remove('lang-entering')},150);}</script>
   <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
-  <link rel="preload" href="/fonts/raleway-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/fonts/work-sans-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/raleway-variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/work-sans-variable.woff2" as="font" type="font/woff2" crossorigin>
   {{- if and .IsHome (not (.Site.Params.heroVideo | default false)) }}
   {{- with .Site.Params.heroImage }}{{ with resources.Get (strings.TrimPrefix "/" .) }}
   {{- $heroPreload := .Fill "1600x900 webp q80" }}

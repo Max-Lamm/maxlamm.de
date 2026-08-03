@@ -4,13 +4,8 @@
    ============================================================ */
 
 /* --- Local Fonts --- */
-@font-face { font-family: 'Raleway'; font-style: normal; font-weight: 300; font-display: swap; src: url('/fonts/raleway-300-normal.woff2') format('woff2'); }
-@font-face { font-family: 'Raleway'; font-style: normal; font-weight: 400; font-display: swap; src: url('/fonts/raleway-400-normal.woff2') format('woff2'); }
-@font-face { font-family: 'Raleway'; font-style: normal; font-weight: 600; font-display: swap; src: url('/fonts/raleway-600-normal.woff2') format('woff2'); }
-@font-face { font-family: 'Raleway'; font-style: normal; font-weight: 700; font-display: swap; src: url('/fonts/raleway-700-normal.woff2') format('woff2'); }
-@font-face { font-family: 'Work Sans'; font-style: normal; font-weight: 600; font-display: swap; src: url('/fonts/work-sans-600-normal.woff2') format('woff2'); }
-@font-face { font-family: 'Work Sans'; font-style: normal; font-weight: 700; font-display: swap; src: url('/fonts/work-sans-700-normal.woff2') format('woff2'); }
-@font-face { font-family: 'Work Sans'; font-style: normal; font-weight: 800; font-display: swap; src: url('/fonts/work-sans-800-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Raleway'; font-style: normal; font-weight: 100 900; font-display: swap; src: url('/fonts/raleway-variable.woff2') format('woff2'); }
+@font-face { font-family: 'Work Sans'; font-style: normal; font-weight: 100 900; font-display: swap; src: url('/fonts/work-sans-variable.woff2') format('woff2'); }
 
 /* --- Klaro Cookie Consent --- */
 .klaro .cookie-modal,
