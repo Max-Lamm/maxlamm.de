@@ -113,6 +113,11 @@
   <link rel="preload" as="image" href="{{ $heroPreload.RelPermalink }}" fetchpriority="high">
   {{- end }}{{ end }}
   {{- end }}
+  {{- if and .IsHome (.Site.Params.heroVideo | default false) }}
+  {{- with .Site.Params.heroPoster }}
+  <link rel="preload" as="image" href="{{ . }}" fetchpriority="high">
+  {{- end }}
+  {{- end }}
   <!-- Cloudflare Turnstile (Spam Protection) -->
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
   <!-- Klaro Cookie Consent -->

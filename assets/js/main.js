@@ -254,7 +254,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const heroImg = document.querySelector('.hero__img');
   const heroEl = document.querySelector('.hero');
   const homeFilter = document.querySelector('.home-filter');
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (heroVideo && reducedMotion) {
+    // Kein Autoplay bei reduzierter Bewegung: Poster bleibt stehen
+    heroVideo.removeAttribute('autoplay');
+    heroVideo.pause();
+  }
   if ((heroVideo || heroBg || heroImg) && heroEl) {
+    let heroVideoPlaying = !reducedMotion;
     window.addEventListener('scroll', () => {
       const heroH = heroEl.offsetHeight;
       const scrolled = window.scrollY;
@@ -272,6 +279,17 @@ document.addEventListener('DOMContentLoaded', () => {
       if (heroBg) heroBg.style.opacity = opacity;
       if (heroImg) heroImg.style.opacity = opacity;
       if (homeFilter) homeFilter.style.opacity = 1 - opacity;
+
+      // Dekodierung stoppen, wenn das (fixed positionierte) Video unsichtbar ist
+      if (heroVideo && !reducedMotion) {
+        if (opacity === 0 && heroVideoPlaying) {
+          heroVideoPlaying = false;
+          heroVideo.pause();
+        } else if (opacity > 0 && !heroVideoPlaying) {
+          heroVideoPlaying = true;
+          heroVideo.play().catch(() => {});
+        }
+      }
     }, { passive: true });
   }
 

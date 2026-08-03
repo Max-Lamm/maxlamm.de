@@ -113,6 +113,9 @@ pagination.pagerSize = 50
   heroImage = "/images/hero.jpg"
   # Optionaler Fokuspunkt fuers Still (object-position), z.B. "center 40%" oder "left". Leer = center.
   # heroFocus = "center"
+  # Hero-Video statt Still. Quellen liegen fest unter /videos/hero(.webm|.mp4) bzw. /videos/hero-mobile.(webm|mp4).
+  heroVideo = true
+  heroPoster = "/images/hero-poster.webp"
 
 [taxonomies]
   category = "categories"
