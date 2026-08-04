@@ -160,17 +160,38 @@ document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('.contact-form');
   if (form) {
     const lang = document.documentElement.lang || 'de';
+    const phone = form.dataset.phone || '';
     const i18n = {
-      de: { sending: 'Sende...', sent: '\u2713 Gesendet!', error: 'Fehler \u2013 bitte erneut versuchen' },
-      en: { sending: 'Sending...', sent: '\u2713 Sent!', error: 'Error \u2013 please try again' }
+      de: {
+        sending: 'Sende...', sent: '\u2713 Gesendet!',
+        errors: {
+          spam: 'Da ist etwas schiefgelaufen, bitte kurz neu laden und erneut versuchen',
+          captcha: 'Sicherheitspr\u00fcfung fehlgeschlagen, bitte H\u00e4kchen erneut setzen',
+          invalid: 'Bitte E-Mail-Adresse pr\u00fcfen',
+          mail: `Konnte nicht gesendet werden \u2013 ruf gern direkt an: ${phone}`,
+          network: `Verbindung fehlgeschlagen \u2013 ruf gern direkt an: ${phone}`
+        }
+      },
+      en: {
+        sending: 'Sending...', sent: '\u2713 Sent!',
+        errors: {
+          spam: 'Something went wrong, please reload and try again',
+          captcha: 'Security check failed, please check the box again',
+          invalid: 'Please check your email address',
+          mail: `Could not send \u2013 feel free to call directly: ${phone}`,
+          network: `Connection failed \u2013 feel free to call directly: ${phone}`
+        }
+      }
     };
     const t = i18n[lang] || i18n.de;
+    const statusEl = form.querySelector('.form-status');
 
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
       const btn = form.querySelector('.btn');
       const formGroups = form.querySelectorAll('.form-group');
       const originalText = btn.textContent;
+      if (statusEl) { statusEl.textContent = ''; statusEl.classList.remove('is-visible'); }
 
       // Sending state
       btn.textContent = t.sending;
@@ -220,18 +241,25 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 300);
           }, 2500);
         } else {
-          throw new Error('Send failed');
+          let code = 'network';
+          try {
+            const body = await resp.json();
+            if (body && body.error) code = body.error;
+          } catch (parseErr) { /* keine JSON-Antwort, bei network bleiben */ }
+          throw new Error(code);
         }
       } catch (err) {
         // Error state
         btn.classList.remove('btn--sending');
         btn.classList.add('btn--error');
-        btn.textContent = t.error;
+        btn.textContent = originalText;
         btn.disabled = false;
-        setTimeout(() => {
-          btn.classList.remove('btn--error');
-          btn.textContent = originalText;
-        }, 3000);
+        if (window.turnstile) window.turnstile.reset();
+        if (statusEl) {
+          statusEl.textContent = t.errors[err.message] || t.errors.network;
+          statusEl.classList.add('is-visible');
+        }
+        setTimeout(() => btn.classList.remove('btn--error'), 400);
       }
     });
   }
@@ -239,13 +267,20 @@ document.addEventListener('DOMContentLoaded', () => {
   /* --- Projects section fade-in on scroll --- */
   const projectsSection = document.querySelector('.projects-section');
   if (projectsSection) {
-    const onGridScroll = () => {
-      if (window.scrollY > 222) {
-        projectsSection.classList.add('section-visible');
-        window.removeEventListener('scroll', onGridScroll);
-      }
-    };
-    window.addEventListener('scroll', onGridScroll, { passive: true });
+    if ('IntersectionObserver' in window) {
+      const gridObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            projectsSection.classList.add('section-visible');
+            observer.disconnect();
+          }
+        });
+      }, { rootMargin: '0px 0px -222px 0px' });
+      gridObserver.observe(projectsSection);
+    } else {
+      // Kein IntersectionObserver: Grid sofort sichtbar statt dauerhaft verborgen
+      projectsSection.classList.add('section-visible');
+    }
   }
 
   /* --- Hero video / background fade-out on scroll --- */

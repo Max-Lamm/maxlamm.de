@@ -91,6 +91,41 @@ img { max-width: 100%; height: auto; display: block; }
 a { color: var(--accent); text-decoration: none; transition: color .2s; }
 a:hover { color: var(--accent-hover); }
 
+/* Skip-Link: nur sichtbar bei Keyboard-Fokus */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 1000;
+  padding: .75rem 1.25rem;
+  background: var(--bg-card);
+  color: var(--text-white);
+  border: 1px solid var(--accent);
+  border-radius: 3px;
+  transition: top .2s ease;
+}
+
+.skip-link:focus-visible {
+  top: 1rem;
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* Sichtbarer Fokus fuer Keyboard-Navigation, ueberall im gleichen Ember-Look */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+.project-card:focus-visible,
+.home-filter-badge:focus-visible,
+.lightbox__close:focus-visible,
+.lightbox__prev:focus-visible,
+.lightbox__next:focus-visible,
+.scroll-top:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
 .container {
   width: 100%;
   max-width: var(--max-width);
@@ -240,10 +275,20 @@ a:hover { color: var(--accent-hover); }
   50% { transform: translateY(8px); }
 }
 
-/* Bewegung respektiert Nutzerpraeferenz: kein Zoom, kein Bob */
+/* Bewegung respektiert Nutzerpraeferenz: global gedrosselt, Inhalt bleibt sofort sichtbar */
 @media (prefers-reduced-motion: reduce) {
-  .hero__img { animation: none; transform: none; }
-  .hero__scroll { animation: none; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  html { scroll-behavior: auto; }
+  .hero__img, .hero__scroll { animation: none !important; transform: none !important; }
+  .js .projects-section > *:not(.home-filter) {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .js .home-filter { opacity: 1 !important; }
 }
 
 /* ============================================================
@@ -460,7 +505,7 @@ a:hover { color: var(--accent-hover); }
   background: linear-gradient(to bottom, rgba(0,0,0,.8) 0, var(--bg-dark) 100vh);
 }
 
-.projects-section > *:not(.home-filter) {
+.js .projects-section > *:not(.home-filter) {
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 2s ease-out, transform 1s ease-out;
@@ -562,7 +607,8 @@ html.lang-entering.lang-ready { transition: opacity .4s ease; opacity: 1; }
   text-transform: uppercase;
   letter-spacing: .06em;
   color: var(--text-white);
-  margin: .25rem 0 0;
+  line-height: 1.2;
+  margin: 0;
   transition: transform .4s ease;
   transform-origin: bottom left;
 }
@@ -572,6 +618,7 @@ html.lang-entering.lang-ready { transition: opacity .4s ease; opacity: 1; }
   color: rgba(255,255,255,.6);
   letter-spacing: .04em;
   text-transform: uppercase;
+  line-height: 1.3;
   transition: transform .4s ease;
   transform-origin: bottom left;
 }
@@ -587,37 +634,57 @@ html.lang-entering.lang-ready { transition: opacity .4s ease; opacity: 1; }
   transform-origin: bottom left;
 }
 
-.project-card:hover .project-card__title {
+.project-card:hover .project-card__title,
+.project-card:focus-visible .project-card__title {
   transform: scale(.85) translateY(8px);
 }
 
 .project-card:hover .project-card__tags,
-.project-card:hover .project-card__categories {
+.project-card:hover .project-card__categories,
+.project-card:focus-visible .project-card__tags,
+.project-card:focus-visible .project-card__categories {
   opacity: 0;
 }
 
 /* ============================================================
-   HOMEPAGE CARDS — clean thumbnails, centered overlay on hover
+   HOMEPAGE CARDS — title always visible, type/category on hover
    ============================================================ */
 .home-card .project-card__overlay {
-  opacity: 0;
-  background: rgba(0,0,0,.65);
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.home-card:hover .project-card__overlay {
   opacity: 1;
 }
 
-.home-card:hover .project-card__title {
+.home-card:hover .project-card__overlay,
+.home-card:focus-visible .project-card__overlay {
+  opacity: .75;
+}
+
+.home-card .project-card__title {
   transform: none;
 }
 
+.home-card:hover .project-card__title,
+.home-card:focus-visible .project-card__title {
+  transform: scale(.85);
+}
+
+.home-card .project-card__tags,
+.home-card .project-card__categories {
+  opacity: 0;
+}
+
 .home-card:hover .project-card__tags,
-.home-card:hover .project-card__categories {
+.home-card:hover .project-card__categories,
+.home-card:focus-visible .project-card__tags,
+.home-card:focus-visible .project-card__categories {
   opacity: 1;
+}
+
+/* Touch: kein Hover verfuegbar, Typ/Kategorie bleiben dauerhaft sichtbar */
+@media (hover: none) {
+  .home-card .project-card__tags,
+  .home-card .project-card__categories {
+    opacity: 1;
+  }
 }
 
 /* ============================================================
@@ -868,6 +935,37 @@ html.lang-entering.lang-ready { transition: opacity .4s ease; opacity: 1; }
 .form-group.fade-in {
   opacity: 1;
   transition: opacity 0.3s ease;
+}
+
+/* --- Error diagnostics + phone fallback --- */
+.form-status {
+  margin: .75rem 0 0;
+  min-height: 1.2em;
+  font-size: .85rem;
+  color: var(--accent);
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+
+.form-status.is-visible {
+  opacity: 1;
+}
+
+.contact-form__fallback {
+  max-width: 620px;
+  margin: 1.5rem auto 0;
+  text-align: left;
+  font-size: .85rem;
+  color: var(--text-light);
+}
+
+.contact-form__fallback a {
+  color: var(--text-white);
+  border-bottom: 1px solid var(--accent);
+}
+
+.contact-form__fallback a:hover {
+  color: var(--accent);
 }
 
 /* ============================================================
@@ -1435,6 +1533,9 @@ button.filter-badge.badge--outline {
   flex-wrap: wrap;
   justify-content: center;
   padding: 0 var(--gap) 1.5rem;
+}
+
+.js .home-filter {
   opacity: 0;
 }
 
@@ -1739,24 +1840,6 @@ button.home-filter-badge.badge--outline {
   }
   .site-nav__inner {
     position: relative;
-  }
-
-  /* Homepage cards: show overlay permanently in /work style on mobile */
-  .home-card .project-card__overlay {
-    opacity: 1;
-    background: linear-gradient(to top, rgba(0,0,0,.8) 0%, rgba(0,0,0,.4) 45%, rgba(0,0,0,.1) 60%, transparent 100%);
-    justify-content: flex-end;
-    align-items: flex-start;
-    text-align: left;
-  }
-
-  .home-card:hover .project-card__title {
-    transform: none;
-  }
-
-  .home-card:hover .project-card__tags,
-  .home-card:hover .project-card__categories {
-    opacity: 1;
   }
 }
 

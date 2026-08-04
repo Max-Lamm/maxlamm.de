@@ -103,7 +103,7 @@
   <link rel="dns-prefetch" href="https://challenges.cloudflare.com">
   {{- $css := resources.Get "css/style.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}">
-  <script>if(/^#(home|projects|about|contact)$/.test(location.hash)){document.documentElement.classList.add('lang-entering');setTimeout(function(){document.documentElement.classList.remove('lang-entering')},150);}</script>
+  <script>document.documentElement.classList.add('js');if(/^#(home|projects|about|contact)$/.test(location.hash)){document.documentElement.classList.add('lang-entering');setTimeout(function(){document.documentElement.classList.remove('lang-entering')},150);}</script>
   <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
   <link rel="preload" href="/fonts/raleway-variable.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/work-sans-variable.woff2" as="font" type="font/woff2" crossorigin>
@@ -128,7 +128,11 @@
   <script defer src="https://cloud.umami.is/script.js" data-website-id="2b85b30e-54b8-455e-828e-892c448a5bf3"></script>
 </head>
 <body>
+  <a href="#main" class="skip-link">{{ if eq .Lang "de" }}Zum Inhalt springen{{ else }}Skip to content{{ end }}</a>
+
+  <main id="main">
   {{ block "main" . }}{{ end }}
+  </main>
 
   {{- partial "footer.html" . -}}
 
